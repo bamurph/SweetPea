@@ -1,0 +1,19 @@
+PODS:
+  - FeedKit (5.0.0)
+  - RxCocoa (3.0.0):
+    - RxSwift (~> 3.0)
+  - RxSwift (3.0.0)
+
+DEPENDENCIES:
+  - FeedKit (~> 5.0)
+  - RxCocoa (~> 3.0)
+  - RxSwift (~> 3.0)
+
+SPEC CHECKSUMS:
+  FeedKit: f3edf3ba14a3aef57caceec91ef77745d10abbbe
+  RxCocoa: 0a2f3ae381cf16f4021a4cee7a4420f83058a965
+  RxSwift: a930cd662f5b4a7ca9dc3518585dba91dadf497c
+
+PODFILE CHECKSUM: 413eff46fc0f611ac3d00899c23ad26b67f1c767
+
+COCOAPODS: 1.1.1

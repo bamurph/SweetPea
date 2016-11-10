@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7AF81C7DD8A444B7673153E8 /* Pods_SweetPea.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 217687A5DF26143AF8C2A8D4 /* Pods_SweetPea.framework */; };
 		B5F0D23F1DD506ED00402FEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F0D23E1DD506ED00402FEC /* AppDelegate.swift */; };
 		B5F0D2411DD506ED00402FEC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F0D2401DD506ED00402FEC /* ViewController.swift */; };
 		B5F0D2441DD506ED00402FEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5F0D2421DD506ED00402FEC /* Main.storyboard */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		164D54AAD7DC45E9CA476AE1 /* Pods-SweetPea.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SweetPea.release.xcconfig"; path = "Pods/Target Support Files/Pods-SweetPea/Pods-SweetPea.release.xcconfig"; sourceTree = "<group>"; };
+		217687A5DF26143AF8C2A8D4 /* Pods_SweetPea.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SweetPea.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5F0D23B1DD506ED00402FEC /* SweetPea.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SweetPea.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5F0D23E1DD506ED00402FEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B5F0D2401DD506ED00402FEC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		B5F0D2481DD506ED00402FEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B5F0D24B1DD506ED00402FEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B5F0D24D1DD506ED00402FEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1E388EF1B5A8B303BF4AC6A /* Pods-SweetPea.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SweetPea.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SweetPea/Pods-SweetPea.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7AF81C7DD8A444B7673153E8 /* Pods_SweetPea.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B6FB18795E1081067AE9E42 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				217687A5DF26143AF8C2A8D4 /* Pods_SweetPea.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3889F404982A7A91B6E4B31A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D1E388EF1B5A8B303BF4AC6A /* Pods-SweetPea.debug.xcconfig */,
+				164D54AAD7DC45E9CA476AE1 /* Pods-SweetPea.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		B5F0D2321DD506ED00402FEC = {
 			isa = PBXGroup;
 			children = (
 				B5F0D23D1DD506ED00402FEC /* SweetPea */,
 				B5F0D23C1DD506ED00402FEC /* Products */,
+				3889F404982A7A91B6E4B31A /* Pods */,
+				1B6FB18795E1081067AE9E42 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -75,9 +99,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B5F0D2501DD506ED00402FEC /* Build configuration list for PBXNativeTarget "SweetPea" */;
 			buildPhases = (
+				739DCC59BA06844286405727 /* [CP] Check Pods Manifest.lock */,
 				B5F0D2371DD506ED00402FEC /* Sources */,
 				B5F0D2381DD506ED00402FEC /* Frameworks */,
 				B5F0D2391DD506ED00402FEC /* Resources */,
+				BEEE864DD6C25A11B4278794 /* [CP] Embed Pods Frameworks */,
+				5C9C664D3DF5E06035C1412C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -135,6 +162,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5C9C664D3DF5E06035C1412C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SweetPea/Pods-SweetPea-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		739DCC59BA06844286405727 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BEEE864DD6C25A11B4278794 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SweetPea/Pods-SweetPea-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B5F0D2371DD506ED00402FEC /* Sources */ = {
@@ -262,6 +337,7 @@
 		};
 		B5F0D2511DD506ED00402FEC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1E388EF1B5A8B303BF4AC6A /* Pods-SweetPea.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 97JRRX372K;
@@ -275,6 +351,7 @@
 		};
 		B5F0D2521DD506ED00402FEC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 164D54AAD7DC45E9CA476AE1 /* Pods-SweetPea.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 97JRRX372K;
@@ -305,6 +382,7 @@
 				B5F0D2521DD506ED00402FEC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
