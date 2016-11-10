@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		7AF81C7DD8A444B7673153E8 /* Pods_SweetPea.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 217687A5DF26143AF8C2A8D4 /* Pods_SweetPea.framework */; };
+		B5BB0D901DD51C8300BD7FA0 /* SweetPeaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BB0D8F1DD51C8300BD7FA0 /* SweetPeaTests.swift */; };
+		B5BB0D991DD51CB300BD7FA0 /* OPMLService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BB0D981DD51CB300BD7FA0 /* OPMLService.swift */; };
+		B5BB0D9B1DD51CC300BD7FA0 /* overcast.opml in Resources */ = {isa = PBXBuildFile; fileRef = B5BB0D9A1DD51CC300BD7FA0 /* overcast.opml */; };
 		B5F0D23F1DD506ED00402FEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F0D23E1DD506ED00402FEC /* AppDelegate.swift */; };
 		B5F0D2411DD506ED00402FEC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F0D2401DD506ED00402FEC /* ViewController.swift */; };
 		B5F0D2441DD506ED00402FEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5F0D2421DD506ED00402FEC /* Main.storyboard */; };
@@ -16,9 +19,24 @@
 		B5F0D24C1DD506ED00402FEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5F0D24A1DD506ED00402FEC /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		B5BB0D921DD51C8300BD7FA0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B5F0D2331DD506ED00402FEC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B5F0D23A1DD506ED00402FEC;
+			remoteInfo = SweetPea;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		164D54AAD7DC45E9CA476AE1 /* Pods-SweetPea.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SweetPea.release.xcconfig"; path = "Pods/Target Support Files/Pods-SweetPea/Pods-SweetPea.release.xcconfig"; sourceTree = "<group>"; };
 		217687A5DF26143AF8C2A8D4 /* Pods_SweetPea.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SweetPea.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5BB0D8D1DD51C8300BD7FA0 /* SweetPeaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SweetPeaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5BB0D8F1DD51C8300BD7FA0 /* SweetPeaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SweetPeaTests.swift; sourceTree = "<group>"; };
+		B5BB0D911DD51C8300BD7FA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5BB0D981DD51CB300BD7FA0 /* OPMLService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OPMLService.swift; sourceTree = "<group>"; };
+		B5BB0D9A1DD51CC300BD7FA0 /* overcast.opml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = overcast.opml; path = ../../../Downloads/overcast.opml; sourceTree = "<group>"; };
 		B5F0D23B1DD506ED00402FEC /* SweetPea.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SweetPea.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5F0D23E1DD506ED00402FEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B5F0D2401DD506ED00402FEC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -31,6 +49,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		B5BB0D8A1DD51C8300BD7FA0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B5F0D2381DD506ED00402FEC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -59,10 +84,29 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		B5BB0D8E1DD51C8300BD7FA0 /* SweetPeaTests */ = {
+			isa = PBXGroup;
+			children = (
+				B5BB0D8F1DD51C8300BD7FA0 /* SweetPeaTests.swift */,
+				B5BB0D911DD51C8300BD7FA0 /* Info.plist */,
+			);
+			path = SweetPeaTests;
+			sourceTree = "<group>";
+		};
+		B5BB0D971DD51CA400BD7FA0 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B5BB0D981DD51CB300BD7FA0 /* OPMLService.swift */,
+				B5BB0D9A1DD51CC300BD7FA0 /* overcast.opml */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
 		B5F0D2321DD506ED00402FEC = {
 			isa = PBXGroup;
 			children = (
 				B5F0D23D1DD506ED00402FEC /* SweetPea */,
+				B5BB0D8E1DD51C8300BD7FA0 /* SweetPeaTests */,
 				B5F0D23C1DD506ED00402FEC /* Products */,
 				3889F404982A7A91B6E4B31A /* Pods */,
 				1B6FB18795E1081067AE9E42 /* Frameworks */,
@@ -73,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				B5F0D23B1DD506ED00402FEC /* SweetPea.app */,
+				B5BB0D8D1DD51C8300BD7FA0 /* SweetPeaTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -80,6 +125,7 @@
 		B5F0D23D1DD506ED00402FEC /* SweetPea */ = {
 			isa = PBXGroup;
 			children = (
+				B5BB0D971DD51CA400BD7FA0 /* Services */,
 				B5F0D23E1DD506ED00402FEC /* AppDelegate.swift */,
 				B5F0D2401DD506ED00402FEC /* ViewController.swift */,
 				B5F0D2421DD506ED00402FEC /* Main.storyboard */,
@@ -95,6 +141,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		B5BB0D8C1DD51C8300BD7FA0 /* SweetPeaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5BB0D961DD51C8300BD7FA0 /* Build configuration list for PBXNativeTarget "SweetPeaTests" */;
+			buildPhases = (
+				B5BB0D891DD51C8300BD7FA0 /* Sources */,
+				B5BB0D8A1DD51C8300BD7FA0 /* Frameworks */,
+				B5BB0D8B1DD51C8300BD7FA0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B5BB0D931DD51C8300BD7FA0 /* PBXTargetDependency */,
+			);
+			name = SweetPeaTests;
+			productName = SweetPeaTests;
+			productReference = B5BB0D8D1DD51C8300BD7FA0 /* SweetPeaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		B5F0D23A1DD506ED00402FEC /* SweetPea */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B5F0D2501DD506ED00402FEC /* Build configuration list for PBXNativeTarget "SweetPea" */;
@@ -125,6 +189,12 @@
 				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "Constellation Software";
 				TargetAttributes = {
+					B5BB0D8C1DD51C8300BD7FA0 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 97JRRX372K;
+						ProvisioningStyle = Automatic;
+						TestTargetID = B5F0D23A1DD506ED00402FEC;
+					};
 					B5F0D23A1DD506ED00402FEC = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = 97JRRX372K;
@@ -146,17 +216,26 @@
 			projectRoot = "";
 			targets = (
 				B5F0D23A1DD506ED00402FEC /* SweetPea */,
+				B5BB0D8C1DD51C8300BD7FA0 /* SweetPeaTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		B5BB0D8B1DD51C8300BD7FA0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B5F0D2391DD506ED00402FEC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				B5F0D24C1DD506ED00402FEC /* LaunchScreen.storyboard in Resources */,
 				B5F0D2491DD506ED00402FEC /* Assets.xcassets in Resources */,
+				B5BB0D9B1DD51CC300BD7FA0 /* overcast.opml in Resources */,
 				B5F0D2441DD506ED00402FEC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -212,17 +291,34 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		B5BB0D891DD51C8300BD7FA0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5BB0D901DD51C8300BD7FA0 /* SweetPeaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B5F0D2371DD506ED00402FEC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				B5F0D2471DD506ED00402FEC /* PeaPod.xcdatamodeld in Sources */,
+				B5BB0D991DD51CB300BD7FA0 /* OPMLService.swift in Sources */,
 				B5F0D2411DD506ED00402FEC /* ViewController.swift in Sources */,
 				B5F0D23F1DD506ED00402FEC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B5BB0D931DD51C8300BD7FA0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B5F0D23A1DD506ED00402FEC /* SweetPea */;
+			targetProxy = B5BB0D921DD51C8300BD7FA0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		B5F0D2421DD506ED00402FEC /* Main.storyboard */ = {
@@ -244,6 +340,34 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		B5BB0D941DD51C8300BD7FA0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 97JRRX372K;
+				INFOPLIST_FILE = SweetPeaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = constellation.SweetPeaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SweetPea.app/SweetPea";
+			};
+			name = Debug;
+		};
+		B5BB0D951DD51C8300BD7FA0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 97JRRX372K;
+				INFOPLIST_FILE = SweetPeaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = constellation.SweetPeaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SweetPea.app/SweetPea";
+			};
+			name = Release;
+		};
 		B5F0D24E1DD506ED00402FEC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -366,6 +490,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		B5BB0D961DD51C8300BD7FA0 /* Build configuration list for PBXNativeTarget "SweetPeaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5BB0D941DD51C8300BD7FA0 /* Debug */,
+				B5BB0D951DD51C8300BD7FA0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		B5F0D2361DD506ED00402FEC /* Build configuration list for PBXProject "SweetPea" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
