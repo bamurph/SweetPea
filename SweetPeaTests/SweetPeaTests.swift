@@ -21,14 +21,15 @@ class SweetPeaTests: XCTestCase {
         let testBundle = Bundle(for: type(of: self))
 
         let demoURL = testBundle.url(forResource: "overcast", withExtension: "opml")
-        
-        dump(demoURL)
-        let r = try! OPMLService.init(url: OPMLService.demoURL!).parse()
-            .toBlocking()
-            .single()
-        dump(r)
 
-        XCTAssertNotNil(r)
+        XCTAssert(((try? demoURL?.checkResourceIsReachable()) != nil))
+
+        let service = try? OPMLService(with: demoURL!)
+
+        let items = try! service!.items
+            .toBlocking().last()
+        dump(items)
+
 
     }
     
