@@ -7,30 +7,29 @@
 //
 
 import XCTest
+import RxTest
+import RxBlocking
+import FeedKit
+
 @testable import SweetPea
 
 class SweetPeaTests: XCTestCase {
+
     
-    override func setUp() {
-        super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
-    
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
-    }
-    
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    func testOPMLParse() {
+
+        let testBundle = Bundle(for: type(of: self))
+
+        let demoURL = testBundle.url(forResource: "overcast", withExtension: "opml")
+        
+        dump(demoURL)
+        let r = try! OPMLService.init(url: OPMLService.demoURL!).parse()
+            .toBlocking()
+            .single()
+        dump(r)
+
+        XCTAssertNotNil(r)
+
     }
     
 }

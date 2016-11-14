@@ -1,19 +1,39 @@
 PODS:
   - FeedKit (5.0.0)
+  - Lepton (0.1.0)
+  - RxBlocking (3.0.0):
+    - RxSwift (~> 3.0)
   - RxCocoa (3.0.0):
     - RxSwift (~> 3.0)
   - RxSwift (3.0.0)
+  - RxTest (3.0.0):
+    - RxSwift (~> 3.0)
 
 DEPENDENCIES:
   - FeedKit (~> 5.0)
+  - Lepton (from `https://github.com/younata/Lepton.git`)
+  - RxBlocking (~> 3.0)
   - RxCocoa (~> 3.0)
   - RxSwift (~> 3.0)
+  - RxTest (~> 3.0)
+
+EXTERNAL SOURCES:
+  Lepton:
+    :git: https://github.com/younata/Lepton.git
+
+CHECKOUT OPTIONS:
+  Lepton:
+    :commit: 92a21f46f12f2ec6a814aedc30a51e551d42a573
+    :git: https://github.com/younata/Lepton.git
 
 SPEC CHECKSUMS:
   FeedKit: f3edf3ba14a3aef57caceec91ef77745d10abbbe
+  Lepton: bd40c02b72773ff71a12d98345b4c879401f1955
+  RxBlocking: 0132c660340d8b8f34b65b2e099167ea6134eecf
   RxCocoa: 0a2f3ae381cf16f4021a4cee7a4420f83058a965
   RxSwift: a930cd662f5b4a7ca9dc3518585dba91dadf497c
+  RxTest: 770511db5d602b618ee8c8a7c06b4b71f9168f7c
 
-PODFILE CHECKSUM: 413eff46fc0f611ac3d00899c23ad26b67f1c767
+PODFILE CHECKSUM: 68b33e7ffa6ad2e766abc063fde500e88bb6e818
 
 COCOAPODS: 1.1.1
