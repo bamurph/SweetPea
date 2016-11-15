@@ -14,22 +14,24 @@ import Lepton
 class OPMLService {
 
     let url: URL
-    let items: Observable<[Item]>
+    let items: Variable<[Item]> = Variable([])
     let disposeBag = DisposeBag()
 
     init(with url: URL) throws {
         self.url = url
-        self.items = OPMLService.fetchedFile(from: url)
+        let ff = OPMLService.fetchedFile(from: url)
             .catchError { e in
                 throw e
-            }
-            .flatMapLatest { s in
+            }.flatMapLatest { s in
                 OPMLService.parsedItems(from: s)
                     .catchError { e in
                         throw e
                 }
-        }
-
+            }
+        ff.subscribe(onNext: { n in
+            self.items.value = n
+        }).addDisposableTo(disposeBag)
+        
         
     }
 

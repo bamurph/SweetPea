@@ -10,6 +10,7 @@ import XCTest
 import RxTest
 import RxBlocking
 import FeedKit
+import Lepton
 
 @testable import SweetPea
 
@@ -26,10 +27,37 @@ class SweetPeaTests: XCTestCase {
 
         let service = try? OPMLService(with: demoURL!)
 
-        let items = try! service!.items
-            .toBlocking().last()
+        let items: [Item] = service!.items.value
+        XCTAssert(items.count == 10)
         dump(items)
 
+    }
+
+    func testRSSServiceInit() {
+        let demoItem = Item(title: "Dan Carlin\'s Hardcore Historyry", summary: nil, xmlURL: "https://feeds.feedburner.com/dancarlin/history?format=xml", query: nil, tags: [])
+
+        let hasItems = expectation(description: "has more than 0 items")
+
+        let service = RSSService(item: demoItem)
+        service.update()
+
+        let sub = service.feed.asObservable()
+            .subscribe(onNext: { n in
+                dump(n)
+                if (n?.items?.count) != nil {
+                    hasItems.fulfill()
+                }
+                // dump(n)
+            })
+
+
+
+        waitForExpectations(timeout: 3) { error in
+            if let error = error {
+                print(error)
+            }
+            sub.dispose()
+        }
 
     }
     
