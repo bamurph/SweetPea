@@ -33,8 +33,21 @@ class SweetPeaTests: XCTestCase {
 
     }
 
+    func testSubViewModel() {
+        let hasResults = expectation(description: "it has a result")
+        let testBundle = Bundle(for: type(of: self))
+        let demoURL = testBundle.url(forResource: "overcast", withExtension: "opml")
+
+        let svm = try? SubscriptionsViewModel(with: demoURL!)
+        print(svm?.service.items.value)
+        waitForExpectations(timeout: 5) { error in
+
+        }
+
+    }
+
     func testRSSServiceInit() {
-        let demoItem = Item(title: "Dan Carlin\'s Hardcore Historyry", summary: nil, xmlURL: "https://feeds.feedburner.com/dancarlin/history?format=xml", query: nil, tags: [])
+        let demoItem = Item(title: "Dan Carlin\'s Hardcore History", summary: nil, xmlURL: "https://feeds.feedburner.com/dancarlin/history?format=xml", query: nil, tags: [])
 
         let hasItems = expectation(description: "has more than 0 items")
 
@@ -49,9 +62,6 @@ class SweetPeaTests: XCTestCase {
                 }
                 // dump(n)
             })
-
-
-
         waitForExpectations(timeout: 3) { error in
             if let error = error {
                 print(error)
