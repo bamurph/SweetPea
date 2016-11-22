@@ -38,10 +38,19 @@ class SweetPeaTests: XCTestCase {
         let testBundle = Bundle(for: type(of: self))
         let demoURL = testBundle.url(forResource: "overcast", withExtension: "opml")
 
-        let svm = try? SubscriptionsViewModel(with: demoURL!)
-        print(svm?.service.items.value)
-        waitForExpectations(timeout: 5) { error in
+        let svm = SubscriptionsViewModel(with: demoURL!)
 
+
+        defer {
+            let sub = svm?.feeds.asObservable()
+                .subscribe(onNext: { n in
+                    dump(n.count)
+                    hasResults.fulfill()
+                })
+
+            waitForExpectations(timeout: 5) { error in
+                sub?.dispose()
+            }
         }
 
     }

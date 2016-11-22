@@ -16,11 +16,12 @@ class SubscriptionsViewModel {
     let service: OPMLService
     let feeds: Variable<[RSSFeed]> = Variable([])
 
-    init(with url: URL) throws {
+    init?(with url: URL) {
         do {
             service = try OPMLService(with: url)
         } catch let error {
-            throw error
+            print(error)
+            return nil
         }
 
 
