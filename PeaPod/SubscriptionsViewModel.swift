@@ -33,7 +33,7 @@ class SubscriptionsViewModel {
                     .subscribe(onNext: { n in
                         guard n != nil else { return }
                         self.feeds.value.append(n!)
-
+                        dump(n)
                     }).addDisposableTo(disposeBag)
                 svc.update()
         }

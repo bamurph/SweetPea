@@ -52,6 +52,19 @@ class SweetPeaTests: XCTestCase {
                 sub?.dispose()
             }
         }
+    }
+
+    func testFeedViewModel() {
+        let demoItem = Item(title: "Dan Carlin\'s Hardcore History", summary: nil, xmlURL: "https://feeds.feedburner.com/dancarlin/history?format=xml", query: nil, tags: [])
+
+        let service = RSSService(item: demoItem)
+        service.update()
+
+        let sub = service.feed.asObservable()
+            .subscribe(onNext: { n in
+                let fvm = FeedViewModel(with: n!)
+                XCTAssert((fvm.feed.items?.count)! > 0)
+            })
 
     }
 
