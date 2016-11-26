@@ -59,14 +59,36 @@ class SweetPeaTests: XCTestCase {
 
         let service = RSSService(item: demoItem)
         service.update()
+        let audioIsPlaying = expectation(description: "Audio is Playing")
 
         let sub = service.feed.asObservable()
             .subscribe(onNext: { n in
                 let fvm = FeedViewModel(with: n!)
                 XCTAssert((fvm.feed.items?.count)! > 0)
+
+                let f = fvm.feed.items?
+                    .filter { $0.enclosure != nil }
+                    .first
+
+                guard let i = f else { XCTFail(); return }
+
+                let audio = fvm.audio(for: i)
+                    .subscribe(onNext: { n in
+                        print(n.url)
+                        if n.play() {
+                            audioIsPlaying.fulfill()
+                        }
+                        dump(n)
+                    })
             })
+        waitForExpectations(timeout: 100) { error in
+            
+        }
+        
 
     }
+
+
 
     func testRSSServiceInit() {
         let demoItem = Item(title: "Dan Carlin\'s Hardcore History", summary: nil, xmlURL: "https://feeds.feedburner.com/dancarlin/history?format=xml", query: nil, tags: [])

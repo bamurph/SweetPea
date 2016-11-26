@@ -11,6 +11,6 @@ import Foundation
 
 struct Resources {
 
-    static let demoURL =  Bundle.main.url(forResource: "overcast", withExtension: "opml")
+    static let demoURL = Bundle.main.url(forResource: "overcast", withExtension: "opml")
 
 }
