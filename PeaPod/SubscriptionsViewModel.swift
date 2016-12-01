@@ -26,23 +26,23 @@ class SubscriptionsViewModel {
         }
 
         // Put on a background queue to avoid blocking during load
-        DispatchQueue.global(qos: .background).async {
-            self.service.items.value
-                .forEach {
-                    let svc = RSSService(item: $0)
-                    svc.feed.asObservable()
-                        .subscribeOn(ConcurrentMainScheduler.instance)
-                        .subscribe(onNext: { n in
-                            guard n != nil else { return }
-                            self.feeds.value.append(n!)
-//                            dump(n)
-                        }).addDisposableTo(self.disposeBag)
-                    svc.update()
-            }
-        }
+//        DispatchQueue.global(qos: .background).async {
+//            self.service.items.value
+//                .forEach {
+//                    let svc = RSSService(url: $0)
+//                    svc.feed.asObservable()
+//                        .subscribeOn(ConcurrentMainScheduler.instance)
+//                        .subscribe(onNext: { n in
+//                            guard n != nil else { return }
+//                            self.feeds.value.append(n!)
+////                            dump(n)
+//                        }).addDisposableTo(self.disposeBag)
+//                    svc.update()
+//            }
+//        }
 
         
-
-    }
+//
+//    }
     
-}
+    }}
