@@ -1,6 +1,8 @@
 PODS:
   - FeedKit (5.0.0)
   - Lepton (0.1.0)
+  - Nimble (5.1.0)
+  - Quick (0.10.0)
   - RxBlocking (3.0.0):
     - RxSwift (~> 3.0)
   - RxCocoa (3.0.0):
@@ -10,6 +12,8 @@ PODS:
 DEPENDENCIES:
   - FeedKit (~> 5.0)
   - Lepton (from `https://github.com/younata/Lepton.git`)
+  - Nimble
+  - Quick
   - RxBlocking (~> 3.0)
   - RxCocoa (~> 3.0)
   - RxSwift (~> 3.0)
@@ -26,10 +30,12 @@ CHECKOUT OPTIONS:
 SPEC CHECKSUMS:
   FeedKit: f3edf3ba14a3aef57caceec91ef77745d10abbbe
   Lepton: bd40c02b72773ff71a12d98345b4c879401f1955
+  Nimble: 5ea121a2eda60440287054cde077fc0ad22227b3
+  Quick: 5d290df1c69d5ee2f0729956dcf0fd9a30447eaa
   RxBlocking: 0132c660340d8b8f34b65b2e099167ea6134eecf
   RxCocoa: 0a2f3ae381cf16f4021a4cee7a4420f83058a965
   RxSwift: a930cd662f5b4a7ca9dc3518585dba91dadf497c
 
-PODFILE CHECKSUM: 790d3551d4a0564268d9056fed79985b598516e2
+PODFILE CHECKSUM: 25558bc4724b7fa720036cd5ed7b34a077b45144
 
 COCOAPODS: 1.1.1

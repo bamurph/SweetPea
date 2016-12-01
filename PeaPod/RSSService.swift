@@ -12,7 +12,10 @@ import RxSwift
 import Lepton
 
 
+
+
 /// Bare-Bones RSS Service to fetch items from a single RSS feed
+/// Item type is Lepton OPML instance
 struct RSSService {
     let item: Item
     let feed: Variable<RSSFeed?> = Variable(nil)

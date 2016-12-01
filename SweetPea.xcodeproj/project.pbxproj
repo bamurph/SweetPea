@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7AF81C7DD8A444B7673153E8 /* Pods_SweetPea.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 217687A5DF26143AF8C2A8D4 /* Pods_SweetPea.framework */; };
+		B5142A2A1DF0CA92005CE3AC /* RSSSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5142A291DF0CA92005CE3AC /* RSSSpec.swift */; };
 		B537939B1DD8BE0B00D9C9AF /* OPMLService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BB0D981DD51CB300BD7FA0 /* OPMLService.swift */; };
 		B537939C1DD8C33F00D9C9AF /* overcast.opml in Resources */ = {isa = PBXBuildFile; fileRef = B5BB0D9A1DD51CC300BD7FA0 /* overcast.opml */; };
 		B53793A01DDA626300D9C9AF /* RSSService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B537939F1DDA626300D9C9AF /* RSSService.swift */; };
@@ -30,6 +31,7 @@
 		B5F0D2491DD506ED00402FEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5F0D2481DD506ED00402FEC /* Assets.xcassets */; };
 		B5F0D24C1DD506ED00402FEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5F0D24A1DD506ED00402FEC /* LaunchScreen.storyboard */; };
 		C72ED2AC3F04909295807E77 /* Pods_SweetPeaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A86763A151A1FAF46D41125C /* Pods_SweetPeaTests.framework */; };
+		E100960F58E63D8523B39731 /* Pods_Tests_SweetPeaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8D4A22CA2C7ED9B428F56F4 /* Pods_Tests_SweetPeaTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,11 +59,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		00031456D56D3833FDF310D1 /* Pods-Tests-SweetPeaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests-SweetPeaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tests-SweetPeaTests/Pods-Tests-SweetPeaTests.release.xcconfig"; sourceTree = "<group>"; };
 		164D54AAD7DC45E9CA476AE1 /* Pods-SweetPea.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SweetPea.release.xcconfig"; path = "Pods/Target Support Files/Pods-SweetPea/Pods-SweetPea.release.xcconfig"; sourceTree = "<group>"; };
 		217687A5DF26143AF8C2A8D4 /* Pods_SweetPea.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SweetPea.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8623AF9DB9F4CB26E40CBBDF /* Pods-SweetPeaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SweetPeaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SweetPeaTests/Pods-SweetPeaTests.debug.xcconfig"; sourceTree = "<group>"; };
 		9CBA30FAEB4D0AE63B6EA51F /* Pods-SweetPeaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SweetPeaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SweetPeaTests/Pods-SweetPeaTests.release.xcconfig"; sourceTree = "<group>"; };
 		A86763A151A1FAF46D41125C /* Pods_SweetPeaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SweetPeaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5142A291DF0CA92005CE3AC /* RSSSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSSSpec.swift; sourceTree = "<group>"; };
 		B537939D1DD9BF8C00D9C9AF /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		B537939F1DDA626300D9C9AF /* RSSService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSSService.swift; sourceTree = "<group>"; };
 		B5A1AC861DE4EFC90093E823 /* FeedViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FeedViewModel.swift; path = PeaPod/FeedViewModel.swift; sourceTree = "<group>"; };
@@ -81,7 +85,9 @@
 		B5F0D2481DD506ED00402FEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B5F0D24B1DD506ED00402FEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B5F0D24D1DD506ED00402FEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B8D4A22CA2C7ED9B428F56F4 /* Pods_Tests_SweetPeaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tests_SweetPeaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1E388EF1B5A8B303BF4AC6A /* Pods-SweetPea.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SweetPea.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SweetPea/Pods-SweetPea.debug.xcconfig"; sourceTree = "<group>"; };
+		E80FE2E7BD080BE4D1368D6C /* Pods-Tests-SweetPeaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests-SweetPeaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tests-SweetPeaTests/Pods-Tests-SweetPeaTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +96,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C72ED2AC3F04909295807E77 /* Pods_SweetPeaTests.framework in Frameworks */,
+				E100960F58E63D8523B39731 /* Pods_Tests_SweetPeaTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +119,7 @@
 				B5A1AC911DE642D80093E823 /* XCTest.framework */,
 				217687A5DF26143AF8C2A8D4 /* Pods_SweetPea.framework */,
 				A86763A151A1FAF46D41125C /* Pods_SweetPeaTests.framework */,
+				B8D4A22CA2C7ED9B428F56F4 /* Pods_Tests_SweetPeaTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -123,6 +131,8 @@
 				164D54AAD7DC45E9CA476AE1 /* Pods-SweetPea.release.xcconfig */,
 				8623AF9DB9F4CB26E40CBBDF /* Pods-SweetPeaTests.debug.xcconfig */,
 				9CBA30FAEB4D0AE63B6EA51F /* Pods-SweetPeaTests.release.xcconfig */,
+				E80FE2E7BD080BE4D1368D6C /* Pods-Tests-SweetPeaTests.debug.xcconfig */,
+				00031456D56D3833FDF310D1 /* Pods-Tests-SweetPeaTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -137,6 +147,7 @@
 		B5BB0D8E1DD51C8300BD7FA0 /* SweetPeaTests */ = {
 			isa = PBXGroup;
 			children = (
+				B5142A291DF0CA92005CE3AC /* RSSSpec.swift */,
 				B5BB0D8F1DD51C8300BD7FA0 /* SweetPeaTests.swift */,
 				B5BB0D911DD51C8300BD7FA0 /* Info.plist */,
 			);
@@ -324,7 +335,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SweetPeaTests/Pods-SweetPeaTests-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tests-SweetPeaTests/Pods-Tests-SweetPeaTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		17E017EA720192361D7844CD /* [CP] Copy Pods Resources */ = {
@@ -339,7 +350,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SweetPeaTests/Pods-SweetPeaTests-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tests-SweetPeaTests/Pods-Tests-SweetPeaTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		46B3508A54F72E88262504D3 /* [CP] Check Pods Manifest.lock */ = {
@@ -414,6 +425,7 @@
 				B537939B1DD8BE0B00D9C9AF /* OPMLService.swift in Sources */,
 				B5A1AC981DE6456C0093E823 /* SweetPeaTests.swift in Sources */,
 				B53793A01DDA626300D9C9AF /* RSSService.swift in Sources */,
+				B5142A2A1DF0CA92005CE3AC /* RSSSpec.swift in Sources */,
 				B5BB74631DE3894800F327F0 /* SubscriptionsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -465,7 +477,7 @@
 /* Begin XCBuildConfiguration section */
 		B5BB0D941DD51C8300BD7FA0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8623AF9DB9F4CB26E40CBBDF /* Pods-SweetPeaTests.debug.xcconfig */;
+			baseConfigurationReference = E80FE2E7BD080BE4D1368D6C /* Pods-Tests-SweetPeaTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -500,7 +512,7 @@
 		};
 		B5BB0D951DD51C8300BD7FA0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9CBA30FAEB4D0AE63B6EA51F /* Pods-SweetPeaTests.release.xcconfig */;
+			baseConfigurationReference = 00031456D56D3833FDF310D1 /* Pods-Tests-SweetPeaTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

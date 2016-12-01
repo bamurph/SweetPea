@@ -90,29 +90,10 @@ class SweetPeaTests: XCTestCase {
 
 
 
-    func testRSSServiceInit() {
-        let demoItem = Item(title: "Dan Carlin\'s Hardcore History", summary: nil, xmlURL: "https://feeds.feedburner.com/dancarlin/history?format=xml", query: nil, tags: [])
 
-        let hasItems = expectation(description: "has more than 0 items")
-
-        let service = RSSService(item: demoItem)
-        service.update()
-
-        let sub = service.feed.asObservable()
-            .subscribe(onNext: { n in
-                dump(n)
-                if (n?.items?.count) != nil {
-                    hasItems.fulfill()
-                }
-                // dump(n)
-            })
-        waitForExpectations(timeout: 3) { error in
-            if let error = error {
-                print(error)
-            }
-            sub.dispose()
-        }
-
+    func testRSSService() {
+        let url = URL(string: "https://feeds.feedburner.com/dancarlin/history?format=xml")!
+        let service = RSSService()
+        
     }
-    
 }
