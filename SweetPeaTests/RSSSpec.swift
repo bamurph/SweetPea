@@ -9,13 +9,26 @@
 @testable import SweetPea
 import Quick
 import Nimble
+import RxSwift
+import FeedKit
 
+/// Stub RSS Service
 
 class RSSSpec: QuickSpec {
     override func spec() {
+
+        let testBundle = Bundle(for: type(of: self))
+        let url = testBundle.url(forResource: "utr", withExtension: "rss")
+
         it("fetch rss with a mock provider") {
-
+            let service = RSSService()
+            let _ = service.fetch(url: url!)
+                .subscribe(onNext: { feed in
+                    expect(feed.title).to(match("Under the Radar"))
+                    dump(feed)
+                    expect(feed.items?.count).to(equal(56))
+                })
         }
-
+        
     }
 }

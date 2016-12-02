@@ -12,6 +12,15 @@
 		B537939B1DD8BE0B00D9C9AF /* OPMLService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BB0D981DD51CB300BD7FA0 /* OPMLService.swift */; };
 		B537939C1DD8C33F00D9C9AF /* overcast.opml in Resources */ = {isa = PBXBuildFile; fileRef = B5BB0D9A1DD51CC300BD7FA0 /* overcast.opml */; };
 		B53793A11DDA626600D9C9AF /* RSSService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B537939F1DDA626300D9C9AF /* RSSService.swift */; };
+		B551BC421DF23B6A001C76E3 /* Under the Radar 1_ Adapting to the Market.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B551BC411DF23B6A001C76E3 /* Under the Radar 1_ Adapting to the Market.mp3 */; };
+		B551BC431DF23B6A001C76E3 /* Under the Radar 1_ Adapting to the Market.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B551BC411DF23B6A001C76E3 /* Under the Radar 1_ Adapting to the Market.mp3 */; };
+		B551BC451DF23B71001C76E3 /* Under the Radar 56_ Surviving the Winter.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B551BC441DF23B71001C76E3 /* Under the Radar 56_ Surviving the Winter.mp3 */; };
+		B551BC461DF23B71001C76E3 /* Under the Radar 56_ Surviving the Winter.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B551BC441DF23B71001C76E3 /* Under the Radar 56_ Surviving the Winter.mp3 */; };
+		B551BC481DF23B8D001C76E3 /* Under the Radar 55_ Black Friday Sale.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B551BC471DF23B8D001C76E3 /* Under the Radar 55_ Black Friday Sale.mp3 */; };
+		B551BC491DF23B8D001C76E3 /* Under the Radar 55_ Black Friday Sale.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B551BC471DF23B8D001C76E3 /* Under the Radar 55_ Black Friday Sale.mp3 */; };
+		B551BC4C1DF23CA1001C76E3 /* AudioPlaying.swift in Sources */ = {isa = PBXBuildFile; fileRef = B551BC4B1DF23CA1001C76E3 /* AudioPlaying.swift */; };
+		B551BC4D1DF23CA1001C76E3 /* AudioPlaying.swift in Sources */ = {isa = PBXBuildFile; fileRef = B551BC4B1DF23CA1001C76E3 /* AudioPlaying.swift */; };
+		B551BC4F1DF23CE8001C76E3 /* AudioPlayingSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B551BC4E1DF23CE8001C76E3 /* AudioPlayingSpec.swift */; };
 		B5A1AC871DE4EFC90093E823 /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A1AC861DE4EFC90093E823 /* FeedViewModel.swift */; };
 		B5A1AC881DE4EFC90093E823 /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A1AC861DE4EFC90093E823 /* FeedViewModel.swift */; };
 		B5A1AC8E1DE640440093E823 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B537939D1DD9BF8C00D9C9AF /* Helpers.swift */; };
@@ -29,10 +38,9 @@
 		B5F0D2491DD506ED00402FEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5F0D2481DD506ED00402FEC /* Assets.xcassets */; };
 		B5F0D24C1DD506ED00402FEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5F0D24A1DD506ED00402FEC /* LaunchScreen.storyboard */; };
 		B5FBBA451DF1FBB700B7A71C /* RSSProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FBBA441DF1FBB700B7A71C /* RSSProtocol.swift */; };
-		B5FBBA481DF209B600B7A71C /* mtjc.rss in Resources */ = {isa = PBXBuildFile; fileRef = B5FBBA471DF209B600B7A71C /* mtjc.rss */; };
-		B5FBBA491DF209BA00B7A71C /* mtjc.rss in Resources */ = {isa = PBXBuildFile; fileRef = B5FBBA471DF209B600B7A71C /* mtjc.rss */; };
-		C72ED2AC3F04909295807E77 /* Pods_SweetPeaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A86763A151A1FAF46D41125C /* Pods_SweetPeaTests.framework */; };
-		E100960F58E63D8523B39731 /* Pods_Tests_SweetPeaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8D4A22CA2C7ED9B428F56F4 /* Pods_Tests_SweetPeaTests.framework */; };
+		B5FBBA481DF209B600B7A71C /* utr.rss in Resources */ = {isa = PBXBuildFile; fileRef = B5FBBA471DF209B600B7A71C /* utr.rss */; };
+		B5FBBA491DF209BA00B7A71C /* utr.rss in Resources */ = {isa = PBXBuildFile; fileRef = B5FBBA471DF209B600B7A71C /* utr.rss */; };
+		E100960F58E63D8523B39731 /* Pods_Tests_SweetPeaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8D4A22CA2C7ED9B428F56F4 /* Pods_Tests_SweetPeaTests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +77,11 @@
 		B5142A291DF0CA92005CE3AC /* RSSSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSSSpec.swift; sourceTree = "<group>"; };
 		B537939D1DD9BF8C00D9C9AF /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		B537939F1DDA626300D9C9AF /* RSSService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSSService.swift; sourceTree = "<group>"; };
+		B551BC411DF23B6A001C76E3 /* Under the Radar 1_ Adapting to the Market.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Under the Radar 1_ Adapting to the Market.mp3"; sourceTree = "<group>"; };
+		B551BC441DF23B71001C76E3 /* Under the Radar 56_ Surviving the Winter.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Under the Radar 56_ Surviving the Winter.mp3"; sourceTree = "<group>"; };
+		B551BC471DF23B8D001C76E3 /* Under the Radar 55_ Black Friday Sale.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Under the Radar 55_ Black Friday Sale.mp3"; sourceTree = "<group>"; };
+		B551BC4B1DF23CA1001C76E3 /* AudioPlaying.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioPlaying.swift; sourceTree = "<group>"; };
+		B551BC4E1DF23CE8001C76E3 /* AudioPlayingSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioPlayingSpec.swift; sourceTree = "<group>"; };
 		B5A1AC861DE4EFC90093E823 /* FeedViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FeedViewModel.swift; path = PeaPod/FeedViewModel.swift; sourceTree = "<group>"; };
 		B5A1AC911DE642D80093E823 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		B5A1AC941DE643F20093E823 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -86,7 +99,7 @@
 		B5F0D24B1DD506ED00402FEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B5F0D24D1DD506ED00402FEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B5FBBA441DF1FBB700B7A71C /* RSSProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSSProtocol.swift; sourceTree = "<group>"; };
-		B5FBBA471DF209B600B7A71C /* mtjc.rss */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = mtjc.rss; path = ../../../Downloads/mtjc.rss; sourceTree = "<group>"; };
+		B5FBBA471DF209B600B7A71C /* utr.rss */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = utr.rss; path = ../../../Downloads/utr.rss; sourceTree = "<group>"; };
 		B8D4A22CA2C7ED9B428F56F4 /* Pods_Tests_SweetPeaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tests_SweetPeaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1E388EF1B5A8B303BF4AC6A /* Pods-SweetPea.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SweetPea.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SweetPea/Pods-SweetPea.debug.xcconfig"; sourceTree = "<group>"; };
 		E80FE2E7BD080BE4D1368D6C /* Pods-Tests-SweetPeaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests-SweetPeaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tests-SweetPeaTests/Pods-Tests-SweetPeaTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -97,7 +110,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C72ED2AC3F04909295807E77 /* Pods_SweetPeaTests.framework in Frameworks */,
 				E100960F58E63D8523B39731 /* Pods_Tests_SweetPeaTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,6 +151,16 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		B551BC4A1DF23B92001C76E3 /* UTR */ = {
+			isa = PBXGroup;
+			children = (
+				B551BC411DF23B6A001C76E3 /* Under the Radar 1_ Adapting to the Market.mp3 */,
+				B551BC471DF23B8D001C76E3 /* Under the Radar 55_ Black Friday Sale.mp3 */,
+				B551BC441DF23B71001C76E3 /* Under the Radar 56_ Surviving the Winter.mp3 */,
+			);
+			name = UTR;
+			sourceTree = "<group>";
+		};
 		B5A1AC8C1DE63F1C0093E823 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -149,6 +171,7 @@
 		B5BB0D8E1DD51C8300BD7FA0 /* SweetPeaTests */ = {
 			isa = PBXGroup;
 			children = (
+				B551BC4E1DF23CE8001C76E3 /* AudioPlayingSpec.swift */,
 				B5142A291DF0CA92005CE3AC /* RSSSpec.swift */,
 				B5BB0D911DD51C8300BD7FA0 /* Info.plist */,
 			);
@@ -158,6 +181,7 @@
 		B5BB0D971DD51CA400BD7FA0 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				B551BC4B1DF23CA1001C76E3 /* AudioPlaying.swift */,
 				B537939F1DDA626300D9C9AF /* RSSService.swift */,
 				B5BB0D981DD51CB300BD7FA0 /* OPMLService.swift */,
 				B5FBBA441DF1FBB700B7A71C /* RSSProtocol.swift */,
@@ -226,7 +250,8 @@
 		B5FBBA461DF2099D00B7A71C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				B5FBBA471DF209B600B7A71C /* mtjc.rss */,
+				B551BC4A1DF23B92001C76E3 /* UTR */,
+				B5FBBA471DF209B600B7A71C /* utr.rss */,
 				B5BB0D9A1DD51CC300BD7FA0 /* overcast.opml */,
 			);
 			name = Resources;
@@ -324,7 +349,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5FBBA491DF209BA00B7A71C /* mtjc.rss in Resources */,
+				B551BC461DF23B71001C76E3 /* Under the Radar 56_ Surviving the Winter.mp3 in Resources */,
+				B551BC491DF23B8D001C76E3 /* Under the Radar 55_ Black Friday Sale.mp3 in Resources */,
+				B5FBBA491DF209BA00B7A71C /* utr.rss in Resources */,
+				B551BC431DF23B6A001C76E3 /* Under the Radar 1_ Adapting to the Market.mp3 in Resources */,
 				B537939C1DD8C33F00D9C9AF /* overcast.opml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -333,10 +361,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B551BC451DF23B71001C76E3 /* Under the Radar 56_ Surviving the Winter.mp3 in Resources */,
 				B5F0D24C1DD506ED00402FEC /* LaunchScreen.storyboard in Resources */,
-				B5FBBA481DF209B600B7A71C /* mtjc.rss in Resources */,
+				B551BC481DF23B8D001C76E3 /* Under the Radar 55_ Black Friday Sale.mp3 in Resources */,
+				B5FBBA481DF209B600B7A71C /* utr.rss in Resources */,
 				B5F0D2491DD506ED00402FEC /* Assets.xcassets in Resources */,
 				B5BB0D9B1DD51CC300BD7FA0 /* overcast.opml in Resources */,
+				B551BC421DF23B6A001C76E3 /* Under the Radar 1_ Adapting to the Market.mp3 in Resources */,
 				B5F0D2441DD506ED00402FEC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -442,10 +473,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5A1AC881DE4EFC90093E823 /* FeedViewModel.swift in Sources */,
+				B551BC4D1DF23CA1001C76E3 /* AudioPlaying.swift in Sources */,
 				B5A1AC8F1DE640450093E823 /* Helpers.swift in Sources */,
 				B537939B1DD8BE0B00D9C9AF /* OPMLService.swift in Sources */,
 				B5142A2A1DF0CA92005CE3AC /* RSSSpec.swift in Sources */,
 				B5BB74631DE3894800F327F0 /* SubscriptionsViewModel.swift in Sources */,
+				B551BC4F1DF23CE8001C76E3 /* AudioPlayingSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,6 +489,7 @@
 				B5FBBA451DF1FBB700B7A71C /* RSSProtocol.swift in Sources */,
 				B5BB74621DE3894800F327F0 /* SubscriptionsViewModel.swift in Sources */,
 				B5F0D2471DD506ED00402FEC /* PeaPod.xcdatamodeld in Sources */,
+				B551BC4C1DF23CA1001C76E3 /* AudioPlaying.swift in Sources */,
 				B5BB0D991DD51CB300BD7FA0 /* OPMLService.swift in Sources */,
 				B5A1AC8E1DE640440093E823 /* Helpers.swift in Sources */,
 				B53793A11DDA626600D9C9AF /* RSSService.swift in Sources */,
@@ -509,7 +543,6 @@
 					"\"$PODS_CONFIGURATION_BUILD_DIR/RxBlocking\"",
 					"\"$PODS_CONFIGURATION_BUILD_DIR/RxCocoa\"",
 					"\"$PODS_CONFIGURATION_BUILD_DIR/RxSwift\"",
-					"\"$PODS_CONFIGURATION_BUILD_DIR/RxTest\"",
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks/**",
 				);
 				"FRAMEWORK_SEARCH_PATHS[arch=*]" = (
@@ -519,7 +552,6 @@
 					"\"$PODS_CONFIGURATION_BUILD_DIR/RxBlocking\"",
 					"\"$PODS_CONFIGURATION_BUILD_DIR/RxCocoa\"",
 					"\"$PODS_CONFIGURATION_BUILD_DIR/RxSwift\"",
-					"\"$PODS_CONFIGURATION_BUILD_DIR/RxTest\"",
 				);
 				INFOPLIST_FILE = SweetPeaTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -544,7 +576,6 @@
 					"\"$PODS_CONFIGURATION_BUILD_DIR/RxBlocking\"",
 					"\"$PODS_CONFIGURATION_BUILD_DIR/RxCocoa\"",
 					"\"$PODS_CONFIGURATION_BUILD_DIR/RxSwift\"",
-					"\"$PODS_CONFIGURATION_BUILD_DIR/RxTest\"",
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks/**",
 				);
 				INFOPLIST_FILE = SweetPeaTests/Info.plist;
@@ -665,7 +696,6 @@
 					"\"$PODS_CONFIGURATION_BUILD_DIR/RxBlocking\"",
 					"\"$PODS_CONFIGURATION_BUILD_DIR/RxCocoa\"",
 					"\"$PODS_CONFIGURATION_BUILD_DIR/RxSwift\"",
-					"\"$PODS_CONFIGURATION_BUILD_DIR/RxTest\"",
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks/**",
 				);
 				INFOPLIST_FILE = PeaPod/Info.plist;
@@ -690,7 +720,6 @@
 					"\"$PODS_CONFIGURATION_BUILD_DIR/RxBlocking\"",
 					"\"$PODS_CONFIGURATION_BUILD_DIR/RxCocoa\"",
 					"\"$PODS_CONFIGURATION_BUILD_DIR/RxSwift\"",
-					"\"$PODS_CONFIGURATION_BUILD_DIR/RxTest\"",
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks/**",
 				);
 				INFOPLIST_FILE = PeaPod/Info.plist;

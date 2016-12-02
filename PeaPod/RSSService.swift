@@ -37,23 +37,4 @@ struct RSSService: RSSProtocol {
     }
 }
 
-/// Stub RSS Service
 
-struct StubRSSService: RSSProtocol {
-
-
-    func fetch(url: URL) -> Observable<RSSFeed> {
-        let testBundle = Bundle(for: type(of: AppDelegate.self) as! AnyClass)
-        let url = testBundle.url(forResource: "mtjc", withExtension: "rss")
-
-        return Observable.create { observer in
-            FeedParser.init(URL: url!)!.parse { result in
-                observer.onNext(result.rssFeed!)
-                observer.onCompleted()
-            }
-            return Disposables.create()
-        }
-        
-        
-    }
-}

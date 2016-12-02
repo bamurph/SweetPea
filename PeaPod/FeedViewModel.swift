@@ -12,18 +12,7 @@ import RxSwift
 import FeedKit
 import Lepton
 
-enum FeedAudioError: Error {
-    case noEnclosure
-    case noMimeType
-    case invalidMimeType(String)
-    case noURL
-}
 
-enum MimeType: String {
-    case mp3 = "audio/mpeg"
-    case aac = "audio/aac"
-
-}
 
 class FeedViewModel {
     let disposeBag = DisposeBag()
@@ -34,41 +23,22 @@ class FeedViewModel {
         self.feed = feed
     }
 
-
-    func audio(for item: RSSFeedItem) -> Observable<AVAudioPlayer> {
+    func audioPlayer(url: URL) -> Observable<AVAudioPlayer> {
         return Observable.create { observer in
-            guard let enclosure = item.enclosure else {
-                observer.onError(FeedAudioError.noEnclosure)
-                return Disposables.create()
-            }
-            guard let typeString = enclosure.attributes?.type else {
-                observer.onError(FeedAudioError.noMimeType)
-                return Disposables.create()
-            }
-            guard let mimeType = MimeType.init(rawValue: typeString) else {
-                observer.onError(FeedAudioError.invalidMimeType(enclosure.attributes?.type ?? "noValue"))
-                return Disposables.create()
-            }
-            guard let fileURL = URL(string: enclosure.attributes?.url ?? "") else {
-                observer.onError(FeedAudioError.noURL)
-                return Disposables.create()
-            }
-
             do {
-                let player = try AVAudioPlayer(contentsOf: fileURL, fileTypeHint: mimeType.rawValue)
+                let player = try AVAudioPlayer(contentsOf: url)
                 DispatchQueue.global(qos: .background).async {
-                    if player.prepareToPlay() {
-                        observer.onNext(player)
-                        observer.onCompleted()
-                    }
+                    observer.onNext(player)
+                    observer.onCompleted()
                 }
-            } catch let outError {
+            }
+            catch let outError {
                 observer.onError(outError)
             }
-
-
             return Disposables.create()
         }
     }
+
+
     
 }
