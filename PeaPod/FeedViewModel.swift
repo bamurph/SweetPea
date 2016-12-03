@@ -23,21 +23,6 @@ class FeedViewModel {
         self.feed = feed
     }
 
-    func audioPlayer(url: URL) -> Observable<AVAudioPlayer> {
-        return Observable.create { observer in
-            do {
-                let player = try AVAudioPlayer(contentsOf: url)
-                DispatchQueue.global(qos: .background).async {
-                    observer.onNext(player)
-                    observer.onCompleted()
-                }
-            }
-            catch let outError {
-                observer.onError(outError)
-            }
-            return Disposables.create()
-        }
-    }
 
 
     

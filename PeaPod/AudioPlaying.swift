@@ -23,5 +23,5 @@ enum MimeType: String {
 }
 
 protocol AudioPlaying {
-    func audioPlayer(url: URL) -> Observable<AVAudioPlayer>
+    func audioPlayer(url: URL) -> Observable<AVPlayer>
 }
