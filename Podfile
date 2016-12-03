@@ -10,6 +10,7 @@ target 'SweetPea' do
 
     abstract_target 'Tests' do
         inherit! :search_paths
+        target 'SweetPeaTests'
 
         ## - Testing
         pod 'Quick'
