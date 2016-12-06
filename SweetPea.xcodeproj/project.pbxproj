@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		7AF81C7DD8A444B7673153E8 /* Pods_SweetPea.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 217687A5DF26143AF8C2A8D4 /* Pods_SweetPea.framework */; };
+		84845C9D2435C480C4077018 /* Pods_SweetPeaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A86763A151A1FAF46D41125C /* Pods_SweetPeaTests.framework */; };
 		B5142A2A1DF0CA92005CE3AC /* RSSSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5142A291DF0CA92005CE3AC /* RSSSpec.swift */; };
-		B537939B1DD8BE0B00D9C9AF /* OPMLService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BB0D981DD51CB300BD7FA0 /* OPMLService.swift */; };
 		B537939C1DD8C33F00D9C9AF /* overcast.opml in Resources */ = {isa = PBXBuildFile; fileRef = B5BB0D9A1DD51CC300BD7FA0 /* overcast.opml */; };
 		B53793A11DDA626600D9C9AF /* RSSService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B537939F1DDA626300D9C9AF /* RSSService.swift */; };
 		B551BC421DF23B6A001C76E3 /* Under the Radar 1_ Adapting to the Market.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B551BC411DF23B6A001C76E3 /* Under the Radar 1_ Adapting to the Market.mp3 */; };
@@ -27,9 +27,11 @@
 		B5A1AC881DE4EFC90093E823 /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A1AC861DE4EFC90093E823 /* FeedViewModel.swift */; };
 		B5A1AC8E1DE640440093E823 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B537939D1DD9BF8C00D9C9AF /* Helpers.swift */; };
 		B5A1AC8F1DE640450093E823 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B537939D1DD9BF8C00D9C9AF /* Helpers.swift */; };
+		B5BA3F161DF74EAF000B6FFF /* OPMLServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BA3F151DF74EAF000B6FFF /* OPMLServiceTest.swift */; };
+		B5BA3F171DF75478000B6FFF /* SubscriptionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BB74611DE3894800F327F0 /* SubscriptionsViewModel.swift */; };
+		B5BA3F191DF7557E000B6FFF /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5BA3F181DF7557E000B6FFF /* Quick.framework */; };
 		B5BB0D991DD51CB300BD7FA0 /* OPMLService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BB0D981DD51CB300BD7FA0 /* OPMLService.swift */; };
 		B5BB0D9B1DD51CC300BD7FA0 /* overcast.opml in Resources */ = {isa = PBXBuildFile; fileRef = B5BB0D9A1DD51CC300BD7FA0 /* overcast.opml */; };
-		B5BB74621DE3894800F327F0 /* SubscriptionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BB74611DE3894800F327F0 /* SubscriptionsViewModel.swift */; };
 		B5BB74631DE3894800F327F0 /* SubscriptionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BB74611DE3894800F327F0 /* SubscriptionsViewModel.swift */; };
 		B5E4DFD11DEA10120074A51C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5A1AC941DE643F20093E823 /* XCTest.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		B5E4DFD21DEA10120074A51C /* XCTest.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B5A1AC941DE643F20093E823 /* XCTest.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -88,6 +90,8 @@
 		B5A1AC861DE4EFC90093E823 /* FeedViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FeedViewModel.swift; path = PeaPod/FeedViewModel.swift; sourceTree = "<group>"; };
 		B5A1AC911DE642D80093E823 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		B5A1AC941DE643F20093E823 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		B5BA3F151DF74EAF000B6FFF /* OPMLServiceTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OPMLServiceTest.swift; sourceTree = "<group>"; };
+		B5BA3F181DF7557E000B6FFF /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = "Pods/../build/Debug-iphoneos/Quick/Quick.framework"; sourceTree = "<group>"; };
 		B5BB0D8D1DD51C8300BD7FA0 /* SweetPeaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SweetPeaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5BB0D911DD51C8300BD7FA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B5BB0D981DD51CB300BD7FA0 /* OPMLService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OPMLService.swift; sourceTree = "<group>"; };
@@ -113,7 +117,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5BA3F191DF7557E000B6FFF /* Quick.framework in Frameworks */,
 				E100960F58E63D8523B39731 /* Pods_Tests_SweetPeaTests.framework in Frameworks */,
+				84845C9D2435C480C4077018 /* Pods_SweetPeaTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,6 +138,7 @@
 		1B6FB18795E1081067AE9E42 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B5BA3F181DF7557E000B6FFF /* Quick.framework */,
 				B5A1AC941DE643F20093E823 /* XCTest.framework */,
 				B5A1AC911DE642D80093E823 /* XCTest.framework */,
 				217687A5DF26143AF8C2A8D4 /* Pods_SweetPea.framework */,
@@ -171,13 +178,15 @@
 			name = Views;
 			sourceTree = "<group>";
 		};
-		B5BB0D8E1DD51C8300BD7FA0 /* SweetPeaTests */ = {
+		B5BB0D8E1DD51C8300BD7FA0 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				B5BA3F151DF74EAF000B6FFF /* OPMLServiceTest.swift */,
 				B551BC4E1DF23CE8001C76E3 /* AudioPlayingSpec.swift */,
 				B5142A291DF0CA92005CE3AC /* RSSSpec.swift */,
 				B5BB0D911DD51C8300BD7FA0 /* Info.plist */,
 			);
+			name = Tests;
 			path = SweetPeaTests;
 			sourceTree = "<group>";
 		};
@@ -187,8 +196,8 @@
 				B551BC4B1DF23CA1001C76E3 /* AudioPlaying.swift */,
 				B551BC501DF24065001C76E3 /* AudioService.swift */,
 				B537939F1DDA626300D9C9AF /* RSSService.swift */,
-				B5BB0D981DD51CB300BD7FA0 /* OPMLService.swift */,
 				B5FBBA441DF1FBB700B7A71C /* RSSProtocol.swift */,
+				B5BB0D981DD51CB300BD7FA0 /* OPMLService.swift */,
 			);
 			name = Services;
 			sourceTree = "<group>";
@@ -207,7 +216,7 @@
 			isa = PBXGroup;
 			children = (
 				B5F0D23D1DD506ED00402FEC /* SweetPea */,
-				B5BB0D8E1DD51C8300BD7FA0 /* SweetPeaTests */,
+				B5BB0D8E1DD51C8300BD7FA0 /* Tests */,
 				B5F0D23C1DD506ED00402FEC /* Products */,
 				3889F404982A7A91B6E4B31A /* Pods */,
 				1B6FB18795E1081067AE9E42 /* Frameworks */,
@@ -391,7 +400,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tests-SweetPeaTests/Pods-Tests-SweetPeaTests-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SweetPeaTests/Pods-SweetPeaTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		17E017EA720192361D7844CD /* [CP] Copy Pods Resources */ = {
@@ -406,7 +415,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tests-SweetPeaTests/Pods-Tests-SweetPeaTests-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SweetPeaTests/Pods-SweetPeaTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		46B3508A54F72E88262504D3 /* [CP] Check Pods Manifest.lock */ = {
@@ -480,7 +489,7 @@
 				B5A1AC881DE4EFC90093E823 /* FeedViewModel.swift in Sources */,
 				B551BC4D1DF23CA1001C76E3 /* AudioPlaying.swift in Sources */,
 				B5A1AC8F1DE640450093E823 /* Helpers.swift in Sources */,
-				B537939B1DD8BE0B00D9C9AF /* OPMLService.swift in Sources */,
+				B5BA3F161DF74EAF000B6FFF /* OPMLServiceTest.swift in Sources */,
 				B5142A2A1DF0CA92005CE3AC /* RSSSpec.swift in Sources */,
 				B5BB74631DE3894800F327F0 /* SubscriptionsViewModel.swift in Sources */,
 				B551BC4F1DF23CE8001C76E3 /* AudioPlayingSpec.swift in Sources */,
@@ -492,9 +501,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5FBBA451DF1FBB700B7A71C /* RSSProtocol.swift in Sources */,
-				B5BB74621DE3894800F327F0 /* SubscriptionsViewModel.swift in Sources */,
 				B5F0D2471DD506ED00402FEC /* PeaPod.xcdatamodeld in Sources */,
 				B551BC4C1DF23CA1001C76E3 /* AudioPlaying.swift in Sources */,
+				B5BA3F171DF75478000B6FFF /* SubscriptionsViewModel.swift in Sources */,
 				B5BB0D991DD51CB300BD7FA0 /* OPMLService.swift in Sources */,
 				B5A1AC8E1DE640440093E823 /* Helpers.swift in Sources */,
 				B53793A11DDA626600D9C9AF /* RSSService.swift in Sources */,
@@ -537,7 +546,7 @@
 /* Begin XCBuildConfiguration section */
 		B5BB0D941DD51C8300BD7FA0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E80FE2E7BD080BE4D1368D6C /* Pods-Tests-SweetPeaTests.debug.xcconfig */;
+			baseConfigurationReference = 8623AF9DB9F4CB26E40CBBDF /* Pods-SweetPeaTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -550,6 +559,7 @@
 					"\"$PODS_CONFIGURATION_BUILD_DIR/RxCocoa\"",
 					"\"$PODS_CONFIGURATION_BUILD_DIR/RxSwift\"",
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks/**",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/Quick",
 				);
 				"FRAMEWORK_SEARCH_PATHS[arch=*]" = (
 					"$(inherited)",
@@ -570,7 +580,7 @@
 		};
 		B5BB0D951DD51C8300BD7FA0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 00031456D56D3833FDF310D1 /* Pods-Tests-SweetPeaTests.release.xcconfig */;
+			baseConfigurationReference = 9CBA30FAEB4D0AE63B6EA51F /* Pods-SweetPeaTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -583,6 +593,7 @@
 					"\"$PODS_CONFIGURATION_BUILD_DIR/RxCocoa\"",
 					"\"$PODS_CONFIGURATION_BUILD_DIR/RxSwift\"",
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks/**",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/Quick",
 				);
 				INFOPLIST_FILE = SweetPeaTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

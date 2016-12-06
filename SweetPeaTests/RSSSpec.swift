@@ -16,11 +16,11 @@ import FeedKit
 
 class RSSSpec: QuickSpec {
     override func spec() {
-
+        
         let testBundle = Bundle(for: type(of: self))
         let url = testBundle.url(forResource: "utr", withExtension: "rss")
 
-        it("fetch rss with a mock provider") {
+        it("fetch rss with a stub provider") {
             let service = RSSService()
             let _ = service.fetch(url: url!)
                 .subscribe(onNext: { feed in

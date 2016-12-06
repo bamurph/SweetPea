@@ -22,16 +22,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
-                        <connections>
-                            <outletCollection property="gestureRecognizers" destination="GV6-z3-uHA" appends="YES" id="C35-c3-fhr"/>
-                        </connections>
                     </view>
-                    <connections>
-                        <outlet property="tap" destination="GV6-z3-uHA" id="sFv-ru-0j5"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zsK-PG-BXW" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="GV6-z3-uHA"/>
             </objects>
             <point key="canvasLocation" x="187" y="92"/>
         </scene>

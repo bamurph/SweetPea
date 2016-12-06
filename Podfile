@@ -8,18 +8,11 @@ target 'SweetPea' do
     pod 'RxCocoa', '~> 3.0'
     pod 'RxBlocking', '~> 3.0'
 
-    abstract_target 'Tests' do
+    target 'SweetPeaTests' do
         inherit! :search_paths
-        target 'SweetPeaTests'
-
-        ## - Testing
         pod 'Quick'
         pod 'Nimble'
-
-        target 'SweetPeaTests'
-
     end
-
 end
 
 

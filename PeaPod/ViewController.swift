@@ -16,7 +16,7 @@ class ViewController: UIViewController {
     let service = AudioService()
     var player: AVPlayer!
 
-    @IBOutlet var tap: UITapGestureRecognizer!
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,11 +31,7 @@ class ViewController: UIViewController {
             })
 
 
-        tap.rx.event
-            .throttle(0.2, scheduler: MainScheduler.instance)
-            .subscribe(onNext: { [weak self] _ in
-                print(self?.player.currentTime().seconds)
-            })
+
 
 
     }
