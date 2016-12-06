@@ -23,6 +23,11 @@ class OPMLServiceTest: QuickSpec {
             let feeds = service.items(from: url!)
 
             feeds.subscribe(onNext: { feeds in
+                expect(feeds.count).to(equal(10))
+                expect(feeds.first!.title).to(equal("Dan Carlin's Hardcore History"))
+                expect(feeds.last!.title).to(equal("The iPhreaks Show"))
+                expect(feeds[1].title).toNot(equal("Ultimate Toast Club"))
+
                 feeds.forEach {
                     expect($0.xmlURL).toNot(beNil())
                     expect($0.title).toNot(beNil())
