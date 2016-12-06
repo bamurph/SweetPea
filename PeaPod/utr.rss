@@ -1,0 +1,1273 @@
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:admin="http://webns.net/mvcb/" xmlns:atom="http://www.w3.org/2005/Atom/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0">
+  <channel>
+    <title>Under the Radar</title>
+    <link>https://www.relay.fm/radar</link>
+    <pubDate>Fri, 02 Dec 2016 13:00:00 GMT</pubDate>
+    <description>From development and design to marketing and support, Under the Radar is all about independent app development. It's never longer than 30 minutes.  Hosted by David Smith and Marco Arment.</description>
+    <language>en-US</language>
+    <copyright>Copyright © 2016 Relay FM</copyright>
+    <itunes:author>Relay FM</itunes:author>
+    <itunes:keywords>Development, iOS, Mac, Marco Arment, Underscore, David Smith, Apple, Web, Apps</itunes:keywords>
+    <itunes:explicit>clean</itunes:explicit>
+    <itunes:image href="http://relayfm.s3.amazonaws.com/uploads/broadcast/image/23/radar_artwork.png"/>
+    <itunes:owner>
+      <itunes:name>Relay FM</itunes:name>
+      <itunes:email>hello@relay.fm</itunes:email>
+    </itunes:owner>
+    <itunes:block>no</itunes:block>
+    <itunes:category text="Technology"/>
+    <itunes:category text="Technology">
+      <itunes:category text="Software How-To"/>
+    </itunes:category>
+    <item>
+      <title>Under the Radar 56: Surviving the Winter</title>
+      <description>Strategies for surviving the ups, downs, and increasing challenges of today's App Store and nearby businesses.</description>
+      <pubDate>Fri, 02 Dec 2016 13:00:00 GMT</pubDate>
+      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/traffic.libsyn.com/radarrelay/undertheradar56.mp3" length="14490004" type="audio/mp3"/>
+      <link>http://relay.fm/radar/56</link>
+      <guid>http://relay.fm/radar/56</guid>
+      <itunes:author>David Smith and Marco Arment</itunes:author>
+      <itunes:subtitle>Strategies for surviving the ups, downs, and increasing challenges of today's App Store and nearby businesses.</itunes:subtitle>
+      <itunes:summary>Strategies for surviving the ups, downs, and increasing challenges of today's App Store and nearby businesses.</itunes:summary>
+      <itunes:explicit>clean</itunes:explicit>
+      <itunes:duration>1798</itunes:duration>
+      <content:encoded>&lt;p&gt;Strategies for surviving the ups, downs, and increasing challenges of today&amp;#39;s App Store and nearby businesses.&lt;/p&gt;
+ &lt;h4&gt;This episode of Under the Radar is sponsored by:&lt;/h4&gt; &lt;ul&gt;
+&lt;li&gt;&lt;a href="http://braintreepayments.com/radar"&gt;Braintree&lt;/a&gt;: Code for easy online payments.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Links and Show Notes&lt;/h4&gt; &lt;p&gt;&lt;a href="http://static.developingperspective.com/undertheradar56.html"&gt;Episode Transcript&lt;/a&gt;&lt;/p&gt;
+ </content:encoded>
+      <itunes:image href="http://relayfm.s3.amazonaws.com/uploads/broadcast/image/23/radar_artwork.png"/>
+    </item>
+    <item>
+      <title>Under the Radar 55: Black Friday Sale</title>
+      <description>The effectiveness and side effects of sales and price changes.</description>
+      <pubDate>Fri, 25 Nov 2016 19:00:00 GMT</pubDate>
+      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/traffic.libsyn.com/radarrelay/undertheradar55.mp3" length="12719542" type="audio/mp3"/>
+      <link>http://relay.fm/radar/55</link>
+      <guid>http://relay.fm/radar/55</guid>
+      <itunes:author>David Smith and Marco Arment</itunes:author>
+      <itunes:subtitle>The effectiveness and side effects of sales and price changes.</itunes:subtitle>
+      <itunes:summary>The effectiveness and side effects of sales and price changes.</itunes:summary>
+      <itunes:explicit>clean</itunes:explicit>
+      <itunes:duration>1576</itunes:duration>
+      <content:encoded>&lt;p&gt;The effectiveness and side effects of sales and price changes.&lt;/p&gt;
+ &lt;h4&gt;This episode of Under the Radar is sponsored by:&lt;/h4&gt; &lt;ul&gt;
+&lt;li&gt;&lt;a href="http://promo.linode.com/under-the-radar?utm_source=under-the-radar&amp;amp;utm_medium=podcast&amp;amp;utm_content=20%20dollar&amp;amp;utm_campaign=under%20the%20radar"&gt;Linode&lt;/a&gt;: High performance SSD Linux servers for all of your infrastructure needs. Get a $20 credit with promo code ‘radar20’&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Links and Show Notes&lt;/h4&gt; &lt;ul&gt;
+&lt;li&gt;&lt;a href="http://static.crossforward.com/undertheradar55.html"&gt;Episode Transcript&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+ </content:encoded>
+      <itunes:image href="http://relayfm.s3.amazonaws.com/uploads/broadcast/image/23/radar_artwork.png"/>
+    </item>
+    <item>
+      <title>Under the Radar 54: Parametric Design</title>
+      <description>Appearance managers, self-theming views, and rapid design iteration with code and variables.</description>
+      <pubDate>Thu, 17 Nov 2016 16:00:00 GMT</pubDate>
+      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/traffic.libsyn.com/radarrelay/undertheradar54.mp3" length="14154096" type="audio/mp3"/>
+      <link>http://relay.fm/radar/54</link>
+      <guid>http://relay.fm/radar/54</guid>
+      <itunes:author>David Smith and Marco Arment</itunes:author>
+      <itunes:subtitle>Appearance managers, self-theming views, and rapid design iteration with code and variables.</itunes:subtitle>
+      <itunes:summary>Appearance managers, self-theming views, and rapid design iteration with code and variables.</itunes:summary>
+      <itunes:explicit>clean</itunes:explicit>
+      <itunes:duration>1756</itunes:duration>
+      <content:encoded>&lt;p&gt;Appearance managers, self-theming views, and rapid design iteration with code and variables.&lt;/p&gt;
+ &lt;h4&gt;This episode of Under the Radar is sponsored by:&lt;/h4&gt; &lt;ul&gt;
+&lt;li&gt;&lt;a href="http://promo.linode.com/under-the-radar?utm_source=under-the-radar&amp;amp;utm_medium=podcast&amp;amp;utm_content=20%20dollar&amp;amp;utm_campaign=under%20the%20radar"&gt;Linode&lt;/a&gt;: High performance SSD Linux servers for all of your infrastructure needs. Get a $20 credit with promo code ‘radar20’&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Links and Show Notes&lt;/h4&gt; &lt;ul&gt;
+&lt;li&gt;&lt;a href="http://static.developingperspective.com/undertheradar54.html"&gt;Episode Transcript&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+ </content:encoded>
+      <itunes:image href="http://relayfm.s3.amazonaws.com/uploads/broadcast/image/23/radar_artwork.png"/>
+    </item>
+    <item>
+      <title>Under the Radar 53: Seasonality</title>
+      <description>Planning for annual events and marketing opportunities, and accommodating variable cycles of productivity.</description>
+      <pubDate>Fri, 11 Nov 2016 00:00:00 GMT</pubDate>
+      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/traffic.libsyn.com/radarrelay/undertheradar53.mp3" length="13696266" type="audio/mp3"/>
+      <link>http://relay.fm/radar/53</link>
+      <guid>http://relay.fm/radar/53</guid>
+      <itunes:author>David Smith and Marco Arment</itunes:author>
+      <itunes:subtitle>Planning for annual events and marketing opportunities, and accommodating variable cycles of productivity.</itunes:subtitle>
+      <itunes:summary>Planning for annual events and marketing opportunities, and accommodating variable cycles of productivity.</itunes:summary>
+      <itunes:explicit>clean</itunes:explicit>
+      <itunes:duration>1698</itunes:duration>
+      <content:encoded>&lt;p&gt;Planning for annual events and marketing opportunities, and accommodating variable cycles of productivity.&lt;/p&gt;
+ &lt;h4&gt;This episode of Under the Radar is sponsored by:&lt;/h4&gt; &lt;ul&gt;
+&lt;li&gt;&lt;a href="http://pingdom.com/radar"&gt;Pingdom&lt;/a&gt;: Start monitoring your websites and servers today. Use offer RADAR for 20% off.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Links and Show Notes&lt;/h4&gt; &lt;ul&gt;
+&lt;li&gt;&lt;a href="http://static.developingperspective.com/undertheradar53.html"&gt;Episode Transcript&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+ </content:encoded>
+      <itunes:image href="http://relayfm.s3.amazonaws.com/uploads/broadcast/image/23/radar_artwork.png"/>
+    </item>
+    <item>
+      <title>Under the Radar 52: Learning, Sometimes Willingly</title>
+      <description>The challenges of learning new languages, APIs, and tools, how we avoid facing these difficulties, and what drives us to overcome them.</description>
+      <pubDate>Thu, 03 Nov 2016 17:00:00 GMT</pubDate>
+      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/traffic.libsyn.com/radarrelay/undertheradar52.mp3" length="14432864" type="audio/mp3"/>
+      <link>http://relay.fm/radar/52</link>
+      <guid>http://relay.fm/radar/52</guid>
+      <itunes:author>David Smith and Marco Arment</itunes:author>
+      <itunes:subtitle>The challenges of learning new languages, APIs, and tools, how we avoid facing these difficulties, and what drives us to overcome them.</itunes:subtitle>
+      <itunes:summary>The challenges of learning new languages, APIs, and tools, how we avoid facing these difficulties, and what drives us to overcome them.</itunes:summary>
+      <itunes:explicit>clean</itunes:explicit>
+      <itunes:duration>1790</itunes:duration>
+      <content:encoded>&lt;p&gt;The challenges of learning new languages, APIs, and tools, how we avoid facing these difficulties, and what drives us to overcome them.&lt;/p&gt;
+ &lt;h4&gt;This episode of Under the Radar is sponsored by:&lt;/h4&gt; &lt;ul&gt;
+&lt;li&gt;&lt;a href="http://braintreepayments.com/radar"&gt;Braintree&lt;/a&gt;: Code for easy online payments.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Links and Show Notes&lt;/h4&gt; &lt;ul&gt;
+&lt;li&gt;&lt;a href="http://static.developingperspective.com/undertheradar52.html"&gt;Episode Transcript&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+ </content:encoded>
+      <itunes:image href="http://relayfm.s3.amazonaws.com/uploads/broadcast/image/23/radar_artwork.png"/>
+    </item>
+    <item>
+      <title>Under the Radar 51: Speaking at Conferences</title>
+      <description>Overcoming fears of speaking at conferences, how much work it really takes, and deciding whether it's worthwhile.</description>
+      <pubDate>Thu, 27 Oct 2016 15:00:00 GMT</pubDate>
+      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/traffic.libsyn.com/radarrelay/undertheradar51.mp3" length="14490022" type="audio/mp3"/>
+      <link>http://relay.fm/radar/51</link>
+      <guid>http://relay.fm/radar/51</guid>
+      <itunes:author>David Smith and Marco Arment</itunes:author>
+      <itunes:subtitle>Overcoming fears of speaking at conferences, how much work it really takes, and deciding whether it's worthwhile.</itunes:subtitle>
+      <itunes:summary>Overcoming fears of speaking at conferences, how much work it really takes, and deciding whether it's worthwhile.</itunes:summary>
+      <itunes:explicit>clean</itunes:explicit>
+      <itunes:duration>1798</itunes:duration>
+      <content:encoded>&lt;p&gt;Overcoming fears of speaking at conferences, how much work it really takes, and deciding whether it&amp;#39;s worthwhile.&lt;/p&gt;
+ &lt;h4&gt;This episode of Under the Radar is sponsored by:&lt;/h4&gt; &lt;ul&gt;
+&lt;li&gt;&lt;a href="http://promo.linode.com/under-the-radar?utm_source=under-the-radar&amp;amp;utm_medium=podcast&amp;amp;utm_content=20%20dollar&amp;amp;utm_campaign=under%20the%20radar"&gt;Linode&lt;/a&gt;: High performance SSD Linux servers for all of your infrastructure needs. Get a $20 credit with promo code ‘radar20’&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Links and Show Notes&lt;/h4&gt; &lt;ul&gt;
+&lt;li&gt;&lt;a href="http://static.developingperspective.com/undertheradar51.html"&gt;Episode Transcript&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://vimeo.com/55825725"&gt;Marco at Çingleton&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;David&amp;#39;s next conferences:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://2016.ull.ie"&gt;Ùll&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://cocoaconf.com/yosemite"&gt;CocoaConf Yosemite&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+ </content:encoded>
+      <itunes:image href="http://relayfm.s3.amazonaws.com/uploads/broadcast/image/23/radar_artwork.png"/>
+    </item>
+    <item>
+      <title>Under the Radar 50: Checking the Weather for the Last Time</title>
+      <description>Responsibly shutting down a failed app.</description>
+      <pubDate>Fri, 21 Oct 2016 14:45:00 GMT</pubDate>
+      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/traffic.libsyn.com/radarrelay/undertheradar50.mp3" length="14479727" type="audio/mp3"/>
+      <link>http://relay.fm/radar/50</link>
+      <guid>http://relay.fm/radar/50</guid>
+      <itunes:author>David Smith and Marco Arment</itunes:author>
+      <itunes:subtitle>Responsibly shutting down a failed app.</itunes:subtitle>
+      <itunes:summary>Responsibly shutting down a failed app.</itunes:summary>
+      <itunes:explicit>clean</itunes:explicit>
+      <itunes:duration>1796</itunes:duration>
+      <content:encoded>&lt;p&gt;Responsibly shutting down a failed app.&lt;/p&gt;
+ &lt;h4&gt;This episode of Under the Radar is sponsored by:&lt;/h4&gt; &lt;ul&gt;
+&lt;li&gt;&lt;a href="http://pingdom.com/radar"&gt;Pingdom&lt;/a&gt;: Start monitoring your websites and servers today. Use offer RADAR for 20% off.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Links and Show Notes&lt;/h4&gt; &lt;ul&gt;
+&lt;li&gt;&lt;a href="http://static.developingperspective.com/undertheradar50.html"&gt;Episode Transcript&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://developingperspective.com/2012/09/04/76/"&gt;The Developing Perspective Series&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+ </content:encoded>
+      <itunes:image href="http://relayfm.s3.amazonaws.com/uploads/broadcast/image/23/radar_artwork.png"/>
+    </item>
+    <item>
+      <title>Under the Radar 49: App Store Search Ads</title>
+      <description>An overview of advertising terms, costs, and metrics, and getting started with App Store Search Ads for indie developers.</description>
+      <pubDate>Thu, 13 Oct 2016 14:00:00 GMT</pubDate>
+      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/traffic.libsyn.com/radarrelay/undertheradar49.mp3" length="14247842" type="audio/mp3"/>
+      <link>http://relay.fm/radar/49</link>
+      <guid>http://relay.fm/radar/49</guid>
+      <itunes:author>David Smith and Marco Arment</itunes:author>
+      <itunes:subtitle>An overview of advertising terms, costs, and metrics, and getting started with App Store Search Ads for indie developers.</itunes:subtitle>
+      <itunes:summary>An overview of advertising terms, costs, and metrics, and getting started with App Store Search Ads for indie developers.</itunes:summary>
+      <itunes:explicit>clean</itunes:explicit>
+      <itunes:duration>1767</itunes:duration>
+      <content:encoded>&lt;p&gt;An overview of advertising terms, costs, and metrics, and getting started with App Store Search Ads for indie developers.&lt;/p&gt;
+ &lt;h4&gt;This episode of Under the Radar is sponsored by:&lt;/h4&gt; &lt;ul&gt;
+&lt;li&gt;&lt;a href="http://promo.linode.com/under-the-radar?utm_source=under-the-radar&amp;amp;utm_medium=podcast&amp;amp;utm_content=20%20dollar&amp;amp;utm_campaign=under%20the%20radar"&gt;Linode&lt;/a&gt;: High performance SSD Linux servers for all of your infrastructure needs. Get a $20 credit with promo code ‘radar20’&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Links and Show Notes&lt;/h4&gt; &lt;ul&gt;
+&lt;li&gt;&lt;a href="http://static.developingperspective.com/undertheradar49.html"&gt;Episode Transcript&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.glimsoft.com/09/29/experimenting-with-app-store-search-ads/"&gt;Experimenting with App Store Search Ads&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+ </content:encoded>
+      <itunes:image href="http://relayfm.s3.amazonaws.com/uploads/broadcast/image/23/radar_artwork.png"/>
+    </item>
+    <item>
+      <title>Under the Radar 48: Late Bloomers</title>
+      <description>Adopting techniques, tools, and APIs long after they've been introduced, with specific examples from Overcast's development.</description>
+      <pubDate>Thu, 06 Oct 2016 21:00:00 GMT</pubDate>
+      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/traffic.libsyn.com/radarrelay/undertheradar48.mp3" length="14305727" type="audio/mp3"/>
+      <link>http://relay.fm/radar/48</link>
+      <guid>http://relay.fm/radar/48</guid>
+      <itunes:author>David Smith and Marco Arment</itunes:author>
+      <itunes:subtitle>Adopting techniques, tools, and APIs long after they've been introduced, with specific examples from Overcast's development.</itunes:subtitle>
+      <itunes:summary>Adopting techniques, tools, and APIs long after they've been introduced, with specific examples from Overcast's development.</itunes:summary>
+      <itunes:explicit>clean</itunes:explicit>
+      <itunes:duration>1775</itunes:duration>
+      <content:encoded>&lt;p&gt;Adopting techniques, tools, and APIs long after they&amp;#39;ve been introduced, with specific examples from Overcast&amp;#39;s development.&lt;/p&gt;
+ &lt;h4&gt;This episode of Under the Radar is sponsored by:&lt;/h4&gt; &lt;ul&gt;
+&lt;li&gt;&lt;a href="http://braintreepayments.com/radar"&gt;Braintree&lt;/a&gt;: Code for easy online payments.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Links and Show Notes&lt;/h4&gt; &lt;p&gt;&lt;a href="http://static.developingperspective.com/undertheradar48.html"&gt;&lt;strong&gt;Episode Transcript&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/facebook/KVOController"&gt;KVOController&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+ </content:encoded>
+      <itunes:image href="http://relayfm.s3.amazonaws.com/uploads/broadcast/image/23/radar_artwork.png"/>
+    </item>
+    <item>
+      <title>Under the Radar 47: Data Persistence</title>
+      <description>Choosing a database or scheme for local data storage, including Core Data, SQLite, property lists, JSON, user defaults, and NSURLCache.</description>
+      <pubDate>Thu, 29 Sep 2016 06:00:00 GMT</pubDate>
+      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/traffic.libsyn.com/radarrelay/undertheradar47.mp3" length="14405042" type="audio/mp3"/>
+      <link>http://relay.fm/radar/47</link>
+      <guid>http://relay.fm/radar/47</guid>
+      <itunes:author>David Smith and Marco Arment</itunes:author>
+      <itunes:subtitle>Choosing a database or scheme for local data storage, including Core Data, SQLite, property lists, JSON, user defaults, and NSURLCache.</itunes:subtitle>
+      <itunes:summary>Choosing a database or scheme for local data storage, including Core Data, SQLite, property lists, JSON, user defaults, and NSURLCache.</itunes:summary>
+      <itunes:explicit>clean</itunes:explicit>
+      <itunes:duration>1787</itunes:duration>
+      <content:encoded>&lt;p&gt;Choosing a database or scheme for local data storage, including Core Data, SQLite, property lists, JSON, user defaults, and NSURLCache.&lt;/p&gt;
+ &lt;h4&gt;This episode of Under the Radar is sponsored by:&lt;/h4&gt; &lt;ul&gt;
+&lt;li&gt;&lt;a href="http://promo.linode.com/under-the-radar?utm_source=under-the-radar&amp;amp;utm_medium=podcast&amp;amp;utm_content=20%20dollar&amp;amp;utm_campaign=under%20the%20radar"&gt;Linode&lt;/a&gt;: High performance SSD Linux servers for all of your infrastructure needs. Get a $20 credit with promo code ‘radar20’&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Links and Show Notes&lt;/h4&gt; &lt;p&gt;&lt;a href="http://static.developingperspective.com/undertheradar47.txt"&gt;&lt;strong&gt;Episode Transcript&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+ </content:encoded>
+      <itunes:image href="http://relayfm.s3.amazonaws.com/uploads/broadcast/image/23/radar_artwork.png"/>
+    </item>
+    <item>
+      <title>Under the Radar 46: Legacy Support</title>
+      <description>When to require new iOS versions, and the real-world need for test devices.</description>
+      <pubDate>Fri, 23 Sep 2016 06:00:00 GMT</pubDate>
+      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/traffic.libsyn.com/radarrelay/undertheradar46.mp3" length="14503437" type="audio/mp3"/>
+      <link>http://relay.fm/radar/46</link>
+      <guid>http://relay.fm/radar/46</guid>
+      <itunes:author>David Smith and Marco Arment</itunes:author>
+      <itunes:subtitle>When to require new iOS versions, and the real-world need for test devices.</itunes:subtitle>
+      <itunes:summary>When to require new iOS versions, and the real-world need for test devices.</itunes:summary>
+      <itunes:explicit>clean</itunes:explicit>
+      <itunes:duration>1799</itunes:duration>
+      <content:encoded>&lt;p&gt;When to require new iOS versions, and the real-world need for test devices.&lt;/p&gt;
+ &lt;h4&gt;This episode of Under the Radar is sponsored by:&lt;/h4&gt; &lt;ul&gt;
+&lt;li&gt;&lt;a href="http://promo.linode.com/under-the-radar?utm_source=under-the-radar&amp;amp;utm_medium=podcast&amp;amp;utm_content=20%20dollar&amp;amp;utm_campaign=under%20the%20radar"&gt;Linode&lt;/a&gt;: High performance SSD Linux servers for all of your infrastructure needs. Get a $20 credit with promo code ‘radar20’&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Links and Show Notes&lt;/h4&gt; &lt;ul&gt;
+&lt;li&gt;&lt;a href="http://static.developingperspective.com/undertheradar46.txt"&gt;Episode Transcript&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://david-smith.org/blog/2012/11/07/my-2012-compatibility-lab/"&gt;David&amp;#39;s old Compatibility Lab&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://david-smith.org/iosversionstats/"&gt;iOS Version Stats&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+ </content:encoded>
+      <itunes:image href="http://relayfm.s3.amazonaws.com/uploads/broadcast/image/23/radar_artwork.png"/>
+    </item>
+    <item>
+      <title>Under the Radar 45: Ads ★★☆☆☆</title>
+      <description>David's app income shifting to ads over time, and Overcast switching to ads.</description>
+      <pubDate>Thu, 15 Sep 2016 00:00:00 GMT</pubDate>
+      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/traffic.libsyn.com/radarrelay/undertheradar45.mp3" length="14261224" type="audio/mp3"/>
+      <link>http://relay.fm/radar/45</link>
+      <guid>http://relay.fm/radar/45</guid>
+      <itunes:author>David Smith and Marco Arment</itunes:author>
+      <itunes:subtitle>David's app income shifting to ads over time, and Overcast switching to ads.</itunes:subtitle>
+      <itunes:summary>David's app income shifting to ads over time, and Overcast switching to ads.</itunes:summary>
+      <itunes:explicit>clean</itunes:explicit>
+      <itunes:duration>1769</itunes:duration>
+      <content:encoded>&lt;p&gt;David&amp;#39;s app income shifting to ads over time, and Overcast switching to ads.&lt;/p&gt;
+ &lt;h4&gt;This episode of Under the Radar is sponsored by:&lt;/h4&gt; &lt;ul&gt;
+&lt;li&gt;&lt;a href="http://promo.linode.com/under-the-radar?utm_source=under-the-radar&amp;amp;utm_medium=podcast&amp;amp;utm_content=20%20dollar&amp;amp;utm_campaign=under%20the%20radar"&gt;Linode&lt;/a&gt;: High performance SSD Linux servers for all of your infrastructure needs. Get a $20 credit with promo code ‘radar20’&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Links and Show Notes&lt;/h4&gt; &lt;p&gt;&lt;a href="http://static.developingperspective.com/undertheradar45.html"&gt;&lt;strong&gt;Episode Transcript&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://david-smith.org/blog/2016/09/05/evolving-business-app-store-business-models/"&gt;Evolving App Store Business Models&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://marco.org/2016/09/09/overcast-ads"&gt;Overcast trying ads, dark theme now free&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+ </content:encoded>
+      <itunes:image href="http://relayfm.s3.amazonaws.com/uploads/broadcast/image/23/radar_artwork.png"/>
+    </item>
+    <item>
+      <title>Under the Radar 44: Fall Cleaning</title>
+      <description>Ramifications of pruning very old apps from the App Store and cracking down on title-keyword spam.</description>
+      <pubDate>Thu, 08 Sep 2016 15:00:00 GMT</pubDate>
+      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/traffic.libsyn.com/radarrelay/undertheradar44.mp3" length="14390051" type="audio/mp3"/>
+      <link>http://relay.fm/radar/44</link>
+      <guid>http://relay.fm/radar/44</guid>
+      <itunes:author>David Smith and Marco Arment</itunes:author>
+      <itunes:subtitle>Ramifications of pruning very old apps from the App Store and cracking down on title-keyword spam.</itunes:subtitle>
+      <itunes:summary>Ramifications of pruning very old apps from the App Store and cracking down on title-keyword spam.</itunes:summary>
+      <itunes:explicit>clean</itunes:explicit>
+      <itunes:duration>1785</itunes:duration>
+      <content:encoded>&lt;p&gt;Ramifications of pruning very old apps from the App Store and cracking down on title-keyword spam.&lt;/p&gt;
+ &lt;h4&gt;This episode of Under the Radar is sponsored by:&lt;/h4&gt; &lt;ul&gt;
+&lt;li&gt;&lt;a href="http://braintreepayments.com/radar"&gt;Braintree&lt;/a&gt;: Code for easy online payments.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Links and Show Notes&lt;/h4&gt; &lt;p&gt;&lt;a href="http://static.developingperspective.com/undertheradar44.html"&gt;&lt;strong&gt;Episode Transcript&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://david-smith.org/blog/2014/04/16/towards-a-better-app-store/"&gt;Towards a Better App Store&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+ </content:encoded>
+      <itunes:image href="http://relayfm.s3.amazonaws.com/uploads/broadcast/image/23/radar_artwork.png"/>
+    </item>
+    <item>
+      <title>Under the Radar 43: Pending An Apple Release</title>
+      <description>Preparations in the final week before a major iOS release, and handling Apple requests for promotional artwork.</description>
+      <pubDate>Thu, 01 Sep 2016 12:00:00 GMT</pubDate>
+      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/traffic.libsyn.com/radarrelay/undertheradar43.mp3" length="14450515" type="audio/mp3"/>
+      <link>http://relay.fm/radar/43</link>
+      <guid>http://relay.fm/radar/43</guid>
+      <itunes:author>David Smith and Marco Arment</itunes:author>
+      <itunes:subtitle>Preparations in the final week before a major iOS release, and handling Apple requests for promotional artwork.</itunes:subtitle>
+      <itunes:summary>Preparations in the final week before a major iOS release, and handling Apple requests for promotional artwork.</itunes:summary>
+      <itunes:explicit>clean</itunes:explicit>
+      <itunes:duration>1793</itunes:duration>
+      <content:encoded>&lt;p&gt;Preparations in the final week before a major iOS release, and handling Apple requests for promotional artwork.&lt;/p&gt;
+ &lt;h4&gt;This episode of Under the Radar is sponsored by:&lt;/h4&gt; &lt;ul&gt;
+&lt;li&gt;&lt;a href="http://promo.linode.com/under-the-radar?utm_source=under-the-radar&amp;amp;utm_medium=podcast&amp;amp;utm_content=20%20dollar&amp;amp;utm_campaign=under%20the%20radar"&gt;Linode&lt;/a&gt;: High performance SSD Linux servers for all of your infrastructure needs. Get a $20 credit with promo code ‘radar20’&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Links and Show Notes&lt;/h4&gt; &lt;p&gt;&lt;a href="http://static.developingperspective.com/UnderTheRadar43.html"&gt;&lt;strong&gt;Episode Transcript&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+ </content:encoded>
+      <itunes:image href="http://relayfm.s3.amazonaws.com/uploads/broadcast/image/23/radar_artwork.png"/>
+    </item>
+    <item>
+      <title>Under the Radar 42: Getting Next Year's Customers</title>
+      <description>Lessons from Vesper's shutdown and strategies to navigate the difficult environment for paid apps today.</description>
+      <pubDate>Thu, 25 Aug 2016 14:00:00 GMT</pubDate>
+      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/traffic.libsyn.com/radarrelay/undertheradar42.mp3" length="14102342" type="audio/mp3"/>
+      <link>http://relay.fm/radar/42</link>
+      <guid>http://relay.fm/radar/42</guid>
+      <itunes:author>David Smith and Marco Arment</itunes:author>
+      <itunes:subtitle>Lessons from Vesper's shutdown and strategies to navigate the difficult environment for paid apps today.</itunes:subtitle>
+      <itunes:summary>Lessons from Vesper's shutdown and strategies to navigate the difficult environment for paid apps today.</itunes:summary>
+      <itunes:explicit>clean</itunes:explicit>
+      <itunes:duration>1749</itunes:duration>
+      <content:encoded>&lt;p&gt;Lessons from Vesper&amp;#39;s shutdown and strategies to navigate the difficult environment for paid apps today.&lt;/p&gt;
+ &lt;h4&gt;This episode of Under the Radar is sponsored by:&lt;/h4&gt; &lt;ul&gt;
+&lt;li&gt;&lt;a href="http://promo.linode.com/under-the-radar?utm_source=under-the-radar&amp;amp;utm_medium=podcast&amp;amp;utm_content=20%20dollar&amp;amp;utm_campaign=under%20the%20radar"&gt;Linode&lt;/a&gt;: High performance SSD Linux servers for all of your infrastructure needs. Get a $20 credit with promo code ‘radar20’&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Links and Show Notes&lt;/h4&gt; &lt;p&gt;&lt;a href="http://static.developingperspective.com/UnderTheRadar42.html"&gt;&lt;strong&gt;Episode Transcript&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+ </content:encoded>
+      <itunes:image href="http://relayfm.s3.amazonaws.com/uploads/broadcast/image/23/radar_artwork.png"/>
+    </item>
+    <item>
+      <title>Under the Radar 41: Internationalization</title>
+      <description>Why and how to localize and internationalize your iOS apps.</description>
+      <pubDate>Wed, 17 Aug 2016 23:00:00 GMT</pubDate>
+      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/traffic.libsyn.com/radarrelay/undertheradar41.mp3" length="14481233" type="audio/mp3"/>
+      <link>http://relay.fm/radar/41</link>
+      <guid>http://relay.fm/radar/41</guid>
+      <itunes:author>David Smith and Marco Arment</itunes:author>
+      <itunes:subtitle>Why and how to localize and internationalize your iOS apps.</itunes:subtitle>
+      <itunes:summary>Why and how to localize and internationalize your iOS apps.</itunes:summary>
+      <itunes:explicit>clean</itunes:explicit>
+      <itunes:duration>1797</itunes:duration>
+      <content:encoded>&lt;p&gt;Why and how to localize and internationalize your iOS apps.&lt;/p&gt;
+ &lt;h4&gt;This episode of Under the Radar is sponsored by:&lt;/h4&gt; &lt;ul&gt;
+&lt;li&gt;&lt;a href="http://cocoaconf.com/yosemite"&gt;CocoaConf &lt;/a&gt;: Use code &lt;strong&gt;UnderTheRadar&lt;/strong&gt; to get 20% off tickets.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Links and Show Notes&lt;/h4&gt; &lt;p&gt;&lt;a href="http://static.developingperspective.com/UnderTheRadar41.html"&gt;&lt;strong&gt;Episode Transcript&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+ </content:encoded>
+      <itunes:image href="http://relayfm.s3.amazonaws.com/uploads/broadcast/image/23/radar_artwork.png"/>
+    </item>
+    <item>
+      <title>Under the Radar 40: Rethinking Apple Watch Apps</title>
+      <description>Using lessons and analytics from watchOS 1 and 2 to rethink our Apple Watch apps for watchOS 3, using Overcast's app as a case study.</description>
+      <pubDate>Thu, 11 Aug 2016 16:00:00 GMT</pubDate>
+      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/traffic.libsyn.com/radarrelay/undertheradar40.mp3" length="14163893" type="audio/mp3"/>
+      <link>http://relay.fm/radar/40</link>
+      <guid>http://relay.fm/radar/40</guid>
+      <itunes:author>David Smith and Marco Arment</itunes:author>
+      <itunes:subtitle>Using lessons and analytics from watchOS 1 and 2 to rethink our Apple Watch apps for watchOS 3, using Overcast's app as a case study.</itunes:subtitle>
+      <itunes:summary>Using lessons and analytics from watchOS 1 and 2 to rethink our Apple Watch apps for watchOS 3, using Overcast's app as a case study.</itunes:summary>
+      <itunes:explicit>clean</itunes:explicit>
+      <itunes:duration>1757</itunes:duration>
+      <content:encoded>&lt;p&gt;Using lessons and analytics from watchOS 1 and 2 to rethink our Apple Watch apps for watchOS 3, using Overcast&amp;#39;s app as a case study.&lt;/p&gt;
+ &lt;h4&gt;This episode of Under the Radar is sponsored by:&lt;/h4&gt; &lt;ul&gt;
+&lt;li&gt;&lt;a href="http://promo.linode.com/under-the-radar?utm_source=under-the-radar&amp;amp;utm_medium=podcast&amp;amp;utm_content=20%20dollar&amp;amp;utm_campaign=under%20the%20radar"&gt;Linode&lt;/a&gt;: High performance SSD Linux servers for all of your infrastructure needs. Get a $20 credit with promo code ‘radar20’&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Links and Show Notes&lt;/h4&gt; &lt;p&gt;&lt;a href="http://static.developingperspective.com/UnderTheRadar40.html"&gt;&lt;strong&gt;Episode Transcript&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+ </content:encoded>
+      <itunes:image href="http://relayfm.s3.amazonaws.com/uploads/broadcast/image/23/radar_artwork.png"/>
+    </item>
+    <item>
+      <title>Under the Radar 39: Lightning Round 1</title>
+      <description>Quick takes on eight topics submitted by listeners.</description>
+      <pubDate>Thu, 04 Aug 2016 19:00:00 GMT</pubDate>
+      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/traffic.libsyn.com/radarrelay/undertheradar39.mp3" length="22188565" type="audio/mp3"/>
+      <link>http://relay.fm/radar/39</link>
+      <guid>http://relay.fm/radar/39</guid>
+      <itunes:author>David Smith and Marco Arment</itunes:author>
+      <itunes:subtitle>Quick takes on eight topics submitted by listeners.</itunes:subtitle>
+      <itunes:summary>Quick takes on eight topics submitted by listeners.</itunes:summary>
+      <itunes:explicit>clean</itunes:explicit>
+      <itunes:duration>1780</itunes:duration>
+      <content:encoded>&lt;p&gt;Quick takes on eight topics submitted by listeners.&lt;/p&gt;
+ &lt;h4&gt;This episode of Under the Radar is sponsored by:&lt;/h4&gt; &lt;ul&gt;
+&lt;li&gt;&lt;a href="http://braintreepayments.com/radar"&gt;Braintree&lt;/a&gt;: Code for easy online payments.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Links and Show Notes&lt;/h4&gt; &lt;p&gt;&lt;a href="http://static.developingperspective.com/UnderTheRadar39.html"&gt;&lt;strong&gt;Episode Transcript&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+ </content:encoded>
+      <itunes:image href="http://relayfm.s3.amazonaws.com/uploads/broadcast/image/23/radar_artwork.png"/>
+    </item>
+    <item>
+      <title>Under the Radar 38: Psychological Tricks</title>
+      <description>Techniques often used by games to increase engagement, revenue, and addictiveness, and their potential ethical uses in our apps.</description>
+      <pubDate>Thu, 28 Jul 2016 13:00:00 GMT</pubDate>
+      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/traffic.libsyn.com/radarrelay/undertheradar38.mp3" length="21251608" type="audio/mp3"/>
+      <link>http://relay.fm/radar/38</link>
+      <guid>http://relay.fm/radar/38</guid>
+      <itunes:author>David Smith and Marco Arment</itunes:author>
+      <itunes:subtitle>Techniques often used by games to increase engagement, revenue, and addictiveness, and their potential ethical uses in our apps.</itunes:subtitle>
+      <itunes:summary>Techniques often used by games to increase engagement, revenue, and addictiveness, and their potential ethical uses in our apps.</itunes:summary>
+      <itunes:explicit>clean</itunes:explicit>
+      <itunes:duration>1762</itunes:duration>
+      <content:encoded>&lt;p&gt;Techniques often used by games to increase engagement, revenue, and addictiveness, and their potential ethical uses in our apps.&lt;/p&gt;
+ &lt;h4&gt;This episode of Under the Radar is sponsored by:&lt;/h4&gt; &lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.macstadium.com/radar"&gt;MacStadium&lt;/a&gt;: Trial a Mac server for free for 24 hours&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Links and Show Notes&lt;/h4&gt; &lt;p&gt;&lt;a href="http://static.developingperspective.com/UnderTheRadar38.html"&gt;&lt;strong&gt;Episode Transcript&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+ </content:encoded>
+      <itunes:image href="http://relayfm.s3.amazonaws.com/uploads/broadcast/image/23/radar_artwork.png"/>
+    </item>
+    <item>
+      <title>Under the Radar 37: Code Reuse</title>
+      <description>Creating and managing shared code, using Git submodules effectively, and whether to open-source your libraries.</description>
+      <pubDate>Thu, 21 Jul 2016 15:00:00 GMT</pubDate>
+      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/traffic.libsyn.com/radarrelay/undertheradar37.mp3" length="21336470" type="audio/mp3"/>
+      <link>http://relay.fm/radar/37</link>
+      <guid>http://relay.fm/radar/37</guid>
+      <itunes:author>David Smith and Marco Arment</itunes:author>
+      <itunes:subtitle>Creating and managing shared code, using Git submodules effectively, and whether to open-source your libraries.</itunes:subtitle>
+      <itunes:summary>Creating and managing shared code, using Git submodules effectively, and whether to open-source your libraries.</itunes:summary>
+      <itunes:explicit>clean</itunes:explicit>
+      <itunes:duration>1769</itunes:duration>
+      <content:encoded>&lt;p&gt;Creating and managing shared code, using Git submodules effectively, and whether to open-source your libraries.&lt;/p&gt;
+ &lt;h4&gt;This episode of Under the Radar is sponsored by:&lt;/h4&gt; &lt;ul&gt;
+&lt;li&gt;&lt;a href="http://cocoaconf.com/yosemite"&gt;CocoaConf &lt;/a&gt;: Use code &lt;strong&gt;UnderTheRadar&lt;/strong&gt; to get 20% off tickets.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Links and Show Notes&lt;/h4&gt; &lt;p&gt;&lt;a href="http://static.developingperspective.com/UnderTheRadar37.html"&gt;&lt;strong&gt;Episode Transcript&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.git-tower.com"&gt;Git Tower&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/marcoarment/FCUtilities"&gt;FCUtilities&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+ </content:encoded>
+      <itunes:image href="http://relayfm.s3.amazonaws.com/uploads/broadcast/image/23/radar_artwork.png"/>
+    </item>
+    <item>
+      <title>Under the Radar 36: Should You Release Every App?</title>
+      <description>Pros and cons of releasing your personal utility apps, focusing mostly on Mac apps.</description>
+      <pubDate>Thu, 14 Jul 2016 14:00:00 GMT</pubDate>
+      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/traffic.libsyn.com/radarrelay/undertheradar36.mp3" length="21077890" type="audio/mp3"/>
+      <link>http://relay.fm/radar/36</link>
+      <guid>http://relay.fm/radar/36</guid>
+      <itunes:author>David Smith and Marco Arment</itunes:author>
+      <itunes:subtitle>Pros and cons of releasing your personal utility apps, focusing mostly on Mac apps.</itunes:subtitle>
+      <itunes:summary>Pros and cons of releasing your personal utility apps, focusing mostly on Mac apps.</itunes:summary>
+      <itunes:explicit>clean</itunes:explicit>
+      <itunes:duration>1747</itunes:duration>
+      <content:encoded>&lt;p&gt;Pros and cons of releasing your personal utility apps, focusing mostly on Mac apps.&lt;/p&gt;
+ &lt;h4&gt;This episode of Under the Radar is sponsored by:&lt;/h4&gt; &lt;ul&gt;
+&lt;li&gt;&lt;a href="http://pingdom.com/radar"&gt;Pingdom&lt;/a&gt;: Start monitoring your websites and servers today. Use offer RADAR for 20% off.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Links and Show Notes&lt;/h4&gt; &lt;p&gt;&lt;a href="http://static.developingperspective.com/UnderTheRadar36.html"&gt;&lt;strong&gt;Episode Transcript&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+ </content:encoded>
+      <itunes:image href="http://relayfm.s3.amazonaws.com/uploads/broadcast/image/23/radar_artwork.png"/>
+    </item>
+    <item>
+      <title>Under the Radar 35: Ideas</title>
+      <description>The value of app ideas, evaluating their feasibility, and considering the business you want to be in.</description>
+      <pubDate>Thu, 07 Jul 2016 13:00:00 GMT</pubDate>
+      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/traffic.libsyn.com/radarrelay/undertheradar35.mp3" length="14341557" type="audio/mp3"/>
+      <link>http://relay.fm/radar/35</link>
+      <guid>http://relay.fm/radar/35</guid>
+      <itunes:author>David Smith and Marco Arment</itunes:author>
+      <itunes:subtitle>The value of app ideas, evaluating their feasibility, and considering the business you want to be in.</itunes:subtitle>
+      <itunes:summary>The value of app ideas, evaluating their feasibility, and considering the business you want to be in.</itunes:summary>
+      <itunes:explicit>clean</itunes:explicit>
+      <itunes:duration>1779</itunes:duration>
+      <content:encoded>&lt;p&gt;The value of app ideas, evaluating their feasibility, and considering the business you want to be in.&lt;/p&gt;
+ &lt;h4&gt;This episode of Under the Radar is sponsored by:&lt;/h4&gt; &lt;ul&gt;
+&lt;li&gt;&lt;a href="http://braintreepayments.com/radar"&gt;Braintree&lt;/a&gt;: Code for easy online payments.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Links and Show Notes&lt;/h4&gt; &lt;p&gt;&lt;a href="http://static.developingperspective.com/UnderTheRadar35.html"&gt;&lt;strong&gt;Episode Transcript&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://developingperspective.com/2014/11/06/202/"&gt;Developing Perspective #202&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+ </content:encoded>
+      <itunes:image href="http://relayfm.s3.amazonaws.com/uploads/broadcast/image/23/radar_artwork.png"/>
+    </item>
+    <item>
+      <title>Under the Radar 34: tvOS 10, macOS 10.12 and Swift 3</title>
+      <description>Concluding our WWDC 2016 coverage, we discuss what's new (or not?) for indie developers in tvOS, macOS, and Swift.</description>
+      <pubDate>Thu, 30 Jun 2016 14:00:00 GMT</pubDate>
+      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/traffic.libsyn.com/radarrelay/undertheradar34.mp3" length="14450112" type="audio/mp3"/>
+      <link>http://relay.fm/radar/34</link>
+      <guid>http://relay.fm/radar/34</guid>
+      <itunes:author>David Smith and Marco Arment</itunes:author>
+      <itunes:subtitle>Concluding our WWDC 2016 coverage, we discuss what's new (or not?) for indie developers in tvOS, macOS, and Swift.</itunes:subtitle>
+      <itunes:summary>Concluding our WWDC 2016 coverage, we discuss what's new (or not?) for indie developers in tvOS, macOS, and Swift.</itunes:summary>
+      <itunes:explicit>clean</itunes:explicit>
+      <itunes:duration>1793</itunes:duration>
+      <content:encoded>&lt;p&gt;Concluding our WWDC 2016 coverage, we discuss what&amp;#39;s new (or not?) for indie developers in tvOS, macOS, and Swift.&lt;/p&gt;
+ &lt;h4&gt;This episode of Under the Radar is sponsored by:&lt;/h4&gt; &lt;ul&gt;
+&lt;li&gt;&lt;a href="http://pingdom.com/radar"&gt;Pingdom&lt;/a&gt;: Start monitoring your websites and servers today. Use offer RADAR for 20% off.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Links and Show Notes&lt;/h4&gt; &lt;ul&gt;
+&lt;li&gt;&lt;a href="http://static.developingperspective.com/UnderTheRadar34.html"&gt;&lt;strong&gt;Episode Transcript&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+ </content:encoded>
+      <itunes:image href="http://relayfm.s3.amazonaws.com/uploads/broadcast/image/23/radar_artwork.png"/>
+    </item>
+    <item>
+      <title>Under the Radar 33: iOS 10</title>
+      <description>Following on from last week's discussion of the newly announced changes to watchOS 3, this week we dive into iOS 10.  We discuss what changes are especially relevant and how we think we might adopt them.</description>
+      <pubDate>Fri, 24 Jun 2016 11:00:00 GMT</pubDate>
+      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/traffic.libsyn.com/radarrelay/undertheradar33.mp3" length="20762695" type="audio/mp3"/>
+      <link>http://relay.fm/radar/33</link>
+      <guid>http://relay.fm/radar/33</guid>
+      <itunes:author>David Smith and Marco Arment</itunes:author>
+      <itunes:subtitle>Following on from last week's discussion of the newly announced changes to watchOS 3, this week we dive into iOS 10.  We discuss what changes are especially relevant and how we think we might adopt them.</itunes:subtitle>
+      <itunes:summary>Following on from last week's discussion of the newly announced changes to watchOS 3, this week we dive into iOS 10.  We discuss what changes are especially relevant and how we think we might adopt them.</itunes:summary>
+      <itunes:explicit>clean</itunes:explicit>
+      <itunes:duration>1721</itunes:duration>
+      <content:encoded>&lt;p&gt;Following on from last week&amp;#39;s discussion of the newly announced changes to watchOS 3, this week we dive into iOS 10.  We discuss what changes are especially relevant and how we think we might adopt them.&lt;/p&gt;
+ &lt;h4&gt;This episode of Under the Radar is sponsored by:&lt;/h4&gt; &lt;ul&gt;
+&lt;li&gt;&lt;a href="http://cocoaconf.com/"&gt;CocoaConf &lt;/a&gt;: The developer conference for those who think different. Use code &lt;strong&gt;UnderTheRadar&lt;/strong&gt; to get 20% off tickets.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Links and Show Notes&lt;/h4&gt; &lt;p&gt;&lt;a href="http://static.developingperspective.com/UnderTheRadar33.html"&gt;&lt;strong&gt;Episode Transcript&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/WhatsNewIniOS/Articles/iOS10.html"&gt;iOS 10 What&amp;#39;s New&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://developer.apple.com/ios/human-interface-guidelines/overview/whats-new/"&gt;iOS 10 Human Interface Guidelines&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/iOS10APIDiffs/index.html"&gt;iOS 10 API Diffs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://developer.apple.com/videos/play/wwdc2016/102/"&gt;Platforms State of the Union&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+ </content:encoded>
+      <itunes:image href="http://relayfm.s3.amazonaws.com/uploads/broadcast/image/23/radar_artwork.png"/>
+    </item>
+    <item>
+      <title>Under the Radar 32: watchOS 3</title>
+      <description>Live from WWDC 2016, we discuss what's new for developers in watchOS 3.</description>
+      <pubDate>Fri, 17 Jun 2016 18:00:00 GMT</pubDate>
+      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/traffic.libsyn.com/radarrelay/undertheradar32.mp3" length="20845111" type="audio/mp3"/>
+      <link>http://relay.fm/radar/32</link>
+      <guid>http://relay.fm/radar/32</guid>
+      <itunes:author>David Smith and Marco Arment</itunes:author>
+      <itunes:subtitle>Live from WWDC 2016, we discuss what's new for developers in watchOS 3.</itunes:subtitle>
+      <itunes:summary>Live from WWDC 2016, we discuss what's new for developers in watchOS 3.</itunes:summary>
+      <itunes:explicit>clean</itunes:explicit>
+      <itunes:duration>1728</itunes:duration>
+      <content:encoded>&lt;p&gt;Live from WWDC 2016, we discuss what&amp;#39;s new for developers in watchOS 3.&lt;/p&gt;
+ &lt;h4&gt;This episode of Under the Radar is sponsored by:&lt;/h4&gt; &lt;ul&gt;
+&lt;li&gt;&lt;a href="http://pingdom.com/radar"&gt;Pingdom&lt;/a&gt;: Start monitoring your websites and servers today. Use offer RADAR for 20% off.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Links and Show Notes&lt;/h4&gt; &lt;p&gt;&lt;a href="http://static.developingperspective.com/UnderTheRadar32.html"&gt;&lt;strong&gt;Episode Transcript&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+ </content:encoded>
+      <itunes:image href="http://relayfm.s3.amazonaws.com/uploads/broadcast/image/23/radar_artwork.png"/>
+    </item>
+    <item>
+      <title>Under the Radar 31: Today’s App Store Announcements</title>
+      <description>The App Store's new subscription options and search ads that were announced today.</description>
+      <pubDate>Wed, 08 Jun 2016 19:00:00 GMT</pubDate>
+      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/traffic.libsyn.com/radarrelay/undertheradar31.mp3" length="21666802" type="audio/mp3"/>
+      <link>http://relay.fm/radar/31</link>
+      <guid>http://relay.fm/radar/31</guid>
+      <itunes:author>David Smith and Marco Arment</itunes:author>
+      <itunes:subtitle>The App Store's new subscription options and search ads that were announced today.</itunes:subtitle>
+      <itunes:summary>The App Store's new subscription options and search ads that were announced today.</itunes:summary>
+      <itunes:explicit>clean</itunes:explicit>
+      <itunes:duration>1796</itunes:duration>
+      <content:encoded>&lt;p&gt;The App Store&amp;#39;s new subscription options and search ads that were announced today.&lt;/p&gt;
+ &lt;h4&gt;This episode of Under the Radar is sponsored by:&lt;/h4&gt; &lt;ul&gt;
+&lt;li&gt;&lt;a href="http://braintreepayments.com/radar"&gt;Braintree&lt;/a&gt;: Code for easy online payments.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Links and Show Notes&lt;/h4&gt; &lt;p&gt;&lt;a href="http://static.developingperspective.com/UnderTheRadar31.html"&gt;&lt;strong&gt;Episode Transcript&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://developer.apple.com/app-store/subscriptions/whats-new/"&gt;Apple: What&amp;#39;s new in Subscriptions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://developer.apple.com/app-store/search-ads/"&gt;Apple: Search Ads&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Phil Schiller interviews:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://daringfireball.net/2016/06/the_new_app_store"&gt;Daring Fireball&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.theverge.com/2016/6/8/11880730/apple-app-store-subscription-update-phil-schiller-interview"&gt;The Verge&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.loopinsight.com/2016/06/08/phil-schiller-apple-making-major-changes-to-the-app-store/"&gt;The Loop&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.telegraph.co.uk/technology/2016/06/08/apple-to-launch-major-overhaul-of-app-store-with-paid-search-ads/"&gt;The Telegraph&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+ </content:encoded>
+      <itunes:image href="http://relayfm.s3.amazonaws.com/uploads/broadcast/image/23/radar_artwork.png"/>
+    </item>
+    <item>
+      <title>Under the Radar 30: A Brief Visit to Android</title>
+      <description>David revisits Android development after four years away.</description>
+      <pubDate>Thu, 02 Jun 2016 14:00:00 GMT</pubDate>
+      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/traffic.libsyn.com/radarrelay/undertheradar30.mp3" length="21193064" type="audio/mp3"/>
+      <link>http://relay.fm/radar/30</link>
+      <guid>http://relay.fm/radar/30</guid>
+      <itunes:author>David Smith and Marco Arment</itunes:author>
+      <itunes:subtitle>David revisits Android development after four years away.</itunes:subtitle>
+      <itunes:summary>David revisits Android development after four years away.</itunes:summary>
+      <itunes:explicit>clean</itunes:explicit>
+      <itunes:duration>1757</itunes:duration>
+      <content:encoded>&lt;p&gt;David revisits Android development after four years away.&lt;/p&gt;
+ &lt;h4&gt;This episode of Under the Radar is sponsored by:&lt;/h4&gt; &lt;ul&gt;
+&lt;li&gt;&lt;a href="http://hover.com"&gt;Hover&lt;/a&gt;: Simplified domain management. Use code FASTREVIEW to get 10% off your first purchase.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Links and Show Notes&lt;/h4&gt; &lt;p&gt;&lt;strong&gt;&lt;a href="http://static.developingperspective.com/UnderTheRadar30.html"&gt;Episode Transcript&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+ </content:encoded>
+      <itunes:image href="http://relayfm.s3.amazonaws.com/uploads/broadcast/image/23/radar_artwork.png"/>
+    </item>
+    <item>
+      <title>Under the Radar 29: Numbers and Analytics</title>
+      <description>Using data, market research, and analytics to improve your apps and better allocate your time.</description>
+      <pubDate>Thu, 26 May 2016 19:00:00 GMT</pubDate>
+      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/traffic.libsyn.com/radarrelay/undertheradar29.mp3" length="21054579" type="audio/mp3"/>
+      <link>http://relay.fm/radar/29</link>
+      <guid>http://relay.fm/radar/29</guid>
+      <itunes:author>David Smith and Marco Arment</itunes:author>
+      <itunes:subtitle>Using data, market research, and analytics to improve your apps and better allocate your time.</itunes:subtitle>
+      <itunes:summary>Using data, market research, and analytics to improve your apps and better allocate your time.</itunes:summary>
+      <itunes:explicit>clean</itunes:explicit>
+      <itunes:duration>1745</itunes:duration>
+      <content:encoded>&lt;p&gt;Using data, market research, and analytics to improve your apps and better allocate your time.&lt;/p&gt;
+ &lt;h4&gt;This episode of Under the Radar is sponsored by:&lt;/h4&gt; &lt;ul&gt;
+&lt;li&gt;&lt;a href="http://pingdom.com/radar"&gt;Pingdom&lt;/a&gt;: Start monitoring your websites and servers today. Use offer code &lt;strong&gt;RADAR&lt;/strong&gt; for 20% off.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Links and Show Notes&lt;/h4&gt; &lt;p&gt;&lt;strong&gt;&lt;a href="http://static.developingperspective.com/UnderTheRadar29.html"&gt;Episode Transcript&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+ </content:encoded>
+      <itunes:image href="http://relayfm.s3.amazonaws.com/uploads/broadcast/image/23/radar_artwork.png"/>
+    </item>
+    <item>
+      <title>Under the Radar 28: Wear Your Own T-Shirt</title>
+      <description>Becoming more comfortable with self-promotion in the right contexts.</description>
+      <pubDate>Fri, 20 May 2016 01:00:00 GMT</pubDate>
+      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/traffic.libsyn.com/radarrelay/undertheradar28.mp3" length="21201230" type="audio/mp3"/>
+      <link>http://relay.fm/radar/28</link>
+      <guid>http://relay.fm/radar/28</guid>
+      <itunes:author>David Smith and Marco Arment</itunes:author>
+      <itunes:subtitle>Becoming more comfortable with self-promotion in the right contexts.</itunes:subtitle>
+      <itunes:summary>Becoming more comfortable with self-promotion in the right contexts.</itunes:summary>
+      <itunes:explicit>clean</itunes:explicit>
+      <itunes:duration>1758</itunes:duration>
+      <content:encoded>&lt;p&gt;Becoming more comfortable with self-promotion in the right contexts.&lt;/p&gt;
+ &lt;h4&gt;This episode of Under the Radar is sponsored by:&lt;/h4&gt; &lt;ul&gt;
+&lt;li&gt;&lt;a href="http://pingdom.com/"&gt;Pingdom&lt;/a&gt;: Start monitoring your websites and servers today. Use code &lt;strong&gt;RADAR&lt;/strong&gt; for 20% off.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Links and Show Notes&lt;/h4&gt; &lt;p&gt;&lt;strong&gt;&lt;a href="http://static.developingperspective.com/UnderTheRadar28.html"&gt;Episode Transcript&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+ </content:encoded>
+      <itunes:image href="http://relayfm.s3.amazonaws.com/uploads/broadcast/image/23/radar_artwork.png"/>
+    </item>
+    <item>
+      <title>Under the Radar 27: Fast App Review</title>
+      <description>How iOS development will change if the recent app-review speedup becomes permanent.</description>
+      <pubDate>Fri, 13 May 2016 01:00:00 GMT</pubDate>
+      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/traffic.libsyn.com/radarrelay/undertheradar27.mp3" length="21023511" type="audio/mp3"/>
+      <link>http://relay.fm/radar/27</link>
+      <guid>http://relay.fm/radar/27</guid>
+      <itunes:author>David Smith and Marco Arment</itunes:author>
+      <itunes:subtitle>How iOS development will change if the recent app-review speedup becomes permanent.</itunes:subtitle>
+      <itunes:summary>How iOS development will change if the recent app-review speedup becomes permanent.</itunes:summary>
+      <itunes:explicit>clean</itunes:explicit>
+      <itunes:duration>1743</itunes:duration>
+      <content:encoded>&lt;p&gt;How iOS development will change if the recent app-review speedup becomes permanent.&lt;/p&gt;
+ &lt;h4&gt;This episode of Under the Radar is sponsored by:&lt;/h4&gt; &lt;ul&gt;
+&lt;li&gt;&lt;a href="http://braintreepayments.com/radar"&gt;Braintree&lt;/a&gt;: Code for easy online payments.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Links and Show Notes&lt;/h4&gt; &lt;p&gt;&lt;strong&gt;&lt;a href="http://static.developingperspective.com/UnderTheRadar27.html"&gt;Episode Transcript&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://appreviewtimes.com/"&gt;Average App Store Review Times&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.macstories.net/news/apple-shortening-app-review-times/"&gt;MacStories on the recent speedup&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+ </content:encoded>
+      <itunes:image href="http://relayfm.s3.amazonaws.com/uploads/broadcast/image/23/radar_artwork.png"/>
+    </item>
+    <item>
+      <title>Under the Radar 26: Wading Slowly Into AppKit</title>
+      <description>Experimenting with Mac development and considering its future potential.</description>
+      <pubDate>Fri, 06 May 2016 15:00:00 GMT</pubDate>
+      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/traffic.libsyn.com/radarrelay/undertheradar26.mp3" length="21189961" type="audio/mp3"/>
+      <link>http://relay.fm/radar/26</link>
+      <guid>http://relay.fm/radar/26</guid>
+      <itunes:author>David Smith and Marco Arment</itunes:author>
+      <itunes:subtitle>Experimenting with Mac development and considering its future potential.</itunes:subtitle>
+      <itunes:summary>Experimenting with Mac development and considering its future potential.</itunes:summary>
+      <itunes:explicit>clean</itunes:explicit>
+      <itunes:duration>1757</itunes:duration>
+      <content:encoded>&lt;p&gt;Experimenting with Mac development and considering its future potential.&lt;/p&gt;
+ &lt;h4&gt;This episode of Under the Radar is sponsored by:&lt;/h4&gt; &lt;ul&gt;
+&lt;li&gt;&lt;a href="http://hover.com"&gt;Hover&lt;/a&gt;: Simplified domain management. Use code &lt;strong&gt;WWDC&lt;/strong&gt; to get 10% off your first purchase.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Links and Show Notes&lt;/h4&gt; &lt;p&gt;&lt;strong&gt;&lt;a href="http://static.developingperspective.com/UnderTheRadar26.html"&gt;Episode Transcript&lt;/a&gt;&lt;/strong&gt;&lt;br&gt;
+* &lt;a href="https://marco.org/2016/05/02/quitter"&gt;Quitter&lt;/a&gt;&lt;br&gt;
+* &lt;a href="https://www.rescuetime.com/"&gt;RescueTime&lt;/a&gt;&lt;/p&gt;
+ </content:encoded>
+      <itunes:image href="http://relayfm.s3.amazonaws.com/uploads/broadcast/image/23/radar_artwork.png"/>
+    </item>
+    <item>
+      <title>Under the Radar 25: The Calm Before the Storm</title>
+      <description>What to do (and not do) in the few months before WWDC.</description>
+      <pubDate>Thu, 28 Apr 2016 19:00:00 GMT</pubDate>
+      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/traffic.libsyn.com/radarrelay/undertheradar25.mp3" length="20897145" type="audio/mp3"/>
+      <link>http://relay.fm/radar/25</link>
+      <guid>http://relay.fm/radar/25</guid>
+      <itunes:author>David Smith and Marco Arment</itunes:author>
+      <itunes:subtitle>What to do (and not do) in the few months before WWDC.</itunes:subtitle>
+      <itunes:summary>What to do (and not do) in the few months before WWDC.</itunes:summary>
+      <itunes:explicit>clean</itunes:explicit>
+      <itunes:duration>1732</itunes:duration>
+      <content:encoded>&lt;p&gt;What to do (and not do) in the few months before WWDC.&lt;/p&gt;
+ &lt;h4&gt;This episode of Under the Radar is sponsored by:&lt;/h4&gt; &lt;ul&gt;
+&lt;li&gt;&lt;a href="http://pingdom.com/"&gt;Pingdom&lt;/a&gt;: Start monitoring your websites and servers today. Use offer code &lt;strong&gt;Radar&lt;/strong&gt; for 20% off.&lt;/li&gt;
+&lt;/ul&gt;
+</content:encoded>
+      <itunes:image href="http://relayfm.s3.amazonaws.com/uploads/broadcast/image/23/radar_artwork.png"/>
+    </item>
+    <item>
+      <title>Under the Radar 24: Should You Register for a WWDC Ticket?</title>
+      <description>The value of a WWDC ticket — or going to San Francisco without one.</description>
+      <pubDate>Tue, 19 Apr 2016 20:00:00 GMT</pubDate>
+      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/traffic.libsyn.com/radarrelay/undertheradar24.mp3" length="21284332" type="audio/mp3"/>
+      <link>http://relay.fm/radar/24</link>
+      <guid>http://relay.fm/radar/24</guid>
+      <itunes:author>David Smith and Marco Arment</itunes:author>
+      <itunes:subtitle>The value of a WWDC ticket — or going to San Francisco without one.</itunes:subtitle>
+      <itunes:summary>The value of a WWDC ticket — or going to San Francisco without one.</itunes:summary>
+      <itunes:explicit>clean</itunes:explicit>
+      <itunes:duration>1764</itunes:duration>
+      <content:encoded>&lt;p&gt;The value of a WWDC ticket — or going to San Francisco without one.&lt;/p&gt;
+ &lt;h4&gt;This episode of Under the Radar is sponsored by:&lt;/h4&gt; &lt;ul&gt;
+&lt;li&gt;David&amp;#39;s &amp;quot;++&amp;quot; family of health apps:
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://itunes.apple.com/us/app/pedometer++/id712286167?mt=8&amp;amp;at=10l3KS&amp;amp;ct=utr"&gt;Pedometer++&lt;/a&gt;: Track your daily steps right from your iPhone, even if you don&amp;#39;t have an Apple Watch.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://itunes.apple.com/us/app/activity++/id1089666978?ls=1&amp;amp;at=10l3KS&amp;amp;ct=utr&amp;amp;ls=1&amp;amp;mt=8"&gt;Activity++&lt;/a&gt;: A new way to visualize your Apple Watch Activity data.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://itunes.apple.com/us/app/sleep++/id1038440371?at=10l3KS&amp;amp;ct=utr&amp;amp;ls=1&amp;amp;mt=8"&gt;Sleep++&lt;/a&gt;: Add full-blown sleep tracking to your Apple Watch.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://itunes.apple.com/us/app/overcast-podcast-player/id888422857?ls=1&amp;amp;mt=8&amp;amp;at=10l3KS&amp;amp;ct=utr"&gt;Overcast&lt;/a&gt;: Marco&amp;#39;s podcast player, which is pretty good. Become a patron today for dark mode, file uploads, and positive feelings.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Links and Show Notes&lt;/h4&gt; &lt;ul&gt;
+&lt;li&gt;&lt;a href="https://developer.apple.com/wwdc/"&gt;WWDC 2016&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Other conferences in San Francisco at the same time: &lt;a href="http://www.bringyourlayers.com/"&gt;Layers&lt;/a&gt; and &lt;a href="http://www.altconf.com/"&gt;AltConf&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+ </content:encoded>
+      <itunes:image href="http://relayfm.s3.amazonaws.com/uploads/broadcast/image/23/radar_artwork.png"/>
+    </item>
+    <item>
+      <title>Under the Radar 23: Launching Activity++</title>
+      <description>Handling the launch of David's newest app, and lessons to be learned from it.</description>
+      <pubDate>Thu, 14 Apr 2016 15:00:00 GMT</pubDate>
+      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/traffic.libsyn.com/radarrelay/undertheradar23.mp3" length="21023196" type="audio/mp3"/>
+      <link>http://relay.fm/radar/23</link>
+      <guid>http://relay.fm/radar/23</guid>
+      <itunes:author>David Smith and Marco Arment</itunes:author>
+      <itunes:subtitle>Handling the launch of David's newest app, and lessons to be learned from it.</itunes:subtitle>
+      <itunes:summary>Handling the launch of David's newest app, and lessons to be learned from it.</itunes:summary>
+      <itunes:explicit>clean</itunes:explicit>
+      <itunes:duration>1743</itunes:duration>
+      <content:encoded>&lt;p&gt;Handling the launch of David&amp;#39;s newest app, and lessons to be learned from it.&lt;/p&gt;
+ &lt;h4&gt;This episode of Under the Radar is sponsored by:&lt;/h4&gt; &lt;ul&gt;
+&lt;li&gt;&lt;a href="http://pingdom.com/"&gt;Pingdom&lt;/a&gt;: Start monitoring your websites and servers today. Use offer code &lt;strong&gt;Radar&lt;/strong&gt; for 20% off.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Links and Show Notes&lt;/h4&gt; &lt;ul&gt;
+&lt;li&gt;&lt;a href="https://david-smith.org/blog/2016/04/07/introducing-activity-plus-plus/"&gt;Introducing Activity++&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://itunes.apple.com/us/app/activity++/id1089666978?ls=1&amp;amp;at=10l3KS&amp;amp;ct=activity&amp;amp;ls=1&amp;amp;mt=8"&gt;Activity++ in App Store&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://itunes.apple.com/app/apple-store/id1062745479?pt=80993800&amp;amp;ct=Web&amp;amp;mt=8&amp;amp;at=10l3KS&amp;amp;ct=activity"&gt;HeartWatch&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+ </content:encoded>
+      <itunes:image href="http://relayfm.s3.amazonaws.com/uploads/broadcast/image/23/radar_artwork.png"/>
+    </item>
+    <item>
+      <title>Under the Radar 22: Version Control</title>
+      <description>The immense value of version control for very small teams — even teams of one.</description>
+      <pubDate>Fri, 08 Apr 2016 02:00:00 GMT</pubDate>
+      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/traffic.libsyn.com/radarrelay/undertheradar22.mp3" length="20507531" type="audio/mp3"/>
+      <link>http://relay.fm/radar/22</link>
+      <guid>http://relay.fm/radar/22</guid>
+      <itunes:author>David Smith and Marco Arment</itunes:author>
+      <itunes:subtitle>The immense value of version control for very small teams — even teams of one.</itunes:subtitle>
+      <itunes:summary>The immense value of version control for very small teams — even teams of one.</itunes:summary>
+      <itunes:explicit>clean</itunes:explicit>
+      <itunes:duration>1700</itunes:duration>
+      <content:encoded>&lt;p&gt;The immense value of version control for very small teams — even teams of one.&lt;/p&gt;
+ &lt;h4&gt;This episode of Under the Radar is sponsored by:&lt;/h4&gt; &lt;ul&gt;
+&lt;li&gt;&lt;a href="http://braintreepayments.com/radar"&gt;Braintree&lt;/a&gt;: Code for easy online payments.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Links and Show Notes&lt;/h4&gt; &lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.git-tower.com/"&gt;Git Tower for Mac&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+ </content:encoded>
+      <itunes:image href="http://relayfm.s3.amazonaws.com/uploads/broadcast/image/23/radar_artwork.png"/>
+    </item>
+    <item>
+      <title>Under the Radar 21: App Store Rejection</title>
+      <description>Tips on avoiding rejections by Apple's app-review staff and what to do when your app get rejected.</description>
+      <pubDate>Fri, 01 Apr 2016 02:00:00 GMT</pubDate>
+      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/traffic.libsyn.com/radarrelay/undertheradar21.mp3" length="21516323" type="audio/mp3"/>
+      <link>http://relay.fm/radar/21</link>
+      <guid>http://relay.fm/radar/21</guid>
+      <itunes:author>David Smith and Marco Arment</itunes:author>
+      <itunes:subtitle>Tips on avoiding rejections by Apple's app-review staff and what to do when your app get rejected.</itunes:subtitle>
+      <itunes:summary>Tips on avoiding rejections by Apple's app-review staff and what to do when your app get rejected.</itunes:summary>
+      <itunes:explicit>clean</itunes:explicit>
+      <itunes:duration>1784</itunes:duration>
+      <content:encoded>&lt;p&gt;Tips on avoiding rejections by Apple&amp;#39;s app-review staff and what to do when your app get rejected.&lt;/p&gt;
+ &lt;h4&gt;This episode of Under the Radar is sponsored by:&lt;/h4&gt; &lt;ul&gt;
+&lt;li&gt;&lt;a href="http://hover.com/"&gt;Hover&lt;/a&gt;: Simplified domain management. Use code REVIEW to get 10% off your first purchase.&lt;/li&gt;
+&lt;/ul&gt;
+</content:encoded>
+      <itunes:image href="http://relayfm.s3.amazonaws.com/uploads/broadcast/image/23/radar_artwork.png"/>
+    </item>
+    <item>
+      <title>Under the Radar 20: Improving the App Store, Part 2</title>
+      <description>In the second of a two-part series, we discuss some specific ideas on how the App Store could realistically be improved.</description>
+      <pubDate>Thu, 24 Mar 2016 19:00:00 GMT</pubDate>
+      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/traffic.libsyn.com/radarrelay/undertheradar20.mp3" length="21385988" type="audio/mp3"/>
+      <link>http://relay.fm/radar/20</link>
+      <guid>http://relay.fm/radar/20</guid>
+      <itunes:author>David Smith and Marco Arment</itunes:author>
+      <itunes:subtitle>In the second of a two-part series, we discuss some specific ideas on how the App Store could realistically be improved.</itunes:subtitle>
+      <itunes:summary>In the second of a two-part series, we discuss some specific ideas on how the App Store could realistically be improved.</itunes:summary>
+      <itunes:explicit>clean</itunes:explicit>
+      <itunes:duration>1773</itunes:duration>
+      <content:encoded>&lt;p&gt;In the second of a two-part series, we discuss some specific ideas on how the App Store could realistically be improved.&lt;/p&gt;
+ &lt;h4&gt;This episode of Under the Radar is sponsored by:&lt;/h4&gt; &lt;ul&gt;
+&lt;li&gt;&lt;a href="http://rollbar.com/undertheradar"&gt;Rollbar&lt;/a&gt;: Full-stack error tracking for all apps in any language.&lt;/li&gt;
+&lt;/ul&gt;
+</content:encoded>
+      <itunes:image href="http://relayfm.s3.amazonaws.com/uploads/broadcast/image/23/radar_artwork.png"/>
+    </item>
+    <item>
+      <title>Under the Radar 19: Improving the App Store, Part 1</title>
+      <description>In the first of a two-part series, we discuss whether the App Store needs improvement for our benefit, or whether it's working well enough for Apple and customers already.</description>
+      <pubDate>Sat, 19 Mar 2016 01:00:00 GMT</pubDate>
+      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/traffic.libsyn.com/radarrelay/undertheradar19.mp3" length="20970116" type="audio/mp3"/>
+      <link>http://relay.fm/radar/19</link>
+      <guid>http://relay.fm/radar/19</guid>
+      <itunes:author>David Smith and Marco Arment</itunes:author>
+      <itunes:subtitle>In the first of a two-part series, we discuss whether the App Store needs improvement for our benefit, or whether it's working well enough for Apple and customers already.</itunes:subtitle>
+      <itunes:summary>In the first of a two-part series, we discuss whether the App Store needs improvement for our benefit, or whether it's working well enough for Apple and customers already.</itunes:summary>
+      <itunes:explicit>clean</itunes:explicit>
+      <itunes:duration>1738</itunes:duration>
+      <content:encoded>&lt;p&gt;In the first of a two-part series, we discuss whether the App Store needs improvement for our benefit, or whether it&amp;#39;s working well enough for Apple and customers already.&lt;/p&gt;
+ &lt;h4&gt;This episode of Under the Radar is sponsored by:&lt;/h4&gt; &lt;ul&gt;
+&lt;li&gt;&lt;a href="https://tapstream.com/utr/"&gt;Tapstream&lt;/a&gt;: A total app marketing toolkit.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Links and Show Notes&lt;/h4&gt; &lt;ul&gt;
+&lt;li&gt;&lt;a href="https://david-smith.org/blog/2014/04/16/towards-a-better-app-store/"&gt;Towards a Better App Store&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://twitter.com/pschiller/status/705424396417048576"&gt;Phil&amp;#39;s 1st Tweet about the App Store&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://twitter.com/pschiller/status/708811114923081730"&gt;Phil&amp;#39;s 2nd Tweet about the App Store&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://appshopper.com/all/new"&gt;View what the &amp;#39;new&amp;#39; apps look like&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+ </content:encoded>
+      <itunes:image href="http://relayfm.s3.amazonaws.com/uploads/broadcast/image/23/radar_artwork.png"/>
+    </item>
+    <item>
+      <title>Under the Radar 18: Choosing a Pricing Model</title>
+      <description>Considering paid-up-front, freemium, ad-supported, and completely free business models for David's newest app.</description>
+      <pubDate>Fri, 11 Mar 2016 15:30:00 GMT</pubDate>
+      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/traffic.libsyn.com/radarrelay/undertheradar18.mp3" length="21280628" type="audio/mp3"/>
+      <link>http://relay.fm/radar/18</link>
+      <guid>http://relay.fm/radar/18</guid>
+      <itunes:author>David Smith and Marco Arment</itunes:author>
+      <itunes:subtitle>Considering paid-up-front, freemium, ad-supported, and completely free business models for David's newest app.</itunes:subtitle>
+      <itunes:summary>Considering paid-up-front, freemium, ad-supported, and completely free business models for David's newest app.</itunes:summary>
+      <itunes:explicit>clean</itunes:explicit>
+      <itunes:duration>1764</itunes:duration>
+      <content:encoded>&lt;p&gt;Considering paid-up-front, freemium, ad-supported, and completely free business models for David&amp;#39;s newest app.&lt;/p&gt;
+ &lt;h4&gt;This episode of Under the Radar is sponsored by:&lt;/h4&gt; &lt;ul&gt;
+&lt;li&gt;&lt;a href="http://hover.com/"&gt;Hover&lt;/a&gt;: Simplified domain management. Use code &lt;strong&gt;COCOA&lt;/strong&gt; to get 10% off your first purchase.&lt;/li&gt;
+&lt;/ul&gt;
+</content:encoded>
+      <itunes:image href="http://relayfm.s3.amazonaws.com/uploads/broadcast/image/23/radar_artwork.png"/>
+    </item>
+    <item>
+      <title>Under the Radar 17: Work-Life Balance</title>
+      <description>Maintaining a healthy work-life balance for consultants and the self-employed.</description>
+      <pubDate>Thu, 03 Mar 2016 01:00:00 GMT</pubDate>
+      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/traffic.libsyn.com/radarrelay/undertheradar17.mp3" length="21269265" type="audio/mp3"/>
+      <link>http://relay.fm/radar/17</link>
+      <guid>http://relay.fm/radar/17</guid>
+      <itunes:author>David Smith and Marco Arment</itunes:author>
+      <itunes:subtitle>Maintaining a healthy work-life balance for consultants and the self-employed.</itunes:subtitle>
+      <itunes:summary>Maintaining a healthy work-life balance for consultants and the self-employed.</itunes:summary>
+      <itunes:explicit>clean</itunes:explicit>
+      <itunes:duration>1763</itunes:duration>
+      <content:encoded>&lt;p&gt;Maintaining a healthy work-life balance for consultants and the self-employed.&lt;/p&gt;
+ &lt;h4&gt;This episode of Under the Radar is sponsored by:&lt;/h4&gt; &lt;ul&gt;
+&lt;li&gt;&lt;a href="http://igloosoftware.com/radar"&gt;Igloo&lt;/a&gt;: An intranet you’ll actually like, free for up to 10 people.&lt;/li&gt;
+&lt;/ul&gt;
+</content:encoded>
+      <itunes:image href="http://relayfm.s3.amazonaws.com/uploads/broadcast/image/23/radar_artwork.png"/>
+    </item>
+    <item>
+      <title>Under the Radar 16: Designing for Misuse</title>
+      <description>Accommodating unexpectedly heavy usage, basic web security, and avoiding user-generated spam.</description>
+      <pubDate>Wed, 24 Feb 2016 03:00:00 GMT</pubDate>
+      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/traffic.libsyn.com/radarrelay/undertheradar16.mp3" length="21139211" type="audio/mp3"/>
+      <link>http://relay.fm/radar/16</link>
+      <guid>http://relay.fm/radar/16</guid>
+      <itunes:author>David Smith and Marco Arment</itunes:author>
+      <itunes:subtitle>Accommodating unexpectedly heavy usage, basic web security, and avoiding user-generated spam.</itunes:subtitle>
+      <itunes:summary>Accommodating unexpectedly heavy usage, basic web security, and avoiding user-generated spam.</itunes:summary>
+      <itunes:explicit>clean</itunes:explicit>
+      <itunes:duration>1752</itunes:duration>
+      <content:encoded>&lt;p&gt;Accommodating unexpectedly heavy usage, basic web security, and avoiding user-generated spam.&lt;/p&gt;
+ &lt;h4&gt;This episode of Under the Radar is sponsored by:&lt;/h4&gt; &lt;ul&gt;
+&lt;li&gt;&lt;a href="http://devmate.com/radar"&gt;DevMate&lt;/a&gt;: License and protect your Mac apps, deliver updates to customers, collect crash reports and feedback, and much more. Create better apps easier.&lt;/li&gt;
+&lt;/ul&gt;
+</content:encoded>
+      <itunes:image href="http://relayfm.s3.amazonaws.com/uploads/broadcast/image/23/radar_artwork.png"/>
+    </item>
+    <item>
+      <title>Under the Radar 15: Marketing at Launch</title>
+      <description>Marketing, promotion, and celebration of successful launches and major updates.</description>
+      <pubDate>Wed, 17 Feb 2016 15:00:00 GMT</pubDate>
+      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/traffic.libsyn.com/radarrelay/undertheradar15.mp3" length="21385255" type="audio/mp3"/>
+      <link>http://relay.fm/radar/15</link>
+      <guid>http://relay.fm/radar/15</guid>
+      <itunes:author>David Smith and Marco Arment</itunes:author>
+      <itunes:subtitle>Marketing, promotion, and celebration of successful launches and major updates.</itunes:subtitle>
+      <itunes:summary>Marketing, promotion, and celebration of successful launches and major updates.</itunes:summary>
+      <itunes:explicit>clean</itunes:explicit>
+      <itunes:duration>1773</itunes:duration>
+      <content:encoded>&lt;p&gt;Marketing, promotion, and celebration of successful launches and major updates.&lt;/p&gt;
+ &lt;h4&gt;This episode of Under the Radar is sponsored by:&lt;/h4&gt; &lt;ul&gt;
+&lt;li&gt;&lt;a href="http://tapstream.com/utr/"&gt;Tapstream&lt;/a&gt;: A total app marketing toolkit.&lt;/li&gt;
+&lt;/ul&gt;
+</content:encoded>
+      <itunes:image href="http://relayfm.s3.amazonaws.com/uploads/broadcast/image/23/radar_artwork.png"/>
+    </item>
+    <item>
+      <title>Under the Radar 14: Linux Servers for App Developers</title>
+      <description>An introduction to running your own Linux servers.</description>
+      <pubDate>Fri, 12 Feb 2016 00:00:00 GMT</pubDate>
+      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/traffic.libsyn.com/radarrelay/undertheradar14.mp3" length="21632237" type="audio/mp3"/>
+      <link>http://relay.fm/radar/14</link>
+      <guid>http://relay.fm/radar/14</guid>
+      <itunes:author>David Smith and Marco Arment</itunes:author>
+      <itunes:subtitle>An introduction to running your own Linux servers.</itunes:subtitle>
+      <itunes:summary>An introduction to running your own Linux servers.</itunes:summary>
+      <itunes:explicit>clean</itunes:explicit>
+      <itunes:duration>1793</itunes:duration>
+      <content:encoded>&lt;p&gt;An introduction to running your own Linux servers.&lt;/p&gt;
+ &lt;h4&gt;This episode of Under the Radar is sponsored by:&lt;/h4&gt; &lt;ul&gt;
+&lt;li&gt;&lt;a href="http://igloosoftware.com/radar"&gt;Igloo&lt;/a&gt;: An intranet you’ll actually like, free for up to 10 people.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Links and Show Notes&lt;/h4&gt; &lt;ul&gt;
+&lt;li&gt;&lt;a href="https://marco.org/2014/03/27/web-hosting-for-app-developers"&gt;Marco&amp;#39;s tips from last year&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.percona.com/software/mysql-database/percona-xtrabackup"&gt;Percona Xtrabackup for MySQL&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+ </content:encoded>
+      <itunes:image href="http://relayfm.s3.amazonaws.com/uploads/broadcast/image/23/radar_artwork.png"/>
+    </item>
+    <item>
+      <title>Under the Radar 13: External Dependencies</title>
+      <description>Weighing the costs of external dependencies in the wake of the Parse shutdown announcement.</description>
+      <pubDate>Fri, 05 Feb 2016 00:00:00 GMT</pubDate>
+      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/traffic.libsyn.com/radarrelay/undertheradar13.mp3" length="21657688" type="audio/mp3"/>
+      <link>http://relay.fm/radar/13</link>
+      <guid>http://relay.fm/radar/13</guid>
+      <itunes:author>David Smith and Marco Arment</itunes:author>
+      <itunes:subtitle>Weighing the costs of external dependencies in the wake of the Parse shutdown announcement.</itunes:subtitle>
+      <itunes:summary>Weighing the costs of external dependencies in the wake of the Parse shutdown announcement.</itunes:summary>
+      <itunes:explicit>clean</itunes:explicit>
+      <itunes:duration>1796</itunes:duration>
+      <content:encoded>&lt;p&gt;Weighing the costs of external dependencies in the wake of the Parse shutdown announcement.&lt;/p&gt;
+ &lt;h4&gt;This episode of Under the Radar is sponsored by:&lt;/h4&gt; &lt;ul&gt;
+&lt;li&gt;&lt;a href="http://hover.com/"&gt;Hover&lt;/a&gt;: Simplified domain management. Use code PERSPECTIVE to get 10% off your first purchase.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Links and Show Notes&lt;/h4&gt; &lt;ul&gt;
+&lt;li&gt;&lt;a href="http://blog.parse.com/announcements/moving-on/"&gt;Parse Announcement&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://web.archive.org/web/20151124022225/https://parse.com/plans"&gt;Parse Pricing&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+ </content:encoded>
+      <itunes:image href="http://relayfm.s3.amazonaws.com/uploads/broadcast/image/23/radar_artwork.png"/>
+    </item>
+    <item>
+      <title>Under the Radar 12: Apps With Personality</title>
+      <description>Apps with personality vs. neutral voices, and whether independent developers should project a corporate image.</description>
+      <pubDate>Thu, 28 Jan 2016 19:00:00 GMT</pubDate>
+      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/traffic.libsyn.com/radarrelay/undertheradar12.mp3" length="21511336" type="audio/mp3"/>
+      <link>http://relay.fm/radar/12</link>
+      <guid>http://relay.fm/radar/12</guid>
+      <itunes:author>David Smith and Marco Arment</itunes:author>
+      <itunes:subtitle>Apps with personality vs. neutral voices, and whether independent developers should project a corporate image. </itunes:subtitle>
+      <itunes:summary>Apps with personality vs. neutral voices, and whether independent developers should project a corporate image. </itunes:summary>
+      <itunes:explicit>clean</itunes:explicit>
+      <itunes:duration>1783</itunes:duration>
+      <content:encoded>&lt;p&gt;Apps with personality vs. neutral voices, and whether independent developers should project a corporate image.&lt;/p&gt;
+ &lt;h4&gt;This episode of Under the Radar is sponsored by:&lt;/h4&gt; &lt;ul&gt;
+&lt;li&gt;&lt;a href="http://cocoaconf.com/"&gt;CocoaConf&lt;/a&gt;: The developer conference for those who think different. Use code &lt;strong&gt;UnderTheRadar&lt;/strong&gt; to get 20% off tickets.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Links and Show Notes&lt;/h4&gt; &lt;ul&gt;
+&lt;li&gt;&lt;a href="http://releasenotes.tv/140-like-watching-paint-dry/"&gt;Release Notes #140&lt;/a&gt; (&lt;a href="https://overcast.fm/+JR46XFhk"&gt;Overcast link&lt;/a&gt;)
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://metakite.com/metatax/"&gt;MetaTax&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.meetcarrot.com/weather/"&gt;Carrot Weather&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://david-smith.org/apps/"&gt;Pedometer++&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://overcast.fm/"&gt;Overcast&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://en.wikipedia.org/wiki/The_Ministry_of_Silly_Walks"&gt;The Ministry of Silliness&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+ </content:encoded>
+      <itunes:image href="http://relayfm.s3.amazonaws.com/uploads/broadcast/image/23/radar_artwork.png"/>
+    </item>
+    <item>
+      <title>Under the Radar 11: Ad-Funded Apps</title>
+      <description>Real-world experience with ad-funded apps, and what the iAd shutdown announcement may mean.</description>
+      <pubDate>Fri, 22 Jan 2016 03:00:00 GMT</pubDate>
+      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/traffic.libsyn.com/radarrelay/undertheradar11.mp3" length="20504106" type="audio/mp3"/>
+      <link>http://relay.fm/radar/11</link>
+      <guid>http://relay.fm/radar/11</guid>
+      <itunes:author>David Smith and Marco Arment</itunes:author>
+      <itunes:subtitle>Real-world experience with ad-funded apps, and what the iAd shutdown announcement may mean.</itunes:subtitle>
+      <itunes:summary>Real-world experience with ad-funded apps, and what the iAd shutdown announcement may mean.</itunes:summary>
+      <itunes:explicit>clean</itunes:explicit>
+      <itunes:duration>1699</itunes:duration>
+      <content:encoded>&lt;p&gt;Real-world experience with ad-funded apps, and what the iAd shutdown announcement may mean.&lt;/p&gt;
+ &lt;h4&gt;This episode of Under the Radar is sponsored by:&lt;/h4&gt; &lt;ul&gt;
+&lt;li&gt;&lt;a href="http://igloosoftware.com/radar"&gt;Igloo&lt;/a&gt;: An intranet you’ll actually like, free for up to 10 people.&lt;/li&gt;
+&lt;/ul&gt;
+</content:encoded>
+      <itunes:image href="http://relayfm.s3.amazonaws.com/uploads/broadcast/image/23/radar_artwork.png"/>
+    </item>
+    <item>
+      <title>Under the Radar 10: Designed by a Programmer</title>
+      <description>Getting by without a designer, and programmatic drawing of image assets.</description>
+      <pubDate>Thu, 14 Jan 2016 15:00:00 GMT</pubDate>
+      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/traffic.libsyn.com/radarrelay/undertheradar10.mp3" length="21126325" type="audio/mp3"/>
+      <link>http://relay.fm/radar/10</link>
+      <guid>http://relay.fm/radar/10</guid>
+      <itunes:author>David Smith and Marco Arment</itunes:author>
+      <itunes:subtitle>Getting by without a designer, and programmatic drawing of image assets.</itunes:subtitle>
+      <itunes:summary>Getting by without a designer, and programmatic drawing of image assets.</itunes:summary>
+      <itunes:explicit>clean</itunes:explicit>
+      <itunes:duration>1751</itunes:duration>
+      <content:encoded>&lt;p&gt;Getting by without a designer, and programmatic drawing of image assets.&lt;/p&gt;
+ &lt;h4&gt;This episode of Under the Radar is sponsored by:&lt;/h4&gt; &lt;ul&gt;
+&lt;li&gt;&lt;a href="http://hover.com"&gt;Hover&lt;/a&gt;: Simplified domain management. Use code SWIFT to get 10% off your first purchase.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Links and Show Notes&lt;/h4&gt; &lt;ul&gt;
+&lt;li&gt;&lt;a href="http://www.paintcodeapp.com/"&gt;PaintCode&lt;/a&gt; for drawing programmatic graphics and generating code&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://red-sweater.com/blog/bibliography-design"&gt;Design books for programmers&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+ </content:encoded>
+      <itunes:image href="http://relayfm.s3.amazonaws.com/uploads/broadcast/image/23/radar_artwork.png"/>
+    </item>
+    <item>
+      <title>Under the Radar 9: State of the Apple Watch</title>
+      <description>Where Apple Watch development stands today, and what could improve it in the future.</description>
+      <pubDate>Fri, 08 Jan 2016 14:00:00 GMT</pubDate>
+      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/traffic.libsyn.com/radarrelay/undertheradar9.mp3" length="21450159" type="audio/mp3"/>
+      <link>http://relay.fm/radar/9</link>
+      <guid>http://relay.fm/radar/9</guid>
+      <itunes:author>David Smith and Marco Arment</itunes:author>
+      <itunes:subtitle>Where Apple Watch development stands today, and what could improve it in the future.</itunes:subtitle>
+      <itunes:summary>Where Apple Watch development stands today, and what could improve it in the future.</itunes:summary>
+      <itunes:explicit>clean</itunes:explicit>
+      <itunes:duration>1778</itunes:duration>
+      <content:encoded>&lt;p&gt;Where Apple Watch development stands today, and what could improve it in the future.&lt;/p&gt;
+ &lt;h4&gt;This episode of Under the Radar is sponsored by:&lt;/h4&gt; &lt;ul&gt;
+&lt;li&gt;&lt;a href="http://igloosoftware.com/radar"&gt;Igloo&lt;/a&gt;: An intranet you’ll actually like. Try Igloo for free.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Links and Show Notes&lt;/h4&gt; &lt;ul&gt;
+&lt;li&gt;&lt;a href="https://itunes.apple.com/us/app/sleep++/id1038440371?mt=8"&gt;Sleep++&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://pedometerplusplus.com/"&gt;Pedometer++&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+ </content:encoded>
+      <itunes:image href="http://relayfm.s3.amazonaws.com/uploads/broadcast/image/23/radar_artwork.png"/>
+    </item>
+    <item>
+      <title>Under the Radar 8: Vacation</title>
+      <description>Avoiding burnout, minimizing self-imposed stress, and taking vacations.</description>
+      <pubDate>Thu, 24 Dec 2015 03:30:00 GMT</pubDate>
+      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/traffic.libsyn.com/radarrelay/undertheradar8.mp3" length="18767119" type="audio/mp3"/>
+      <link>http://relay.fm/radar/8</link>
+      <guid>http://relay.fm/radar/8</guid>
+      <itunes:author>David Smith and Marco Arment</itunes:author>
+      <itunes:subtitle>Avoiding burnout, minimizing self-imposed stress, and taking vacations.</itunes:subtitle>
+      <itunes:summary>Avoiding burnout, minimizing self-imposed stress, and taking vacations.</itunes:summary>
+      <itunes:explicit>clean</itunes:explicit>
+      <itunes:duration>1555</itunes:duration>
+      <content:encoded>&lt;p&gt;Avoiding burnout, minimizing self-imposed stress, and taking vacations.&lt;/p&gt;
+ &lt;h4&gt;This episode of Under the Radar is sponsored by:&lt;/h4&gt; &lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.imgix.com/utr"&gt;Imgix&lt;/a&gt;: Real-time image-processing CDN. Resize, crop, and process on the fly.&lt;/li&gt;
+&lt;/ul&gt;
+</content:encoded>
+      <itunes:image href="http://relayfm.s3.amazonaws.com/uploads/broadcast/image/23/radar_artwork.png"/>
+    </item>
+    <item>
+      <title>Under the Radar 7: Building New Features</title>
+      <description>How we design, build, and ship new features in our apps.</description>
+      <pubDate>Fri, 18 Dec 2015 15:45:00 GMT</pubDate>
+      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/traffic.libsyn.com/radarrelay/undertheradar7.mp3" length="20147947" type="audio/mp3"/>
+      <link>http://relay.fm/radar/7</link>
+      <guid>http://relay.fm/radar/7</guid>
+      <itunes:author>David Smith and Marco Arment</itunes:author>
+      <itunes:subtitle>How we design, build, and ship new features in our apps.</itunes:subtitle>
+      <itunes:summary>How we design, build, and ship new features in our apps.</itunes:summary>
+      <itunes:explicit>clean</itunes:explicit>
+      <itunes:duration>1670</itunes:duration>
+      <content:encoded>&lt;p&gt;How we design, build, and ship new features in our apps.&lt;/p&gt;
+ &lt;h4&gt;This episode of Under the Radar is sponsored by:&lt;/h4&gt; &lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.imgix.com/utr"&gt;Imgix&lt;/a&gt;: Real-time image-processing CDN. Resize, crop, and process images on the fly.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Links and Show Notes&lt;/h4&gt; &lt;ul&gt;
+&lt;li&gt;&lt;a href="https://itunes.apple.com/us/app/sleep++/id1038440371?mt=8"&gt;Sleep++&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://static.marco.org/LwGuSpOT7XB.png"&gt;Overcast&amp;#39;s original Voice Boost design&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+ </content:encoded>
+      <itunes:image href="http://relayfm.s3.amazonaws.com/uploads/broadcast/image/23/radar_artwork.png"/>
+    </item>
+    <item>
+      <title>Under the Radar 6: How to Become a Programmer</title>
+      <description>Our origin stories and tips for beginners to get started.</description>
+      <pubDate>Fri, 11 Dec 2015 20:00:00 GMT</pubDate>
+      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/traffic.libsyn.com/radarrelay/undertheradar6.mp3" length="20665184" type="audio/mp3"/>
+      <link>http://relay.fm/radar/6</link>
+      <guid>http://relay.fm/radar/6</guid>
+      <itunes:author>David Smith and Marco Arment</itunes:author>
+      <itunes:subtitle>Our origin stories and tips for beginners to get started.</itunes:subtitle>
+      <itunes:summary>Our origin stories and tips for beginners to get started.</itunes:summary>
+      <itunes:explicit>clean</itunes:explicit>
+      <itunes:duration>1713</itunes:duration>
+      <content:encoded>&lt;p&gt;Our origin stories and tips for beginners to get started.&lt;/p&gt;
+ &lt;h4&gt;This episode of Under the Radar is sponsored by:&lt;/h4&gt; &lt;ul&gt;
+&lt;li&gt;&lt;a href="http://nsscreencast.com/headphones"&gt;NSScreencast&lt;/a&gt;: Weekly bite-sized screencasts on iOS development.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Links and Show Notes&lt;/h4&gt; &lt;ul&gt;
+&lt;li&gt;&lt;a href="https://itunes.apple.com/us/app-bundle/lightbot-coding-programming/id940215134?mt=8&amp;amp;at=10l3KS&amp;amp;ct=aff"&gt;Lightbot&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://pragprog.com/book/ltp2/learn-to-program"&gt;Learn to Program Book&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://itunes.apple.com/us/app/hopscotch-coding-for-kids/id617098629?ign-mpt=uo%253D4&amp;amp;at=10l3KS&amp;amp;ct=aff&amp;amp;mt=8"&gt;Hopscotch&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+ </content:encoded>
+      <itunes:image href="http://relayfm.s3.amazonaws.com/uploads/broadcast/image/23/radar_artwork.png"/>
+    </item>
+    <item>
+      <title>Under the Radar 5: Managing Feedback</title>
+      <description>Considering feedback and feature requests from beta testers and customers.</description>
+      <pubDate>Sat, 05 Dec 2015 17:00:00 GMT</pubDate>
+      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/traffic.libsyn.com/radarrelay/undertheradar5.mp3" length="18460569" type="audio/mp3"/>
+      <link>http://relay.fm/radar/5</link>
+      <guid>http://relay.fm/radar/5</guid>
+      <itunes:author>David Smith and Marco Arment</itunes:author>
+      <itunes:subtitle>Considering feedback and feature requests from beta testers and customers.</itunes:subtitle>
+      <itunes:summary>Considering feedback and feature requests from beta testers and customers.</itunes:summary>
+      <itunes:explicit>clean</itunes:explicit>
+      <itunes:duration>1530</itunes:duration>
+      <content:encoded>&lt;p&gt;Considering feedback and feature requests from beta testers and customers.&lt;/p&gt;
+ &lt;h4&gt;This episode of Under the Radar is sponsored by:&lt;/h4&gt; &lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.imgix.com/utr"&gt;Imgix&lt;/a&gt;: Real-time image-processing CDN. Resize, crop, and process images on the fly.&lt;/li&gt;
+&lt;/ul&gt;
+</content:encoded>
+      <itunes:image href="http://relayfm.s3.amazonaws.com/uploads/broadcast/image/23/radar_artwork.png"/>
+    </item>
+    <item>
+      <title>Under the Radar 4: Unexpected Complexity</title>
+      <description>Handling unexpected complexities, and deciding whether to tackle complex problems.</description>
+      <pubDate>Wed, 25 Nov 2015 01:00:00 GMT</pubDate>
+      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/traffic.libsyn.com/radarrelay/undertheradar4.mp3" length="20276208" type="audio/mp3"/>
+      <link>http://relay.fm/radar/4</link>
+      <guid>http://relay.fm/radar/4</guid>
+      <itunes:author>David Smith and Marco Arment</itunes:author>
+      <itunes:subtitle>Handling unexpected complexities, and deciding whether to tackle complex problems.</itunes:subtitle>
+      <itunes:summary>Handling unexpected complexities, and deciding whether to tackle complex problems.</itunes:summary>
+      <itunes:explicit>clean</itunes:explicit>
+      <itunes:duration>1681</itunes:duration>
+      <content:encoded>&lt;p&gt;Handling unexpected complexities, and deciding whether to tackle complex problems.&lt;/p&gt;
+ &lt;h4&gt;This episode of Under the Radar is sponsored by:&lt;/h4&gt; &lt;ul&gt;
+&lt;li&gt;&lt;a href="https://neededition.com/"&gt;Need&lt;/a&gt;: A curated retailer and lifestyle publication for the modern gentleman. Use code &lt;strong&gt;RADAR&lt;/strong&gt; for 20% off.&lt;/li&gt;
+&lt;/ul&gt;
+</content:encoded>
+      <itunes:image href="http://relayfm.s3.amazonaws.com/uploads/broadcast/image/23/radar_artwork.png"/>
+    </item>
+    <item>
+      <title>Under the Radar 3: Ergonomics</title>
+      <description>Ensuring your work setup is as comfortable as possible for long-term use and reducing the risks of developing RSI.</description>
+      <pubDate>Wed, 18 Nov 2015 21:00:00 GMT</pubDate>
+      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/traffic.libsyn.com/radarrelay/undertheradar3.mp3" length="20331506" type="audio/mp3"/>
+      <link>http://relay.fm/radar/3</link>
+      <guid>http://relay.fm/radar/3</guid>
+      <itunes:author>David Smith and Marco Arment</itunes:author>
+      <itunes:subtitle>Ensuring your work setup is as comfortable as possible for long-term use and reducing the risks of developing RSI.</itunes:subtitle>
+      <itunes:summary>Ensuring your work setup is as comfortable as possible for long-term use and reducing the risks of developing RSI.</itunes:summary>
+      <itunes:explicit>clean</itunes:explicit>
+      <itunes:duration>1686</itunes:duration>
+      <content:encoded>&lt;p&gt;Ensuring your work setup is as comfortable as possible for long-term use and reducing the risks of developing RSI.&lt;/p&gt;
+ &lt;h4&gt;This episode of Under the Radar is sponsored by:&lt;/h4&gt; &lt;ul&gt;
+&lt;li&gt;&lt;a href="http://nsscreencast.com/firstcrack"&gt;NSScreencast&lt;/a&gt;: Weekly bite-sized screencasts on iOS development.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Links and Show Notes&lt;/h4&gt; &lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.flickr.com/photos/marcoarment/3234209861/"&gt;Six-pack makeshift standing desk&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.hermanmiller.com/products/seating/performance-work-chairs/embody-chairs.html"&gt;Herman Miller Embody chair&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Split ergonomic keyboards:
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://www.marco.org/2013/08/30/sculpt-ergonomic-keyboard-review"&gt;Microsoft Sculpt Ergonomic&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.marco.org/2015/02/26/matis-ergo-pro-review"&gt;Matias Ergo Pro&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://ergo.human.cornell.edu/AHTutorials/typingposture.html"&gt;Keyboard angles&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.amazon.com/dp/B00HVLUR86?tag=marcoorg-20"&gt;Marco&amp;#39;s favorite closed headphones for desk use&lt;/a&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://www.marco.org/headphones-closed-portable"&gt;Many more picks in Marco&amp;#39;s mega-review&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.livephish.com/"&gt;Live Phish&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+ </content:encoded>
+      <itunes:image href="http://relayfm.s3.amazonaws.com/uploads/broadcast/image/23/radar_artwork.png"/>
+    </item>
+    <item>
+      <title>Under the Radar 2: Time for Swift</title>
+      <description>Why we haven't adopted Swift yet, when we might, and whether we should expand into additional platforms instead.</description>
+      <pubDate>Tue, 10 Nov 2015 22:00:00 GMT</pubDate>
+      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/traffic.libsyn.com/radarrelay/undertheradar2.mp3" length="20597963" type="audio/mp3"/>
+      <link>http://relay.fm/radar/2</link>
+      <guid>http://relay.fm/radar/2</guid>
+      <itunes:author>David Smith and Marco Arment</itunes:author>
+      <itunes:subtitle>Why we haven't adopted Swift yet, when we might, and whether we should expand into additional platforms instead.</itunes:subtitle>
+      <itunes:summary>Why we haven't adopted Swift yet, when we might, and whether we should expand into additional platforms instead.</itunes:summary>
+      <itunes:explicit>clean</itunes:explicit>
+      <itunes:duration>1708</itunes:duration>
+      <content:encoded>&lt;p&gt;Why we haven&amp;#39;t adopted Swift yet, when we might, and whether we should expand into additional platforms instead.&lt;/p&gt;
+ &lt;h4&gt;This episode of Under the Radar is sponsored by:&lt;/h4&gt; &lt;ul&gt;
+&lt;li&gt;&lt;a href="http://nsscreencast.com/firstcrack"&gt;NSScreencast&lt;/a&gt;: Weekly bite-sized screencasts on iOS development. Get 30% off your first month with this link.&lt;/li&gt;
+&lt;/ul&gt;
+</content:encoded>
+      <itunes:image href="http://relayfm.s3.amazonaws.com/uploads/broadcast/image/23/radar_artwork.png"/>
+    </item>
+    <item>
+      <title>Under the Radar 1: Adapting to the Market</title>
+      <description>How independent iOS app developers can find ways to thrive in a highly competitive, commoditized App Store. </description>
+      <pubDate>Wed, 04 Nov 2015 14:45:00 GMT</pubDate>
+      <enclosure url="http://www.podtrac.com/pts/redirect.mp3/traffic.libsyn.com/radarrelay/undertheradar1.mp3" length="19581398" type="audio/mp3"/>
+      <link>http://relay.fm/radar/1</link>
+      <guid>http://relay.fm/radar/1</guid>
+      <itunes:author>David Smith and Marco Arment</itunes:author>
+      <itunes:subtitle>How independent iOS app developers can find ways to thrive in a highly competitive, commoditized App Store. </itunes:subtitle>
+      <itunes:summary>How independent iOS app developers can find ways to thrive in a highly competitive, commoditized App Store. </itunes:summary>
+      <itunes:explicit>clean</itunes:explicit>
+      <itunes:duration>1623</itunes:duration>
+      <content:encoded>&lt;p&gt;How independent iOS app developers can find ways to thrive in a highly competitive, commoditized App Store. &lt;/p&gt;
+ </content:encoded>
+      <itunes:image href="http://relayfm.s3.amazonaws.com/uploads/broadcast/image/23/radar_artwork.png"/>
+    </item>
+  </channel>
+</rss>
