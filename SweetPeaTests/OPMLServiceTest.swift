@@ -22,7 +22,17 @@ class OPMLServiceTest: QuickSpec {
             let service = OPMLService()
             let feeds = service.items(from: url!)
 
-            expect(feeds).to(beAnInstanceOf(Observable<[Item]>))
+            feeds.subscribe(onNext: { feeds in
+                feeds.forEach {
+                    expect($0.xmlURL).toNot(beNil())
+                    expect($0.title).toNot(beNil())
+                }
+
+
+
+            })
+            
+
         }
     }
 }

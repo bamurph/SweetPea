@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7AF81C7DD8A444B7673153E8 /* Pods_SweetPea.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 217687A5DF26143AF8C2A8D4 /* Pods_SweetPea.framework */; };
+		7AF81C7DD8A444B7673153E8 /* Pods_SweetPea.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 217687A5DF26143AF8C2A8D4 /* Pods_SweetPea.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		84845C9D2435C480C4077018 /* Pods_SweetPeaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A86763A151A1FAF46D41125C /* Pods_SweetPeaTests.framework */; };
 		B5142A2A1DF0CA92005CE3AC /* RSSSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5142A291DF0CA92005CE3AC /* RSSSpec.swift */; };
 		B537939C1DD8C33F00D9C9AF /* overcast.opml in Resources */ = {isa = PBXBuildFile; fileRef = B5BB0D9A1DD51CC300BD7FA0 /* overcast.opml */; };
@@ -45,7 +45,6 @@
 		B5FBBA451DF1FBB700B7A71C /* RSSProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FBBA441DF1FBB700B7A71C /* RSSProtocol.swift */; };
 		B5FBBA481DF209B600B7A71C /* utr.rss in Resources */ = {isa = PBXBuildFile; fileRef = B5FBBA471DF209B600B7A71C /* utr.rss */; };
 		B5FBBA491DF209BA00B7A71C /* utr.rss in Resources */ = {isa = PBXBuildFile; fileRef = B5FBBA471DF209B600B7A71C /* utr.rss */; };
-		E100960F58E63D8523B39731 /* Pods_Tests_SweetPeaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8D4A22CA2C7ED9B428F56F4 /* Pods_Tests_SweetPeaTests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,7 +72,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		00031456D56D3833FDF310D1 /* Pods-Tests-SweetPeaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests-SweetPeaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tests-SweetPeaTests/Pods-Tests-SweetPeaTests.release.xcconfig"; sourceTree = "<group>"; };
 		164D54AAD7DC45E9CA476AE1 /* Pods-SweetPea.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SweetPea.release.xcconfig"; path = "Pods/Target Support Files/Pods-SweetPea/Pods-SweetPea.release.xcconfig"; sourceTree = "<group>"; };
 		217687A5DF26143AF8C2A8D4 /* Pods_SweetPea.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SweetPea.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8623AF9DB9F4CB26E40CBBDF /* Pods-SweetPeaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SweetPeaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SweetPeaTests/Pods-SweetPeaTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -111,7 +109,6 @@
 		B5FBBA471DF209B600B7A71C /* utr.rss */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = utr.rss; path = ../../../Downloads/utr.rss; sourceTree = "<group>"; };
 		B8D4A22CA2C7ED9B428F56F4 /* Pods_Tests_SweetPeaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tests_SweetPeaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1E388EF1B5A8B303BF4AC6A /* Pods-SweetPea.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SweetPea.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SweetPea/Pods-SweetPea.debug.xcconfig"; sourceTree = "<group>"; };
-		E80FE2E7BD080BE4D1368D6C /* Pods-Tests-SweetPeaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests-SweetPeaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tests-SweetPeaTests/Pods-Tests-SweetPeaTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,7 +117,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5BA3F191DF7557E000B6FFF /* Quick.framework in Frameworks */,
-				E100960F58E63D8523B39731 /* Pods_Tests_SweetPeaTests.framework in Frameworks */,
 				84845C9D2435C480C4077018 /* Pods_SweetPeaTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -157,8 +153,6 @@
 				164D54AAD7DC45E9CA476AE1 /* Pods-SweetPea.release.xcconfig */,
 				8623AF9DB9F4CB26E40CBBDF /* Pods-SweetPeaTests.debug.xcconfig */,
 				9CBA30FAEB4D0AE63B6EA51F /* Pods-SweetPeaTests.release.xcconfig */,
-				E80FE2E7BD080BE4D1368D6C /* Pods-Tests-SweetPeaTests.debug.xcconfig */,
-				00031456D56D3833FDF310D1 /* Pods-Tests-SweetPeaTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -563,7 +557,6 @@
 					"\"$PODS_CONFIGURATION_BUILD_DIR/RxCocoa\"",
 					"\"$PODS_CONFIGURATION_BUILD_DIR/RxSwift\"",
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks/**",
-					"$(PROJECT_DIR)/build/Debug-iphoneos/Quick",
 				);
 				"FRAMEWORK_SEARCH_PATHS[arch=*]" = (
 					"$(inherited)",
@@ -597,7 +590,6 @@
 					"\"$PODS_CONFIGURATION_BUILD_DIR/RxCocoa\"",
 					"\"$PODS_CONFIGURATION_BUILD_DIR/RxSwift\"",
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks/**",
-					"$(PROJECT_DIR)/build/Debug-iphoneos/Quick",
 				);
 				INFOPLIST_FILE = SweetPeaTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
