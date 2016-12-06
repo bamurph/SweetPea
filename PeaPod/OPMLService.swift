@@ -11,10 +11,10 @@ import FeedKit
 import RxSwift
 import Lepton
 
-struct OPMLService {
+struct OPMLService: OPMLProtocol {
 
-    let url: URL
     let disposeBag = DisposeBag()
+
 
     func fetchedFile(from url: URL) -> Observable<String> {
         return Observable<String>.create { observer in
@@ -46,7 +46,7 @@ struct OPMLService {
     }
 
 
-    func items(from: URL) -> Observable<[Item]> {
+    func items(from url: URL) -> Observable<[Item]> {
         return self
             .fetchedFile(from: url)
             .flatMap { self.items(from: $0) }

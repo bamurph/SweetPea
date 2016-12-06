@@ -6,9 +6,13 @@
 //  Copyright © 2016 Constellation Software. All rights reserved.
 //
 
+import RxSwift
 import Quick
 import Nimble
-@testable import SweetPea 
+import Lepton
+
+@testable import SweetPea
+
 class OPMLServiceTest: QuickSpec {
     override func spec() {
         let testBundle = Bundle(for: type(of: self))
@@ -18,6 +22,7 @@ class OPMLServiceTest: QuickSpec {
             let service = OPMLService()
             let feeds = service.items(from: url!)
 
+            expect(feeds).to(beAnInstanceOf(Observable<[Item]>))
         }
     }
 }
