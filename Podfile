@@ -6,13 +6,12 @@ target 'SweetPea' do
     pod 'Lepton' , :git => 'https://github.com/younata/Lepton.git'
     pod 'RxSwift', '~> 3.0'
     pod 'RxCocoa', '~> 3.0'
-#    pod 'RxTest', '~> 3.0'
     pod 'RxBlocking', '~> 3.0'
-
 
     target 'SweetPeaTests' do
         inherit! :search_paths
-
+        pod 'Quick'
+        pod 'Nimble'
     end
 end
 

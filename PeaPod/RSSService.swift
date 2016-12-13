@@ -11,22 +11,30 @@ import FeedKit
 import RxSwift
 import Lepton
 
+enum RSSServiceErrors: Error {
+    case atomSyntax
+}
 
-/// Bare-Bones RSS Service to fetch items from a single RSS feed
-struct RSSService {
-    let item: Item
-    let feed: Variable<RSSFeed?> = Variable(nil)
+/// Bare-Bones RSS Service
+struct RSSService: RSSProtocol {
 
-    func update() {
-        FeedParser.init(URL: URL(string: item.xmlURL!)!)?.parse { result in
-            switch result {
-            case .rss(let rssFeed):
-                self.feed.value = rssFeed
-            //observer.onCompleted()
-            case .atom: break
-            case .failure(let error):
-                print(error)
+    func fetch(url: URL) -> Observable<RSSFeed> {
+        return Observable.create { observer in
+            print("subscribed")
+            FeedParser.init(URL: url)?.parse { result in
+                switch result {
+                case .rss(let rssFeed):
+                    observer.onNext(rssFeed)
+                    observer.onCompleted()
+                case .atom:
+                    observer.onError(RSSServiceErrors.atomSyntax)
+                case .failure(let error):
+                    observer.onError(error)
+                }
             }
+            return Disposables.create()
         }
     }
 }
+
+

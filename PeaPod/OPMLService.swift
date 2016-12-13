@@ -11,31 +11,12 @@ import FeedKit
 import RxSwift
 import Lepton
 
-class OPMLService {
+struct OPMLService: OPMLProtocol {
 
-    let url: URL
-    let items: Variable<[Item]> = Variable([])
     let disposeBag = DisposeBag()
 
-    init(with url: URL) throws {
-        self.url = url
-        let ff = OPMLService.fetchedFile(from: url)
-            .catchError { e in
-                throw e
-            }.flatMapLatest { s in
-                OPMLService.parsedItems(from: s)
-                    .catchError { e in
-                        throw e
-                }
-            }
-        ff.subscribe(onNext: { n in
-            self.items.value = n
-        }).addDisposableTo(disposeBag)
-        
-        
-    }
 
-    static func fetchedFile(from url: URL) -> Observable<String> {
+    func fetchedFile(from url: URL) -> Observable<String> {
         return Observable<String>.create { observer in
             do {
                 let string = try String(contentsOf: url, encoding: String.Encoding.utf8)
@@ -48,7 +29,7 @@ class OPMLService {
         }
     }
 
-    static func parsedItems(from file: String) -> Observable<[Item]> {
+    func items(from file: String) -> Observable<[Item]> {
         return Observable<[Item]>.create { observer in
             let parser = Parser(text: file)
                 .success {
@@ -63,9 +44,13 @@ class OPMLService {
             return Disposables.create()
         }
     }
-    
-    
-    
+
+
+    func items(from url: URL) -> Observable<[Item]> {
+        return self
+            .fetchedFile(from: url)
+            .flatMap { self.items(from: $0) }
+    }
     
     
 }

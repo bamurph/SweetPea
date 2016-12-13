@@ -7,20 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7AF81C7DD8A444B7673153E8 /* Pods_SweetPea.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 217687A5DF26143AF8C2A8D4 /* Pods_SweetPea.framework */; };
-		B537939B1DD8BE0B00D9C9AF /* OPMLService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BB0D981DD51CB300BD7FA0 /* OPMLService.swift */; };
-		B537939C1DD8C33F00D9C9AF /* overcast.opml in Resources */ = {isa = PBXBuildFile; fileRef = B5BB0D9A1DD51CC300BD7FA0 /* overcast.opml */; };
-		B53793A01DDA626300D9C9AF /* RSSService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B537939F1DDA626300D9C9AF /* RSSService.swift */; };
+		7AF81C7DD8A444B7673153E8 /* Pods_SweetPea.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 217687A5DF26143AF8C2A8D4 /* Pods_SweetPea.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		84845C9D2435C480C4077018 /* Pods_SweetPeaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A86763A151A1FAF46D41125C /* Pods_SweetPeaTests.framework */; };
+		B5142A2A1DF0CA92005CE3AC /* RSSSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5142A291DF0CA92005CE3AC /* RSSSpec.swift */; };
 		B53793A11DDA626600D9C9AF /* RSSService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B537939F1DDA626300D9C9AF /* RSSService.swift */; };
+		B551BC421DF23B6A001C76E3 /* Under the Radar 1_ Adapting to the Market.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B551BC411DF23B6A001C76E3 /* Under the Radar 1_ Adapting to the Market.mp3 */; };
+		B551BC431DF23B6A001C76E3 /* Under the Radar 1_ Adapting to the Market.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B551BC411DF23B6A001C76E3 /* Under the Radar 1_ Adapting to the Market.mp3 */; };
+		B551BC451DF23B71001C76E3 /* Under the Radar 56_ Surviving the Winter.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B551BC441DF23B71001C76E3 /* Under the Radar 56_ Surviving the Winter.mp3 */; };
+		B551BC461DF23B71001C76E3 /* Under the Radar 56_ Surviving the Winter.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B551BC441DF23B71001C76E3 /* Under the Radar 56_ Surviving the Winter.mp3 */; };
+		B551BC481DF23B8D001C76E3 /* Under the Radar 55_ Black Friday Sale.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B551BC471DF23B8D001C76E3 /* Under the Radar 55_ Black Friday Sale.mp3 */; };
+		B551BC491DF23B8D001C76E3 /* Under the Radar 55_ Black Friday Sale.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B551BC471DF23B8D001C76E3 /* Under the Radar 55_ Black Friday Sale.mp3 */; };
+		B551BC4C1DF23CA1001C76E3 /* AudioPlaying.swift in Sources */ = {isa = PBXBuildFile; fileRef = B551BC4B1DF23CA1001C76E3 /* AudioPlaying.swift */; };
+		B551BC4D1DF23CA1001C76E3 /* AudioPlaying.swift in Sources */ = {isa = PBXBuildFile; fileRef = B551BC4B1DF23CA1001C76E3 /* AudioPlaying.swift */; };
+		B551BC4F1DF23CE8001C76E3 /* AudioPlayingSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B551BC4E1DF23CE8001C76E3 /* AudioPlayingSpec.swift */; };
+		B551BC511DF24065001C76E3 /* AudioService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B551BC501DF24065001C76E3 /* AudioService.swift */; };
+		B551BC521DF24065001C76E3 /* AudioService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B551BC501DF24065001C76E3 /* AudioService.swift */; };
 		B5A1AC871DE4EFC90093E823 /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A1AC861DE4EFC90093E823 /* FeedViewModel.swift */; };
 		B5A1AC881DE4EFC90093E823 /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A1AC861DE4EFC90093E823 /* FeedViewModel.swift */; };
 		B5A1AC8E1DE640440093E823 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B537939D1DD9BF8C00D9C9AF /* Helpers.swift */; };
 		B5A1AC8F1DE640450093E823 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B537939D1DD9BF8C00D9C9AF /* Helpers.swift */; };
-		B5A1AC981DE6456C0093E823 /* SweetPeaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BB0D8F1DD51C8300BD7FA0 /* SweetPeaTests.swift */; };
+		B5B686C71DF76D2400B5673B /* utr.rss in Resources */ = {isa = PBXBuildFile; fileRef = B5B686C61DF76D2400B5673B /* utr.rss */; };
+		B5B686C91DF76D3800B5673B /* overcast.opml in Resources */ = {isa = PBXBuildFile; fileRef = B5B686C81DF76D3800B5673B /* overcast.opml */; };
+		B5B686CA1DF76F2B00B5673B /* overcast.opml in Resources */ = {isa = PBXBuildFile; fileRef = B5B686C81DF76D3800B5673B /* overcast.opml */; };
+		B5B686CB1DF76F2E00B5673B /* utr.rss in Resources */ = {isa = PBXBuildFile; fileRef = B5B686C61DF76D2400B5673B /* utr.rss */; };
+		B5BA3F161DF74EAF000B6FFF /* OPMLServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BA3F151DF74EAF000B6FFF /* OPMLServiceTest.swift */; };
+		B5BA3F171DF75478000B6FFF /* SubscriptionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BB74611DE3894800F327F0 /* SubscriptionsViewModel.swift */; };
+		B5BA3F191DF7557E000B6FFF /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5BA3F181DF7557E000B6FFF /* Quick.framework */; };
 		B5BB0D991DD51CB300BD7FA0 /* OPMLService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BB0D981DD51CB300BD7FA0 /* OPMLService.swift */; };
-		B5BB0D9B1DD51CC300BD7FA0 /* overcast.opml in Resources */ = {isa = PBXBuildFile; fileRef = B5BB0D9A1DD51CC300BD7FA0 /* overcast.opml */; };
-		B5BB74621DE3894800F327F0 /* SubscriptionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BB74611DE3894800F327F0 /* SubscriptionsViewModel.swift */; };
 		B5BB74631DE3894800F327F0 /* SubscriptionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BB74611DE3894800F327F0 /* SubscriptionsViewModel.swift */; };
+		B5E281771DF75BA400D53ABB /* OPMLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E281761DF75BA400D53ABB /* OPMLProtocol.swift */; };
 		B5E4DFD11DEA10120074A51C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5A1AC941DE643F20093E823 /* XCTest.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		B5E4DFD21DEA10120074A51C /* XCTest.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B5A1AC941DE643F20093E823 /* XCTest.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B5F0D23F1DD506ED00402FEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F0D23E1DD506ED00402FEC /* AppDelegate.swift */; };
@@ -29,7 +44,7 @@
 		B5F0D2471DD506ED00402FEC /* PeaPod.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B5F0D2451DD506ED00402FEC /* PeaPod.xcdatamodeld */; };
 		B5F0D2491DD506ED00402FEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5F0D2481DD506ED00402FEC /* Assets.xcassets */; };
 		B5F0D24C1DD506ED00402FEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5F0D24A1DD506ED00402FEC /* LaunchScreen.storyboard */; };
-		C72ED2AC3F04909295807E77 /* Pods_SweetPeaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A86763A151A1FAF46D41125C /* Pods_SweetPeaTests.framework */; };
+		B5FBBA451DF1FBB700B7A71C /* RSSProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FBBA441DF1FBB700B7A71C /* RSSProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,17 +77,27 @@
 		8623AF9DB9F4CB26E40CBBDF /* Pods-SweetPeaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SweetPeaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SweetPeaTests/Pods-SweetPeaTests.debug.xcconfig"; sourceTree = "<group>"; };
 		9CBA30FAEB4D0AE63B6EA51F /* Pods-SweetPeaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SweetPeaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SweetPeaTests/Pods-SweetPeaTests.release.xcconfig"; sourceTree = "<group>"; };
 		A86763A151A1FAF46D41125C /* Pods_SweetPeaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SweetPeaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5142A291DF0CA92005CE3AC /* RSSSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSSSpec.swift; sourceTree = "<group>"; };
 		B537939D1DD9BF8C00D9C9AF /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		B537939F1DDA626300D9C9AF /* RSSService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSSService.swift; sourceTree = "<group>"; };
+		B551BC411DF23B6A001C76E3 /* Under the Radar 1_ Adapting to the Market.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Under the Radar 1_ Adapting to the Market.mp3"; sourceTree = "<group>"; };
+		B551BC441DF23B71001C76E3 /* Under the Radar 56_ Surviving the Winter.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Under the Radar 56_ Surviving the Winter.mp3"; sourceTree = "<group>"; };
+		B551BC471DF23B8D001C76E3 /* Under the Radar 55_ Black Friday Sale.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Under the Radar 55_ Black Friday Sale.mp3"; sourceTree = "<group>"; };
+		B551BC4B1DF23CA1001C76E3 /* AudioPlaying.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioPlaying.swift; sourceTree = "<group>"; };
+		B551BC4E1DF23CE8001C76E3 /* AudioPlayingSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioPlayingSpec.swift; sourceTree = "<group>"; };
+		B551BC501DF24065001C76E3 /* AudioService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioService.swift; sourceTree = "<group>"; };
 		B5A1AC861DE4EFC90093E823 /* FeedViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FeedViewModel.swift; path = PeaPod/FeedViewModel.swift; sourceTree = "<group>"; };
 		B5A1AC911DE642D80093E823 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		B5A1AC941DE643F20093E823 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		B5B686C61DF76D2400B5673B /* utr.rss */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = utr.rss; sourceTree = "<group>"; };
+		B5B686C81DF76D3800B5673B /* overcast.opml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = overcast.opml; sourceTree = "<group>"; };
+		B5BA3F151DF74EAF000B6FFF /* OPMLServiceTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OPMLServiceTest.swift; sourceTree = "<group>"; };
+		B5BA3F181DF7557E000B6FFF /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = "Pods/../build/Debug-iphoneos/Quick/Quick.framework"; sourceTree = "<group>"; };
 		B5BB0D8D1DD51C8300BD7FA0 /* SweetPeaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SweetPeaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B5BB0D8F1DD51C8300BD7FA0 /* SweetPeaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SweetPeaTests.swift; sourceTree = "<group>"; };
 		B5BB0D911DD51C8300BD7FA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B5BB0D981DD51CB300BD7FA0 /* OPMLService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OPMLService.swift; sourceTree = "<group>"; };
-		B5BB0D9A1DD51CC300BD7FA0 /* overcast.opml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = overcast.opml; path = ../../../Downloads/overcast.opml; sourceTree = "<group>"; };
 		B5BB74611DE3894800F327F0 /* SubscriptionsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SubscriptionsViewModel.swift; path = PeaPod/SubscriptionsViewModel.swift; sourceTree = "<group>"; };
+		B5E281761DF75BA400D53ABB /* OPMLProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OPMLProtocol.swift; sourceTree = "<group>"; };
 		B5F0D23B1DD506ED00402FEC /* SweetPea.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SweetPea.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5F0D23E1DD506ED00402FEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B5F0D2401DD506ED00402FEC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -81,6 +106,8 @@
 		B5F0D2481DD506ED00402FEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B5F0D24B1DD506ED00402FEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B5F0D24D1DD506ED00402FEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5FBBA441DF1FBB700B7A71C /* RSSProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSSProtocol.swift; sourceTree = "<group>"; };
+		B8D4A22CA2C7ED9B428F56F4 /* Pods_Tests_SweetPeaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tests_SweetPeaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1E388EF1B5A8B303BF4AC6A /* Pods-SweetPea.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SweetPea.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SweetPea/Pods-SweetPea.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -89,7 +116,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C72ED2AC3F04909295807E77 /* Pods_SweetPeaTests.framework in Frameworks */,
+				B5BA3F191DF7557E000B6FFF /* Quick.framework in Frameworks */,
+				84845C9D2435C480C4077018 /* Pods_SweetPeaTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,10 +136,12 @@
 		1B6FB18795E1081067AE9E42 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B5BA3F181DF7557E000B6FFF /* Quick.framework */,
 				B5A1AC941DE643F20093E823 /* XCTest.framework */,
 				B5A1AC911DE642D80093E823 /* XCTest.framework */,
 				217687A5DF26143AF8C2A8D4 /* Pods_SweetPea.framework */,
 				A86763A151A1FAF46D41125C /* Pods_SweetPeaTests.framework */,
+				B8D4A22CA2C7ED9B428F56F4 /* Pods_Tests_SweetPeaTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -127,6 +157,16 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		B551BC4A1DF23B92001C76E3 /* UTR */ = {
+			isa = PBXGroup;
+			children = (
+				B551BC411DF23B6A001C76E3 /* Under the Radar 1_ Adapting to the Market.mp3 */,
+				B551BC471DF23B8D001C76E3 /* Under the Radar 55_ Black Friday Sale.mp3 */,
+				B551BC441DF23B71001C76E3 /* Under the Radar 56_ Surviving the Winter.mp3 */,
+			);
+			name = UTR;
+			sourceTree = "<group>";
+		};
 		B5A1AC8C1DE63F1C0093E823 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -134,21 +174,27 @@
 			name = Views;
 			sourceTree = "<group>";
 		};
-		B5BB0D8E1DD51C8300BD7FA0 /* SweetPeaTests */ = {
+		B5BB0D8E1DD51C8300BD7FA0 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				B5BB0D8F1DD51C8300BD7FA0 /* SweetPeaTests.swift */,
+				B5BA3F151DF74EAF000B6FFF /* OPMLServiceTest.swift */,
+				B551BC4E1DF23CE8001C76E3 /* AudioPlayingSpec.swift */,
+				B5142A291DF0CA92005CE3AC /* RSSSpec.swift */,
 				B5BB0D911DD51C8300BD7FA0 /* Info.plist */,
 			);
+			name = Tests;
 			path = SweetPeaTests;
 			sourceTree = "<group>";
 		};
 		B5BB0D971DD51CA400BD7FA0 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				B551BC4B1DF23CA1001C76E3 /* AudioPlaying.swift */,
+				B551BC501DF24065001C76E3 /* AudioService.swift */,
 				B537939F1DDA626300D9C9AF /* RSSService.swift */,
+				B5FBBA441DF1FBB700B7A71C /* RSSProtocol.swift */,
+				B5E281761DF75BA400D53ABB /* OPMLProtocol.swift */,
 				B5BB0D981DD51CB300BD7FA0 /* OPMLService.swift */,
-				B5BB0D9A1DD51CC300BD7FA0 /* overcast.opml */,
 			);
 			name = Services;
 			sourceTree = "<group>";
@@ -167,7 +213,7 @@
 			isa = PBXGroup;
 			children = (
 				B5F0D23D1DD506ED00402FEC /* SweetPea */,
-				B5BB0D8E1DD51C8300BD7FA0 /* SweetPeaTests */,
+				B5BB0D8E1DD51C8300BD7FA0 /* Tests */,
 				B5F0D23C1DD506ED00402FEC /* Products */,
 				3889F404982A7A91B6E4B31A /* Pods */,
 				1B6FB18795E1081067AE9E42 /* Frameworks */,
@@ -186,6 +232,8 @@
 		B5F0D23D1DD506ED00402FEC /* SweetPea */ = {
 			isa = PBXGroup;
 			children = (
+				B5FBBA461DF2099D00B7A71C /* Resources */,
+				B5FBBA431DF1FAC400B7A71C /* Models */,
 				B5A1AC8C1DE63F1C0093E823 /* Views */,
 				B5BB74601DE3890A00F327F0 /* ViewModels */,
 				B537939D1DD9BF8C00D9C9AF /* Helpers.swift */,
@@ -200,6 +248,23 @@
 			);
 			name = SweetPea;
 			path = PeaPod;
+			sourceTree = "<group>";
+		};
+		B5FBBA431DF1FAC400B7A71C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		B5FBBA461DF2099D00B7A71C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B5B686C61DF76D2400B5673B /* utr.rss */,
+				B5B686C81DF76D3800B5673B /* overcast.opml */,
+				B551BC4A1DF23B92001C76E3 /* UTR */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -294,7 +359,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B537939C1DD8C33F00D9C9AF /* overcast.opml in Resources */,
+				B551BC461DF23B71001C76E3 /* Under the Radar 56_ Surviving the Winter.mp3 in Resources */,
+				B551BC491DF23B8D001C76E3 /* Under the Radar 55_ Black Friday Sale.mp3 in Resources */,
+				B5B686CB1DF76F2E00B5673B /* utr.rss in Resources */,
+				B5B686CA1DF76F2B00B5673B /* overcast.opml in Resources */,
+				B551BC431DF23B6A001C76E3 /* Under the Radar 1_ Adapting to the Market.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,9 +371,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5B686C91DF76D3800B5673B /* overcast.opml in Resources */,
+				B5B686C71DF76D2400B5673B /* utr.rss in Resources */,
+				B551BC451DF23B71001C76E3 /* Under the Radar 56_ Surviving the Winter.mp3 in Resources */,
 				B5F0D24C1DD506ED00402FEC /* LaunchScreen.storyboard in Resources */,
+				B551BC481DF23B8D001C76E3 /* Under the Radar 55_ Black Friday Sale.mp3 in Resources */,
 				B5F0D2491DD506ED00402FEC /* Assets.xcassets in Resources */,
-				B5BB0D9B1DD51CC300BD7FA0 /* overcast.opml in Resources */,
+				B551BC421DF23B6A001C76E3 /* Under the Radar 1_ Adapting to the Market.mp3 in Resources */,
 				B5F0D2441DD506ED00402FEC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -409,12 +482,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B551BC521DF24065001C76E3 /* AudioService.swift in Sources */,
 				B5A1AC881DE4EFC90093E823 /* FeedViewModel.swift in Sources */,
+				B551BC4D1DF23CA1001C76E3 /* AudioPlaying.swift in Sources */,
 				B5A1AC8F1DE640450093E823 /* Helpers.swift in Sources */,
-				B537939B1DD8BE0B00D9C9AF /* OPMLService.swift in Sources */,
-				B5A1AC981DE6456C0093E823 /* SweetPeaTests.swift in Sources */,
-				B53793A01DDA626300D9C9AF /* RSSService.swift in Sources */,
+				B5BA3F161DF74EAF000B6FFF /* OPMLServiceTest.swift in Sources */,
+				B5142A2A1DF0CA92005CE3AC /* RSSSpec.swift in Sources */,
 				B5BB74631DE3894800F327F0 /* SubscriptionsViewModel.swift in Sources */,
+				B551BC4F1DF23CE8001C76E3 /* AudioPlayingSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,12 +497,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5BB74621DE3894800F327F0 /* SubscriptionsViewModel.swift in Sources */,
+				B5FBBA451DF1FBB700B7A71C /* RSSProtocol.swift in Sources */,
 				B5F0D2471DD506ED00402FEC /* PeaPod.xcdatamodeld in Sources */,
+				B551BC4C1DF23CA1001C76E3 /* AudioPlaying.swift in Sources */,
+				B5E281771DF75BA400D53ABB /* OPMLProtocol.swift in Sources */,
+				B5BA3F171DF75478000B6FFF /* SubscriptionsViewModel.swift in Sources */,
 				B5BB0D991DD51CB300BD7FA0 /* OPMLService.swift in Sources */,
 				B5A1AC8E1DE640440093E823 /* Helpers.swift in Sources */,
 				B53793A11DDA626600D9C9AF /* RSSService.swift in Sources */,
 				B5F0D2411DD506ED00402FEC /* ViewController.swift in Sources */,
+				B551BC511DF24065001C76E3 /* AudioService.swift in Sources */,
 				B5A1AC871DE4EFC90093E823 /* FeedViewModel.swift in Sources */,
 				B5F0D23F1DD506ED00402FEC /* AppDelegate.swift in Sources */,
 			);
@@ -477,7 +556,6 @@
 					"\"$PODS_CONFIGURATION_BUILD_DIR/RxBlocking\"",
 					"\"$PODS_CONFIGURATION_BUILD_DIR/RxCocoa\"",
 					"\"$PODS_CONFIGURATION_BUILD_DIR/RxSwift\"",
-					"\"$PODS_CONFIGURATION_BUILD_DIR/RxTest\"",
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks/**",
 				);
 				"FRAMEWORK_SEARCH_PATHS[arch=*]" = (
@@ -487,7 +565,6 @@
 					"\"$PODS_CONFIGURATION_BUILD_DIR/RxBlocking\"",
 					"\"$PODS_CONFIGURATION_BUILD_DIR/RxCocoa\"",
 					"\"$PODS_CONFIGURATION_BUILD_DIR/RxSwift\"",
-					"\"$PODS_CONFIGURATION_BUILD_DIR/RxTest\"",
 				);
 				INFOPLIST_FILE = SweetPeaTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -512,7 +589,6 @@
 					"\"$PODS_CONFIGURATION_BUILD_DIR/RxBlocking\"",
 					"\"$PODS_CONFIGURATION_BUILD_DIR/RxCocoa\"",
 					"\"$PODS_CONFIGURATION_BUILD_DIR/RxSwift\"",
-					"\"$PODS_CONFIGURATION_BUILD_DIR/RxTest\"",
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks/**",
 				);
 				INFOPLIST_FILE = SweetPeaTests/Info.plist;
@@ -623,6 +699,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D1E388EF1B5A8B303BF4AC6A /* Pods-SweetPea.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 97JRRX372K;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -632,7 +709,6 @@
 					"\"$PODS_CONFIGURATION_BUILD_DIR/RxBlocking\"",
 					"\"$PODS_CONFIGURATION_BUILD_DIR/RxCocoa\"",
 					"\"$PODS_CONFIGURATION_BUILD_DIR/RxSwift\"",
-					"\"$PODS_CONFIGURATION_BUILD_DIR/RxTest\"",
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks/**",
 				);
 				INFOPLIST_FILE = PeaPod/Info.plist;
@@ -647,6 +723,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 164D54AAD7DC45E9CA476AE1 /* Pods-SweetPea.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 97JRRX372K;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -656,7 +733,6 @@
 					"\"$PODS_CONFIGURATION_BUILD_DIR/RxBlocking\"",
 					"\"$PODS_CONFIGURATION_BUILD_DIR/RxCocoa\"",
 					"\"$PODS_CONFIGURATION_BUILD_DIR/RxSwift\"",
-					"\"$PODS_CONFIGURATION_BUILD_DIR/RxTest\"",
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks/**",
 				);
 				INFOPLIST_FILE = PeaPod/Info.plist;
