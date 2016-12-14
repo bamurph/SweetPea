@@ -43,6 +43,7 @@
 		B5F0D2491DD506ED00402FEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5F0D2481DD506ED00402FEC /* Assets.xcassets */; };
 		B5F0D24C1DD506ED00402FEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5F0D24A1DD506ED00402FEC /* LaunchScreen.storyboard */; };
 		B5F57B4F1E01982500462BC8 /* Compose.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F57B4E1E01982500462BC8 /* Compose.swift */; };
+		B5F57B511E01997100462BC8 /* Pipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F57B501E01997100462BC8 /* Pipe.swift */; };
 		B5FBBA451DF1FBB700B7A71C /* RSSProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FBBA441DF1FBB700B7A71C /* RSSProtocol.swift */; };
 /* End PBXBuildFile section */
 
@@ -106,6 +107,7 @@
 		B5F0D24B1DD506ED00402FEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B5F0D24D1DD506ED00402FEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B5F57B4E1E01982500462BC8 /* Compose.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Compose.swift; sourceTree = "<group>"; };
+		B5F57B501E01997100462BC8 /* Pipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pipe.swift; sourceTree = "<group>"; };
 		B5FBBA441DF1FBB700B7A71C /* RSSProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSSProtocol.swift; sourceTree = "<group>"; };
 		B8D4A22CA2C7ED9B428F56F4 /* Pods_Tests_SweetPeaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tests_SweetPeaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1E388EF1B5A8B303BF4AC6A /* Pods-SweetPea.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SweetPea.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SweetPea/Pods-SweetPea.debug.xcconfig"; sourceTree = "<group>"; };
@@ -255,6 +257,7 @@
 			children = (
 				B537939D1DD9BF8C00D9C9AF /* Helpers.swift */,
 				B5F57B4E1E01982500462BC8 /* Compose.swift */,
+				B5F57B501E01997100462BC8 /* Pipe.swift */,
 			);
 			name = Library;
 			sourceTree = "<group>";
@@ -505,6 +508,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5FBBA451DF1FBB700B7A71C /* RSSProtocol.swift in Sources */,
+				B5F57B511E01997100462BC8 /* Pipe.swift in Sources */,
 				B5F0D2471DD506ED00402FEC /* PeaPod.xcdatamodeld in Sources */,
 				B551BC4C1DF23CA1001C76E3 /* AudioPlaying.swift in Sources */,
 				B5E281771DF75BA400D53ABB /* OPMLProtocol.swift in Sources */,
