@@ -17,13 +17,12 @@ import Lepton
 class FeedViewModel {
     let disposeBag = DisposeBag()
     let feed: RSSFeed
-
+    let svc: RSSService
 
     init(with feed: RSSFeed) {
         self.feed = feed
+        svc = RSSService()
+
     }
 
-
-
-    
 }
