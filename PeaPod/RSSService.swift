@@ -36,12 +36,14 @@ struct RSSService: RSSProtocol {
             return Disposables.create()
         }
     }
-}
 
-func rssFeeds(for urls: [URL]) -> Observable<RSSFeed> {
-    return Observable.from(urls)
+    func rssFeeds(for urls: [URL]) -> Observable<RSSFeed> {
+        return Observable.from(urls)
             .map { RSSService().fetch(url: $0) }
             .merge()
+    }`
 }
+
+
 
 
