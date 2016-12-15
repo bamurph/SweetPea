@@ -11,6 +11,9 @@ import FeedKit
 import RxSwift
 import Lepton
 
+public typealias OPMLItem = Item
+public typealias OPMLUrl = URL
+
 protocol OPMLProtocol {
-    func items(from url: URL) -> Observable<[Item]>
+    func items(from url: OPMLUrl) -> Observable<[OPMLItem]>
 }
