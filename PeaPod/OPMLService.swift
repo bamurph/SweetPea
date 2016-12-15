@@ -52,14 +52,19 @@ struct OPMLService: OPMLProtocol {
             .flatMap { self.items(from: $0) }
     }
 
+
+    func withFeedURLs(from items: [Item]) -> [Item] {
+        return items.filter { $0.xmlURL != nil }
+    }
+
+    func rssURLs(from items: [Item]) -> [URL] {
+        return items.flatMap { URL(string: $0.xmlURL!) ?? nil }
+    }
+
+    let feedsFromUrls = withFeedURLs
 }
 
-func withFeedURLs(from items: [Item]) -> [Item] {
-    return items.filter { $0.xmlURL != nil }
-}
 
-func rssURLs(from items: [Item]) -> [URL] {
-    return items.flatMap { URL(string: $0.xmlURL!) ?? nil }
-}
+
 
 

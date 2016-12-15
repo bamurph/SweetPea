@@ -13,3 +13,4 @@ import RxSwift
 protocol RSSProtocol {
     func fetch(url: URL) -> Observable<RSSFeed>
 }
+ 
