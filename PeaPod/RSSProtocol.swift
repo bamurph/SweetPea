@@ -10,7 +10,8 @@ import Foundation
 import FeedKit
 import RxSwift
 
+typealias RSSUrl = URL
 protocol RSSProtocol {
-    func fetch(url: URL) -> Observable<RSSFeed>
+    func fetch(url: RSSUrl) -> Observable<RSSFeed>
 }
  

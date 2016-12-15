@@ -19,7 +19,7 @@ enum RSSServiceErrors: Error {
 /// Bare-Bones RSS Service
 struct RSSService: RSSProtocol {
 
-    func fetch(url: URL) -> Observable<RSSFeed> {
+    func fetch(url: RSSUrl) -> Observable<RSSFeed> {
         return Observable.create { observer in
             print("subscribed")
             FeedParser.init(URL: url)?.parse { result in

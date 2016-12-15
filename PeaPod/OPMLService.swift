@@ -16,7 +16,7 @@ struct OPMLService: OPMLProtocol {
     let disposeBag = DisposeBag()
 
 
-    func fetchedFile(from url: URL) -> Observable<String> {
+    func fetchedFile(from url: OPMLUrl) -> Observable<String> {
         return Observable<String>.create { observer in
             do {
                 let string = try String(contentsOf: url, encoding: String.Encoding.utf8)
@@ -29,39 +29,50 @@ struct OPMLService: OPMLProtocol {
         }
     }
 
-    func items(from file: String) -> Observable<[Item]> {
+    func extractedItems(from file: Observable<String>) -> Observable<[OPMLItem]> {
         return Observable<[Item]>.create { observer in
-            let parser = Parser(text: file)
-                .success {
-                    observer.onNext($0)
-                    observer.onCompleted()
+            file.subscribe(onNext: { contents  in
+                let parser = Parser(text: contents)
+                    .success {
+                        observer.onNext($0)
+                        observer.onCompleted()
+                    }
+                    .failure {
+                        observer.onError($0)
                 }
-                .failure {
-                    observer.onError($0)
-            }
 
-            parser.main()
-            return Disposables.create()
+                parser.main()
+            })
         }
     }
 
 
-    func items(from url: URL) -> Observable<[Item]> {
-        return self
-            .fetchedFile(from: url)
-            .flatMap { self.items(from: $0) }
+    func items(from url: OPMLUrl) -> Observable<[OPMLItem]> {
+        return url |> fetchedFile |> extractedItems
     }
 
 
-    func withFeedURLs(from items: [Item]) -> [Item] {
-        return items.filter { $0.xmlURL != nil }
+
+    func withFeedURLs(from items: Observable<[OPMLItem]>) -> Observable<[OPMLItem]> {
+        return items.map {
+            $0.filter {
+                $0.xmlURL != nil || URL(string: $0.xmlURL!) != nil
+            }
+        }
     }
 
-    func rssURLs(from items: [Item]) -> [URL] {
-        return items.flatMap { URL(string: $0.xmlURL!) ?? nil }
+    func rssUrls(items: Observable<[OPMLItem]>) -> Observable<[RSSUrl]> {
+        let itemsWithURLs = items |> withFeedURLs
+        return itemsWithURLs.map {
+            $0.map {
+                URL(string: $0.xmlURL!)!
+            }
+        }
     }
 
-    let feedsFromUrls = withFeedURLs
+    func rssUrls(url: OPMLUrl) -> Observable<[RSSUrl]> {
+        return url |> items |> rssUrls
+    }
 }
 
 

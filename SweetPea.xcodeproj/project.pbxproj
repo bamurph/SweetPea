@@ -33,7 +33,8 @@
 		B5BA3F191DF7557E000B6FFF /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5BA3F181DF7557E000B6FFF /* Quick.framework */; };
 		B5BB0D991DD51CB300BD7FA0 /* OPMLService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BB0D981DD51CB300BD7FA0 /* OPMLService.swift */; };
 		B5BB74631DE3894800F327F0 /* SubscriptionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BB74611DE3894800F327F0 /* SubscriptionsViewModel.swift */; };
-		B5DABFD41E030ECA00D9FFFF /* Subscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DABFD31E030ECA00D9FFFF /* Subscription.swift */; };
+		B5DABFD81E033A8100D9FFFF /* Pods_SweetPea.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5DABFD71E033A8100D9FFFF /* Pods_SweetPea.framework */; };
+		B5DABFDA1E033A9200D9FFFF /* FeedKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5DABFD91E033A9200D9FFFF /* FeedKit.framework */; };
 		B5E281771DF75BA400D53ABB /* OPMLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E281761DF75BA400D53ABB /* OPMLProtocol.swift */; };
 		B5E4DFD11DEA10120074A51C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5A1AC941DE643F20093E823 /* XCTest.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		B5E4DFD21DEA10120074A51C /* XCTest.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B5A1AC941DE643F20093E823 /* XCTest.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -109,7 +110,8 @@
 		B5BB0D911DD51C8300BD7FA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B5BB0D981DD51CB300BD7FA0 /* OPMLService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OPMLService.swift; sourceTree = "<group>"; };
 		B5BB74611DE3894800F327F0 /* SubscriptionsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SubscriptionsViewModel.swift; path = PeaPod/SubscriptionsViewModel.swift; sourceTree = "<group>"; };
-		B5DABFD31E030ECA00D9FFFF /* Subscription.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Subscription.swift; sourceTree = "<group>"; };
+		B5DABFD71E033A8100D9FFFF /* Pods_SweetPea.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_SweetPea.framework; path = "../../Library/Developer/Xcode/DerivedData/SweetPea-ammcoyyuyrqelrgeerwkfbahqsyg/Build/Products/Debug-iphonesimulator/Pods_SweetPea.framework"; sourceTree = "<group>"; };
+		B5DABFD91E033A9200D9FFFF /* FeedKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FeedKit.framework; path = "../../Library/Developer/Xcode/DerivedData/SweetPea-ammcoyyuyrqelrgeerwkfbahqsyg/Build/Products/Debug-iphonesimulator/FeedKit/FeedKit.framework"; sourceTree = "<group>"; };
 		B5E281761DF75BA400D53ABB /* OPMLProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OPMLProtocol.swift; sourceTree = "<group>"; };
 		B5F0D23B1DD506ED00402FEC /* SweetPea.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SweetPea.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5F0D23E1DD506ED00402FEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -132,6 +134,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5DABFDA1E033A9200D9FFFF /* FeedKit.framework in Frameworks */,
+				B5DABFD81E033A8100D9FFFF /* Pods_SweetPea.framework in Frameworks */,
 				B5BA3F191DF7557E000B6FFF /* Quick.framework in Frameworks */,
 				84845C9D2435C480C4077018 /* Pods_SweetPeaTests.framework in Frameworks */,
 			);
@@ -152,6 +156,8 @@
 		1B6FB18795E1081067AE9E42 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B5DABFD91E033A9200D9FFFF /* FeedKit.framework */,
+				B5DABFD71E033A8100D9FFFF /* Pods_SweetPea.framework */,
 				B5BA3F181DF7557E000B6FFF /* Quick.framework */,
 				B5A1AC941DE643F20093E823 /* XCTest.framework */,
 				B5A1AC911DE642D80093E823 /* XCTest.framework */,
@@ -281,7 +287,6 @@
 		B5FBBA431DF1FAC400B7A71C /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				B5DABFD31E030ECA00D9FFFF /* Subscription.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -309,6 +314,7 @@
 				B5BB0D8B1DD51C8300BD7FA0 /* Resources */,
 				0749ADF7790530F16EF1D7CF /* [CP] Embed Pods Frameworks */,
 				17E017EA720192361D7844CD /* [CP] Copy Pods Resources */,
+				B5DABFDB1E033C2700D9FFFF /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -488,6 +494,19 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		B5DABFDB1E033C2700D9FFFF /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "find ${TARGET_BUILD_DIR} -type d -name \"*.framework\" -exec cp -Rf {} ${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ \\;";
+		};
 		BEEE864DD6C25A11B4278794 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -534,7 +553,6 @@
 			files = (
 				B5FBBA451DF1FBB700B7A71C /* RSSProtocol.swift in Sources */,
 				B5F57B511E01997100462BC8 /* Pipe.swift in Sources */,
-				B5DABFD41E030ECA00D9FFFF /* Subscription.swift in Sources */,
 				B5F0D2471DD506ED00402FEC /* PeaPod.xcdatamodeld in Sources */,
 				B551BC4C1DF23CA1001C76E3 /* AudioPlaying.swift in Sources */,
 				B5E281771DF75BA400D53ABB /* OPMLProtocol.swift in Sources */,
@@ -605,7 +623,7 @@
 					"\"$PODS_CONFIGURATION_BUILD_DIR/RxSwift\"",
 				);
 				INFOPLIST_FILE = SweetPeaTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = constellation.SweetPeaTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
@@ -628,7 +646,7 @@
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks/**",
 				);
 				INFOPLIST_FILE = SweetPeaTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = constellation.SweetPeaTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
