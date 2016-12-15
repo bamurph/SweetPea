@@ -25,9 +25,7 @@ class ViewController: UIViewController {
             .audioPlayer(url: urls[0])
             .subscribe(onNext: { n in
                 self.player = n
-                print("about to play")
                 self.player.play()
-                print("should be playing")
             })
 
 

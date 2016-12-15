@@ -21,7 +21,6 @@ struct RSSService: RSSProtocol {
 
     func fetch(url: RSSUrl) -> Observable<RSSFeed> {
         return Observable.create { observer in
-            print("subscribed")
             FeedParser.init(URL: url)?.parse { result in
                 switch result {
                 case .rss(let rssFeed):
@@ -41,7 +40,7 @@ struct RSSService: RSSProtocol {
         return Observable.from(urls)
             .map { RSSService().fetch(url: $0) }
             .merge()
-    }`
+    }
 }
 
 

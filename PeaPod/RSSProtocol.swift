@@ -13,5 +13,6 @@ import RxSwift
 typealias RSSUrl = URL
 protocol RSSProtocol {
     func fetch(url: RSSUrl) -> Observable<RSSFeed>
+    
 }
  

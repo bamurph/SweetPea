@@ -21,6 +21,11 @@
                BlueprintName = "SweetPeaTests"
                ReferencedContainer = "container:SweetPea.xcodeproj">
             </BuildableReference>
+            <SkippedTests>
+               <Test
+                  Identifier = "SubscriptionsViewModelSpec">
+               </Test>
+            </SkippedTests>
          </TestableReference>
       </Testables>
       <AdditionalOptions>

@@ -32,9 +32,11 @@
 		B5BA3F171DF75478000B6FFF /* SubscriptionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BB74611DE3894800F327F0 /* SubscriptionsViewModel.swift */; };
 		B5BA3F191DF7557E000B6FFF /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5BA3F181DF7557E000B6FFF /* Quick.framework */; };
 		B5BB0D991DD51CB300BD7FA0 /* OPMLService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BB0D981DD51CB300BD7FA0 /* OPMLService.swift */; };
-		B5BB74631DE3894800F327F0 /* SubscriptionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BB74611DE3894800F327F0 /* SubscriptionsViewModel.swift */; };
 		B5DABFD81E033A8100D9FFFF /* Pods_SweetPea.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5DABFD71E033A8100D9FFFF /* Pods_SweetPea.framework */; };
 		B5DABFDA1E033A9200D9FFFF /* FeedKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5DABFD91E033A9200D9FFFF /* FeedKit.framework */; };
+		B5DABFDD1E03401200D9FFFF /* SubscriptionsViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DABFDC1E03401200D9FFFF /* SubscriptionsViewModelSpec.swift */; };
+		B5DABFDE1E03425300D9FFFF /* SubscriptionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BB74611DE3894800F327F0 /* SubscriptionsViewModel.swift */; };
+		B5DABFE01E0343DB00D9FFFF /* StubUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DABFDF1E0343DB00D9FFFF /* StubUtility.swift */; };
 		B5E281771DF75BA400D53ABB /* OPMLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E281761DF75BA400D53ABB /* OPMLProtocol.swift */; };
 		B5E4DFD11DEA10120074A51C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5A1AC941DE643F20093E823 /* XCTest.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		B5E4DFD21DEA10120074A51C /* XCTest.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B5A1AC941DE643F20093E823 /* XCTest.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -112,6 +114,8 @@
 		B5BB74611DE3894800F327F0 /* SubscriptionsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SubscriptionsViewModel.swift; path = PeaPod/SubscriptionsViewModel.swift; sourceTree = "<group>"; };
 		B5DABFD71E033A8100D9FFFF /* Pods_SweetPea.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_SweetPea.framework; path = "../../Library/Developer/Xcode/DerivedData/SweetPea-ammcoyyuyrqelrgeerwkfbahqsyg/Build/Products/Debug-iphonesimulator/Pods_SweetPea.framework"; sourceTree = "<group>"; };
 		B5DABFD91E033A9200D9FFFF /* FeedKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FeedKit.framework; path = "../../Library/Developer/Xcode/DerivedData/SweetPea-ammcoyyuyrqelrgeerwkfbahqsyg/Build/Products/Debug-iphonesimulator/FeedKit/FeedKit.framework"; sourceTree = "<group>"; };
+		B5DABFDC1E03401200D9FFFF /* SubscriptionsViewModelSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubscriptionsViewModelSpec.swift; sourceTree = "<group>"; };
+		B5DABFDF1E0343DB00D9FFFF /* StubUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StubUtility.swift; sourceTree = "<group>"; };
 		B5E281761DF75BA400D53ABB /* OPMLProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OPMLProtocol.swift; sourceTree = "<group>"; };
 		B5F0D23B1DD506ED00402FEC /* SweetPea.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SweetPea.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5F0D23E1DD506ED00402FEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -200,6 +204,7 @@
 		B5BB0D8E1DD51C8300BD7FA0 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				B5DABFDC1E03401200D9FFFF /* SubscriptionsViewModelSpec.swift */,
 				B5BA3F151DF74EAF000B6FFF /* OPMLServiceTest.swift */,
 				B551BC4E1DF23CE8001C76E3 /* AudioPlayingSpec.swift */,
 				B5142A291DF0CA92005CE3AC /* RSSSpec.swift */,
@@ -277,6 +282,7 @@
 		B5F57B4D1E0197FF00462BC8 /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				B5DABFDF1E0343DB00D9FFFF /* StubUtility.swift */,
 				B537939D1DD9BF8C00D9C9AF /* Helpers.swift */,
 				B5F57B4E1E01982500462BC8 /* Compose.swift */,
 				B5F57B501E01997100462BC8 /* Pipe.swift */,
@@ -529,10 +535,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5DABFDE1E03425300D9FFFF /* SubscriptionsViewModel.swift in Sources */,
 				B5F57B581E019F1D00462BC8 /* FeedViewModel.swift in Sources */,
 				B5F57B591E019F1D00462BC8 /* AudioService.swift in Sources */,
 				B5F57B5A1E019F1D00462BC8 /* RSSService.swift in Sources */,
 				B5F57B5B1E019F1D00462BC8 /* RSSProtocol.swift in Sources */,
+				B5DABFDD1E03401200D9FFFF /* SubscriptionsViewModelSpec.swift in Sources */,
 				B5F57B5C1E019F1D00462BC8 /* OPMLProtocol.swift in Sources */,
 				B5F57B5D1E019F1D00462BC8 /* OPMLService.swift in Sources */,
 				B5F57B561E019ECD00462BC8 /* Compose.swift in Sources */,
@@ -541,7 +549,6 @@
 				B5A1AC8F1DE640450093E823 /* Helpers.swift in Sources */,
 				B5BA3F161DF74EAF000B6FFF /* OPMLServiceTest.swift in Sources */,
 				B5142A2A1DF0CA92005CE3AC /* RSSSpec.swift in Sources */,
-				B5BB74631DE3894800F327F0 /* SubscriptionsViewModel.swift in Sources */,
 				B551BC4F1DF23CE8001C76E3 /* AudioPlayingSpec.swift in Sources */,
 				B5F57B531E019A1300462BC8 /* ComposeSpec.swift in Sources */,
 			);
@@ -565,6 +572,7 @@
 				B5644B7F1E01DE6000FC3FB1 /* SubscriptionsViewController.swift in Sources */,
 				B551BC511DF24065001C76E3 /* AudioService.swift in Sources */,
 				B5A1AC871DE4EFC90093E823 /* FeedViewModel.swift in Sources */,
+				B5DABFE01E0343DB00D9FFFF /* StubUtility.swift in Sources */,
 				B5F0D23F1DD506ED00402FEC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
