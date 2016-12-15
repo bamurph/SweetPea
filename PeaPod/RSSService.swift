@@ -13,12 +13,13 @@ import Lepton
 
 enum RSSServiceErrors: Error {
     case atomSyntax
+    case nilURL
 }
 
 /// Bare-Bones RSS Service
 struct RSSService: RSSProtocol {
 
-    func fetch(url: URL) -> Observable<RSSFeed> {
+    func fetch(url: RSSUrl) -> Observable<RSSFeed> {
         return Observable.create { observer in
             print("subscribed")
             FeedParser.init(URL: url)?.parse { result in
@@ -35,6 +36,14 @@ struct RSSService: RSSProtocol {
             return Disposables.create()
         }
     }
+
+    func rssFeeds(for urls: [URL]) -> Observable<RSSFeed> {
+        return Observable.from(urls)
+            .map { RSSService().fetch(url: $0) }
+            .merge()
+    }`
 }
+
+
 
 
