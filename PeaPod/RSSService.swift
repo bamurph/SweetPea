@@ -13,7 +13,8 @@ import Lepton
 
 enum RSSServiceErrors: Error {
     case atomSyntax
-    case nilURL
+    case nilUrl
+    case badUrl
 }
 
 /// Bare-Bones RSS Service
@@ -23,7 +24,13 @@ struct RSSService: RSSProtocol {
 
     func fetch(url: RSSUrl) -> Observable<RSSFeed> {
         return Observable.create { observer in
-            FeedParser.init(URL: url)?.parse { result in
+
+            guard let data = NSData(contentsOf: url) as? Data else {
+                observer.onError(RSSServiceErrors.badUrl)
+                return Disposables.create()
+            }
+
+            FeedParser(data: data).parse { result in
                 switch result {
                 case .rss(let rssFeed):
                     observer.onNext(rssFeed)
