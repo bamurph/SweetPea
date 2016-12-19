@@ -15,7 +15,6 @@ struct OPMLService: OPMLProtocol {
 
     let disposeBag = DisposeBag()
 
-
     func fetchedFile(from url: OPMLUrl) -> Observable<String> {
         return Observable<String>.create { observer in
             do {

@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<opml version="1.0"><head><title>Test Subscriptions</title>
+</head><body>
+
+    <outline type="rss" text="Dan Carlin's Hardcore History" title="Dan Carlin's Hardcore History" xmlUrl="hh.rss" htmlUrl="http://www.dancarlin.com/"/>
+
+    <outline type="rss" text="Under The Radar" title="Under The Radar" xmlUrl="utr.rss" htmlUrl="http://relay.fm/radar/"/>
+
+</body>
+</opml>

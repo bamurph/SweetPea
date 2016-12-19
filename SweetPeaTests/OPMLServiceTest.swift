@@ -13,31 +13,66 @@ import Lepton
 
 @testable import SweetPea
 
+
 class OPMLServiceTest: QuickSpec {
     override func spec() {
-        let testBundle = Bundle(for: type(of: self))
-        let url = testBundle.url(forResource: "overcast", withExtension: "opml")
 
-        it("fetches OPML stub ") {
-            let service = OPMLService()
-            let feeds = service.items(from: url!)
+        describe("an OPML file") {
+            let testBundle = Bundle(for: type(of: self))
+            let svc = OPMLServiceStub(with: testBundle)
+            let url = testBundle.url(forResource: "tests", withExtension:                  "opml")
+            var items = [OPMLItem]()
+            _ = svc.items(url!).subscribe(onNext: {n in
+                items = n
+            })
 
-            feeds.subscribe(onNext: { feeds in
-                expect(feeds.count).to(equal(10))
-                expect(feeds.first!.title).to(equal("Dan Carlin's Hardcore History"))
-                expect(feeds.last!.title).to(equal("The iPhreaks Show"))
-                expect(feeds[1].title).toNot(equal("Ultimate Toast Club"))
+            var rssUrls = [RSSUrl]()
+            _ = svc.rssUrls(url: url!).subscribe(onNext: {n in
+                rssUrls = n
+            })
 
-                feeds.forEach {
-                    expect($0.xmlURL).toNot(beNil())
-                    expect($0.title).toNot(beNil())
+
+            describe("count items") {
+                context("when there are two items in the opml file") {
+                    it("has two items") {
+                        expect(items.count).toEventually(equal(2))
+                        expect(items.count).toNotEventually(equal(5))
+                    }
+                }
+            }
+
+            describe("convert strings to URLs") {
+                context("when the urls are local") {
+                    it("returns valid urls") {
+                        var urls = items.map { URL(string: $0.xmlURL!) }
+
+                        expect(urls).toNot(beNil())
+                        print(urls)
+                    }
                 }
 
+                context("when an rss url is local") {
+                    it("returns a complete url") {
+                        expect(rssUrls).toNot(beNil())
+                        print(rssUrls)
+                    }
+                }
+            }
 
 
-            })
-            
+//            describe("check xmlURL strings") {
+//                context("when a rss feed is local") {
+//                    it("is represented as a filename") {
+//                        let rssUrls = svc.rssUrls(url: url!)
+//
+//                    }
+//                }
+//            }
 
         }
+
+
+
+
     }
 }

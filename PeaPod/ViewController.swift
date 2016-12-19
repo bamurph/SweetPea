@@ -21,7 +21,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        service
+        _ =  service
             .audioPlayer(url: urls[0])
             .subscribe(onNext: { n in
                 self.player = n
