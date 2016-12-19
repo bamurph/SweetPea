@@ -25,7 +25,6 @@ class RSSSpec: QuickSpec {
             let _ = service.fetch(url: url!)
                 .subscribe(onNext: { feed in
                     expect(feed.title).to(match("Under the Radar"))
-                    dump(feed)
                     expect(feed.items?.count).to(equal(56))
                 })
         }

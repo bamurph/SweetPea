@@ -44,7 +44,7 @@ class OPMLServiceTest: QuickSpec {
             describe("convert strings to URLs") {
                 context("when the urls are local") {
                     it("returns valid urls") {
-                        var urls = items.map { URL(string: $0.xmlURL!) }
+                        let urls = items.map { URL(string: $0.xmlURL!) }
 
                         expect(urls).toNot(beNil())
                         print(urls)
