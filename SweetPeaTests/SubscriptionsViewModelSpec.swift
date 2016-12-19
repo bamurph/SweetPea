@@ -8,6 +8,7 @@
 
 import Quick
 import Nimble
+import RxSwift
 
 @testable import SweetPea
 
@@ -15,16 +16,31 @@ import Nimble
 
 class SubscriptionsViewModelSpec: QuickSpec {
 
-    class StubSubscriptionViewModel: SubscriptionsViewModel {
-        let testBundle = Bundle(for: type(of: self) as! AnyClass)
-
-        override init?(with url: OPMLUrl) {
-            super.init(with: url)
-        }
-    }
-
-
     override func spec() {
+        describe("Prepare a collection of subscriptions for view") {
+            let testBundle = Bundle(for: type(of: self))
+            let testUrl = testBundle.url(forResource: "tests", withExtension: "opml")
+            let svm = SubscriptionViewModelStub(with: testUrl!, bundle: testBundle)
+
+            describe("Parse the OPML file for the feeds") {
+                context("when there are two feeds in test.opml") {
+                    it("has two feeds") {
+                        expect(svm?.feeds.value.count).toEventually(equal(2))
+                    }
+                    it("has many items in those feeds") {
+                        let items = svm?.feeds.value
+                            .flatMap { $0.items }
+                            .flatMap { $0 }
+                        expect(items?.count).to(beGreaterThan(5))
+                    }
+
+                    
+
+
+                }
+            }
+            
+        }
 
 //        it("init a SVM from an OPML file url") {
 //            let svm = SubscriptionsViewModel(with: url!)

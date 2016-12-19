@@ -23,6 +23,7 @@
 		B58A64071E06EA66001716E7 /* tests.opml in Resources */ = {isa = PBXBuildFile; fileRef = B58A64051E06EA66001716E7 /* tests.opml */; };
 		B58A64091E06ED6C001716E7 /* SubscriptionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BB74611DE3894800F327F0 /* SubscriptionsViewModel.swift */; };
 		B58A640B1E06EFC9001716E7 /* OPMLServiceStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58A640A1E06EFC9001716E7 /* OPMLServiceStub.swift */; };
+		B58B3D931E088A140015BCAB /* SubscriptionViewModelStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58B3D911E0889070015BCAB /* SubscriptionViewModelStub.swift */; };
 		B5A1AC871DE4EFC90093E823 /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A1AC861DE4EFC90093E823 /* FeedViewModel.swift */; };
 		B5A1AC8E1DE640440093E823 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B537939D1DD9BF8C00D9C9AF /* Helpers.swift */; };
 		B5A1AC8F1DE640450093E823 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B537939D1DD9BF8C00D9C9AF /* Helpers.swift */; };
@@ -103,6 +104,7 @@
 		B58A64021E06E89A001716E7 /* hh.rss */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = hh.rss; sourceTree = "<group>"; };
 		B58A64051E06EA66001716E7 /* tests.opml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = tests.opml; sourceTree = "<group>"; };
 		B58A640A1E06EFC9001716E7 /* OPMLServiceStub.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OPMLServiceStub.swift; sourceTree = "<group>"; };
+		B58B3D911E0889070015BCAB /* SubscriptionViewModelStub.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubscriptionViewModelStub.swift; sourceTree = "<group>"; };
 		B5A1AC861DE4EFC90093E823 /* FeedViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FeedViewModel.swift; path = PeaPod/FeedViewModel.swift; sourceTree = "<group>"; };
 		B5A1AC911DE642D80093E823 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		B5A1AC941DE643F20093E823 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -216,6 +218,7 @@
 			isa = PBXGroup;
 			children = (
 				B5DABFDC1E03401200D9FFFF /* SubscriptionsViewModelSpec.swift */,
+				B58B3D911E0889070015BCAB /* SubscriptionViewModelStub.swift */,
 				B5BA3F151DF74EAF000B6FFF /* OPMLServiceTest.swift */,
 				B58A640A1E06EFC9001716E7 /* OPMLServiceStub.swift */,
 				B551BC4E1DF23CE8001C76E3 /* AudioPlayingSpec.swift */,
@@ -555,6 +558,7 @@
 				B5F57B5D1E019F1D00462BC8 /* OPMLService.swift in Sources */,
 				B5F57B561E019ECD00462BC8 /* Compose.swift in Sources */,
 				B5F57B571E019ECD00462BC8 /* Pipe.swift in Sources */,
+				B58B3D931E088A140015BCAB /* SubscriptionViewModelStub.swift in Sources */,
 				B551BC4D1DF23CA1001C76E3 /* AudioPlaying.swift in Sources */,
 				B5A1AC8F1DE640450093E823 /* Helpers.swift in Sources */,
 				B58A640B1E06EFC9001716E7 /* OPMLServiceStub.swift in Sources */,

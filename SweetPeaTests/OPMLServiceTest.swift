@@ -20,7 +20,7 @@ class OPMLServiceTest: QuickSpec {
         describe("an OPML file") {
             let testBundle = Bundle(for: type(of: self))
             let svc = OPMLServiceStub(with: testBundle)
-            let url = testBundle.url(forResource: "tests", withExtension:                  "opml")
+            let url = testBundle.url(forResource: "tests", withExtension: "opml")
             var items = [OPMLItem]()
             _ = svc.items(url!).subscribe(onNext: {n in
                 items = n

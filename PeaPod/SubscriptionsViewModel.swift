@@ -17,6 +17,11 @@ class SubscriptionsViewModel {
     //let opmlService = OPMLService()
     let feeds: Variable<[RSSFeed]> = Variable([])
 
+    // Empty Init (used for stub in testing)
+    init() {
+
+    }
+
     // Init with a OPML File
     init?(with url: OPMLUrl) {
         _ = OPMLService().rssUrls(url: url)
@@ -24,10 +29,13 @@ class SubscriptionsViewModel {
             .merge()
             .subscribe(onNext: { n in
                 self.feeds.value.append(n)
+
             })
     }
 
     
+    
 
 }
+
 
