@@ -31,6 +31,7 @@
 		B556A2221E09DEF20002CDB9 /* SubscriptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5644B7E1E01DE6000FC3FB1 /* SubscriptionsViewController.swift */; };
 		B556A2231E09DEF40002CDB9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F0D23E1DD506ED00402FEC /* AppDelegate.swift */; };
 		B556A2241E09DEF40002CDB9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F0D2401DD506ED00402FEC /* ViewController.swift */; };
+		B556A2251E09E0030002CDB9 /* SubscriptionsViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DABFDC1E03401200D9FFFF /* SubscriptionsViewModelSpec.swift */; };
 		B5644B7F1E01DE6000FC3FB1 /* SubscriptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5644B7E1E01DE6000FC3FB1 /* SubscriptionsViewController.swift */; };
 		B58A64041E06E89A001716E7 /* hh.rss in Resources */ = {isa = PBXBuildFile; fileRef = B58A64021E06E89A001716E7 /* hh.rss */; };
 		B58A64061E06EA66001716E7 /* tests.opml in Resources */ = {isa = PBXBuildFile; fileRef = B58A64051E06EA66001716E7 /* tests.opml */; };
@@ -564,6 +565,7 @@
 				B58A640B1E06EFC9001716E7 /* OPMLServiceStub.swift in Sources */,
 				B556A2211E09DEEF0002CDB9 /* FeedViewModel.swift in Sources */,
 				B5BA3F161DF74EAF000B6FFF /* OPMLServiceTest.swift in Sources */,
+				B556A2251E09E0030002CDB9 /* SubscriptionsViewModelSpec.swift in Sources */,
 				B556A21B1E09DEE90002CDB9 /* OPMLService.swift in Sources */,
 				B5142A2A1DF0CA92005CE3AC /* RSSSpec.swift in Sources */,
 				B556A21A1E09DEE90002CDB9 /* OPMLProtocol.swift in Sources */,

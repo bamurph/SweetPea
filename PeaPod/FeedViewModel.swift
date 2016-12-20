@@ -12,8 +12,6 @@ import RxSwift
 import FeedKit
 import Lepton
 
-
-
 class FeedViewModel {
     let disposeBag = DisposeBag()
     let feed: RSSFeed
