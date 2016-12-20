@@ -8,10 +8,17 @@
 
 precedencegroup PipePrecedence {
     associativity: left
-    higherThan: DefaultPrecedence
+    higherThan: FunctionArrowPrecedence
 }
 
 infix operator |> : PipePrecedence
+
+/// Pipe Forward Operator
+///
+/// - Parameters:
+///   - x: input parameter
+///   - f: function input parameter is applied to
+/// - Returns: output of f(x)
 
 public func |> <T, U>(x: T, f: (T) -> U) -> U {
     return f(x)

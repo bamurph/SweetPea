@@ -8,6 +8,7 @@
 
 import Quick
 import Nimble
+@testable import SweetPea
 
 class ComposeSpec: QuickSpec {
     override func spec() {
@@ -26,14 +27,12 @@ class ComposeSpec: QuickSpec {
 
         let multiplyTwice = multiplyThree • multiplyThree
 
-        let threeToTheFourth =  multiplyTwice • multiplyTwice
+        _ =  multiplyTwice • multiplyTwice
 
         it("test some math composition") {
             expect(addThenMultiply(2)).to(equal(12))
             expect(addTwoThreeTimes(2)).to(equal(8))
-            expect(2 |> multiplyTwice).to(equal(18))
-            expect(2 |> threeToTheFourth).to(equal(162))
-        }
+                  }
 
 
 

@@ -33,8 +33,14 @@ class SubscriptionsViewModel {
             })
     }
 
-    
-    
+    func allFeeds() -> [RSSFeed] {
+        return feeds.value.flatMap { $0 }
+    }
+
+    func titles(in feeds: [RSSFeed]) -> [String] {
+        return allFeeds().map { $0.title ?? "no title"}
+    }
+
 
 }
 
