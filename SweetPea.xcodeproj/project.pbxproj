@@ -50,8 +50,6 @@
 		B5F57B4F1E01982500462BC8 /* Compose.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F57B4E1E01982500462BC8 /* Compose.swift */; };
 		B5F57B511E01997100462BC8 /* Pipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F57B501E01997100462BC8 /* Pipe.swift */; };
 		B5F57B531E019A1300462BC8 /* ComposeSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F57B521E019A1300462BC8 /* ComposeSpec.swift */; };
-		B5F57B561E019ECD00462BC8 /* Compose.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F57B4E1E01982500462BC8 /* Compose.swift */; };
-		B5F57B571E019ECD00462BC8 /* Pipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F57B501E01997100462BC8 /* Pipe.swift */; };
 		B5F57B581E019F1D00462BC8 /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A1AC861DE4EFC90093E823 /* FeedViewModel.swift */; };
 		B5F57B591E019F1D00462BC8 /* AudioService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B551BC501DF24065001C76E3 /* AudioService.swift */; };
 		B5F57B5A1E019F1D00462BC8 /* RSSService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B537939F1DDA626300D9C9AF /* RSSService.swift */; };
@@ -556,8 +554,6 @@
 				B5DABFDD1E03401200D9FFFF /* SubscriptionsViewModelSpec.swift in Sources */,
 				B5F57B5C1E019F1D00462BC8 /* OPMLProtocol.swift in Sources */,
 				B5F57B5D1E019F1D00462BC8 /* OPMLService.swift in Sources */,
-				B5F57B561E019ECD00462BC8 /* Compose.swift in Sources */,
-				B5F57B571E019ECD00462BC8 /* Pipe.swift in Sources */,
 				B58B3D931E088A140015BCAB /* SubscriptionViewModelStub.swift in Sources */,
 				B551BC4D1DF23CA1001C76E3 /* AudioPlaying.swift in Sources */,
 				B5A1AC8F1DE640450093E823 /* Helpers.swift in Sources */,
