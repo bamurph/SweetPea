@@ -11,9 +11,6 @@ import Quick
 import Nimble
 import Lepton
 
-@testable import SweetPea
-
-
 class OPMLServiceTest: QuickSpec {
     override func spec() {
 

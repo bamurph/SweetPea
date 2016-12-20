@@ -14,19 +14,31 @@
 		B551BC461DF23B71001C76E3 /* Under the Radar 56_ Surviving the Winter.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B551BC441DF23B71001C76E3 /* Under the Radar 56_ Surviving the Winter.mp3 */; };
 		B551BC491DF23B8D001C76E3 /* Under the Radar 55_ Black Friday Sale.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B551BC471DF23B8D001C76E3 /* Under the Radar 55_ Black Friday Sale.mp3 */; };
 		B551BC4C1DF23CA1001C76E3 /* AudioPlaying.swift in Sources */ = {isa = PBXBuildFile; fileRef = B551BC4B1DF23CA1001C76E3 /* AudioPlaying.swift */; };
-		B551BC4D1DF23CA1001C76E3 /* AudioPlaying.swift in Sources */ = {isa = PBXBuildFile; fileRef = B551BC4B1DF23CA1001C76E3 /* AudioPlaying.swift */; };
 		B551BC4F1DF23CE8001C76E3 /* AudioPlayingSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B551BC4E1DF23CE8001C76E3 /* AudioPlayingSpec.swift */; };
 		B551BC511DF24065001C76E3 /* AudioService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B551BC501DF24065001C76E3 /* AudioService.swift */; };
+		B556A2161E09DEE90002CDB9 /* AudioPlaying.swift in Sources */ = {isa = PBXBuildFile; fileRef = B551BC4B1DF23CA1001C76E3 /* AudioPlaying.swift */; };
+		B556A2171E09DEE90002CDB9 /* AudioService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B551BC501DF24065001C76E3 /* AudioService.swift */; };
+		B556A2181E09DEE90002CDB9 /* RSSService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B537939F1DDA626300D9C9AF /* RSSService.swift */; };
+		B556A2191E09DEE90002CDB9 /* RSSProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FBBA441DF1FBB700B7A71C /* RSSProtocol.swift */; };
+		B556A21A1E09DEE90002CDB9 /* OPMLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E281761DF75BA400D53ABB /* OPMLProtocol.swift */; };
+		B556A21B1E09DEE90002CDB9 /* OPMLService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BB0D981DD51CB300BD7FA0 /* OPMLService.swift */; };
+		B556A21C1E09DEEC0002CDB9 /* StubUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DABFDF1E0343DB00D9FFFF /* StubUtility.swift */; };
+		B556A21D1E09DEEC0002CDB9 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B537939D1DD9BF8C00D9C9AF /* Helpers.swift */; };
+		B556A21E1E09DEEC0002CDB9 /* Compose.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F57B4E1E01982500462BC8 /* Compose.swift */; };
+		B556A21F1E09DEEC0002CDB9 /* Pipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F57B501E01997100462BC8 /* Pipe.swift */; };
+		B556A2201E09DEEF0002CDB9 /* SubscriptionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BB74611DE3894800F327F0 /* SubscriptionsViewModel.swift */; };
+		B556A2211E09DEEF0002CDB9 /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A1AC861DE4EFC90093E823 /* FeedViewModel.swift */; };
+		B556A2221E09DEF20002CDB9 /* SubscriptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5644B7E1E01DE6000FC3FB1 /* SubscriptionsViewController.swift */; };
+		B556A2231E09DEF40002CDB9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F0D23E1DD506ED00402FEC /* AppDelegate.swift */; };
+		B556A2241E09DEF40002CDB9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F0D2401DD506ED00402FEC /* ViewController.swift */; };
 		B5644B7F1E01DE6000FC3FB1 /* SubscriptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5644B7E1E01DE6000FC3FB1 /* SubscriptionsViewController.swift */; };
 		B58A64041E06E89A001716E7 /* hh.rss in Resources */ = {isa = PBXBuildFile; fileRef = B58A64021E06E89A001716E7 /* hh.rss */; };
 		B58A64061E06EA66001716E7 /* tests.opml in Resources */ = {isa = PBXBuildFile; fileRef = B58A64051E06EA66001716E7 /* tests.opml */; };
 		B58A64071E06EA66001716E7 /* tests.opml in Resources */ = {isa = PBXBuildFile; fileRef = B58A64051E06EA66001716E7 /* tests.opml */; };
-		B58A64091E06ED6C001716E7 /* SubscriptionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BB74611DE3894800F327F0 /* SubscriptionsViewModel.swift */; };
 		B58A640B1E06EFC9001716E7 /* OPMLServiceStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58A640A1E06EFC9001716E7 /* OPMLServiceStub.swift */; };
 		B58B3D931E088A140015BCAB /* SubscriptionViewModelStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58B3D911E0889070015BCAB /* SubscriptionViewModelStub.swift */; };
 		B5A1AC871DE4EFC90093E823 /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A1AC861DE4EFC90093E823 /* FeedViewModel.swift */; };
 		B5A1AC8E1DE640440093E823 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B537939D1DD9BF8C00D9C9AF /* Helpers.swift */; };
-		B5A1AC8F1DE640450093E823 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B537939D1DD9BF8C00D9C9AF /* Helpers.swift */; };
 		B5B686CA1DF76F2B00B5673B /* overcast.opml in Resources */ = {isa = PBXBuildFile; fileRef = B5B686C81DF76D3800B5673B /* overcast.opml */; };
 		B5B686CB1DF76F2E00B5673B /* utr.rss in Resources */ = {isa = PBXBuildFile; fileRef = B5B686C61DF76D2400B5673B /* utr.rss */; };
 		B5BA3F161DF74EAF000B6FFF /* OPMLServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BA3F151DF74EAF000B6FFF /* OPMLServiceTest.swift */; };
@@ -35,7 +47,6 @@
 		B5BB0D991DD51CB300BD7FA0 /* OPMLService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BB0D981DD51CB300BD7FA0 /* OPMLService.swift */; };
 		B5DABFD81E033A8100D9FFFF /* Pods_SweetPea.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5DABFD71E033A8100D9FFFF /* Pods_SweetPea.framework */; };
 		B5DABFDA1E033A9200D9FFFF /* FeedKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5DABFD91E033A9200D9FFFF /* FeedKit.framework */; };
-		B5DABFDD1E03401200D9FFFF /* SubscriptionsViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DABFDC1E03401200D9FFFF /* SubscriptionsViewModelSpec.swift */; };
 		B5DABFE01E0343DB00D9FFFF /* StubUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DABFDF1E0343DB00D9FFFF /* StubUtility.swift */; };
 		B5E281771DF75BA400D53ABB /* OPMLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E281761DF75BA400D53ABB /* OPMLProtocol.swift */; };
 		B5E4DFD11DEA10120074A51C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5A1AC941DE643F20093E823 /* XCTest.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
@@ -50,12 +61,6 @@
 		B5F57B4F1E01982500462BC8 /* Compose.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F57B4E1E01982500462BC8 /* Compose.swift */; };
 		B5F57B511E01997100462BC8 /* Pipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F57B501E01997100462BC8 /* Pipe.swift */; };
 		B5F57B531E019A1300462BC8 /* ComposeSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F57B521E019A1300462BC8 /* ComposeSpec.swift */; };
-		B5F57B581E019F1D00462BC8 /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A1AC861DE4EFC90093E823 /* FeedViewModel.swift */; };
-		B5F57B591E019F1D00462BC8 /* AudioService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B551BC501DF24065001C76E3 /* AudioService.swift */; };
-		B5F57B5A1E019F1D00462BC8 /* RSSService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B537939F1DDA626300D9C9AF /* RSSService.swift */; };
-		B5F57B5B1E019F1D00462BC8 /* RSSProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FBBA441DF1FBB700B7A71C /* RSSProtocol.swift */; };
-		B5F57B5C1E019F1D00462BC8 /* OPMLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E281761DF75BA400D53ABB /* OPMLProtocol.swift */; };
-		B5F57B5D1E019F1D00462BC8 /* OPMLService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BB0D981DD51CB300BD7FA0 /* OPMLService.swift */; };
 		B5FBBA451DF1FBB700B7A71C /* RSSProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FBBA441DF1FBB700B7A71C /* RSSProtocol.swift */; };
 /* End PBXBuildFile section */
 
@@ -547,22 +552,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5F57B581E019F1D00462BC8 /* FeedViewModel.swift in Sources */,
-				B5F57B591E019F1D00462BC8 /* AudioService.swift in Sources */,
-				B5F57B5A1E019F1D00462BC8 /* RSSService.swift in Sources */,
-				B5F57B5B1E019F1D00462BC8 /* RSSProtocol.swift in Sources */,
-				B5DABFDD1E03401200D9FFFF /* SubscriptionsViewModelSpec.swift in Sources */,
-				B5F57B5C1E019F1D00462BC8 /* OPMLProtocol.swift in Sources */,
-				B5F57B5D1E019F1D00462BC8 /* OPMLService.swift in Sources */,
+				B556A2171E09DEE90002CDB9 /* AudioService.swift in Sources */,
+				B556A21D1E09DEEC0002CDB9 /* Helpers.swift in Sources */,
 				B58B3D931E088A140015BCAB /* SubscriptionViewModelStub.swift in Sources */,
-				B551BC4D1DF23CA1001C76E3 /* AudioPlaying.swift in Sources */,
-				B5A1AC8F1DE640450093E823 /* Helpers.swift in Sources */,
+				B556A21F1E09DEEC0002CDB9 /* Pipe.swift in Sources */,
+				B556A2201E09DEEF0002CDB9 /* SubscriptionsViewModel.swift in Sources */,
+				B556A2221E09DEF20002CDB9 /* SubscriptionsViewController.swift in Sources */,
+				B556A2191E09DEE90002CDB9 /* RSSProtocol.swift in Sources */,
+				B556A21E1E09DEEC0002CDB9 /* Compose.swift in Sources */,
+				B556A2231E09DEF40002CDB9 /* AppDelegate.swift in Sources */,
 				B58A640B1E06EFC9001716E7 /* OPMLServiceStub.swift in Sources */,
-				B58A64091E06ED6C001716E7 /* SubscriptionsViewModel.swift in Sources */,
+				B556A2211E09DEEF0002CDB9 /* FeedViewModel.swift in Sources */,
 				B5BA3F161DF74EAF000B6FFF /* OPMLServiceTest.swift in Sources */,
+				B556A21B1E09DEE90002CDB9 /* OPMLService.swift in Sources */,
 				B5142A2A1DF0CA92005CE3AC /* RSSSpec.swift in Sources */,
+				B556A21A1E09DEE90002CDB9 /* OPMLProtocol.swift in Sources */,
+				B556A2161E09DEE90002CDB9 /* AudioPlaying.swift in Sources */,
 				B551BC4F1DF23CE8001C76E3 /* AudioPlayingSpec.swift in Sources */,
 				B5F57B531E019A1300462BC8 /* ComposeSpec.swift in Sources */,
+				B556A2241E09DEF40002CDB9 /* ViewController.swift in Sources */,
+				B556A2181E09DEE90002CDB9 /* RSSService.swift in Sources */,
+				B556A21C1E09DEEC0002CDB9 /* StubUtility.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -625,6 +635,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 97JRRX372K;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$PODS_CONFIGURATION_BUILD_DIR/FeedKit\"",
@@ -656,6 +667,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 97JRRX372K;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$PODS_CONFIGURATION_BUILD_DIR/FeedKit\"",
@@ -799,6 +811,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 97JRRX372K;
+				ENABLE_TESTABILITY = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$PODS_CONFIGURATION_BUILD_DIR/FeedKit\"",

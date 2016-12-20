@@ -7,7 +7,6 @@
 //
 
 import Foundation
-@testable import SweetPea
 
 class SubscriptionViewModelStub: SubscriptionsViewModel {
     

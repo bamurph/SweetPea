@@ -11,12 +11,11 @@ import Nimble
 import RxSwift
 import FeedKit
 
-@testable import SweetPea
-
 
 class SubscriptionsViewModelSpec: QuickSpec {
 
     override func spec() {
+        
         describe("Prepare a collection of subscriptions for view") {
             let testBundle = Bundle(for: type(of: self))
             let testUrl = testBundle.url(forResource: "tests", withExtension: "opml")

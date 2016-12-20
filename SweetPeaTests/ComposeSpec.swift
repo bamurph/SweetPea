@@ -8,7 +8,6 @@
 
 import Quick
 import Nimble
-@testable import SweetPea
 
 class ComposeSpec: QuickSpec {
     override func spec() {

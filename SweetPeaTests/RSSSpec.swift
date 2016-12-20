@@ -6,7 +6,6 @@
 //  Copyright © 2016 Constellation Software. All rights reserved.
 //
 
-@testable import SweetPea
 import Quick
 import Nimble
 import RxSwift

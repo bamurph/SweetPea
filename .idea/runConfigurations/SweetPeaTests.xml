@@ -1,0 +1,6 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="SweetPeaTests" type="OCUnitRunConfiguration" factoryName="XCTest/Kiwi" WORKING_DIR="" PASS_PARENT_ENVS_2="true" PROJECT_NAME="SweetPea" TARGET_NAME="SweetPeaTests" CONFIG_NAME="Debug" SCHEME_NAME="SweetPeaTests" TEST_PATTERN="None" TEST_MODE="PATTERN" XCODE_SKIPPED_TESTS_HASH_CODE="183613993">
+    <envs />
+    <method />
+  </configuration>
+</component>
