@@ -11,6 +11,7 @@ import Nimble
 import RealmSwift
 import RxSwift
 
+
 class StoreSpec: QuickSpec {
     override func spec() {
         describe("returns collections of stored objecets") {
@@ -20,6 +21,22 @@ class StoreSpec: QuickSpec {
                     it("returns no feeds") {
                         expect(store.subscriptions.count).to(equal(0))
                     }
+                }
+            }
+        }
+        describe("creates subscription objects from opml file") {
+            context("when there are two subs in the opml file") {
+                let testBundle = Bundle(for: type(of: self))
+                let testUrl = testBundle.url(forResource: "tests", withExtension: "opml")
+                let svc = OPMLService()
+                it("creates two subs in the store") {
+                    svc.items(from: testUrl!)
+                        .map { $0.map { Subscription(from: $0) }}
+                        .subscribe(onNext: {n in
+                            try! store.write {
+                                code
+                            }
+                        })
                 }
             }
         }

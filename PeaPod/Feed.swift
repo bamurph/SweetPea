@@ -23,6 +23,9 @@ class Feed: Object {
     dynamic var lastBuildDate: Date?
     dynamic var imageUrl: String?
 
+    // List of Items in the Feed
+     var items = List<Episode>()
+
     // Need to bypass Realm's limitations on arrays
     // Serialize array of strings into a single string to store and back again to load
     fileprivate dynamic var _categories: String?

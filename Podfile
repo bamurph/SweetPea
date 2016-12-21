@@ -8,6 +8,7 @@ target 'SweetPea' do
     pod 'RxSwift', '~> 3.0'
     pod 'RxCocoa', '~> 3.0'
     pod 'RxBlocking', '~> 3.0'
+    pod 'RxRealm'
 
     target 'SweetPeaTests' do
         inherit! :search_paths

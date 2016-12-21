@@ -17,6 +17,13 @@ class Subscription: Object {
     dynamic var summary: String?
     dynamic var xmlURL: String?
     dynamic var htmlURL: String?
+    dynamic var feed: Feed?
 
-    dynamic var feed: Feed? 
+    convenience init(from item: OPMLItem) {
+        self.init()
+        self.title = item.title
+        self.summary = item.summary
+        self.xmlURL = item.xmlURL
+    }
+
 }
