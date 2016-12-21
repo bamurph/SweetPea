@@ -2,7 +2,7 @@ platform :ios, '9.0'
 use_frameworks!
 
 target 'SweetPea' do
-    pod 'Realm'
+    pod 'RealmSwift'
     pod 'FeedKit', '~> 5.0'
     pod 'Lepton' , :git => 'https://github.com/younata/Lepton.git'
     pod 'RxSwift', '~> 3.0'
