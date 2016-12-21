@@ -20,7 +20,6 @@ class StoreSpec: QuickSpec {
                     it("returns no feeds") {
                         expect(store.subscriptions.count).to(equal(0))
                     }
-
                 }
             }
         }
