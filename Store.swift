@@ -15,9 +15,6 @@ extension Realm {
         return objects(Subscription.self)
     }
 }
-// MARK: - Actions
-extension Realm {
-    func add
-}
+
 
 let store = try! Realm()
