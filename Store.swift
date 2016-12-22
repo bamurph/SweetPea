@@ -14,6 +14,10 @@ extension Realm {
     var subscriptions: Results<Subscription> {
         return objects(Subscription.self)
     }
+
+    var feeds: Results<Feed> {
+        return objects(Feed.self)
+    }
 }
 
 
