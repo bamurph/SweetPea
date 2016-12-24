@@ -58,7 +58,7 @@ class StoreSpec: QuickSpec {
                         .subscribe(onNext: { n in
                             expect(n.count).to(equal(2))
                             expect(n.count).toNot(equal(55))
-                        })
+                        }).dispose()
 
                 }
             }
