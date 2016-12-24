@@ -7,3 +7,10 @@
 //
 
 import Foundation
+import RealmSwift
+import FeedKit
+import RxSwift
+
+struct EnclosureViewModel {
+
+}

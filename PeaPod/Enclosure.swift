@@ -10,15 +10,14 @@ import Foundation
 import RealmSwift
 import FeedKit
 
+enum EnclosureError: Error {
+    case inputMissing
+}
+
 class Enclosure: Object {
     dynamic var url: String = ""
     dynamic var type: String = ""
-
     let length: RealmOptional<Int64> = RealmOptional(nil)
-
-    enum EnclosureError: Error {
-        case inputMissing
-    }
 
     convenience init(with enclosure: RSSFeedItemEnclosure) throws {
         self.init()

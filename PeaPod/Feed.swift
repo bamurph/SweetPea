@@ -10,10 +10,14 @@ import Foundation
 import RealmSwift
 import FeedKit
 
+enum FeedError: Error {
+    case inputMissing
+}
+
 class Feed: Object {
     fileprivate let separator = "\u{FFFF}"
-    dynamic var title: String?
-    dynamic var link: String?
+    dynamic var title: String = ""
+    dynamic var link: String = ""
     dynamic var feedDescription: String? // property for rss 'description' tag
     dynamic var language: String?
     dynamic var copyright: String?
@@ -38,6 +42,24 @@ class Feed: Object {
         return ["categories"]
     }
 
+    convenience init(with rssFeed: RSSFeed) throws {
+        self.init()
+        guard
+            let title = rssFeed.title, let link = rssFeed.link
+            else {
+                throw FeedError.inputMissing
+        }
+        self.title = title
+        self.link = link
+        self.feedDescription = rssFeed.description
+        self.language = rssFeed.language
+        self.copyright = rssFeed.copyright
+        self.managingEditor = rssFeed.managingEditor
+        self.webMaster = rssFeed.webMaster
+        self.pubDate = rssFeed.pubDate
+        self.lastBuildDate = rssFeed.lastBuildDate
+        self.imageUrl = rssFeed.image?.url
+    }
 
 
 }

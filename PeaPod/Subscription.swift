@@ -13,11 +13,11 @@ import Lepton
 
 /// A subscription object will save / link to additional settings for that sub. 
 class Subscription: Object {
-    dynamic var title: String?
+    dynamic var title: String
     dynamic var summary: String?
-    dynamic var xmlURL: String?
+    dynamic var xmlURL: String
     dynamic var htmlURL: String?
-    dynamic var feed: Feed?
+    dynamic var feed: Feed
 
     convenience init(from item: OPMLItem) {
         self.init()
