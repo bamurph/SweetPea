@@ -18,6 +18,10 @@ extension Realm {
     var feeds: Results<Feed> {
         return objects(Feed.self)
     }
+
+    var episodes: Results<Episode> {
+        return objects(Episode.self)
+    }
 }
 
 

@@ -27,7 +27,7 @@ class StoreSpec: QuickSpec {
 
         // TODO: - rewrite this so we can test before/after teardown
 
-        describe("returns collections of stored objecets") {
+        describe("returns collections of stored objects") {
 
             describe("returns all stored subscriptions") {
                 context("when there are no stored feeds") {
@@ -62,6 +62,10 @@ class StoreSpec: QuickSpec {
 
                 }
             }
+        }
+
+        describe("creates epeisode objects from rss file") {
+
         }
 
 

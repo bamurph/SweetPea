@@ -10,13 +10,7 @@ import Foundation
 import RealmSwift
 import FeedKit
 
-class Enclosure: Object {
-    dynamic var url: String?
-    // RealmOptional properties should always be declared with `let`,
-    // as assigning to them directly will not work as desired
-    let length = RealmOptional<Int64>()
-    dynamic var type: String?
-}
+
 
 class Episode: Object {
     dynamic var title: String?
@@ -25,4 +19,14 @@ class Episode: Object {
     dynamic var episodeDescription: String?
     dynamic var pubDate: Date?
     dynamic var enclosure: Enclosure?
+
+//    convenience init(with item: RSSFeedItem) {
+//        self.init()
+//        self.title = item.title
+//        self.link = item.link
+//        self.episodeDescription = item.description
+//        self.enclosure = item.enc
+//
+//    }
 }
+

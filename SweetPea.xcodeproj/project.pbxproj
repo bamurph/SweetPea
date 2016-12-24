@@ -10,6 +10,11 @@
 		7AF81C7DD8A444B7673153E8 /* Pods_SweetPea.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 217687A5DF26143AF8C2A8D4 /* Pods_SweetPea.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		84845C9D2435C480C4077018 /* Pods_SweetPeaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A86763A151A1FAF46D41125C /* Pods_SweetPeaTests.framework */; };
 		B5142A2A1DF0CA92005CE3AC /* RSSSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5142A291DF0CA92005CE3AC /* RSSSpec.swift */; };
+		B53B50591E0F1342009C8EEF /* EpisodeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53B50581E0F1342009C8EEF /* EpisodeViewModel.swift */; };
+		B53B505B1E0F136B009C8EEF /* Enclosure.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53B505A1E0F136B009C8EEF /* Enclosure.swift */; };
+		B53B505C1E0F136B009C8EEF /* Enclosure.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53B505A1E0F136B009C8EEF /* Enclosure.swift */; };
+		B53B505E1E0F1379009C8EEF /* EnclosureViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53B505D1E0F1379009C8EEF /* EnclosureViewModel.swift */; };
+		B53B505F1E0F1379009C8EEF /* EnclosureViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53B505D1E0F1379009C8EEF /* EnclosureViewModel.swift */; };
 		B551BC431DF23B6A001C76E3 /* Under the Radar 1_ Adapting to the Market.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B551BC411DF23B6A001C76E3 /* Under the Radar 1_ Adapting to the Market.mp3 */; };
 		B551BC461DF23B71001C76E3 /* Under the Radar 56_ Surviving the Winter.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B551BC441DF23B71001C76E3 /* Under the Radar 56_ Surviving the Winter.mp3 */; };
 		B551BC491DF23B8D001C76E3 /* Under the Radar 55_ Black Friday Sale.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B551BC471DF23B8D001C76E3 /* Under the Radar 55_ Black Friday Sale.mp3 */; };
@@ -107,6 +112,9 @@
 		B5142A291DF0CA92005CE3AC /* RSSSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSSSpec.swift; sourceTree = "<group>"; };
 		B537939D1DD9BF8C00D9C9AF /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		B537939F1DDA626300D9C9AF /* RSSService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSSService.swift; sourceTree = "<group>"; };
+		B53B50581E0F1342009C8EEF /* EpisodeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EpisodeViewModel.swift; sourceTree = "<group>"; };
+		B53B505A1E0F136B009C8EEF /* Enclosure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enclosure.swift; sourceTree = "<group>"; };
+		B53B505D1E0F1379009C8EEF /* EnclosureViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnclosureViewModel.swift; sourceTree = "<group>"; };
 		B551BC411DF23B6A001C76E3 /* Under the Radar 1_ Adapting to the Market.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Under the Radar 1_ Adapting to the Market.mp3"; sourceTree = "<group>"; };
 		B551BC441DF23B71001C76E3 /* Under the Radar 56_ Surviving the Winter.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Under the Radar 56_ Surviving the Winter.mp3"; sourceTree = "<group>"; };
 		B551BC471DF23B8D001C76E3 /* Under the Radar 55_ Black Friday Sale.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Under the Radar 55_ Black Friday Sale.mp3"; sourceTree = "<group>"; };
@@ -268,6 +276,8 @@
 			children = (
 				B5BB74611DE3894800F327F0 /* SubscriptionsViewModel.swift */,
 				B5A1AC861DE4EFC90093E823 /* FeedViewModel.swift */,
+				B53B50581E0F1342009C8EEF /* EpisodeViewModel.swift */,
+				B53B505D1E0F1379009C8EEF /* EnclosureViewModel.swift */,
 			);
 			name = ViewModels;
 			path = ..;
@@ -331,6 +341,7 @@
 				B5F20F5A1E0B306B00A5E1A5 /* Episode.swift */,
 				B5F20F541E0B231500A5E1A5 /* Subscription.swift */,
 				B5F20F571E0B261700A5E1A5 /* Feed.swift */,
+				B53B505A1E0F136B009C8EEF /* Enclosure.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -682,12 +693,14 @@
 				B57BB6D81E0B1E330002E0CD /* StoreSpec.swift in Sources */,
 				B58A640B1E06EFC9001716E7 /* OPMLServiceStub.swift in Sources */,
 				B556A2211E09DEEF0002CDB9 /* FeedViewModel.swift in Sources */,
+				B53B505C1E0F136B009C8EEF /* Enclosure.swift in Sources */,
 				B5BA3F161DF74EAF000B6FFF /* OPMLServiceTest.swift in Sources */,
 				B556A2251E09E0030002CDB9 /* SubscriptionsViewModelSpec.swift in Sources */,
 				B5F20F5C1E0B306B00A5E1A5 /* Episode.swift in Sources */,
 				B556A21B1E09DEE90002CDB9 /* OPMLService.swift in Sources */,
 				B5142A2A1DF0CA92005CE3AC /* RSSSpec.swift in Sources */,
 				B556A21A1E09DEE90002CDB9 /* OPMLProtocol.swift in Sources */,
+				B53B505F1E0F1379009C8EEF /* EnclosureViewModel.swift in Sources */,
 				B556A2161E09DEE90002CDB9 /* AudioPlaying.swift in Sources */,
 				B551BC4F1DF23CE8001C76E3 /* AudioPlayingSpec.swift in Sources */,
 				B5F57B531E019A1300462BC8 /* ComposeSpec.swift in Sources */,
@@ -706,6 +719,7 @@
 				B5F57B511E01997100462BC8 /* Pipe.swift in Sources */,
 				B57BB6D51E0B1C8A0002E0CD /* Store.swift in Sources */,
 				B5F0D2471DD506ED00402FEC /* PeaPod.xcdatamodeld in Sources */,
+				B53B505E1E0F1379009C8EEF /* EnclosureViewModel.swift in Sources */,
 				B551BC4C1DF23CA1001C76E3 /* AudioPlaying.swift in Sources */,
 				B5E281771DF75BA400D53ABB /* OPMLProtocol.swift in Sources */,
 				B5F20F551E0B231500A5E1A5 /* Subscription.swift in Sources */,
@@ -718,9 +732,11 @@
 				B5F20F5B1E0B306B00A5E1A5 /* Episode.swift in Sources */,
 				B5644B7F1E01DE6000FC3FB1 /* SubscriptionsViewController.swift in Sources */,
 				B551BC511DF24065001C76E3 /* AudioService.swift in Sources */,
+				B53B50591E0F1342009C8EEF /* EpisodeViewModel.swift in Sources */,
 				B5A1AC871DE4EFC90093E823 /* FeedViewModel.swift in Sources */,
 				B5DABFE01E0343DB00D9FFFF /* StubUtility.swift in Sources */,
 				B5F0D23F1DD506ED00402FEC /* AppDelegate.swift in Sources */,
+				B53B505B1E0F136B009C8EEF /* Enclosure.swift in Sources */,
 				B5F20F581E0B261700A5E1A5 /* Feed.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
