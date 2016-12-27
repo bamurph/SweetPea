@@ -10,20 +10,32 @@ import Foundation
 import RealmSwift
 import Lepton
 
+enum SubscriptionError: Error {
+    case inputMissing
+}
+
 
 /// A subscription object will save / link to additional settings for that sub. 
 class Subscription: Object {
-    dynamic var title: String
+    dynamic var title: String = ""
     dynamic var summary: String?
-    dynamic var xmlURL: String
-    dynamic var htmlURL: String?
+    dynamic var xmlUrl: String = ""
+    dynamic var htmlUrl: String?
     dynamic var feed: Feed
 
-    convenience init(from item: OPMLItem) {
+    convenience init(with item: OPMLItem) throws {
         self.init()
-        self.title = item.title
+
+        guard item.title != nil && item.xmlURL != nil else {
+            throw SubscriptionError.inputMissing
+        }
+
+        self.title = item.title!
         self.summary = item.summary
-        self.xmlURL = item.xmlURL
+        self.xmlUrl = item.xmlURL!
+        self.htmlUrl = item.htmlURL!
+
+
     }
 
 }

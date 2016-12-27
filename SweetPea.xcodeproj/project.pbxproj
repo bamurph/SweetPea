@@ -38,6 +38,7 @@
 		B556A2241E09DEF40002CDB9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F0D2401DD506ED00402FEC /* ViewController.swift */; };
 		B556A2251E09E0030002CDB9 /* SubscriptionsViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DABFDC1E03401200D9FFFF /* SubscriptionsViewModelSpec.swift */; };
 		B5644B7F1E01DE6000FC3FB1 /* SubscriptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5644B7E1E01DE6000FC3FB1 /* SubscriptionsViewController.swift */; };
+		B56ED7581E12F91300482181 /* EpisodeSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56ED7571E12F91300482181 /* EpisodeSpec.swift */; };
 		B57BB6D51E0B1C8A0002E0CD /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57BB6D41E0B1C8A0002E0CD /* Store.swift */; };
 		B57BB6D61E0B1E130002E0CD /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57BB6D41E0B1C8A0002E0CD /* Store.swift */; };
 		B57BB6D81E0B1E330002E0CD /* StoreSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57BB6D71E0B1E330002E0CD /* StoreSpec.swift */; };
@@ -122,6 +123,7 @@
 		B551BC4E1DF23CE8001C76E3 /* AudioPlayingSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioPlayingSpec.swift; sourceTree = "<group>"; };
 		B551BC501DF24065001C76E3 /* AudioService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioService.swift; sourceTree = "<group>"; };
 		B5644B7E1E01DE6000FC3FB1 /* SubscriptionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubscriptionsViewController.swift; sourceTree = "<group>"; };
+		B56ED7571E12F91300482181 /* EpisodeSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EpisodeSpec.swift; sourceTree = "<group>"; };
 		B57BB6D41E0B1C8A0002E0CD /* Store.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Store.swift; path = ../Store.swift; sourceTree = "<group>"; };
 		B57BB6D71E0B1E330002E0CD /* StoreSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreSpec.swift; sourceTree = "<group>"; };
 		B58A64021E06E89A001716E7 /* hh.rss */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = hh.rss; sourceTree = "<group>"; };
@@ -246,6 +248,7 @@
 				B57BB6D71E0B1E330002E0CD /* StoreSpec.swift */,
 				B5DABFDC1E03401200D9FFFF /* SubscriptionsViewModelSpec.swift */,
 				B58B3D911E0889070015BCAB /* SubscriptionViewModelStub.swift */,
+				B56ED7571E12F91300482181 /* EpisodeSpec.swift */,
 				B5BA3F151DF74EAF000B6FFF /* OPMLServiceTest.swift */,
 				B58A640A1E06EFC9001716E7 /* OPMLServiceStub.swift */,
 				B551BC4E1DF23CE8001C76E3 /* AudioPlayingSpec.swift */,
@@ -679,6 +682,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B56ED7581E12F91300482181 /* EpisodeSpec.swift in Sources */,
 				B556A2171E09DEE90002CDB9 /* AudioService.swift in Sources */,
 				B5F20F591E0B261700A5E1A5 /* Feed.swift in Sources */,
 				B556A21D1E09DEEC0002CDB9 /* Helpers.swift in Sources */,
