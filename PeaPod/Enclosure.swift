@@ -16,7 +16,5 @@ class Enclosure: Object {
     dynamic var url: String = ""
     dynamic var type: String = ""
     let length: RealmOptional<Int64> = RealmOptional(nil)
-
-    }
-    
 }
+

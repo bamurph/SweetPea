@@ -38,33 +38,8 @@ class StoreSpec: QuickSpec {
 
             }
         }
-        describe("creates subscription objects from opml file") {
-            context("when there are two subs in the opml file") {
-                let testBundle = Bundle(for: type(of: self))
-                let testUrl = testBundle.url(forResource: "tests", withExtension: "opml")
-                let svc = OPMLServiceStub(with: testBundle)
-                let subs = store.objects(Subscription.self)
-                let items = svc.items(testUrl!)
-                it("creates two subs in the store") {
-                    
-                    svc.withFeedURLs(items)
-                        .map { $0.map { Subscription(with: $0)}}
-                        .map { Observable.from($0) }
-                        .merge()
-                        .subscribe(store.rx.add())
-                        .dispose()
 
-                    Observable.from(subs)
-                        .subscribe(onNext: { n in
-                            expect(n.count).to(equal(2))
-                            expect(n.count).toNot(equal(55))
-                        }).dispose()
-
-                }
-            }
-        }
-
-        describe("creates epeisode objects from rss file") {
+        describe("creates episode objects from rss file") {
 
         }
 
