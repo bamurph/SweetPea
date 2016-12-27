@@ -14,6 +14,7 @@ import RxRealm
 
 
 class StoreSpec: QuickSpec {
+
     override func spec() {
         beforeSuite {
             let subs = store.objects(Subscription.self)
@@ -25,26 +26,27 @@ class StoreSpec: QuickSpec {
             }
         }
 
-        // TODO: - rewrite this so we can test before/after teardown
-
-        describe("returns collections of stored objects") {
-
-            describe("returns all stored subscriptions") {
-                context("when there are no stored feeds") {
-                    it("returns no feeds") {
-                        expect(store.subscriptions.count).to(equal(0))
-                    }
-                }
-
+        describe("adding a subscription from scratch") {
+            it("saves a podcast to the store") {
+                store.addSubscription(title: "A simple podcast.", summary: "Not much!", xmlUrl: "http://asimplepodcast.com/rss", htmlUrl: "http://asimplepodcast.com", feed: nil)
+                expect(store.subscriptions.contains(where: { (sub) -> Bool in
+                    sub.title == "A simple podcast." && sub.summary == "Not much!"
+                })).to(beTrue())
             }
         }
 
-        describe("creates episode objects from rss file") {
-
+        describe("deleting a subscription by title") {
+            it("deletes the subscription") {
+                let sub = store.objects(Subscription.self).filter("title = 'A simple podcast.'").first
+                store.deleteSubscription(subscription: sub!)
+                expect(store.subscriptions.contains(where: { (sub) -> Bool in
+                    sub.title == "A simple podcast."
+                })).to(beFalse())
+            }
         }
-
-
+        
+        
     }
-
+    
 }
 

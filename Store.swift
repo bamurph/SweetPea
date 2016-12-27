@@ -40,6 +40,7 @@ extension Realm {
                 sub.summary = summary
                 sub.xmlUrl = xmlUrl
                 sub.htmlUrl = htmlUrl
+                add(sub)
             }
         } catch {
             print(StoreError.addSubscriptionFailed(error).localizedDescription)
@@ -62,4 +63,5 @@ extension Realm {
 
 
 
-let store = try! Realm()
+let store = try! Realm(fileURL: URL(string: "/Users/ben/Desktop/TestRealm.realm")!)
+

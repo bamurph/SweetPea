@@ -10,9 +10,6 @@ import Foundation
 import RealmSwift
 import FeedKit
 
-enum EpisodeError: Error {
-    case inputMissing
-}
 
 class Episode: Object {
     dynamic var title: String = ""
@@ -23,4 +20,5 @@ class Episode: Object {
     dynamic var enclosure: Enclosure? = Enclosure()
 
 }
+
 
