@@ -21,17 +21,6 @@ class Subscription: Object {
     dynamic var htmlUrl: String?
     dynamic var feed: Feed? = nil
 
-    convenience init(with item: OPMLItem)  {
-        self.init()
-
-        self.title = item.title!
-        self.summary = item.summary
-        self.xmlUrl = item.xmlURL!
-        self.htmlUrl = nil
-
-
-    }
-
 
 
 }

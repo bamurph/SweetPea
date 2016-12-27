@@ -46,15 +46,11 @@ class StoreSpec: QuickSpec {
                 let subs = store.objects(Subscription.self)
                 let items = svc.items(testUrl!)
                 it("creates two subs in the store") {
-                   let last = items
-                    .takeLast(1)
-                    .subscribe(onNext: {n in
-                        n |> Subscription.subsFrom
-                    }
-
-                    let subs = Subscription.subsFrom(items: items)
+                    
                     svc.withFeedURLs(items)
-                        .map { Subscription.subsFrom(items: $0) }
+                        .map { $0.map { Subscription(with: $0)}}
+                        .map { Observable.from($0) }
+                        .merge()
                         .subscribe(store.rx.add())
                         .dispose()
 
