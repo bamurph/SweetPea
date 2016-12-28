@@ -10,7 +10,6 @@ import Quick
 import Nimble
 import RealmSwift
 import RxSwift
-import RxRealm
 
 
 class StoreSpec: QuickSpec {

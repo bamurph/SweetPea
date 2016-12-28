@@ -11,8 +11,6 @@ import RealmSwift
 import Lepton
 import RxSwift
 
-
-
 /// A subscription object will save / link to additional settings for that sub. 
 class Subscription: Object {
     dynamic var title: String = ""
@@ -20,7 +18,5 @@ class Subscription: Object {
     dynamic var xmlUrl: String = ""
     dynamic var htmlUrl: String?
     dynamic var feed: Feed? = nil
-
-
 
 }

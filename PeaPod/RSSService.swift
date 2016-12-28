@@ -11,6 +11,13 @@ import FeedKit
 import RxSwift
 import Lepton
 
+typealias RSSUrl = URL
+
+protocol RSSProtocol {
+    func fetch(url: RSSUrl) -> Observable<RSSFeed>
+
+}
+
 enum RSSServiceError: Error {
     case atomSyntax
     case nilUrl

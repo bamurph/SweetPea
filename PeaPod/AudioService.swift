@@ -10,6 +10,23 @@ import Foundation
 import AVFoundation
 import RxSwift
 
+enum FeedAudioError: Error {
+    case noEnclosure
+    case noMimeType
+    case invalidMimeType(String)
+    case noURL
+}
+
+enum MimeType: String {
+    case mp3 = "audio/mpeg"
+    case aac = "audio/aac"
+}
+
+protocol AudioPlaying {
+    func audioPlayer(url: URL) -> Observable<AVPlayer>
+}
+
+
 struct AudioService: AudioPlaying {
     func audioPlayer(url: URL) -> Observable<AVPlayer> {
         return Observable.create { observer in
@@ -21,5 +38,4 @@ struct AudioService: AudioPlaying {
             return Disposables.create()
         }
     }
-
 }
