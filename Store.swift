@@ -13,6 +13,8 @@ import RxSwift
 enum StoreError: Error {
     case addSubscriptionFailed(Error)
     case deleteSubscriptionFailed(Error)
+    case addAudioFailed(Error)
+    case deleteAudioFaled(Error)
 }
 
 extension Realm {
@@ -27,11 +29,20 @@ extension Realm {
     var episodes: Results<Episode> {
         return objects(Episode.self)
     }
+
+    var enclosures: Results<Enclosure> {
+        return objects(Enclosure.self)
+    }
+
+    var audioData: Results<Audio> {
+        return objects(Audio.self)
+    }
 }
 
 // MARK: Actions
 
 extension Realm {
+    // MARK: Subscription Actions
     func addSubscription(title: String, summary: String?, xmlUrl: String, htmlUrl: String?, feed: Feed?) {
         do {
             try write {
@@ -59,7 +70,28 @@ extension Realm {
         }
     }
 
+    // MARK: Audio Actions
+    func addAudio(for enclosure: Enclosure) {
+        do {
+            try write {
+                let svc = DownloadService()
+
+                svc.data(from: enclosure)
+                    .subscribe(
+                        onNext: { data in
+                            let audio = Audio()
+                            audio.enclosure = enclosure
+                            audio.file = data
+                            self.add(audio) },
+                        onError: { error in
+                            print(StoreError.addAudioFailed(error)) })
+            }
+        } catch (let error) {
+            print(StoreError.addAudioFailed(error))
+        }
+    }
 }
+
 
 
 
