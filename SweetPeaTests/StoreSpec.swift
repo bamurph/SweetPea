@@ -16,12 +16,9 @@ class StoreSpec: QuickSpec {
 
     override func spec() {
         beforeSuite {
-            let subs = store.objects(Subscription.self)
-            let feeds = store.objects(Subscription.self)
 
             try! store.write {
-                store.delete(subs)
-                store.delete(feeds)
+               store.deleteAll()
             }
         }
 
@@ -43,8 +40,25 @@ class StoreSpec: QuickSpec {
                 })).to(beFalse())
             }
         }
+
+
+        // TODO: - Complete these tests
+
+        describe("adding an enclosure") {
+
+        }
         
-        
+        describe("adding audio to an enclosure") {
+
+        }
+
+        describe("deleting an enclosure") {
+
+        }
+
+        describe("deleting an audio file") {
+
+        }
     }
     
 }

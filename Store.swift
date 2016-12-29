@@ -70,13 +70,15 @@ extension Realm {
         }
     }
 
+    // MARK: -
+
     // MARK: Audio Actions
     func addAudio(for enclosure: Enclosure) {
         do {
             try write {
                 let svc = DownloadService()
 
-                svc.data(from: enclosure)
+                let _ = svc.data(from: enclosure)
                     .subscribe(
                         onNext: { data in
                             let audio = Audio()
@@ -90,6 +92,12 @@ extension Realm {
             print(StoreError.addAudioFailed(error))
         }
     }
+
+    // TODO: - finish delete audio
+    func deleteAudio(for enclosure: Enclosure) {
+
+    }
+
 }
 
 
