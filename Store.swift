@@ -60,19 +60,46 @@ extension Realm {
         }
     }
 
-    func deleteSubscription(subscription: Subscription) {
+    func deleteSubscription(_ subscription: Subscription) {
         do {
             try write {
-                if subscription.feed != nil { delete(subscription.feed!) }
+                if let feeds = subscription.feed { delete(feeds) }
                 delete(subscription)
             }
-
         } catch {
             print(StoreError.deleteSubscriptionFailed(error).localizedDescription)
         }
     }
 
-    // MARK: -
+    // MARK: Enclosure Actions
+    func addEnclosure(url: String, type: String, length: Int64?) {
+        do {
+            try write {
+                var enc = Enclosure()
+                enc.url = url
+                enc.type = type
+                enc.length.value = length
+                add(enc)
+            }
+        } catch  {
+            print(StoreError.addEnclosureFailed(error))
+        }
+    }
+
+
+    func deleteEnclosure(_ enclosure: Enclosure) {
+        do {
+            try write {
+                delete(enclosure.localAudio)
+                delete(enclosure)
+            }
+        } catch {
+            print(StoreError.addEnclosureFailed(error))
+        }
+    }
+
+
+
 
     // MARK: Audio Actions
     func addAudio(for enclosure: Enclosure) {
@@ -90,16 +117,16 @@ extension Realm {
                         onError: { error in
                             print(StoreError.addAudioFailed(error)) })
             }
-        } catch (let error) {
+        } catch {
             print(StoreError.addAudioFailed(error))
         }
     }
 
     // TODO: - finish delete audio
-    func deleteAudio(for enclosure: Enclosure) {
-
+    func deleteAudio(_ audio: Audio) {
+        
     }
-
+    
 }
 
 
