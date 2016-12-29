@@ -10,15 +10,32 @@ import Foundation
 import RxSwift
 import AVFoundation
 
-protocol AudioDownloading {
-    func dataFromURL(_ url: URL) -> Observable<Data>
+enum AudioDownloadingError: Error {
+    case invalidURL(String)
 }
 
-struct DownloadService: AudioDownloading {
+protocol AudioDownloading {
+    func data(from url : URL) -> Observable<Data>
+    func data(from enclosure: Enclosure) -> Observable<Data>
+}
 
+struct DownloadService {
     let disposeBag = DisposeBag()
+}
 
-    func dataFromURL(_ url: URL) -> Observable<Data> {
+extension DownloadService: AudioDownloading {
+
+    func data(from enclosure: Enclosure) -> Observable<Data> {
+        guard
+            let url = URL(string: enclosure.url)
+            else {
+                return Observable.error(AudioDownloadingError.invalidURL(enclosure.url))
+        }
+        return url |> data
+    }
+
+
+    func data(from url: URL) -> Observable<Data> {
         return Observable<Data>.create { observer in
 
             do {
@@ -31,5 +48,7 @@ struct DownloadService: AudioDownloading {
             return Disposables.create()
         }
     }
+    
+
 }
 
