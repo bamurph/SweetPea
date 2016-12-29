@@ -122,9 +122,15 @@ extension Realm {
         }
     }
 
-    // TODO: - finish delete audio
+
     func deleteAudio(_ audio: Audio) {
-        
+        do {
+            try write {
+                delete(audio)
+            }
+        } catch {
+            print(StoreError.deleteAudioFailed(error))
+        }
     }
     
 }
