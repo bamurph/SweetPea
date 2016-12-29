@@ -75,7 +75,7 @@ extension Realm {
     func addEnclosure(url: String, type: String, length: Int64?) {
         do {
             try write {
-                var enc = Enclosure()
+                let enc = Enclosure()
                 enc.url = url
                 enc.type = type
                 enc.length.value = length
