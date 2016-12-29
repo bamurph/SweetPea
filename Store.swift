@@ -75,7 +75,7 @@ extension Realm {
     func addEnclosure(url: String, type: String, length: Int64?) {
         do {
             try write {
-                var enc = Enclosure()
+                let enc = Enclosure()
                 enc.url = url
                 enc.type = type
                 enc.length.value = length
@@ -122,9 +122,15 @@ extension Realm {
         }
     }
 
-    // TODO: - finish delete audio
+
     func deleteAudio(_ audio: Audio) {
-        
+        do {
+            try write {
+                delete(audio)
+            }
+        } catch {
+            print(StoreError.deleteAudioFailed(error))
+        }
     }
     
 }
