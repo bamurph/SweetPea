@@ -343,9 +343,9 @@
 		B5FBBA431DF1FAC400B7A71C /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				B5F20F5A1E0B306B00A5E1A5 /* Episode.swift */,
 				B5F20F541E0B231500A5E1A5 /* Subscription.swift */,
 				B5F20F571E0B261700A5E1A5 /* Feed.swift */,
+				B5F20F5A1E0B306B00A5E1A5 /* Episode.swift */,
 				B53B505A1E0F136B009C8EEF /* Enclosure.swift */,
 				B5A4A5401E142541000A6E2D /* Audio.swift */,
 			);
