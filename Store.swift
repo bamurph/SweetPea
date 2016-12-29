@@ -10,9 +10,13 @@ import Foundation
 import RealmSwift
 import RxSwift
 
+
+
 enum StoreError: Error {
     case addSubscriptionFailed(Error)
     case deleteSubscriptionFailed(Error)
+    case addFeedFailed(Error)
+    case deleteFeedFailed(Error)
     case addAudioFailed(Error)
     case deleteAudioFailed(Error)
     case addEnclosureFailed(Error)
@@ -53,6 +57,7 @@ extension Realm {
                 sub.summary = summary
                 sub.xmlUrl = xmlUrl
                 sub.htmlUrl = htmlUrl
+                sub.feed = feed
                 add(sub)
             }
         } catch {
@@ -70,6 +75,43 @@ extension Realm {
             print(StoreError.deleteSubscriptionFailed(error).localizedDescription)
         }
     }
+
+    // MARK: Feed Actions
+
+    func addFeed(title: String, link: String, feedDescription: String?, language: String?, copyright: String?, managingEditor: String?, webMaster: String?, pubDate: Date?, lastBuildDate: Date?, imageUrl: String?, categories: String?, items: List<Episode> = List<Episode>.init()) {
+        do {
+            try write {
+                let feed = Feed()
+                feed.title = title
+                feed.link = link
+                feed.feedDescription = feedDescription
+                feed.language = language
+                feed.copyright = copyright
+                feed.managingEditor = managingEditor
+                feed.webMaster = webMaster
+                feed.pubDate = pubDate
+                feed.lastBuildDate = lastBuildDate
+                feed.imageUrl = imageUrl
+                feed.items = items
+                feed.categories = feed.separated(categories)
+                add(feed)
+            }
+        } catch {
+            print(StoreError.addFeedFailed(error))
+        }
+    }
+
+    func deleteFeed(_ feed: Feed) {
+        do {
+            try write {
+                delete(feed)
+                delete(feed.items)
+            }
+        } catch {
+            print(StoreError.deleteFeedFailed(error))
+        }
+    }
+
 
     // MARK: Enclosure Actions
     func addEnclosure(url: String, type: String, length: Int64?) {
@@ -132,7 +174,7 @@ extension Realm {
             print(StoreError.deleteAudioFailed(error))
         }
     }
-    
+
 }
 
 

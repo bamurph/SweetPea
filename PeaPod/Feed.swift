@@ -40,7 +40,10 @@ class Feed: Object {
         return ["categories"]
     }
 
+    // TODO: - Make sure categories are separated properly when parsed
 
-
+    func separated(_ categories: String?) -> [String] {
+        return categories?.components(separatedBy: separator) ?? []
+    }
 
 }
