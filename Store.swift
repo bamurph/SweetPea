@@ -10,13 +10,13 @@ import Foundation
 import RealmSwift
 import RxSwift
 
-
-
 enum StoreError: Error {
     case addSubscriptionFailed(Error)
     case deleteSubscriptionFailed(Error)
     case addFeedFailed(Error)
     case deleteFeedFailed(Error)
+    case addEpisodeFailed(Error)
+    case deleteEpisodeFailed(Error)
     case addAudioFailed(Error)
     case deleteAudioFailed(Error)
     case addEnclosureFailed(Error)
@@ -45,10 +45,10 @@ extension Realm {
     }
 }
 
-// MARK: Actions
 
+// MARK: - Subscription Actions
 extension Realm {
-    // MARK: Subscription Actions
+
     func addSubscription(title: String, summary: String?, xmlUrl: String, htmlUrl: String?, feed: Feed?) {
         do {
             try write {
@@ -68,7 +68,7 @@ extension Realm {
     func deleteSubscription(_ subscription: Subscription) {
         do {
             try write {
-                if let feeds = subscription.feed { delete(feeds) }
+                if let feed = subscription.feed { feed |> deleteFeed }
                 delete(subscription)
             }
         } catch {
@@ -76,8 +76,10 @@ extension Realm {
         }
     }
 
-    // MARK: Feed Actions
+}
 
+// MARK: - Feed Actions
+extension Realm {
     func addFeed(title: String, link: String, feedDescription: String?, language: String?, copyright: String?, managingEditor: String?, webMaster: String?, pubDate: Date?, lastBuildDate: Date?, imageUrl: String?, categories: String?, items: List<Episode> = List<Episode>.init()) {
         do {
             try write {
@@ -105,15 +107,47 @@ extension Realm {
         do {
             try write {
                 delete(feed)
-                delete(feed.items)
+                feed.items.forEach { $0 |> deleteEpisode }
             }
         } catch {
             print(StoreError.deleteFeedFailed(error))
         }
     }
 
+}
 
-    // MARK: Enclosure Actions
+// MARK: - Episode Actions
+extension Realm {
+    func addEpisode(title: String, guid: String?, link: String, episodeDescription: String?, pubDate: Date?, enclosure: Enclosure) {
+        do {
+            try write {
+                let episode = Episode()
+                episode.title = title
+                episode.guid = guid
+                episode.link = link
+                episode.episodeDescription = episodeDescription
+                episode.pubDate = pubDate
+                episode.enclosure = enclosure
+            }
+        } catch {
+            print(StoreError.addEpisodeFailed(error))
+        }
+    }
+
+    func deleteEpisode(_ episode: Episode) {
+        do {
+            try write {
+                if let enc = episode.enclosure { enc |> deleteEnclosure }
+                delete(episode)
+            }
+        } catch {
+            print(StoreError.deleteEpisodeFailed(error))
+        }
+    }
+}
+
+// MARK: - Enclosure Actions
+extension Realm {
     func addEnclosure(url: String, type: String, length: Int64?) {
         do {
             try write {
@@ -139,11 +173,12 @@ extension Realm {
             print(StoreError.addEnclosureFailed(error))
         }
     }
+}
 
 
 
-
-    // MARK: Audio Actions
+// MARK: - Audio Actions
+extension Realm {
     func addAudio(for enclosure: Enclosure) {
         do {
             try write {
@@ -174,8 +209,8 @@ extension Realm {
             print(StoreError.deleteAudioFailed(error))
         }
     }
-
 }
+
 
 
 
