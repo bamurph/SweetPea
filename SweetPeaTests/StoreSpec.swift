@@ -34,7 +34,7 @@ class StoreSpec: QuickSpec {
         describe("deleting a subscription by title") {
             it("deletes the subscription") {
                 let sub = store.objects(Subscription.self).filter("title = 'A simple podcast.'").first
-                store.deleteSubscription(subscription: sub!)
+                store.deleteSubscription(sub!)
                 expect(store.subscriptions.contains(where: { (sub) -> Bool in
                     sub.title == "A simple podcast."
                 })).to(beFalse())
