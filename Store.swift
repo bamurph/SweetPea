@@ -14,7 +14,9 @@ enum StoreError: Error {
     case addSubscriptionFailed(Error)
     case deleteSubscriptionFailed(Error)
     case addAudioFailed(Error)
-    case deleteAudioFaled(Error)
+    case deleteAudioFailed(Error)
+    case addEnclosureFailed(Error)
+    case deleteEnclosureFailed(Error)
 }
 
 extension Realm {
