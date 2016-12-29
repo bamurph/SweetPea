@@ -39,7 +39,7 @@
             </BuildableReference>
             <SkippedTests>
                <Test
-                  Identifier = "SubscriptionsViewModelSpec">
+                  Identifier = "StoreSpec/deleting_a_subscription_by_title__deletes_the_subscription()">
                </Test>
             </SkippedTests>
          </TestableReference>

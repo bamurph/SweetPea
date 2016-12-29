@@ -11,7 +11,14 @@ import FeedKit
 import RxSwift
 import Lepton
 
-enum RSSServiceErrors: Error {
+typealias RSSUrl = URL
+
+protocol RSSProtocol {
+    func fetch(url: RSSUrl) -> Observable<RSSFeed>
+
+}
+
+enum RSSServiceError: Error {
     case atomSyntax
     case nilUrl
     case badUrl
@@ -26,7 +33,7 @@ struct RSSService: RSSProtocol {
         return Observable.create { observer in
 
             guard let data = NSData(contentsOf: url) as? Data else {
-                observer.onError(RSSServiceErrors.badUrl)
+                observer.onError(RSSServiceError.badUrl)
                 return Disposables.create()
             }
 
@@ -36,9 +43,9 @@ struct RSSService: RSSProtocol {
                     observer.onNext(rssFeed)
                     observer.onCompleted()
                 case .atom:
-                    observer.onError(RSSServiceErrors.atomSyntax)
-                case .failure(let error):
-                    observer.onError(error)
+                    observer.onError(RSSServiceError.atomSyntax)
+                case .failure:
+                    observer.onError(RSSServiceError.badUrl)
                 }
             }
             return Disposables.create()

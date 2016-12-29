@@ -3,10 +3,18 @@ PODS:
   - Lepton (0.1.0)
   - Nimble (5.1.0)
   - Quick (0.10.0)
+  - Realm (2.1.2):
+    - Realm/Headers (= 2.1.2)
+  - Realm/Headers (2.1.2)
+  - RealmSwift (2.1.2):
+    - Realm (= 2.1.2)
   - RxBlocking (3.0.0):
     - RxSwift (~> 3.0)
   - RxCocoa (3.0.0):
     - RxSwift (~> 3.0)
+  - RxRealm (0.4.0):
+    - RealmSwift (~> 2.0)
+    - RxSwift (~> 3.0.0)
   - RxSwift (3.0.0)
 
 DEPENDENCIES:
@@ -14,8 +22,10 @@ DEPENDENCIES:
   - Lepton (from `https://github.com/younata/Lepton.git`)
   - Nimble
   - Quick
+  - RealmSwift
   - RxBlocking (~> 3.0)
   - RxCocoa (~> 3.0)
+  - RxRealm
   - RxSwift (~> 3.0)
 
 EXTERNAL SOURCES:
@@ -32,10 +42,13 @@ SPEC CHECKSUMS:
   Lepton: bd40c02b72773ff71a12d98345b4c879401f1955
   Nimble: 5ea121a2eda60440287054cde077fc0ad22227b3
   Quick: 5d290df1c69d5ee2f0729956dcf0fd9a30447eaa
+  Realm: efe855f4d977c8ce5a82d3116d9f1ff155a6550c
+  RealmSwift: 17d6ee30b6f9df86364408c2197492e33bfea567
   RxBlocking: 0132c660340d8b8f34b65b2e099167ea6134eecf
   RxCocoa: 0a2f3ae381cf16f4021a4cee7a4420f83058a965
+  RxRealm: 6c1052b72118ed6929115801c38f90f0c962f2cf
   RxSwift: a930cd662f5b4a7ca9dc3518585dba91dadf497c
 
-PODFILE CHECKSUM: d1a6680b10bf0e74af21cef3377ebc77abdf52ab
+PODFILE CHECKSUM: 5c11c337f94326f2fa527f2e72a7c8bfbe865ee5
 
-COCOAPODS: 1.1.1
+COCOAPODS: 1.0.0

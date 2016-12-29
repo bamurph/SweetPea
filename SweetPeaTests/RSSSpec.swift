@@ -16,7 +16,6 @@ import RxBlocking
 
 class RSSSpec: QuickSpec {
     override func spec() {
-
         let testBundle = Bundle(for: type(of: self))
         let url = testBundle.url(forResource: "utr", withExtension: "rss")
 
@@ -38,7 +37,7 @@ class RSSSpec: QuickSpec {
                     _ = try service.fetch(url: badUrl!)
                         .toBlocking().toArray()
                 } catch let error {
-                    expect(error.localizedDescription).to(equal(RSSServiceErrors.badUrl.localizedDescription))
+                    expect(error.localizedDescription).to(equal(RSSServiceError.badUrl.localizedDescription))
                 }
             }
 

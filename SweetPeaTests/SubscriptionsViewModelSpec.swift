@@ -40,7 +40,7 @@ class SubscriptionsViewModelSpec: QuickSpec {
                             return svm!.titles(in: feeds)
                         }
                         let all = fs |> titles
-                        expect(all.count).to(beGreaterThan(5))
+                        expect(all.count).to(beGreaterThan(1))
                     }
 
 

@@ -10,17 +10,18 @@
 		7AF81C7DD8A444B7673153E8 /* Pods_SweetPea.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 217687A5DF26143AF8C2A8D4 /* Pods_SweetPea.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		84845C9D2435C480C4077018 /* Pods_SweetPeaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A86763A151A1FAF46D41125C /* Pods_SweetPeaTests.framework */; };
 		B5142A2A1DF0CA92005CE3AC /* RSSSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5142A291DF0CA92005CE3AC /* RSSSpec.swift */; };
+		B53B50591E0F1342009C8EEF /* EpisodeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53B50581E0F1342009C8EEF /* EpisodeViewModel.swift */; };
+		B53B505B1E0F136B009C8EEF /* Enclosure.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53B505A1E0F136B009C8EEF /* Enclosure.swift */; };
+		B53B505C1E0F136B009C8EEF /* Enclosure.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53B505A1E0F136B009C8EEF /* Enclosure.swift */; };
+		B53B505E1E0F1379009C8EEF /* EnclosureViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53B505D1E0F1379009C8EEF /* EnclosureViewModel.swift */; };
+		B53B505F1E0F1379009C8EEF /* EnclosureViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53B505D1E0F1379009C8EEF /* EnclosureViewModel.swift */; };
 		B551BC431DF23B6A001C76E3 /* Under the Radar 1_ Adapting to the Market.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B551BC411DF23B6A001C76E3 /* Under the Radar 1_ Adapting to the Market.mp3 */; };
 		B551BC461DF23B71001C76E3 /* Under the Radar 56_ Surviving the Winter.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B551BC441DF23B71001C76E3 /* Under the Radar 56_ Surviving the Winter.mp3 */; };
 		B551BC491DF23B8D001C76E3 /* Under the Radar 55_ Black Friday Sale.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B551BC471DF23B8D001C76E3 /* Under the Radar 55_ Black Friday Sale.mp3 */; };
-		B551BC4C1DF23CA1001C76E3 /* AudioPlaying.swift in Sources */ = {isa = PBXBuildFile; fileRef = B551BC4B1DF23CA1001C76E3 /* AudioPlaying.swift */; };
 		B551BC4F1DF23CE8001C76E3 /* AudioPlayingSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B551BC4E1DF23CE8001C76E3 /* AudioPlayingSpec.swift */; };
 		B551BC511DF24065001C76E3 /* AudioService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B551BC501DF24065001C76E3 /* AudioService.swift */; };
-		B556A2161E09DEE90002CDB9 /* AudioPlaying.swift in Sources */ = {isa = PBXBuildFile; fileRef = B551BC4B1DF23CA1001C76E3 /* AudioPlaying.swift */; };
 		B556A2171E09DEE90002CDB9 /* AudioService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B551BC501DF24065001C76E3 /* AudioService.swift */; };
 		B556A2181E09DEE90002CDB9 /* RSSService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B537939F1DDA626300D9C9AF /* RSSService.swift */; };
-		B556A2191E09DEE90002CDB9 /* RSSProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FBBA441DF1FBB700B7A71C /* RSSProtocol.swift */; };
-		B556A21A1E09DEE90002CDB9 /* OPMLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E281761DF75BA400D53ABB /* OPMLProtocol.swift */; };
 		B556A21B1E09DEE90002CDB9 /* OPMLService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BB0D981DD51CB300BD7FA0 /* OPMLService.swift */; };
 		B556A21C1E09DEEC0002CDB9 /* StubUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DABFDF1E0343DB00D9FFFF /* StubUtility.swift */; };
 		B556A21D1E09DEEC0002CDB9 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B537939D1DD9BF8C00D9C9AF /* Helpers.swift */; };
@@ -33,6 +34,12 @@
 		B556A2241E09DEF40002CDB9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F0D2401DD506ED00402FEC /* ViewController.swift */; };
 		B556A2251E09E0030002CDB9 /* SubscriptionsViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DABFDC1E03401200D9FFFF /* SubscriptionsViewModelSpec.swift */; };
 		B5644B7F1E01DE6000FC3FB1 /* SubscriptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5644B7E1E01DE6000FC3FB1 /* SubscriptionsViewController.swift */; };
+		B56ED7581E12F91300482181 /* EpisodeSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56ED7571E12F91300482181 /* EpisodeSpec.swift */; };
+		B56ED7601E13077500482181 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56ED75F1E13077500482181 /* Result.swift */; };
+		B56ED7611E13077500482181 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56ED75F1E13077500482181 /* Result.swift */; };
+		B57BB6D51E0B1C8A0002E0CD /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57BB6D41E0B1C8A0002E0CD /* Store.swift */; };
+		B57BB6D61E0B1E130002E0CD /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57BB6D41E0B1C8A0002E0CD /* Store.swift */; };
+		B57BB6D81E0B1E330002E0CD /* StoreSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57BB6D71E0B1E330002E0CD /* StoreSpec.swift */; };
 		B58A64041E06E89A001716E7 /* hh.rss in Resources */ = {isa = PBXBuildFile; fileRef = B58A64021E06E89A001716E7 /* hh.rss */; };
 		B58A64061E06EA66001716E7 /* tests.opml in Resources */ = {isa = PBXBuildFile; fileRef = B58A64051E06EA66001716E7 /* tests.opml */; };
 		B58A64071E06EA66001716E7 /* tests.opml in Resources */ = {isa = PBXBuildFile; fileRef = B58A64051E06EA66001716E7 /* tests.opml */; };
@@ -40,6 +47,11 @@
 		B58B3D931E088A140015BCAB /* SubscriptionViewModelStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58B3D911E0889070015BCAB /* SubscriptionViewModelStub.swift */; };
 		B5A1AC871DE4EFC90093E823 /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A1AC861DE4EFC90093E823 /* FeedViewModel.swift */; };
 		B5A1AC8E1DE640440093E823 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B537939D1DD9BF8C00D9C9AF /* Helpers.swift */; };
+		B5A4A5411E142541000A6E2D /* Audio.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A4A5401E142541000A6E2D /* Audio.swift */; };
+		B5A4A5421E142541000A6E2D /* Audio.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A4A5401E142541000A6E2D /* Audio.swift */; };
+		B5A4A5441E14275B000A6E2D /* DownloadService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A4A5431E14275B000A6E2D /* DownloadService.swift */; };
+		B5A4A5451E14275B000A6E2D /* DownloadService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A4A5431E14275B000A6E2D /* DownloadService.swift */; };
+		B5A4A5471E142F68000A6E2D /* DownloadServiceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A4A5461E142F68000A6E2D /* DownloadServiceSpec.swift */; };
 		B5B686CA1DF76F2B00B5673B /* overcast.opml in Resources */ = {isa = PBXBuildFile; fileRef = B5B686C81DF76D3800B5673B /* overcast.opml */; };
 		B5B686CB1DF76F2E00B5673B /* utr.rss in Resources */ = {isa = PBXBuildFile; fileRef = B5B686C61DF76D2400B5673B /* utr.rss */; };
 		B5BA3F161DF74EAF000B6FFF /* OPMLServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BA3F151DF74EAF000B6FFF /* OPMLServiceTest.swift */; };
@@ -49,7 +61,6 @@
 		B5DABFD81E033A8100D9FFFF /* Pods_SweetPea.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5DABFD71E033A8100D9FFFF /* Pods_SweetPea.framework */; };
 		B5DABFDA1E033A9200D9FFFF /* FeedKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5DABFD91E033A9200D9FFFF /* FeedKit.framework */; };
 		B5DABFE01E0343DB00D9FFFF /* StubUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DABFDF1E0343DB00D9FFFF /* StubUtility.swift */; };
-		B5E281771DF75BA400D53ABB /* OPMLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E281761DF75BA400D53ABB /* OPMLProtocol.swift */; };
 		B5E4DFD11DEA10120074A51C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5A1AC941DE643F20093E823 /* XCTest.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		B5E4DFD21DEA10120074A51C /* XCTest.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B5A1AC941DE643F20093E823 /* XCTest.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B5E5DB221E00C31B0007CAD0 /* RSSService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B537939F1DDA626300D9C9AF /* RSSService.swift */; };
@@ -59,10 +70,15 @@
 		B5F0D2471DD506ED00402FEC /* PeaPod.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B5F0D2451DD506ED00402FEC /* PeaPod.xcdatamodeld */; };
 		B5F0D2491DD506ED00402FEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5F0D2481DD506ED00402FEC /* Assets.xcassets */; };
 		B5F0D24C1DD506ED00402FEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5F0D24A1DD506ED00402FEC /* LaunchScreen.storyboard */; };
+		B5F20F551E0B231500A5E1A5 /* Subscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F20F541E0B231500A5E1A5 /* Subscription.swift */; };
+		B5F20F561E0B231500A5E1A5 /* Subscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F20F541E0B231500A5E1A5 /* Subscription.swift */; };
+		B5F20F581E0B261700A5E1A5 /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F20F571E0B261700A5E1A5 /* Feed.swift */; };
+		B5F20F591E0B261700A5E1A5 /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F20F571E0B261700A5E1A5 /* Feed.swift */; };
+		B5F20F5B1E0B306B00A5E1A5 /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F20F5A1E0B306B00A5E1A5 /* Episode.swift */; };
+		B5F20F5C1E0B306B00A5E1A5 /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F20F5A1E0B306B00A5E1A5 /* Episode.swift */; };
 		B5F57B4F1E01982500462BC8 /* Compose.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F57B4E1E01982500462BC8 /* Compose.swift */; };
 		B5F57B511E01997100462BC8 /* Pipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F57B501E01997100462BC8 /* Pipe.swift */; };
 		B5F57B531E019A1300462BC8 /* ComposeSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F57B521E019A1300462BC8 /* ComposeSpec.swift */; };
-		B5FBBA451DF1FBB700B7A71C /* RSSProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FBBA441DF1FBB700B7A71C /* RSSProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,13 +114,19 @@
 		B5142A291DF0CA92005CE3AC /* RSSSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSSSpec.swift; sourceTree = "<group>"; };
 		B537939D1DD9BF8C00D9C9AF /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		B537939F1DDA626300D9C9AF /* RSSService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSSService.swift; sourceTree = "<group>"; };
+		B53B50581E0F1342009C8EEF /* EpisodeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EpisodeViewModel.swift; sourceTree = "<group>"; };
+		B53B505A1E0F136B009C8EEF /* Enclosure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enclosure.swift; sourceTree = "<group>"; };
+		B53B505D1E0F1379009C8EEF /* EnclosureViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnclosureViewModel.swift; sourceTree = "<group>"; };
 		B551BC411DF23B6A001C76E3 /* Under the Radar 1_ Adapting to the Market.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Under the Radar 1_ Adapting to the Market.mp3"; sourceTree = "<group>"; };
 		B551BC441DF23B71001C76E3 /* Under the Radar 56_ Surviving the Winter.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Under the Radar 56_ Surviving the Winter.mp3"; sourceTree = "<group>"; };
 		B551BC471DF23B8D001C76E3 /* Under the Radar 55_ Black Friday Sale.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Under the Radar 55_ Black Friday Sale.mp3"; sourceTree = "<group>"; };
-		B551BC4B1DF23CA1001C76E3 /* AudioPlaying.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioPlaying.swift; sourceTree = "<group>"; };
 		B551BC4E1DF23CE8001C76E3 /* AudioPlayingSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioPlayingSpec.swift; sourceTree = "<group>"; };
 		B551BC501DF24065001C76E3 /* AudioService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioService.swift; sourceTree = "<group>"; };
 		B5644B7E1E01DE6000FC3FB1 /* SubscriptionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubscriptionsViewController.swift; sourceTree = "<group>"; };
+		B56ED7571E12F91300482181 /* EpisodeSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EpisodeSpec.swift; sourceTree = "<group>"; };
+		B56ED75F1E13077500482181 /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		B57BB6D41E0B1C8A0002E0CD /* Store.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Store.swift; path = ../Store.swift; sourceTree = "<group>"; };
+		B57BB6D71E0B1E330002E0CD /* StoreSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreSpec.swift; sourceTree = "<group>"; };
 		B58A64021E06E89A001716E7 /* hh.rss */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = hh.rss; sourceTree = "<group>"; };
 		B58A64051E06EA66001716E7 /* tests.opml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = tests.opml; sourceTree = "<group>"; };
 		B58A640A1E06EFC9001716E7 /* OPMLServiceStub.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OPMLServiceStub.swift; sourceTree = "<group>"; };
@@ -112,6 +134,9 @@
 		B5A1AC861DE4EFC90093E823 /* FeedViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FeedViewModel.swift; path = PeaPod/FeedViewModel.swift; sourceTree = "<group>"; };
 		B5A1AC911DE642D80093E823 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		B5A1AC941DE643F20093E823 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		B5A4A5401E142541000A6E2D /* Audio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Audio.swift; sourceTree = "<group>"; };
+		B5A4A5431E14275B000A6E2D /* DownloadService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadService.swift; sourceTree = "<group>"; };
+		B5A4A5461E142F68000A6E2D /* DownloadServiceSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadServiceSpec.swift; sourceTree = "<group>"; };
 		B5B686C61DF76D2400B5673B /* utr.rss */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = utr.rss; sourceTree = "<group>"; };
 		B5B686C81DF76D3800B5673B /* overcast.opml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = overcast.opml; sourceTree = "<group>"; };
 		B5BA3F151DF74EAF000B6FFF /* OPMLServiceTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OPMLServiceTest.swift; sourceTree = "<group>"; };
@@ -124,7 +149,6 @@
 		B5DABFD91E033A9200D9FFFF /* FeedKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FeedKit.framework; path = "../../Library/Developer/Xcode/DerivedData/SweetPea-ammcoyyuyrqelrgeerwkfbahqsyg/Build/Products/Debug-iphonesimulator/FeedKit/FeedKit.framework"; sourceTree = "<group>"; };
 		B5DABFDC1E03401200D9FFFF /* SubscriptionsViewModelSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubscriptionsViewModelSpec.swift; sourceTree = "<group>"; };
 		B5DABFDF1E0343DB00D9FFFF /* StubUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StubUtility.swift; sourceTree = "<group>"; };
-		B5E281761DF75BA400D53ABB /* OPMLProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OPMLProtocol.swift; sourceTree = "<group>"; };
 		B5F0D23B1DD506ED00402FEC /* SweetPea.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SweetPea.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5F0D23E1DD506ED00402FEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B5F0D2401DD506ED00402FEC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -133,10 +157,12 @@
 		B5F0D2481DD506ED00402FEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B5F0D24B1DD506ED00402FEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B5F0D24D1DD506ED00402FEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5F20F541E0B231500A5E1A5 /* Subscription.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Subscription.swift; sourceTree = "<group>"; };
+		B5F20F571E0B261700A5E1A5 /* Feed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
+		B5F20F5A1E0B306B00A5E1A5 /* Episode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
 		B5F57B4E1E01982500462BC8 /* Compose.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Compose.swift; sourceTree = "<group>"; };
 		B5F57B501E01997100462BC8 /* Pipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pipe.swift; sourceTree = "<group>"; };
 		B5F57B521E019A1300462BC8 /* ComposeSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComposeSpec.swift; sourceTree = "<group>"; };
-		B5FBBA441DF1FBB700B7A71C /* RSSProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSSProtocol.swift; sourceTree = "<group>"; };
 		B8D4A22CA2C7ED9B428F56F4 /* Pods_Tests_SweetPeaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tests_SweetPeaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1E388EF1B5A8B303BF4AC6A /* Pods-SweetPea.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SweetPea.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SweetPea/Pods-SweetPea.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -221,8 +247,11 @@
 		B5BB0D8E1DD51C8300BD7FA0 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				B5A4A5461E142F68000A6E2D /* DownloadServiceSpec.swift */,
+				B57BB6D71E0B1E330002E0CD /* StoreSpec.swift */,
 				B5DABFDC1E03401200D9FFFF /* SubscriptionsViewModelSpec.swift */,
 				B58B3D911E0889070015BCAB /* SubscriptionViewModelStub.swift */,
+				B56ED7571E12F91300482181 /* EpisodeSpec.swift */,
 				B5BA3F151DF74EAF000B6FFF /* OPMLServiceTest.swift */,
 				B58A640A1E06EFC9001716E7 /* OPMLServiceStub.swift */,
 				B551BC4E1DF23CE8001C76E3 /* AudioPlayingSpec.swift */,
@@ -237,12 +266,11 @@
 		B5BB0D971DD51CA400BD7FA0 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				B551BC4B1DF23CA1001C76E3 /* AudioPlaying.swift */,
 				B551BC501DF24065001C76E3 /* AudioService.swift */,
+				B5A4A5431E14275B000A6E2D /* DownloadService.swift */,
 				B537939F1DDA626300D9C9AF /* RSSService.swift */,
-				B5FBBA441DF1FBB700B7A71C /* RSSProtocol.swift */,
-				B5E281761DF75BA400D53ABB /* OPMLProtocol.swift */,
 				B5BB0D981DD51CB300BD7FA0 /* OPMLService.swift */,
+				B57BB6D41E0B1C8A0002E0CD /* Store.swift */,
 			);
 			name = Services;
 			sourceTree = "<group>";
@@ -252,6 +280,8 @@
 			children = (
 				B5BB74611DE3894800F327F0 /* SubscriptionsViewModel.swift */,
 				B5A1AC861DE4EFC90093E823 /* FeedViewModel.swift */,
+				B53B50581E0F1342009C8EEF /* EpisodeViewModel.swift */,
+				B53B505D1E0F1379009C8EEF /* EnclosureViewModel.swift */,
 			);
 			name = ViewModels;
 			path = ..;
@@ -301,6 +331,7 @@
 		B5F57B4D1E0197FF00462BC8 /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				B56ED75F1E13077500482181 /* Result.swift */,
 				B5DABFDF1E0343DB00D9FFFF /* StubUtility.swift */,
 				B537939D1DD9BF8C00D9C9AF /* Helpers.swift */,
 				B5F57B4E1E01982500462BC8 /* Compose.swift */,
@@ -312,6 +343,11 @@
 		B5FBBA431DF1FAC400B7A71C /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				B5F20F5A1E0B306B00A5E1A5 /* Episode.swift */,
+				B5F20F541E0B231500A5E1A5 /* Subscription.swift */,
+				B5F20F571E0B261700A5E1A5 /* Feed.swift */,
+				B53B505A1E0F136B009C8EEF /* Enclosure.swift */,
+				B5A4A5401E142541000A6E2D /* Audio.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -334,6 +370,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B5BB0D961DD51C8300BD7FA0 /* Build configuration list for PBXNativeTarget "SweetPeaTests" */;
 			buildPhases = (
+				F24DF3AFCDE7DEEF162DCC77 /* 📦 Check Pods Manifest.lock */,
 				46B3508A54F72E88262504D3 /* [CP] Check Pods Manifest.lock */,
 				B5BB0D891DD51C8300BD7FA0 /* Sources */,
 				B5BB0D8A1DD51C8300BD7FA0 /* Frameworks */,
@@ -341,6 +378,8 @@
 				0749ADF7790530F16EF1D7CF /* [CP] Embed Pods Frameworks */,
 				17E017EA720192361D7844CD /* [CP] Copy Pods Resources */,
 				B5DABFDB1E033C2700D9FFFF /* ShellScript */,
+				B1DE054B4DA63BF23B371038 /* 📦 Embed Pods Frameworks */,
+				8283D1B33777BD337EE0E418 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -356,6 +395,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B5F0D2501DD506ED00402FEC /* Build configuration list for PBXNativeTarget "SweetPea" */;
 			buildPhases = (
+				71DADB8DF8C5849C30CAF966 /* 📦 Check Pods Manifest.lock */,
 				739DCC59BA06844286405727 /* [CP] Check Pods Manifest.lock */,
 				B5F0D2371DD506ED00402FEC /* Sources */,
 				B5F0D2381DD506ED00402FEC /* Frameworks */,
@@ -363,6 +403,8 @@
 				BEEE864DD6C25A11B4278794 /* [CP] Embed Pods Frameworks */,
 				5C9C664D3DF5E06035C1412C /* [CP] Copy Pods Resources */,
 				B5E4DFD01DEA0FE50074A51C /* Embed Frameworks */,
+				EE3F4C25560CDEDDD95C77B7 /* 📦 Embed Pods Frameworks */,
+				99EC9B37D766BDE89DFD72BE /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -503,6 +545,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SweetPea/Pods-SweetPea-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		71DADB8DF8C5849C30CAF966 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		739DCC59BA06844286405727 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -516,6 +573,51 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8283D1B33777BD337EE0E418 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SweetPeaTests/Pods-SweetPeaTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		99EC9B37D766BDE89DFD72BE /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SweetPea/Pods-SweetPea-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B1DE054B4DA63BF23B371038 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SweetPeaTests/Pods-SweetPeaTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		B5DABFDB1E033C2700D9FFFF /* ShellScript */ = {
@@ -546,6 +648,36 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SweetPea/Pods-SweetPea-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		EE3F4C25560CDEDDD95C77B7 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SweetPea/Pods-SweetPea-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F24DF3AFCDE7DEEF162DCC77 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -553,28 +685,37 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B56ED7581E12F91300482181 /* EpisodeSpec.swift in Sources */,
 				B556A2171E09DEE90002CDB9 /* AudioService.swift in Sources */,
+				B5F20F591E0B261700A5E1A5 /* Feed.swift in Sources */,
 				B556A21D1E09DEEC0002CDB9 /* Helpers.swift in Sources */,
 				B58B3D931E088A140015BCAB /* SubscriptionViewModelStub.swift in Sources */,
 				B556A21F1E09DEEC0002CDB9 /* Pipe.swift in Sources */,
 				B556A2201E09DEEF0002CDB9 /* SubscriptionsViewModel.swift in Sources */,
+				B57BB6D61E0B1E130002E0CD /* Store.swift in Sources */,
 				B556A2221E09DEF20002CDB9 /* SubscriptionsViewController.swift in Sources */,
-				B556A2191E09DEE90002CDB9 /* RSSProtocol.swift in Sources */,
 				B556A21E1E09DEEC0002CDB9 /* Compose.swift in Sources */,
 				B556A2231E09DEF40002CDB9 /* AppDelegate.swift in Sources */,
+				B57BB6D81E0B1E330002E0CD /* StoreSpec.swift in Sources */,
 				B58A640B1E06EFC9001716E7 /* OPMLServiceStub.swift in Sources */,
 				B556A2211E09DEEF0002CDB9 /* FeedViewModel.swift in Sources */,
+				B5A4A5471E142F68000A6E2D /* DownloadServiceSpec.swift in Sources */,
+				B53B505C1E0F136B009C8EEF /* Enclosure.swift in Sources */,
 				B5BA3F161DF74EAF000B6FFF /* OPMLServiceTest.swift in Sources */,
 				B556A2251E09E0030002CDB9 /* SubscriptionsViewModelSpec.swift in Sources */,
+				B5F20F5C1E0B306B00A5E1A5 /* Episode.swift in Sources */,
 				B556A21B1E09DEE90002CDB9 /* OPMLService.swift in Sources */,
 				B5142A2A1DF0CA92005CE3AC /* RSSSpec.swift in Sources */,
-				B556A21A1E09DEE90002CDB9 /* OPMLProtocol.swift in Sources */,
-				B556A2161E09DEE90002CDB9 /* AudioPlaying.swift in Sources */,
+				B53B505F1E0F1379009C8EEF /* EnclosureViewModel.swift in Sources */,
+				B56ED7611E13077500482181 /* Result.swift in Sources */,
+				B5A4A5421E142541000A6E2D /* Audio.swift in Sources */,
 				B551BC4F1DF23CE8001C76E3 /* AudioPlayingSpec.swift in Sources */,
 				B5F57B531E019A1300462BC8 /* ComposeSpec.swift in Sources */,
 				B556A2241E09DEF40002CDB9 /* ViewController.swift in Sources */,
 				B556A2181E09DEE90002CDB9 /* RSSService.swift in Sources */,
 				B556A21C1E09DEEC0002CDB9 /* StubUtility.swift in Sources */,
+				B5F20F561E0B231500A5E1A5 /* Subscription.swift in Sources */,
+				B5A4A5451E14275B000A6E2D /* DownloadService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -582,22 +723,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5FBBA451DF1FBB700B7A71C /* RSSProtocol.swift in Sources */,
 				B5F57B511E01997100462BC8 /* Pipe.swift in Sources */,
+				B57BB6D51E0B1C8A0002E0CD /* Store.swift in Sources */,
 				B5F0D2471DD506ED00402FEC /* PeaPod.xcdatamodeld in Sources */,
-				B551BC4C1DF23CA1001C76E3 /* AudioPlaying.swift in Sources */,
-				B5E281771DF75BA400D53ABB /* OPMLProtocol.swift in Sources */,
+				B53B505E1E0F1379009C8EEF /* EnclosureViewModel.swift in Sources */,
+				B56ED7601E13077500482181 /* Result.swift in Sources */,
+				B5F20F551E0B231500A5E1A5 /* Subscription.swift in Sources */,
+				B5A4A5441E14275B000A6E2D /* DownloadService.swift in Sources */,
 				B5BA3F171DF75478000B6FFF /* SubscriptionsViewModel.swift in Sources */,
 				B5BB0D991DD51CB300BD7FA0 /* OPMLService.swift in Sources */,
 				B5A1AC8E1DE640440093E823 /* Helpers.swift in Sources */,
 				B5F0D2411DD506ED00402FEC /* ViewController.swift in Sources */,
 				B5F57B4F1E01982500462BC8 /* Compose.swift in Sources */,
+				B5A4A5411E142541000A6E2D /* Audio.swift in Sources */,
 				B5E5DB221E00C31B0007CAD0 /* RSSService.swift in Sources */,
+				B5F20F5B1E0B306B00A5E1A5 /* Episode.swift in Sources */,
 				B5644B7F1E01DE6000FC3FB1 /* SubscriptionsViewController.swift in Sources */,
 				B551BC511DF24065001C76E3 /* AudioService.swift in Sources */,
+				B53B50591E0F1342009C8EEF /* EpisodeViewModel.swift in Sources */,
 				B5A1AC871DE4EFC90093E823 /* FeedViewModel.swift in Sources */,
 				B5DABFE01E0343DB00D9FFFF /* StubUtility.swift in Sources */,
 				B5F0D23F1DD506ED00402FEC /* AppDelegate.swift in Sources */,
+				B53B505B1E0F136B009C8EEF /* Enclosure.swift in Sources */,
+				B5F20F581E0B261700A5E1A5 /* Feed.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -146,7 +146,7 @@ open class RSSFeedItem {
      
      */
     open var enclosure: RSSFeedItemEnclosure?
-    
+       
     /**
      
      A string that uniquely identifies the item.
