@@ -27,7 +27,7 @@ class DownloadServiceSpec: QuickSpec {
                     let data = try? svc.data(from: goodUrl!).toBlocking().first()
                     expect(data).toNot(beNil())
                     expect(data??.count).to(beGreaterThan(100))
-                    expect(data??.count).to(beLessThan(100000000000))
+                    expect(data??.count).to(beLessThan(1000000000))
                 }
             }
 

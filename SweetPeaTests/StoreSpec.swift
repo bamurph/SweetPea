@@ -44,6 +44,18 @@ class StoreSpec: QuickSpec {
 
         // TODO: - Complete these tests
 
+        describe("adding a feed from an rss file") {
+            it("saves a nonsense feed with no items to the store") {
+                store.addFeed(title: "nonsense show", link: "http://nonsenseshow.com/rss", feedDescription: "a really dumb show", language: nil, copyright: nil, managingEditor: nil, webMaster: nil, pubDate: nil, lastBuildDate: Date.init(), imageUrl: nil, categories: nil)
+                let feed = store.feeds.first(where: { (feed) -> Bool in
+                    feed.title == "nonsense show"
+                })
+                expect(feed).toNot(beNil())
+                expect(feed?.feedDescription).to(equal("a really dumb show"))
+            }
+        }
+
+
         describe("adding an enclosure") {
 
         }

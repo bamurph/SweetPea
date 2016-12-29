@@ -10,8 +10,6 @@ import Foundation
 import RealmSwift
 import RxSwift
 
-
-
 enum StoreError: Error {
     case addSubscriptionFailed(Error)
     case deleteSubscriptionFailed(Error)
