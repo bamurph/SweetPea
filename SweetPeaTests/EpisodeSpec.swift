@@ -6,8 +6,10 @@
 //  Copyright © 2016 Constellation Software. All rights reserved.
 //
 
+import Foundation
 import Quick
 import Nimble
+@testable import SweetPea
 
 class EpisodeSpec: QuickSpec {
     override func spec() {

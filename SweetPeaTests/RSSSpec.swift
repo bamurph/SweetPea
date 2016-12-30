@@ -5,12 +5,13 @@
 //  Created by Ben Murphy on 12/1/16.
 //  Copyright © 2016 Constellation Software. All rights reserved.
 //
-
+import Foundation
 import Quick
 import Nimble
 import RxSwift
 import FeedKit
 import RxBlocking
+@testable import SweetPea
 
 /// Stub RSS Service
 

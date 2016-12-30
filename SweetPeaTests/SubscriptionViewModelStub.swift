@@ -8,6 +8,7 @@
 
 import Foundation
 
+@testable import SweetPea
 class SubscriptionViewModelStub: SubscriptionsViewModel {
     
     let bundle: Bundle

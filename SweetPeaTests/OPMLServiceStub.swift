@@ -9,6 +9,7 @@
 import Foundation
 import RxSwift
 import FeedKit
+@testable import SweetPea
 
 struct OPMLServiceStub {
     let testBundle: Bundle

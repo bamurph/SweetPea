@@ -35,14 +35,14 @@ import Foundation
 
     extension Reactive where Base: UITextField {
         /// Reactive text input.
-        public var textInput: TextInput<Base> {
+        public var textInput: TextInput<UITextField> {
             return TextInput(base: base, text: self.text)
         }
     }
 
     extension Reactive where Base: UITextView {
         /// Reactive text input.
-        public var textInput: TextInput<Base> {
+        public var textInput: TextInput<UITextView> {
             return TextInput(base: base, text: self.text)
         }
     }
@@ -53,7 +53,7 @@ import Foundation
     import Cocoa
 
     /// Represents text input with reactive extensions.
-    public struct TextInput<Base: NSTextInputClient> {
+    public struct TextInput<Base: NSTextInput> {
         /// Base text input to extend.
         public let base: Base
 
@@ -70,11 +70,15 @@ import Foundation
         }
     }
 
-    extension Reactive where Base: NSTextField, Base: NSTextInputClient {
+    extension Reactive where Base: NSTextField {
         /// Reactive text input.
-        public var textInput: TextInput<Base> {
+        public var textInput: TextInput<NSTextField> {
             return TextInput(base: base, text: self.text)
         }
+    }
+
+    extension NSTextField : NSTextInput {
+        
     }
 
 #endif

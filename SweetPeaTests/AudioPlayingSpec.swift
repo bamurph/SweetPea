@@ -6,11 +6,12 @@
 //  Copyright © 2016 Constellation Software. All rights reserved.
 //
 
+import Foundation
 import Quick
 import Nimble
 import RxSwift
 import FeedKit
-
+@testable import SweetPea
 
 class AudioPlayingSpec: QuickSpec {
     override func spec() {
