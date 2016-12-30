@@ -3,7 +3,7 @@
    LastUpgradeVersion = "0820"
    version = "1.3">
    <BuildAction
-      parallelizeBuildables = "YES"
+      parallelizeBuildables = "NO"
       buildImplicitDependencies = "NO">
       <BuildActionEntries>
          <BuildActionEntry
@@ -14,7 +14,21 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B5BB0D8C1DD51C8300BD7FA0"
+               BlueprintIdentifier = "F21AE6A04ECC157F9D0E7CE8BC3EE842"
+               BuildableName = "Pods_SweetPeaTests.framework"
+               BlueprintName = "Pods-SweetPeaTests"
+               ReferencedContainer = "container:Pods/Pods.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "B53661731E16C7F10044F10C"
                BuildableName = "SweetPeaTests.xctest"
                BlueprintName = "SweetPeaTests"
                ReferencedContainer = "container:SweetPea.xcodeproj">
@@ -34,13 +48,22 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B5BB0D8C1DD51C8300BD7FA0"
+               BlueprintIdentifier = "B53661731E16C7F10044F10C"
                BuildableName = "SweetPeaTests.xctest"
                BlueprintName = "SweetPeaTests"
                ReferencedContainer = "container:SweetPea.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "B53661731E16C7F10044F10C"
+            BuildableName = "SweetPeaTests.xctest"
+            BlueprintName = "SweetPeaTests"
+            ReferencedContainer = "container:SweetPea.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -57,7 +80,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "B5BB0D8C1DD51C8300BD7FA0"
+            BlueprintIdentifier = "B53661731E16C7F10044F10C"
             BuildableName = "SweetPeaTests.xctest"
             BlueprintName = "SweetPeaTests"
             ReferencedContainer = "container:SweetPea.xcodeproj">
@@ -72,6 +95,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "B53661731E16C7F10044F10C"
+            BuildableName = "SweetPeaTests.xctest"
+            BlueprintName = "SweetPeaTests"
+            ReferencedContainer = "container:SweetPea.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

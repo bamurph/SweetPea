@@ -7,59 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7AF81C7DD8A444B7673153E8 /* Pods_SweetPea.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 217687A5DF26143AF8C2A8D4 /* Pods_SweetPea.framework */; settings = {ATTRIBUTES = (Required, ); }; };
-		84845C9D2435C480C4077018 /* Pods_SweetPeaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A86763A151A1FAF46D41125C /* Pods_SweetPeaTests.framework */; };
-		B5142A2A1DF0CA92005CE3AC /* RSSSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5142A291DF0CA92005CE3AC /* RSSSpec.swift */; };
+		0EAADA37FD89AAE94F44561B /* Pods_SweetPeaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9925CFDF86C3A9CC924D0BC0 /* Pods_SweetPeaTests.framework */; };
+		B53661771E16C7F10044F10C /* SweetPeaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53661761E16C7F10044F10C /* SweetPeaTests.swift */; };
+		B536617E1E16C7F70044F10C /* DownloadServiceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A4A5461E142F68000A6E2D /* DownloadServiceSpec.swift */; };
+		B536617F1E16C7F70044F10C /* StoreSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57BB6D71E0B1E330002E0CD /* StoreSpec.swift */; };
+		B53661811E16C7F70044F10C /* SubscriptionViewModelStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58B3D911E0889070015BCAB /* SubscriptionViewModelStub.swift */; };
+		B53661831E16C7F70044F10C /* OPMLServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BA3F151DF74EAF000B6FFF /* OPMLServiceTest.swift */; };
+		B53661841E16C7F70044F10C /* OPMLServiceStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58A640A1E06EFC9001716E7 /* OPMLServiceStub.swift */; };
+		B53661851E16C7F70044F10C /* AudioPlayingSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B551BC4E1DF23CE8001C76E3 /* AudioPlayingSpec.swift */; };
+		B53661861E16C7F70044F10C /* RSSSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5142A291DF0CA92005CE3AC /* RSSSpec.swift */; };
+		B53661881E16C7F70044F10C /* ComposeSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F57B521E019A1300462BC8 /* ComposeSpec.swift */; };
+		B536618A1E16C8FC0044F10C /* EpisodeSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56ED7571E12F91300482181 /* EpisodeSpec.swift */; };
+		B536618C1E16CACB0044F10C /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B536618B1E16CACB0044F10C /* Quick.framework */; };
+		B536618E1E16CACF0044F10C /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B536618D1E16CACF0044F10C /* Nimble.framework */; };
 		B53B50591E0F1342009C8EEF /* EpisodeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53B50581E0F1342009C8EEF /* EpisodeViewModel.swift */; };
 		B53B505B1E0F136B009C8EEF /* Enclosure.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53B505A1E0F136B009C8EEF /* Enclosure.swift */; };
-		B53B505C1E0F136B009C8EEF /* Enclosure.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53B505A1E0F136B009C8EEF /* Enclosure.swift */; };
 		B53B505E1E0F1379009C8EEF /* EnclosureViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53B505D1E0F1379009C8EEF /* EnclosureViewModel.swift */; };
-		B53B505F1E0F1379009C8EEF /* EnclosureViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53B505D1E0F1379009C8EEF /* EnclosureViewModel.swift */; };
-		B551BC431DF23B6A001C76E3 /* Under the Radar 1_ Adapting to the Market.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B551BC411DF23B6A001C76E3 /* Under the Radar 1_ Adapting to the Market.mp3 */; };
-		B551BC461DF23B71001C76E3 /* Under the Radar 56_ Surviving the Winter.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B551BC441DF23B71001C76E3 /* Under the Radar 56_ Surviving the Winter.mp3 */; };
-		B551BC491DF23B8D001C76E3 /* Under the Radar 55_ Black Friday Sale.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B551BC471DF23B8D001C76E3 /* Under the Radar 55_ Black Friday Sale.mp3 */; };
-		B551BC4F1DF23CE8001C76E3 /* AudioPlayingSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B551BC4E1DF23CE8001C76E3 /* AudioPlayingSpec.swift */; };
 		B551BC511DF24065001C76E3 /* AudioService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B551BC501DF24065001C76E3 /* AudioService.swift */; };
-		B556A2171E09DEE90002CDB9 /* AudioService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B551BC501DF24065001C76E3 /* AudioService.swift */; };
-		B556A2181E09DEE90002CDB9 /* RSSService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B537939F1DDA626300D9C9AF /* RSSService.swift */; };
-		B556A21B1E09DEE90002CDB9 /* OPMLService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BB0D981DD51CB300BD7FA0 /* OPMLService.swift */; };
-		B556A21C1E09DEEC0002CDB9 /* StubUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DABFDF1E0343DB00D9FFFF /* StubUtility.swift */; };
-		B556A21D1E09DEEC0002CDB9 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B537939D1DD9BF8C00D9C9AF /* Helpers.swift */; };
-		B556A21E1E09DEEC0002CDB9 /* Compose.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F57B4E1E01982500462BC8 /* Compose.swift */; };
-		B556A21F1E09DEEC0002CDB9 /* Pipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F57B501E01997100462BC8 /* Pipe.swift */; };
-		B556A2201E09DEEF0002CDB9 /* SubscriptionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BB74611DE3894800F327F0 /* SubscriptionsViewModel.swift */; };
-		B556A2211E09DEEF0002CDB9 /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A1AC861DE4EFC90093E823 /* FeedViewModel.swift */; };
-		B556A2221E09DEF20002CDB9 /* SubscriptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5644B7E1E01DE6000FC3FB1 /* SubscriptionsViewController.swift */; };
-		B556A2231E09DEF40002CDB9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F0D23E1DD506ED00402FEC /* AppDelegate.swift */; };
-		B556A2241E09DEF40002CDB9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F0D2401DD506ED00402FEC /* ViewController.swift */; };
-		B556A2251E09E0030002CDB9 /* SubscriptionsViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DABFDC1E03401200D9FFFF /* SubscriptionsViewModelSpec.swift */; };
 		B5644B7F1E01DE6000FC3FB1 /* SubscriptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5644B7E1E01DE6000FC3FB1 /* SubscriptionsViewController.swift */; };
-		B56ED7581E12F91300482181 /* EpisodeSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56ED7571E12F91300482181 /* EpisodeSpec.swift */; };
 		B56ED7601E13077500482181 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56ED75F1E13077500482181 /* Result.swift */; };
-		B56ED7611E13077500482181 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56ED75F1E13077500482181 /* Result.swift */; };
 		B57BB6D51E0B1C8A0002E0CD /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57BB6D41E0B1C8A0002E0CD /* Store.swift */; };
-		B57BB6D61E0B1E130002E0CD /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57BB6D41E0B1C8A0002E0CD /* Store.swift */; };
-		B57BB6D81E0B1E330002E0CD /* StoreSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57BB6D71E0B1E330002E0CD /* StoreSpec.swift */; };
-		B58A64041E06E89A001716E7 /* hh.rss in Resources */ = {isa = PBXBuildFile; fileRef = B58A64021E06E89A001716E7 /* hh.rss */; };
 		B58A64061E06EA66001716E7 /* tests.opml in Resources */ = {isa = PBXBuildFile; fileRef = B58A64051E06EA66001716E7 /* tests.opml */; };
-		B58A64071E06EA66001716E7 /* tests.opml in Resources */ = {isa = PBXBuildFile; fileRef = B58A64051E06EA66001716E7 /* tests.opml */; };
-		B58A640B1E06EFC9001716E7 /* OPMLServiceStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58A640A1E06EFC9001716E7 /* OPMLServiceStub.swift */; };
-		B58B3D931E088A140015BCAB /* SubscriptionViewModelStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58B3D911E0889070015BCAB /* SubscriptionViewModelStub.swift */; };
 		B5A1AC871DE4EFC90093E823 /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A1AC861DE4EFC90093E823 /* FeedViewModel.swift */; };
 		B5A1AC8E1DE640440093E823 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B537939D1DD9BF8C00D9C9AF /* Helpers.swift */; };
 		B5A4A5411E142541000A6E2D /* Audio.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A4A5401E142541000A6E2D /* Audio.swift */; };
-		B5A4A5421E142541000A6E2D /* Audio.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A4A5401E142541000A6E2D /* Audio.swift */; };
 		B5A4A5441E14275B000A6E2D /* DownloadService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A4A5431E14275B000A6E2D /* DownloadService.swift */; };
-		B5A4A5451E14275B000A6E2D /* DownloadService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A4A5431E14275B000A6E2D /* DownloadService.swift */; };
-		B5A4A5471E142F68000A6E2D /* DownloadServiceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A4A5461E142F68000A6E2D /* DownloadServiceSpec.swift */; };
-		B5B686CA1DF76F2B00B5673B /* overcast.opml in Resources */ = {isa = PBXBuildFile; fileRef = B5B686C81DF76D3800B5673B /* overcast.opml */; };
-		B5B686CB1DF76F2E00B5673B /* utr.rss in Resources */ = {isa = PBXBuildFile; fileRef = B5B686C61DF76D2400B5673B /* utr.rss */; };
-		B5BA3F161DF74EAF000B6FFF /* OPMLServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BA3F151DF74EAF000B6FFF /* OPMLServiceTest.swift */; };
 		B5BA3F171DF75478000B6FFF /* SubscriptionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BB74611DE3894800F327F0 /* SubscriptionsViewModel.swift */; };
-		B5BA3F191DF7557E000B6FFF /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5BA3F181DF7557E000B6FFF /* Quick.framework */; };
 		B5BB0D991DD51CB300BD7FA0 /* OPMLService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BB0D981DD51CB300BD7FA0 /* OPMLService.swift */; };
-		B5DABFD81E033A8100D9FFFF /* Pods_SweetPea.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5DABFD71E033A8100D9FFFF /* Pods_SweetPea.framework */; };
-		B5DABFDA1E033A9200D9FFFF /* FeedKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5DABFD91E033A9200D9FFFF /* FeedKit.framework */; };
 		B5DABFE01E0343DB00D9FFFF /* StubUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DABFDF1E0343DB00D9FFFF /* StubUtility.swift */; };
 		B5E4DFD11DEA10120074A51C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5A1AC941DE643F20093E823 /* XCTest.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		B5E4DFD21DEA10120074A51C /* XCTest.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B5A1AC941DE643F20093E823 /* XCTest.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -71,18 +45,15 @@
 		B5F0D2491DD506ED00402FEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5F0D2481DD506ED00402FEC /* Assets.xcassets */; };
 		B5F0D24C1DD506ED00402FEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5F0D24A1DD506ED00402FEC /* LaunchScreen.storyboard */; };
 		B5F20F551E0B231500A5E1A5 /* Subscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F20F541E0B231500A5E1A5 /* Subscription.swift */; };
-		B5F20F561E0B231500A5E1A5 /* Subscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F20F541E0B231500A5E1A5 /* Subscription.swift */; };
 		B5F20F581E0B261700A5E1A5 /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F20F571E0B261700A5E1A5 /* Feed.swift */; };
-		B5F20F591E0B261700A5E1A5 /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F20F571E0B261700A5E1A5 /* Feed.swift */; };
 		B5F20F5B1E0B306B00A5E1A5 /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F20F5A1E0B306B00A5E1A5 /* Episode.swift */; };
-		B5F20F5C1E0B306B00A5E1A5 /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F20F5A1E0B306B00A5E1A5 /* Episode.swift */; };
 		B5F57B4F1E01982500462BC8 /* Compose.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F57B4E1E01982500462BC8 /* Compose.swift */; };
 		B5F57B511E01997100462BC8 /* Pipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F57B501E01997100462BC8 /* Pipe.swift */; };
-		B5F57B531E019A1300462BC8 /* ComposeSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F57B521E019A1300462BC8 /* ComposeSpec.swift */; };
+		FE6039E09D90A04D0164750C /* Pods_SweetPea.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD0F19D192687EA38E2A0A63 /* Pods_SweetPea.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		B5BB0D921DD51C8300BD7FA0 /* PBXContainerItemProxy */ = {
+		B53661791E16C7F10044F10C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B5F0D2331DD506ED00402FEC /* Project object */;
 			proxyType = 1;
@@ -106,12 +77,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		164D54AAD7DC45E9CA476AE1 /* Pods-SweetPea.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SweetPea.release.xcconfig"; path = "Pods/Target Support Files/Pods-SweetPea/Pods-SweetPea.release.xcconfig"; sourceTree = "<group>"; };
-		217687A5DF26143AF8C2A8D4 /* Pods_SweetPea.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SweetPea.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8623AF9DB9F4CB26E40CBBDF /* Pods-SweetPeaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SweetPeaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SweetPeaTests/Pods-SweetPeaTests.debug.xcconfig"; sourceTree = "<group>"; };
-		9CBA30FAEB4D0AE63B6EA51F /* Pods-SweetPeaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SweetPeaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SweetPeaTests/Pods-SweetPeaTests.release.xcconfig"; sourceTree = "<group>"; };
-		A86763A151A1FAF46D41125C /* Pods_SweetPeaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SweetPeaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2311F216A8AB7A97670E9409 /* Pods-SweetPea.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SweetPea.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SweetPea/Pods-SweetPea.debug.xcconfig"; sourceTree = "<group>"; };
+		69F8EB8C7A5E27568000FC64 /* Pods-SweetPeaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SweetPeaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SweetPeaTests/Pods-SweetPeaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9925CFDF86C3A9CC924D0BC0 /* Pods_SweetPeaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SweetPeaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5142A291DF0CA92005CE3AC /* RSSSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSSSpec.swift; sourceTree = "<group>"; };
+		B53661741E16C7F10044F10C /* SweetPeaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SweetPeaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B53661761E16C7F10044F10C /* SweetPeaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SweetPeaTests.swift; sourceTree = "<group>"; };
+		B53661781E16C7F10044F10C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B536618B1E16CACB0044F10C /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = "../../Library/Developer/Xcode/DerivedData/SweetPea-ammcoyyuyrqelrgeerwkfbahqsyg/Build/Products/Debug-iphonesimulator/Quick/Quick.framework"; sourceTree = "<group>"; };
+		B536618D1E16CACF0044F10C /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = "../../Library/Developer/Xcode/DerivedData/SweetPea-ammcoyyuyrqelrgeerwkfbahqsyg/Build/Products/Debug-iphonesimulator/Nimble/Nimble.framework"; sourceTree = "<group>"; };
 		B537939D1DD9BF8C00D9C9AF /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		B537939F1DDA626300D9C9AF /* RSSService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSSService.swift; sourceTree = "<group>"; };
 		B53B50581E0F1342009C8EEF /* EpisodeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EpisodeViewModel.swift; sourceTree = "<group>"; };
@@ -131,6 +105,8 @@
 		B58A64051E06EA66001716E7 /* tests.opml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = tests.opml; sourceTree = "<group>"; };
 		B58A640A1E06EFC9001716E7 /* OPMLServiceStub.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OPMLServiceStub.swift; sourceTree = "<group>"; };
 		B58B3D911E0889070015BCAB /* SubscriptionViewModelStub.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubscriptionViewModelStub.swift; sourceTree = "<group>"; };
+		B59FFA391E16C2B40082894A /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = "../../Library/Developer/Xcode/DerivedData/SweetPea-ammcoyyuyrqelrgeerwkfbahqsyg/Build/Products/Debug-iphonesimulator/Realm/Realm.framework"; sourceTree = "<group>"; };
+		B59FFA3A1E16C2B40082894A /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = "../../Library/Developer/Xcode/DerivedData/SweetPea-ammcoyyuyrqelrgeerwkfbahqsyg/Build/Products/Debug-iphonesimulator/RealmSwift/RealmSwift.framework"; sourceTree = "<group>"; };
 		B5A1AC861DE4EFC90093E823 /* FeedViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FeedViewModel.swift; path = PeaPod/FeedViewModel.swift; sourceTree = "<group>"; };
 		B5A1AC911DE642D80093E823 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		B5A1AC941DE643F20093E823 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -141,11 +117,9 @@
 		B5B686C81DF76D3800B5673B /* overcast.opml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = overcast.opml; sourceTree = "<group>"; };
 		B5BA3F151DF74EAF000B6FFF /* OPMLServiceTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OPMLServiceTest.swift; sourceTree = "<group>"; };
 		B5BA3F181DF7557E000B6FFF /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = "Pods/../build/Debug-iphoneos/Quick/Quick.framework"; sourceTree = "<group>"; };
-		B5BB0D8D1DD51C8300BD7FA0 /* SweetPeaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SweetPeaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5BB0D911DD51C8300BD7FA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B5BB0D981DD51CB300BD7FA0 /* OPMLService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OPMLService.swift; sourceTree = "<group>"; };
 		B5BB74611DE3894800F327F0 /* SubscriptionsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SubscriptionsViewModel.swift; path = PeaPod/SubscriptionsViewModel.swift; sourceTree = "<group>"; };
-		B5DABFD71E033A8100D9FFFF /* Pods_SweetPea.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_SweetPea.framework; path = "../../Library/Developer/Xcode/DerivedData/SweetPea-ammcoyyuyrqelrgeerwkfbahqsyg/Build/Products/Debug-iphonesimulator/Pods_SweetPea.framework"; sourceTree = "<group>"; };
 		B5DABFD91E033A9200D9FFFF /* FeedKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FeedKit.framework; path = "../../Library/Developer/Xcode/DerivedData/SweetPea-ammcoyyuyrqelrgeerwkfbahqsyg/Build/Products/Debug-iphonesimulator/FeedKit/FeedKit.framework"; sourceTree = "<group>"; };
 		B5DABFDC1E03401200D9FFFF /* SubscriptionsViewModelSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubscriptionsViewModelSpec.swift; sourceTree = "<group>"; };
 		B5DABFDF1E0343DB00D9FFFF /* StubUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StubUtility.swift; sourceTree = "<group>"; };
@@ -163,19 +137,19 @@
 		B5F57B4E1E01982500462BC8 /* Compose.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Compose.swift; sourceTree = "<group>"; };
 		B5F57B501E01997100462BC8 /* Pipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pipe.swift; sourceTree = "<group>"; };
 		B5F57B521E019A1300462BC8 /* ComposeSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComposeSpec.swift; sourceTree = "<group>"; };
-		B8D4A22CA2C7ED9B428F56F4 /* Pods_Tests_SweetPeaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tests_SweetPeaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D1E388EF1B5A8B303BF4AC6A /* Pods-SweetPea.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SweetPea.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SweetPea/Pods-SweetPea.debug.xcconfig"; sourceTree = "<group>"; };
+		B7721E8E8AF777839CB87C5B /* Pods-SweetPeaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SweetPeaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SweetPeaTests/Pods-SweetPeaTests.release.xcconfig"; sourceTree = "<group>"; };
+		C4499A084DAEEB1A183FC81E /* Pods-SweetPea.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SweetPea.release.xcconfig"; path = "Pods/Target Support Files/Pods-SweetPea/Pods-SweetPea.release.xcconfig"; sourceTree = "<group>"; };
+		FD0F19D192687EA38E2A0A63 /* Pods_SweetPea.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SweetPea.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		B5BB0D8A1DD51C8300BD7FA0 /* Frameworks */ = {
+		B53661711E16C7F10044F10C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5DABFDA1E033A9200D9FFFF /* FeedKit.framework in Frameworks */,
-				B5DABFD81E033A8100D9FFFF /* Pods_SweetPea.framework in Frameworks */,
-				B5BA3F191DF7557E000B6FFF /* Quick.framework in Frameworks */,
-				84845C9D2435C480C4077018 /* Pods_SweetPeaTests.framework in Frameworks */,
+				B536618E1E16CACF0044F10C /* Nimble.framework in Frameworks */,
+				B536618C1E16CACB0044F10C /* Quick.framework in Frameworks */,
+				0EAADA37FD89AAE94F44561B /* Pods_SweetPeaTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -183,8 +157,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7AF81C7DD8A444B7673153E8 /* Pods_SweetPea.framework in Frameworks */,
 				B5E4DFD11DEA10120074A51C /* XCTest.framework in Frameworks */,
+				FE6039E09D90A04D0164750C /* Pods_SweetPea.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,27 +168,38 @@
 		1B6FB18795E1081067AE9E42 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B536618D1E16CACF0044F10C /* Nimble.framework */,
+				B536618B1E16CACB0044F10C /* Quick.framework */,
+				B59FFA391E16C2B40082894A /* Realm.framework */,
+				B59FFA3A1E16C2B40082894A /* RealmSwift.framework */,
 				B5DABFD91E033A9200D9FFFF /* FeedKit.framework */,
-				B5DABFD71E033A8100D9FFFF /* Pods_SweetPea.framework */,
 				B5BA3F181DF7557E000B6FFF /* Quick.framework */,
 				B5A1AC941DE643F20093E823 /* XCTest.framework */,
 				B5A1AC911DE642D80093E823 /* XCTest.framework */,
-				217687A5DF26143AF8C2A8D4 /* Pods_SweetPea.framework */,
-				A86763A151A1FAF46D41125C /* Pods_SweetPeaTests.framework */,
-				B8D4A22CA2C7ED9B428F56F4 /* Pods_Tests_SweetPeaTests.framework */,
+				FD0F19D192687EA38E2A0A63 /* Pods_SweetPea.framework */,
+				9925CFDF86C3A9CC924D0BC0 /* Pods_SweetPeaTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		3889F404982A7A91B6E4B31A /* Pods */ = {
+		2E2F67B01D976BF5B1884880 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				D1E388EF1B5A8B303BF4AC6A /* Pods-SweetPea.debug.xcconfig */,
-				164D54AAD7DC45E9CA476AE1 /* Pods-SweetPea.release.xcconfig */,
-				8623AF9DB9F4CB26E40CBBDF /* Pods-SweetPeaTests.debug.xcconfig */,
-				9CBA30FAEB4D0AE63B6EA51F /* Pods-SweetPeaTests.release.xcconfig */,
+				2311F216A8AB7A97670E9409 /* Pods-SweetPea.debug.xcconfig */,
+				C4499A084DAEEB1A183FC81E /* Pods-SweetPea.release.xcconfig */,
+				69F8EB8C7A5E27568000FC64 /* Pods-SweetPeaTests.debug.xcconfig */,
+				B7721E8E8AF777839CB87C5B /* Pods-SweetPeaTests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		B53661751E16C7F10044F10C /* SweetPeaTests */ = {
+			isa = PBXGroup;
+			children = (
+				B53661761E16C7F10044F10C /* SweetPeaTests.swift */,
+				B53661781E16C7F10044F10C /* Info.plist */,
+			);
+			path = SweetPeaTests;
 			sourceTree = "<group>";
 		};
 		B551BC4A1DF23B92001C76E3 /* UTR */ = {
@@ -292,9 +277,10 @@
 			children = (
 				B5F0D23D1DD506ED00402FEC /* SweetPea */,
 				B5BB0D8E1DD51C8300BD7FA0 /* Tests */,
+				B53661751E16C7F10044F10C /* SweetPeaTests */,
 				B5F0D23C1DD506ED00402FEC /* Products */,
-				3889F404982A7A91B6E4B31A /* Pods */,
 				1B6FB18795E1081067AE9E42 /* Frameworks */,
+				2E2F67B01D976BF5B1884880 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -302,7 +288,7 @@
 			isa = PBXGroup;
 			children = (
 				B5F0D23B1DD506ED00402FEC /* SweetPea.app */,
-				B5BB0D8D1DD51C8300BD7FA0 /* SweetPeaTests.xctest */,
+				B53661741E16C7F10044F10C /* SweetPeaTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -366,36 +352,32 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B5BB0D8C1DD51C8300BD7FA0 /* SweetPeaTests */ = {
+		B53661731E16C7F10044F10C /* SweetPeaTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B5BB0D961DD51C8300BD7FA0 /* Build configuration list for PBXNativeTarget "SweetPeaTests" */;
+			buildConfigurationList = B536617B1E16C7F10044F10C /* Build configuration list for PBXNativeTarget "SweetPeaTests" */;
 			buildPhases = (
-				F24DF3AFCDE7DEEF162DCC77 /* 📦 Check Pods Manifest.lock */,
-				46B3508A54F72E88262504D3 /* [CP] Check Pods Manifest.lock */,
-				B5BB0D891DD51C8300BD7FA0 /* Sources */,
-				B5BB0D8A1DD51C8300BD7FA0 /* Frameworks */,
-				B5BB0D8B1DD51C8300BD7FA0 /* Resources */,
-				0749ADF7790530F16EF1D7CF /* [CP] Embed Pods Frameworks */,
-				17E017EA720192361D7844CD /* [CP] Copy Pods Resources */,
-				B5DABFDB1E033C2700D9FFFF /* ShellScript */,
-				B1DE054B4DA63BF23B371038 /* 📦 Embed Pods Frameworks */,
-				8283D1B33777BD337EE0E418 /* 📦 Copy Pods Resources */,
+				A87C316607AAC96311D4F66F /* 📦 Check Pods Manifest.lock */,
+				B53661701E16C7F10044F10C /* Sources */,
+				B53661711E16C7F10044F10C /* Frameworks */,
+				B53661721E16C7F10044F10C /* Resources */,
+				CCF5B2D9A11DD0E0F8DFBB49 /* 📦 Embed Pods Frameworks */,
+				B177DFF24542A84479107BA0 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				B5BB0D931DD51C8300BD7FA0 /* PBXTargetDependency */,
+				B536617A1E16C7F10044F10C /* PBXTargetDependency */,
 			);
 			name = SweetPeaTests;
 			productName = SweetPeaTests;
-			productReference = B5BB0D8D1DD51C8300BD7FA0 /* SweetPeaTests.xctest */;
+			productReference = B53661741E16C7F10044F10C /* SweetPeaTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		B5F0D23A1DD506ED00402FEC /* SweetPea */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B5F0D2501DD506ED00402FEC /* Build configuration list for PBXNativeTarget "SweetPea" */;
 			buildPhases = (
-				71DADB8DF8C5849C30CAF966 /* 📦 Check Pods Manifest.lock */,
+				6C5D72B8724525804E1BF656 /* 📦 Check Pods Manifest.lock */,
 				739DCC59BA06844286405727 /* [CP] Check Pods Manifest.lock */,
 				B5F0D2371DD506ED00402FEC /* Sources */,
 				B5F0D2381DD506ED00402FEC /* Frameworks */,
@@ -403,8 +385,8 @@
 				BEEE864DD6C25A11B4278794 /* [CP] Embed Pods Frameworks */,
 				5C9C664D3DF5E06035C1412C /* [CP] Copy Pods Resources */,
 				B5E4DFD01DEA0FE50074A51C /* Embed Frameworks */,
-				EE3F4C25560CDEDDD95C77B7 /* 📦 Embed Pods Frameworks */,
-				99EC9B37D766BDE89DFD72BE /* 📦 Copy Pods Resources */,
+				919548B6F182D8D9E03EA3D6 /* 📦 Embed Pods Frameworks */,
+				56F399622CCA61D55B4C8B16 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -421,14 +403,15 @@
 		B5F0D2331DD506ED00402FEC /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0810;
+				LastSwiftUpdateCheck = 0820;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Constellation Software";
 				TargetAttributes = {
-					B5BB0D8C1DD51C8300BD7FA0 = {
-						CreatedOnToolsVersion = 8.1;
+					B53661731E16C7F10044F10C = {
+						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 97JRRX372K;
 						ProvisioningStyle = Automatic;
+						TestTargetID = B5F0D23A1DD506ED00402FEC;
 					};
 					B5F0D23A1DD506ED00402FEC = {
 						CreatedOnToolsVersion = 8.1;
@@ -451,23 +434,16 @@
 			projectRoot = "";
 			targets = (
 				B5F0D23A1DD506ED00402FEC /* SweetPea */,
-				B5BB0D8C1DD51C8300BD7FA0 /* SweetPeaTests */,
+				B53661731E16C7F10044F10C /* SweetPeaTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		B5BB0D8B1DD51C8300BD7FA0 /* Resources */ = {
+		B53661721E16C7F10044F10C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B551BC461DF23B71001C76E3 /* Under the Radar 56_ Surviving the Winter.mp3 in Resources */,
-				B551BC491DF23B8D001C76E3 /* Under the Radar 55_ Black Friday Sale.mp3 in Resources */,
-				B5B686CB1DF76F2E00B5673B /* utr.rss in Resources */,
-				B58A64071E06EA66001716E7 /* tests.opml in Resources */,
-				B5B686CA1DF76F2B00B5673B /* overcast.opml in Resources */,
-				B58A64041E06E89A001716E7 /* hh.rss in Resources */,
-				B551BC431DF23B6A001C76E3 /* Under the Radar 1_ Adapting to the Market.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -485,49 +461,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0749ADF7790530F16EF1D7CF /* [CP] Embed Pods Frameworks */ = {
+		56F399622CCA61D55B4C8B16 /* 📦 Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "[CP] Embed Pods Frameworks";
+			name = "📦 Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SweetPeaTests/Pods-SweetPeaTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		17E017EA720192361D7844CD /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SweetPeaTests/Pods-SweetPeaTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		46B3508A54F72E88262504D3 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SweetPea/Pods-SweetPea-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		5C9C664D3DF5E06035C1412C /* [CP] Copy Pods Resources */ = {
@@ -545,7 +491,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SweetPea/Pods-SweetPea-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		71DADB8DF8C5849C30CAF966 /* 📦 Check Pods Manifest.lock */ = {
+		6C5D72B8724525804E1BF656 /* 📦 Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -575,7 +521,37 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		8283D1B33777BD337EE0E418 /* 📦 Copy Pods Resources */ = {
+		919548B6F182D8D9E03EA3D6 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SweetPea/Pods-SweetPea-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A87C316607AAC96311D4F66F /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B177DFF24542A84479107BA0 /* 📦 Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -589,49 +565,6 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SweetPeaTests/Pods-SweetPeaTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
-		};
-		99EC9B37D766BDE89DFD72BE /* 📦 Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "📦 Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SweetPea/Pods-SweetPea-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B1DE054B4DA63BF23B371038 /* 📦 Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "📦 Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SweetPeaTests/Pods-SweetPeaTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B5DABFDB1E033C2700D9FFFF /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "find ${TARGET_BUILD_DIR} -type d -name \"*.framework\" -exec cp -Rf {} ${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ \\;";
 		};
 		BEEE864DD6C25A11B4278794 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -648,7 +581,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SweetPea/Pods-SweetPea-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		EE3F4C25560CDEDDD95C77B7 /* 📦 Embed Pods Frameworks */ = {
+		CCF5B2D9A11DD0E0F8DFBB49 /* 📦 Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -660,62 +593,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SweetPea/Pods-SweetPea-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F24DF3AFCDE7DEEF162DCC77 /* 📦 Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "📦 Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SweetPeaTests/Pods-SweetPeaTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		B5BB0D891DD51C8300BD7FA0 /* Sources */ = {
+		B53661701E16C7F10044F10C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B56ED7581E12F91300482181 /* EpisodeSpec.swift in Sources */,
-				B556A2171E09DEE90002CDB9 /* AudioService.swift in Sources */,
-				B5F20F591E0B261700A5E1A5 /* Feed.swift in Sources */,
-				B556A21D1E09DEEC0002CDB9 /* Helpers.swift in Sources */,
-				B58B3D931E088A140015BCAB /* SubscriptionViewModelStub.swift in Sources */,
-				B556A21F1E09DEEC0002CDB9 /* Pipe.swift in Sources */,
-				B556A2201E09DEEF0002CDB9 /* SubscriptionsViewModel.swift in Sources */,
-				B57BB6D61E0B1E130002E0CD /* Store.swift in Sources */,
-				B556A2221E09DEF20002CDB9 /* SubscriptionsViewController.swift in Sources */,
-				B556A21E1E09DEEC0002CDB9 /* Compose.swift in Sources */,
-				B556A2231E09DEF40002CDB9 /* AppDelegate.swift in Sources */,
-				B57BB6D81E0B1E330002E0CD /* StoreSpec.swift in Sources */,
-				B58A640B1E06EFC9001716E7 /* OPMLServiceStub.swift in Sources */,
-				B556A2211E09DEEF0002CDB9 /* FeedViewModel.swift in Sources */,
-				B5A4A5471E142F68000A6E2D /* DownloadServiceSpec.swift in Sources */,
-				B53B505C1E0F136B009C8EEF /* Enclosure.swift in Sources */,
-				B5BA3F161DF74EAF000B6FFF /* OPMLServiceTest.swift in Sources */,
-				B556A2251E09E0030002CDB9 /* SubscriptionsViewModelSpec.swift in Sources */,
-				B5F20F5C1E0B306B00A5E1A5 /* Episode.swift in Sources */,
-				B556A21B1E09DEE90002CDB9 /* OPMLService.swift in Sources */,
-				B5142A2A1DF0CA92005CE3AC /* RSSSpec.swift in Sources */,
-				B53B505F1E0F1379009C8EEF /* EnclosureViewModel.swift in Sources */,
-				B56ED7611E13077500482181 /* Result.swift in Sources */,
-				B5A4A5421E142541000A6E2D /* Audio.swift in Sources */,
-				B551BC4F1DF23CE8001C76E3 /* AudioPlayingSpec.swift in Sources */,
-				B5F57B531E019A1300462BC8 /* ComposeSpec.swift in Sources */,
-				B556A2241E09DEF40002CDB9 /* ViewController.swift in Sources */,
-				B556A2181E09DEE90002CDB9 /* RSSService.swift in Sources */,
-				B556A21C1E09DEEC0002CDB9 /* StubUtility.swift in Sources */,
-				B5F20F561E0B231500A5E1A5 /* Subscription.swift in Sources */,
-				B5A4A5451E14275B000A6E2D /* DownloadService.swift in Sources */,
+				B536618A1E16C8FC0044F10C /* EpisodeSpec.swift in Sources */,
+				B53661851E16C7F70044F10C /* AudioPlayingSpec.swift in Sources */,
+				B53661861E16C7F70044F10C /* RSSSpec.swift in Sources */,
+				B536617E1E16C7F70044F10C /* DownloadServiceSpec.swift in Sources */,
+				B536617F1E16C7F70044F10C /* StoreSpec.swift in Sources */,
+				B53661881E16C7F70044F10C /* ComposeSpec.swift in Sources */,
+				B53661831E16C7F70044F10C /* OPMLServiceTest.swift in Sources */,
+				B53661811E16C7F70044F10C /* SubscriptionViewModelStub.swift in Sources */,
+				B53661771E16C7F10044F10C /* SweetPeaTests.swift in Sources */,
+				B53661841E16C7F70044F10C /* OPMLServiceStub.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -752,10 +649,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		B5BB0D931DD51C8300BD7FA0 /* PBXTargetDependency */ = {
+		B536617A1E16C7F10044F10C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = B5F0D23A1DD506ED00402FEC /* SweetPea */;
-			targetProxy = B5BB0D921DD51C8300BD7FA0 /* PBXContainerItemProxy */;
+			targetProxy = B53661791E16C7F10044F10C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -779,59 +676,37 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		B5BB0D941DD51C8300BD7FA0 /* Debug */ = {
+		B536617C1E16C7F10044F10C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8623AF9DB9F4CB26E40CBBDF /* Pods-SweetPeaTests.debug.xcconfig */;
+			baseConfigurationReference = 69F8EB8C7A5E27568000FC64 /* Pods-SweetPeaTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = 97JRRX372K;
-				ENABLE_BITCODE = NO;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$PODS_CONFIGURATION_BUILD_DIR/FeedKit\"",
-					"\"$PODS_CONFIGURATION_BUILD_DIR/Lepton\"",
-					"\"$PODS_CONFIGURATION_BUILD_DIR/RxBlocking\"",
-					"\"$PODS_CONFIGURATION_BUILD_DIR/RxCocoa\"",
-					"\"$PODS_CONFIGURATION_BUILD_DIR/RxSwift\"",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks/**",
-				);
-				"FRAMEWORK_SEARCH_PATHS[arch=*]" = (
-					"$(inherited)",
-					"\"$PODS_CONFIGURATION_BUILD_DIR/FeedKit\"",
-					"\"$PODS_CONFIGURATION_BUILD_DIR/Lepton\"",
-					"\"$PODS_CONFIGURATION_BUILD_DIR/RxBlocking\"",
-					"\"$PODS_CONFIGURATION_BUILD_DIR/RxCocoa\"",
-					"\"$PODS_CONFIGURATION_BUILD_DIR/RxSwift\"",
-				);
 				INFOPLIST_FILE = SweetPeaTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = constellation.SweetPeaTests;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Constellation.SweetPeaTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SweetPea.app/SweetPea";
 			};
 			name = Debug;
 		};
-		B5BB0D951DD51C8300BD7FA0 /* Release */ = {
+		B536617D1E16C7F10044F10C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9CBA30FAEB4D0AE63B6EA51F /* Pods-SweetPeaTests.release.xcconfig */;
+			baseConfigurationReference = B7721E8E8AF777839CB87C5B /* Pods-SweetPeaTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = 97JRRX372K;
-				ENABLE_BITCODE = NO;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$PODS_CONFIGURATION_BUILD_DIR/FeedKit\"",
-					"\"$PODS_CONFIGURATION_BUILD_DIR/Lepton\"",
-					"\"$PODS_CONFIGURATION_BUILD_DIR/RxBlocking\"",
-					"\"$PODS_CONFIGURATION_BUILD_DIR/RxCocoa\"",
-					"\"$PODS_CONFIGURATION_BUILD_DIR/RxSwift\"",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks/**",
-				);
 				INFOPLIST_FILE = SweetPeaTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = constellation.SweetPeaTests;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Constellation.SweetPeaTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SweetPea.app/SweetPea";
 			};
 			name = Release;
 		};
@@ -861,6 +736,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -913,8 +789,10 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -934,7 +812,7 @@
 		};
 		B5F0D2511DD506ED00402FEC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D1E388EF1B5A8B303BF4AC6A /* Pods-SweetPea.debug.xcconfig */;
+			baseConfigurationReference = 2311F216A8AB7A97670E9409 /* Pods-SweetPea.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -958,12 +836,12 @@
 		};
 		B5F0D2521DD506ED00402FEC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 164D54AAD7DC45E9CA476AE1 /* Pods-SweetPea.release.xcconfig */;
+			baseConfigurationReference = C4499A084DAEEB1A183FC81E /* Pods-SweetPea.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 97JRRX372K;
-				ENABLE_TESTABILITY = NO;
+				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$PODS_CONFIGURATION_BUILD_DIR/FeedKit\"",
@@ -984,11 +862,11 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B5BB0D961DD51C8300BD7FA0 /* Build configuration list for PBXNativeTarget "SweetPeaTests" */ = {
+		B536617B1E16C7F10044F10C /* Build configuration list for PBXNativeTarget "SweetPeaTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B5BB0D941DD51C8300BD7FA0 /* Debug */,
-				B5BB0D951DD51C8300BD7FA0 /* Release */,
+				B536617C1E16C7F10044F10C /* Debug */,
+				B536617D1E16C7F10044F10C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

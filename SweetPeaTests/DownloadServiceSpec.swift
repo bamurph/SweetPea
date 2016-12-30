@@ -5,10 +5,11 @@
 //  Created by Ben Murphy on 12/28/16.
 //  Copyright © 2016 Constellation Software. All rights reserved.
 //
-
+import UIKit
 import Quick
 import Nimble
 
+@testable import SweetPea
 class DownloadServiceSpec: QuickSpec {
     override func spec() {
 

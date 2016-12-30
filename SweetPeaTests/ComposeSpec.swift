@@ -6,8 +6,10 @@
 //  Copyright © 2016 Constellation Software. All rights reserved.
 //
 
+import UIKit
 import Quick
 import Nimble
+@testable import SweetPea
 
 class ComposeSpec: QuickSpec {
     override func spec() {

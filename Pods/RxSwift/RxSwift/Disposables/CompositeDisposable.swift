@@ -10,14 +10,8 @@ import Foundation
 
 /// Represents a group of disposable resources that are disposed together.
 public final class CompositeDisposable : DisposeBase, Disposable, Cancelable {
-    /// Key used to remove disposable from composite disposable
-    public struct DisposeKey {
-        fileprivate let key: BagKey
-        fileprivate init(key: BagKey) {
-            self.key = key
-        }
-    }
-
+    public typealias DisposeKey = BagKey
+    
     private var _lock = SpinLock()
     
     // state
@@ -86,8 +80,7 @@ public final class CompositeDisposable : DisposeBase, Disposable, Cancelable {
     private func _insert(_ disposable: Disposable) -> DisposeKey? {
         _lock.lock(); defer { _lock.unlock() }
 
-        let bagKey = _disposables?.insert(disposable)
-        return bagKey.map(DisposeKey.init)
+        return _disposables?.insert(disposable)
     }
     
     /// - returns: Gets the number of disposables contained in the `CompositeDisposable`.
@@ -105,7 +98,7 @@ public final class CompositeDisposable : DisposeBase, Disposable, Cancelable {
     
     private func _remove(for disposeKey: DisposeKey) -> Disposable? {
         _lock.lock(); defer { _lock.unlock() }
-        return _disposables?.removeKey(disposeKey.key)
+        return _disposables?.removeKey(disposeKey)
     }
     
     /// Disposes all disposables in the group and removes them from the group.

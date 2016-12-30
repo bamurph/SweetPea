@@ -5,12 +5,13 @@
 //  Created by Ben Murphy on 12/2/16.
 //  Copyright © 2016 Constellation Software. All rights reserved.
 //
-
+import UIKit
 import Quick
 import Nimble
 import RxSwift
 import FeedKit
 
+@testable import SweetPea
 
 class AudioPlayingSpec: QuickSpec {
     override func spec() {
