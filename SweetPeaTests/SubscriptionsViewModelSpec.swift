@@ -5,8 +5,8 @@
 //  Created by Ben Murphy on 12/15/16.
 //  Copyright © 2016 Constellation Software. All rights reserved.
 //
+
 import Foundation
-import UIKit
 import Quick
 import Nimble
 import RxSwift

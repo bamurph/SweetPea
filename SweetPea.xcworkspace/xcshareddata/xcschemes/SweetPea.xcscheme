@@ -14,20 +14,6 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B5F0D23A1DD506ED00402FEC"
-               BuildableName = "SweetPea.app"
-               BlueprintName = "SweetPea"
-               ReferencedContainer = "container:SweetPea.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
                BlueprintIdentifier = "6D0F1EAB381B8B5EB1D9151EE19C82EE"
                BuildableName = "Pods_SweetPea.framework"
                BlueprintName = "Pods-SweetPea"
@@ -46,6 +32,20 @@
                BuildableName = "Pods_SweetPeaTests.framework"
                BlueprintName = "Pods-SweetPeaTests"
                ReferencedContainer = "container:Pods/Pods.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "B5F0D23A1DD506ED00402FEC"
+               BuildableName = "SweetPea.app"
+               BlueprintName = "SweetPea"
+               ReferencedContainer = "container:SweetPea.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -69,7 +69,6 @@
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES"
-      codeCoverageEnabled = "YES"
       enableAddressSanitizer = "YES">
       <Testables>
          <TestableReference

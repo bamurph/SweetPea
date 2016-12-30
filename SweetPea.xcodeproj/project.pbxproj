@@ -12,8 +12,6 @@
 		B536617E1E16C7F70044F10C /* DownloadServiceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A4A5461E142F68000A6E2D /* DownloadServiceSpec.swift */; };
 		B536617F1E16C7F70044F10C /* StoreSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57BB6D71E0B1E330002E0CD /* StoreSpec.swift */; };
 		B53661811E16C7F70044F10C /* SubscriptionViewModelStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58B3D911E0889070015BCAB /* SubscriptionViewModelStub.swift */; };
-		B53661831E16C7F70044F10C /* OPMLServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BA3F151DF74EAF000B6FFF /* OPMLServiceTest.swift */; };
-		B53661841E16C7F70044F10C /* OPMLServiceStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58A640A1E06EFC9001716E7 /* OPMLServiceStub.swift */; };
 		B53661851E16C7F70044F10C /* AudioPlayingSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B551BC4E1DF23CE8001C76E3 /* AudioPlayingSpec.swift */; };
 		B53661861E16C7F70044F10C /* RSSSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5142A291DF0CA92005CE3AC /* RSSSpec.swift */; };
 		B53661881E16C7F70044F10C /* ComposeSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F57B521E019A1300462BC8 /* ComposeSpec.swift */; };
@@ -34,12 +32,22 @@
 		B5A4A5441E14275B000A6E2D /* DownloadService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A4A5431E14275B000A6E2D /* DownloadService.swift */; };
 		B5BA3F171DF75478000B6FFF /* SubscriptionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BB74611DE3894800F327F0 /* SubscriptionsViewModel.swift */; };
 		B5BB0D991DD51CB300BD7FA0 /* OPMLService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BB0D981DD51CB300BD7FA0 /* OPMLService.swift */; };
+		B5D793CD1E16D3F800331A20 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D793CC1E16D3F800331A20 /* main.swift */; };
+		B5D793CF1E16D4EF00331A20 /* TestingAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D793CE1E16D4EF00331A20 /* TestingAppDelegate.swift */; };
+		B5D793D01E16D5E200331A20 /* OPMLServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BA3F151DF74EAF000B6FFF /* OPMLServiceTest.swift */; };
+		B5D793D11E16D5E700331A20 /* OPMLServiceStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58A640A1E06EFC9001716E7 /* OPMLServiceStub.swift */; };
+		B5D793D21E16D64700331A20 /* overcast.opml in Resources */ = {isa = PBXBuildFile; fileRef = B5B686C81DF76D3800B5673B /* overcast.opml */; };
+		B5D793D31E16D64700331A20 /* tests.opml in Resources */ = {isa = PBXBuildFile; fileRef = B58A64051E06EA66001716E7 /* tests.opml */; };
+		B5D793D41E16D64B00331A20 /* Under the Radar 1_ Adapting to the Market.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B551BC411DF23B6A001C76E3 /* Under the Radar 1_ Adapting to the Market.mp3 */; };
+		B5D793D51E16D64B00331A20 /* Under the Radar 55_ Black Friday Sale.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B551BC471DF23B8D001C76E3 /* Under the Radar 55_ Black Friday Sale.mp3 */; };
+		B5D793D61E16D64B00331A20 /* Under the Radar 56_ Surviving the Winter.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B551BC441DF23B71001C76E3 /* Under the Radar 56_ Surviving the Winter.mp3 */; };
+		B5D793D71E16D65100331A20 /* utr.rss in Resources */ = {isa = PBXBuildFile; fileRef = B5B686C61DF76D2400B5673B /* utr.rss */; };
+		B5D793D81E16D65100331A20 /* hh.rss in Resources */ = {isa = PBXBuildFile; fileRef = B58A64021E06E89A001716E7 /* hh.rss */; };
 		B5DABFE01E0343DB00D9FFFF /* StubUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DABFDF1E0343DB00D9FFFF /* StubUtility.swift */; };
 		B5E4DFD11DEA10120074A51C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5A1AC941DE643F20093E823 /* XCTest.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		B5E4DFD21DEA10120074A51C /* XCTest.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B5A1AC941DE643F20093E823 /* XCTest.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B5E5DB221E00C31B0007CAD0 /* RSSService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B537939F1DDA626300D9C9AF /* RSSService.swift */; };
 		B5F0D23F1DD506ED00402FEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F0D23E1DD506ED00402FEC /* AppDelegate.swift */; };
-		B5F0D2411DD506ED00402FEC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F0D2401DD506ED00402FEC /* ViewController.swift */; };
 		B5F0D2441DD506ED00402FEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5F0D2421DD506ED00402FEC /* Main.storyboard */; };
 		B5F0D2471DD506ED00402FEC /* PeaPod.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B5F0D2451DD506ED00402FEC /* PeaPod.xcdatamodeld */; };
 		B5F0D2491DD506ED00402FEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5F0D2481DD506ED00402FEC /* Assets.xcassets */; };
@@ -53,7 +61,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		B53661791E16C7F10044F10C /* PBXContainerItemProxy */ = {
+		B5D793CA1E16D31000331A20 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B5F0D2331DD506ED00402FEC /* Project object */;
 			proxyType = 1;
@@ -83,7 +91,6 @@
 		B5142A291DF0CA92005CE3AC /* RSSSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSSSpec.swift; sourceTree = "<group>"; };
 		B53661741E16C7F10044F10C /* SweetPeaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SweetPeaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B53661761E16C7F10044F10C /* SweetPeaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SweetPeaTests.swift; sourceTree = "<group>"; };
-		B53661781E16C7F10044F10C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B536618B1E16CACB0044F10C /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = "../../Library/Developer/Xcode/DerivedData/SweetPea-ammcoyyuyrqelrgeerwkfbahqsyg/Build/Products/Debug-iphonesimulator/Quick/Quick.framework"; sourceTree = "<group>"; };
 		B536618D1E16CACF0044F10C /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = "../../Library/Developer/Xcode/DerivedData/SweetPea-ammcoyyuyrqelrgeerwkfbahqsyg/Build/Products/Debug-iphonesimulator/Nimble/Nimble.framework"; sourceTree = "<group>"; };
 		B537939D1DD9BF8C00D9C9AF /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
@@ -120,6 +127,8 @@
 		B5BB0D911DD51C8300BD7FA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B5BB0D981DD51CB300BD7FA0 /* OPMLService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OPMLService.swift; sourceTree = "<group>"; };
 		B5BB74611DE3894800F327F0 /* SubscriptionsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SubscriptionsViewModel.swift; path = PeaPod/SubscriptionsViewModel.swift; sourceTree = "<group>"; };
+		B5D793CC1E16D3F800331A20 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		B5D793CE1E16D4EF00331A20 /* TestingAppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestingAppDelegate.swift; sourceTree = "<group>"; };
 		B5DABFD91E033A9200D9FFFF /* FeedKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FeedKit.framework; path = "../../Library/Developer/Xcode/DerivedData/SweetPea-ammcoyyuyrqelrgeerwkfbahqsyg/Build/Products/Debug-iphonesimulator/FeedKit/FeedKit.framework"; sourceTree = "<group>"; };
 		B5DABFDC1E03401200D9FFFF /* SubscriptionsViewModelSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubscriptionsViewModelSpec.swift; sourceTree = "<group>"; };
 		B5DABFDF1E0343DB00D9FFFF /* StubUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StubUtility.swift; sourceTree = "<group>"; };
@@ -196,8 +205,19 @@
 		B53661751E16C7F10044F10C /* SweetPeaTests */ = {
 			isa = PBXGroup;
 			children = (
+				B5D793CE1E16D4EF00331A20 /* TestingAppDelegate.swift */,
+				B5A4A5461E142F68000A6E2D /* DownloadServiceSpec.swift */,
+				B57BB6D71E0B1E330002E0CD /* StoreSpec.swift */,
+				B5DABFDC1E03401200D9FFFF /* SubscriptionsViewModelSpec.swift */,
+				B58B3D911E0889070015BCAB /* SubscriptionViewModelStub.swift */,
+				B56ED7571E12F91300482181 /* EpisodeSpec.swift */,
+				B5BA3F151DF74EAF000B6FFF /* OPMLServiceTest.swift */,
+				B58A640A1E06EFC9001716E7 /* OPMLServiceStub.swift */,
+				B551BC4E1DF23CE8001C76E3 /* AudioPlayingSpec.swift */,
+				B5142A291DF0CA92005CE3AC /* RSSSpec.swift */,
+				B5BB0D911DD51C8300BD7FA0 /* Info.plist */,
+				B5F57B521E019A1300462BC8 /* ComposeSpec.swift */,
 				B53661761E16C7F10044F10C /* SweetPeaTests.swift */,
-				B53661781E16C7F10044F10C /* Info.plist */,
 			);
 			path = SweetPeaTests;
 			sourceTree = "<group>";
@@ -229,25 +249,6 @@
 			name = Views;
 			sourceTree = "<group>";
 		};
-		B5BB0D8E1DD51C8300BD7FA0 /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-				B5A4A5461E142F68000A6E2D /* DownloadServiceSpec.swift */,
-				B57BB6D71E0B1E330002E0CD /* StoreSpec.swift */,
-				B5DABFDC1E03401200D9FFFF /* SubscriptionsViewModelSpec.swift */,
-				B58B3D911E0889070015BCAB /* SubscriptionViewModelStub.swift */,
-				B56ED7571E12F91300482181 /* EpisodeSpec.swift */,
-				B5BA3F151DF74EAF000B6FFF /* OPMLServiceTest.swift */,
-				B58A640A1E06EFC9001716E7 /* OPMLServiceStub.swift */,
-				B551BC4E1DF23CE8001C76E3 /* AudioPlayingSpec.swift */,
-				B5142A291DF0CA92005CE3AC /* RSSSpec.swift */,
-				B5BB0D911DD51C8300BD7FA0 /* Info.plist */,
-				B5F57B521E019A1300462BC8 /* ComposeSpec.swift */,
-			);
-			name = Tests;
-			path = SweetPeaTests;
-			sourceTree = "<group>";
-		};
 		B5BB0D971DD51CA400BD7FA0 /* Services */ = {
 			isa = PBXGroup;
 			children = (
@@ -276,7 +277,6 @@
 			isa = PBXGroup;
 			children = (
 				B5F0D23D1DD506ED00402FEC /* SweetPea */,
-				B5BB0D8E1DD51C8300BD7FA0 /* Tests */,
 				B53661751E16C7F10044F10C /* SweetPeaTests */,
 				B5F0D23C1DD506ED00402FEC /* Products */,
 				1B6FB18795E1081067AE9E42 /* Frameworks */,
@@ -303,6 +303,7 @@
 				B5F57B4D1E0197FF00462BC8 /* Library */,
 				B5BB0D971DD51CA400BD7FA0 /* Services */,
 				B5F0D23E1DD506ED00402FEC /* AppDelegate.swift */,
+				B5D793CC1E16D3F800331A20 /* main.swift */,
 				B5F0D2401DD506ED00402FEC /* ViewController.swift */,
 				B5F0D2421DD506ED00402FEC /* Main.storyboard */,
 				B5F0D2481DD506ED00402FEC /* Assets.xcassets */,
@@ -366,7 +367,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				B536617A1E16C7F10044F10C /* PBXTargetDependency */,
+				B5D793CB1E16D31000331A20 /* PBXTargetDependency */,
 			);
 			name = SweetPeaTests;
 			productName = SweetPeaTests;
@@ -444,6 +445,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5D793D71E16D65100331A20 /* utr.rss in Resources */,
+				B5D793D81E16D65100331A20 /* hh.rss in Resources */,
+				B5D793D21E16D64700331A20 /* overcast.opml in Resources */,
+				B5D793D41E16D64B00331A20 /* Under the Radar 1_ Adapting to the Market.mp3 in Resources */,
+				B5D793D51E16D64B00331A20 /* Under the Radar 55_ Black Friday Sale.mp3 in Resources */,
+				B5D793D31E16D64700331A20 /* tests.opml in Resources */,
+				B5D793D61E16D64B00331A20 /* Under the Radar 56_ Surviving the Winter.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -605,14 +613,15 @@
 			files = (
 				B536618A1E16C8FC0044F10C /* EpisodeSpec.swift in Sources */,
 				B53661851E16C7F70044F10C /* AudioPlayingSpec.swift in Sources */,
+				B5D793D11E16D5E700331A20 /* OPMLServiceStub.swift in Sources */,
 				B53661861E16C7F70044F10C /* RSSSpec.swift in Sources */,
 				B536617E1E16C7F70044F10C /* DownloadServiceSpec.swift in Sources */,
 				B536617F1E16C7F70044F10C /* StoreSpec.swift in Sources */,
 				B53661881E16C7F70044F10C /* ComposeSpec.swift in Sources */,
-				B53661831E16C7F70044F10C /* OPMLServiceTest.swift in Sources */,
 				B53661811E16C7F70044F10C /* SubscriptionViewModelStub.swift in Sources */,
+				B5D793D01E16D5E200331A20 /* OPMLServiceTest.swift in Sources */,
 				B53661771E16C7F10044F10C /* SweetPeaTests.swift in Sources */,
-				B53661841E16C7F70044F10C /* OPMLServiceStub.swift in Sources */,
+				B5D793CF1E16D4EF00331A20 /* TestingAppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -622,6 +631,7 @@
 			files = (
 				B5F57B511E01997100462BC8 /* Pipe.swift in Sources */,
 				B57BB6D51E0B1C8A0002E0CD /* Store.swift in Sources */,
+				B5D793CD1E16D3F800331A20 /* main.swift in Sources */,
 				B5F0D2471DD506ED00402FEC /* PeaPod.xcdatamodeld in Sources */,
 				B53B505E1E0F1379009C8EEF /* EnclosureViewModel.swift in Sources */,
 				B56ED7601E13077500482181 /* Result.swift in Sources */,
@@ -630,7 +640,6 @@
 				B5BA3F171DF75478000B6FFF /* SubscriptionsViewModel.swift in Sources */,
 				B5BB0D991DD51CB300BD7FA0 /* OPMLService.swift in Sources */,
 				B5A1AC8E1DE640440093E823 /* Helpers.swift in Sources */,
-				B5F0D2411DD506ED00402FEC /* ViewController.swift in Sources */,
 				B5F57B4F1E01982500462BC8 /* Compose.swift in Sources */,
 				B5A4A5411E142541000A6E2D /* Audio.swift in Sources */,
 				B5E5DB221E00C31B0007CAD0 /* RSSService.swift in Sources */,
@@ -649,10 +658,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		B536617A1E16C7F10044F10C /* PBXTargetDependency */ = {
+		B5D793CB1E16D31000331A20 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = B5F0D23A1DD506ED00402FEC /* SweetPea */;
-			targetProxy = B53661791E16C7F10044F10C /* PBXContainerItemProxy */;
+			targetProxy = B5D793CA1E16D31000331A20 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

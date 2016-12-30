@@ -6,7 +6,7 @@
 //  Copyright © 2016 Constellation Software. All rights reserved.
 //
 
-import UIKit
+import Foundation
 
 @testable import SweetPea
 class SubscriptionViewModelStub: SubscriptionsViewModel {
