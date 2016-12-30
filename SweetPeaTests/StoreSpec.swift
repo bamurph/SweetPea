@@ -57,23 +57,27 @@ class StoreSpec: QuickSpec {
         }
 
         describe("deleting a feed") {
-            describe("removes the feed added from rss file") {
+            describe("removing a feed by title") {
                 let feed = store.feeds.first(where: { (feed) -> Bool  in
                     feed.title == "nonsense show" })
-                expect(feed).toNot(beNil())
-                if feed != nil {
-                    store.deleteFeed(feed!)
-                    expect(feed).to(beNil())
-
-
+                context("the feed exists") {
+                    expect(feed).toNot(beNil())
+                    if feed != nil {
+                        it("removes the feed") {
+                            store.deleteFeed(feed!)
+                            expect(feed).to(beNil())
+                        }
+                    }
                 }
-            }
 
+            }
         }
 
 
 
-    
+
+
+
 
 
 
@@ -82,7 +86,7 @@ class StoreSpec: QuickSpec {
         }
 
         describe("adding audio to an enclosure") {
-            
+
         }
         
         describe("deleting an enclosure") {
@@ -92,4 +96,5 @@ class StoreSpec: QuickSpec {
         describe("deleting an audio file") {
             
         }
+    }
 }
