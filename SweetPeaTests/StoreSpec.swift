@@ -19,7 +19,7 @@ class StoreSpec: QuickSpec {
         beforeSuite {
 
             try! store.write {
-               store.deleteAll()
+                store.deleteAll()
             }
         }
 
@@ -56,23 +56,40 @@ class StoreSpec: QuickSpec {
             }
         }
 
+        describe("deleting a feed") {
+            describe("removes the feed added from rss file") {
+                let feed = store.feeds.first(where: { (feed) -> Bool  in
+                    feed.title == "nonsense show" })
+                expect(feed).toNot(beNil())
+                if feed != nil {
+                    store.deleteFeed(feed!)
+                    expect(feed).to(beNil())
+
+
+                }
+            }
+
+        }
+
+
+
+    
+
+
 
         describe("adding an enclosure") {
 
         }
-        
+
         describe("adding audio to an enclosure") {
-
+            
         }
-
+        
         describe("deleting an enclosure") {
-
+            
         }
-
+        
         describe("deleting an audio file") {
-
+            
         }
-    }
-    
 }
-
