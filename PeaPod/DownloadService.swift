@@ -1,5 +1,4 @@
-//
-//  DownloadService.swift
+
 //  SweetPea
 //  Created by Ben Murphy on 12/28/16.
 //
@@ -16,7 +15,7 @@ enum AudioDownloadingError: Error {
 
 protocol AudioDownloading {
     func data(from url : URL) -> Observable<Data>
-    func data(from enclosure: Enclosure) -> Observable<Data>
+    func data(from enclosure: Enclosure)-> Observable<Data>
 }
 
 

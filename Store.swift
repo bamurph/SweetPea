@@ -129,6 +129,7 @@ extension Realm {
                 episode.episodeDescription = episodeDescription
                 episode.pubDate = pubDate
                 episode.enclosure = enclosure
+                add(episode)
             }
         } catch {
             print(StoreError.addEpisodeFailed(error))

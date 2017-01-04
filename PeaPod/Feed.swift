@@ -10,8 +10,6 @@ import Foundation
 import RealmSwift
 import FeedKit
 
-
-
 class Feed: Object {
     fileprivate let separator = "\u{FFFF}"
     dynamic var title: String = ""

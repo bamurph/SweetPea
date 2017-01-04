@@ -71,7 +71,39 @@ class StoreSpec: QuickSpec {
 
 
 
+        describe("adding an episode") {
+            let enclosure = Enclosure()
+            enclosure.url = "http://notarealurl.com"
+            enclosure.type = "mp3"
+            enclosure.length.value = 123124
 
+            it("saves an episode to the store") {
+                store.addEpisode(title: "A pilot episode.", guid: "11291239193", link: "http://myfirstpodcast.net", episodeDescription: "The very first episode of this show", pubDate: Date(), enclosure: enclosure)
+                let epo = store.episodes.filter("title = 'A pilot episode.'")
+                let enc = epo.first?.enclosure
+
+                expect(epo).toNot(beNil())
+                expect(enc).toNot(beNil())
+
+            }
+        }
+
+        describe("deleting an episode") {
+            describe("removing an episode by title") {
+                let epo = store.episodes.filter("title = 'A pilot episode.'").first
+                context("if the episode exists") {
+                    if epo != nil {
+                        it("removes the episode") {
+                            store.deleteEpisode(epo!)
+                            expect(epo).to(beNil())
+
+                        }
+                    }
+                }
+
+
+            }
+        }
 
 
 
