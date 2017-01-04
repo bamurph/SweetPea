@@ -22,7 +22,8 @@ class StoreSpec: QuickSpec {
 
         describe("adding a subscription from scratch") {
             it("saves a podcast to the store") {
-                store.addSubscription(title: "A simple podcast.", summary: "Not much!", xmlUrl: "http://asimplepodcast.com/rss", htmlUrl: "http://asimplepodcast.com", feed: nil)
+                store.addSubscription(title: "A simple podcast.", summary: "Not much!", xmlUrl:
+                "http://asimplepodcast.com/rss", htmlUrl: "http://asimplepodcast.com", feed: nil)
                 expect(store.subscriptions.contains(where: { (sub) -> Bool in
                     sub.title == "A simple podcast." && sub.summary == "Not much!"
                 })).to(beTrue())
@@ -31,7 +32,8 @@ class StoreSpec: QuickSpec {
 
         describe("deleting a subscription by title") {
             it("deletes the subscription") {
-                let sub = store.objects(Subscription.self).filter("title = 'A simple podcast.'").first
+                let sub = store.objects(Subscription.self).filter("title = 'A simple podcast.'")
+                        .first
                 store.deleteSubscription(sub!)
                 expect(store.subscriptions.contains(where: { (sub) -> Bool in
                     sub.title == "A simple podcast."
@@ -106,11 +108,17 @@ class StoreSpec: QuickSpec {
         }
 
 
-
-
-
         describe("adding an enclosure") {
+            describe("adding an enclosure") {
+                let enclosure = Enclosure()
+                enclosure.url = "http://afile.net/file.mp3"
+                enclosure.type = "mp3"
+                enclosure.length.value = 55512212
 
+                it("saves enclosure to the store") {
+
+                }
+            }
         }
 
         describe("adding audio to an enclosure") {
