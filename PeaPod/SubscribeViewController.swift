@@ -11,9 +11,11 @@ import RxCocoa
 import RxSwift
 import FeedKit
 
+
 class SubscribeViewController: UIViewController {
     let disposeBag = DisposeBag()
-    let rssService = RSSService()
+    let service = RSSService()
+    let viewModel = FeedViewModel()
 
     @IBOutlet weak var podcastUrl: UITextField!
     @IBOutlet weak var feedName: UILabel!
@@ -22,9 +24,8 @@ class SubscribeViewController: UIViewController {
         super.viewDidLoad()
 
         let response = podcastUrl.rx.text
-            .distinctUntilChanged()
-            .debug()
-            .map { URL(string: $0) }
+            .map { $0 |> ignoreNil }
+            .map { $0 }
 
 
 
