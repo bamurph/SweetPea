@@ -106,8 +106,9 @@ extension Realm {
     func deleteFeed(_ feed: Feed) {
         do {
             try write {
-                delete(feed)
                 feed.items.forEach { $0 |> deleteEpisode }
+                delete(feed)
+
             }
         } catch {
             print(StoreError.deleteFeedFailed(error))

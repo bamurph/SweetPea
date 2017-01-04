@@ -16,11 +16,8 @@ import RxSwift
 class StoreSpec: QuickSpec {
 
     override func spec() {
-        beforeSuite {
-
-            try! store.write {
-               store.deleteAll()
-            }
+        try! store.write {
+            store.deleteAll()
         }
 
         describe("adding a subscription from scratch") {
@@ -56,23 +53,44 @@ class StoreSpec: QuickSpec {
             }
         }
 
+        describe("deleting a feed") {
+            describe("removing a feed by title") {
+                let feed = store.feeds.first(where: { (feed) -> Bool  in
+                    feed.title == "nonsense show" })
+                context("if the feed exists") {
+                    if feed != nil {
+                        it("removes the feed") {
+                            store.deleteFeed(feed!)
+                            expect(feed).to(beNil())
+                        }
+                    }
+                }
+
+            }
+        }
+
+
+
+
+
+
+
+
 
         describe("adding an enclosure") {
 
         }
-        
+
         describe("adding audio to an enclosure") {
 
         }
-
+        
         describe("deleting an enclosure") {
-
+            
         }
-
+        
         describe("deleting an audio file") {
-
+            
         }
     }
-    
 }
-
