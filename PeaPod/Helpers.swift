@@ -14,7 +14,12 @@ struct Resources {
 }
 
 
+/// Ignore all nil values in an observable of optional type
+///
+/// - Parameter x: an optional value
+/// - Returns: an observable sequence of just the single optional value
 func ignoreNil<T>(x: T?) -> Observable<T> {
-    return x.map { Observable.just($0) ?? Observable.empty() }
+    return x.map { Observable.just($0) } ?? Observable.empty()
 }
+
 

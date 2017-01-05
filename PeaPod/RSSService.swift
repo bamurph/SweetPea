@@ -57,6 +57,17 @@ struct RSSService: RSSProtocol {
             .map { RSSService().fetch(url: $0) }
             .merge()
     }
+
+    func performFetch(_ url: URL) -> Observable<RSSFeed> {
+        return Observable.create { observer in
+            self.fetch(url: url)
+                .subscribe(onNext: {n in
+                    observer.onNext(n)
+                }, onError: {e in
+                    print(e)
+                })
+        }
+    }
 }
 
 
