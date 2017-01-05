@@ -23,36 +23,46 @@ class SubscribeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let response = podcastUrl.rx.text.orEmpty
+        _ = podcastUrl.rx.text.orEmpty
             .map { URL(string: $0) }
             .filter { $0 != nil }
             .flatMapLatest { url in
-                return self.service.performFetch(url!)
-            }
-            .map { $0.title }
-            .bindTo(feedName.rx.text)
+                return self.service.performFetch(url!)}
+            .subscribe(onNext: {n in
+                switch n {
+                case .Success(let feed):
+                    self.feedName.text = feed.title ?? "No Title"
 
+                case .Failure(let error):
+                    self.feedName.text = "..."
+                    print(error)
+                }
 
-//            .map { $0.title }
-//            .bindTo(feedName.rx.text)
-//            .flatMapLatest({ (url) -> Observable<RSSFeed> in
-//                return service.fetch(url: url)
-//            })
-//            .subscribe()
-//            .flatMap(ignoreNil)
-//            .flatMapLatest { self.service.fetch(url: $0) }
-//            .map { $0.title }
-//            .subscribe(onNext: {n in
-//                print(n)
-//            })
+            })
 
 
 
-//
-//        response
-//            .map { $0.title ?? "--" }
-//            .bindTo(feedName.rx.text)
-//            .addDisposableTo(disposeBag)
+
+        //            .map { $0.title }
+        //            .bindTo(feedName.rx.text)
+        //            .flatMapLatest({ (url) -> Observable<RSSFeed> in
+        //                return service.fetch(url: url)
+        //            })
+        //            .subscribe()
+        //            .flatMap(ignoreNil)
+        //            .flatMapLatest { self.service.fetch(url: $0) }
+        //            .map { $0.title }
+        //            .subscribe(onNext: {n in
+        //                print(n)
+        //            })
+
+
+
+        //
+        //        response
+        //            .map { $0.title ?? "--" }
+        //            .bindTo(feedName.rx.text)
+        //            .addDisposableTo(disposeBag)
 
 
     }
@@ -74,5 +84,5 @@ class SubscribeViewController: UIViewController {
      // Pass the selected object to the new view controller.
      }
      */
-
+    
 }

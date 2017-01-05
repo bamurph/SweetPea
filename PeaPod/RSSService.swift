@@ -24,6 +24,8 @@ enum RSSServiceError: Error {
     case badUrl
 }
 
+
+
 /// Bare-Bones RSS Service
 struct RSSService: RSSProtocol {
 
@@ -58,13 +60,13 @@ struct RSSService: RSSProtocol {
             .merge()
     }
 
-    func performFetch(_ url: URL) -> Observable<RSSFeed> {
+    func performFetch(_ url: URL) -> Observable<Result<RSSFeed>> {
         return Observable.create { observer in
             self.fetch(url: url)
-                .subscribe(onNext: {n in
-                    observer.onNext(n)
-                }, onError: {e in
-                    print(e)
+                .subscribe(onNext: { n in
+                    observer.onNext(Result.Success(n))
+                }, onError: { e in
+                    observer.onNext(Result.Failure(e))
                 })
         }
     }

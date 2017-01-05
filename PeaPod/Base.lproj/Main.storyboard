@@ -28,9 +28,11 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="URL" enablesReturnKeyAutomatically="YES"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2gZ-tW-nXn">
-                                <rect key="frame" x="166" y="66" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2gZ-tW-nXn">
+                                <rect key="frame" x="24" y="66" width="335" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="UDA-IK-9GK"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -39,7 +41,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <constraints>
+                            <constraint firstItem="2gZ-tW-nXn" firstAttribute="top" secondItem="ewB-LK-i5A" secondAttribute="bottom" constant="8" symbolic="YES" id="F9O-Ol-MDz"/>
+                            <constraint firstItem="2gZ-tW-nXn" firstAttribute="leading" secondItem="ewB-LK-i5A" secondAttribute="leading" id="OEN-9d-bVh"/>
                             <constraint firstItem="ewB-LK-i5A" firstAttribute="trailing" secondItem="nUi-rv-enp" secondAttribute="trailingMargin" id="aV0-Ka-6Tc"/>
+                            <constraint firstItem="2gZ-tW-nXn" firstAttribute="trailing" secondItem="ewB-LK-i5A" secondAttribute="trailing" id="e8m-Ly-bpD"/>
                             <constraint firstItem="ewB-LK-i5A" firstAttribute="top" secondItem="zJ1-Ly-hPA" secondAttribute="bottom" constant="8" symbolic="YES" id="iXC-76-Q2D"/>
                             <constraint firstItem="ewB-LK-i5A" firstAttribute="leading" secondItem="nUi-rv-enp" secondAttribute="leadingMargin" constant="8" id="oJM-VS-iiQ"/>
                         </constraints>
@@ -51,7 +56,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zsK-PG-BXW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="172" y="-27.436281859070466"/>
+            <point key="canvasLocation" x="165.59999999999999" y="-23.838080959520241"/>
         </scene>
     </scenes>
 </document>
