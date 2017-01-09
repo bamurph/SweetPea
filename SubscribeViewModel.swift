@@ -14,7 +14,6 @@ class SubscribeViewModel {
 
     // MARK: - Dependencies
     private let disposeBag = DisposeBag()
-    private let service = RSSService()
 
     // MARK: - Model
     private let feed: Observable<Result<RSSFeed>>
@@ -22,10 +21,10 @@ class SubscribeViewModel {
     let podcastTitle: Observable<String>
 
     /// Each new element fires a new attempt to fetch a podcast.
-    let podcastUrl = Variable<String>("")
+    let urlText = Variable<String>("")
 
     init() {
-        feed = podcastUrl.asObservable()
+        feed = urlText.asObservable()
             .debounce(0.25, scheduler: MainScheduler.instance)
             .distinctUntilChanged()
             .map { URL(string: $0) }
@@ -34,13 +33,19 @@ class SubscribeViewModel {
                     return Observable.empty()
                 }
 
-                return self.service.performFetch(url!)
+                return RSSService().performFetch(url!)
             }
             .shareReplay(1)
 
         podcastTitle = feed
-            .map { $0 }
-    
-    
+            .map {
+                if case .success(let val) = $0 {
+                    return val.title ?? "no title!?"
+                } else {
+                    return ""
+                }
+
+        }
+    }
 }
 

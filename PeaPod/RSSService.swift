@@ -63,9 +63,9 @@ struct RSSService: RSSProtocol {
         return Observable.create { observer in
             self.fetch(url: url)
                 .subscribe(onNext: { n in
-                    observer.onNext(Result.Success(n))
+                    observer.onNext(Result.success(n))
                 }, onError: { e in
-                    observer.onNext(Result.Failure(e))
+                    observer.onNext(Result.failure(e))
                 })
         }
     }
