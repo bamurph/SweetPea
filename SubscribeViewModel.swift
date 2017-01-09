@@ -19,6 +19,7 @@ class SubscribeViewModel {
     private let feed: Observable<Result<RSSFeed>>
 
     let podcastTitle: Observable<String>
+    let podcastDescription: Observable<String>
 
     /// Each new element fires a new attempt to fetch a podcast.
     let urlText = Variable<String>("")
@@ -40,11 +41,20 @@ class SubscribeViewModel {
         podcastTitle = feed
             .map {
                 if case .success(let val) = $0 {
-                    return val.title ?? "no title!?"
+                    // TODO: - Raise some sort of alert here
+                    return val.title ?? "No Title Found"
                 } else {
                     return ""
                 }
+        }
 
+        podcastDescription = feed
+            .map {
+                if case .success(let val) = $0 {
+                    return val.description ?? "No Description Found"
+                } else {
+                    return ""
+                }
         }
     }
 }

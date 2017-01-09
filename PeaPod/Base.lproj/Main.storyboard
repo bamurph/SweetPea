@@ -28,7 +28,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="URL" enablesReturnKeyAutomatically="YES"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2gZ-tW-nXn">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Feed Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2gZ-tW-nXn">
                                 <rect key="frame" x="24" y="66" width="335" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="31" id="UDA-IK-9GK"/>
@@ -37,6 +37,13 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NL9-6s-21o">
+                                <rect key="frame" x="24" y="105" width="335" height="201"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
@@ -44,13 +51,18 @@
                             <constraint firstItem="2gZ-tW-nXn" firstAttribute="top" secondItem="ewB-LK-i5A" secondAttribute="bottom" constant="8" symbolic="YES" id="F9O-Ol-MDz"/>
                             <constraint firstItem="2gZ-tW-nXn" firstAttribute="leading" secondItem="ewB-LK-i5A" secondAttribute="leading" id="OEN-9d-bVh"/>
                             <constraint firstItem="ewB-LK-i5A" firstAttribute="trailing" secondItem="nUi-rv-enp" secondAttribute="trailingMargin" id="aV0-Ka-6Tc"/>
+                            <constraint firstItem="KYO-Jn-lwo" firstAttribute="top" secondItem="NL9-6s-21o" secondAttribute="bottom" constant="361" id="c4n-8q-1Df"/>
                             <constraint firstItem="2gZ-tW-nXn" firstAttribute="trailing" secondItem="ewB-LK-i5A" secondAttribute="trailing" id="e8m-Ly-bpD"/>
+                            <constraint firstItem="NL9-6s-21o" firstAttribute="leading" secondItem="2gZ-tW-nXn" secondAttribute="leading" id="eCC-9n-0If"/>
                             <constraint firstItem="ewB-LK-i5A" firstAttribute="top" secondItem="zJ1-Ly-hPA" secondAttribute="bottom" constant="8" symbolic="YES" id="iXC-76-Q2D"/>
+                            <constraint firstItem="NL9-6s-21o" firstAttribute="top" secondItem="2gZ-tW-nXn" secondAttribute="bottom" constant="8" symbolic="YES" id="jEL-sg-nug"/>
                             <constraint firstItem="ewB-LK-i5A" firstAttribute="leading" secondItem="nUi-rv-enp" secondAttribute="leadingMargin" constant="8" id="oJM-VS-iiQ"/>
+                            <constraint firstItem="NL9-6s-21o" firstAttribute="trailing" secondItem="2gZ-tW-nXn" secondAttribute="trailing" id="wYJ-Ob-P0f"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="feedName" destination="2gZ-tW-nXn" id="c41-hf-Olr"/>
+                        <outlet property="feedDescription" destination="NL9-6s-21o" id="nL1-eK-9Q4"/>
+                        <outlet property="feedTitle" destination="2gZ-tW-nXn" id="fzw-Zj-Rnc"/>
                         <outlet property="podcastUrl" destination="ewB-LK-i5A" id="e9j-SF-wjK"/>
                     </connections>
                 </viewController>

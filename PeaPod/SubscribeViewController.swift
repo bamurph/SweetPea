@@ -17,7 +17,9 @@ class SubscribeViewController: UIViewController {
     let viewModel = SubscribeViewModel()
 
     @IBOutlet weak var podcastUrl: UITextField!
-    @IBOutlet weak var feedName: UILabel!
+
+    @IBOutlet weak var feedTitle: UILabel!
+    @IBOutlet weak var feedDescription: UITextView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,9 +30,12 @@ class SubscribeViewController: UIViewController {
             }).addDisposableTo(disposeBag)
 
         viewModel.podcastTitle
-            .bindTo(feedName.rx.text)
+            .bindTo(feedTitle.rx.text)
             .addDisposableTo(disposeBag)
 
+        viewModel.podcastDescription
+            .bindTo(feedDescription.rx.text)
+            .addDisposableTo(disposeBag)
 
 
 
