@@ -8,8 +8,24 @@
 import Foundation
 
 enum Result<Value> {
-    case Success(Value)
-    case Failure(Error)
+    case success(Value)
+    case failure(Error)
 }
 
-extension Result 
+extension Result {
+    func flatMap<U>(_ transform: (Value) -> Result<U>) -> Result<U> {
+        switch self {
+        case .success(let val): return transform(val)
+        case .failure(let err): return .failure(err)
+        }
+    }
+
+    func flatMap<U>(_ transform: (Value) -> Result<U>, onFailure: () -> Void) -> Result<U> {
+        switch self {
+        case .success(let val): return transform(val)
+        case .failure(let err):
+            onFailure()
+            return .failure(err)
+        }
+    }
+}
