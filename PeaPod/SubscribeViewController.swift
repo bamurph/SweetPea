@@ -14,14 +14,16 @@ import FeedKit
 
 class SubscribeViewController: UIViewController {
     let disposeBag = DisposeBag()
-    let service = RSSService()
-    let viewModel: FeedViewModel? = nil
+    let viewModel = SubscribeViewModel()
 
     @IBOutlet weak var podcastUrl: UITextField!
     @IBOutlet weak var feedName: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        podcastUrl.rx.text
+            .bindTo(viewModel.urlText)
 
         _ = podcastUrl.rx.text.orEmpty
             .map { URL(string: $0) }

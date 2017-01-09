@@ -10,7 +10,6 @@ import Foundation
 import FeedKit
 import RxSwift
 import Lepton
-
 typealias RSSUrl = URL
 
 protocol RSSProtocol {

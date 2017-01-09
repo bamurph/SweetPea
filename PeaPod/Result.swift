@@ -11,3 +11,5 @@ enum Result<Value> {
     case Success(Value)
     case Failure(Error)
 }
+
+extension Result 
