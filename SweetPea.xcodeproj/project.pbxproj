@@ -9,10 +9,10 @@
 /* Begin PBXBuildFile section */
 		0EAADA37FD89AAE94F44561B /* Pods_SweetPeaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9925CFDF86C3A9CC924D0BC0 /* Pods_SweetPeaTests.framework */; };
 		B51D58D51E23FA7C00BB089B /* SubscribeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51D58D41E23FA7C00BB089B /* SubscribeViewModel.swift */; };
+		B51D58E71E2439A100BB089B /* SubscribeViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51D58E61E2439A100BB089B /* SubscribeViewModelSpec.swift */; };
 		B53661771E16C7F10044F10C /* SweetPeaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53661761E16C7F10044F10C /* SweetPeaTests.swift */; };
 		B536617E1E16C7F70044F10C /* DownloadServiceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A4A5461E142F68000A6E2D /* DownloadServiceSpec.swift */; };
 		B536617F1E16C7F70044F10C /* StoreSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57BB6D71E0B1E330002E0CD /* StoreSpec.swift */; };
-		B53661811E16C7F70044F10C /* SubscriptionViewModelStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58B3D911E0889070015BCAB /* SubscriptionViewModelStub.swift */; };
 		B53661851E16C7F70044F10C /* AudioPlayingSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B551BC4E1DF23CE8001C76E3 /* AudioPlayingSpec.swift */; };
 		B53661861E16C7F70044F10C /* RSSSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5142A291DF0CA92005CE3AC /* RSSSpec.swift */; };
 		B53661881E16C7F70044F10C /* ComposeSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F57B521E019A1300462BC8 /* ComposeSpec.swift */; };
@@ -33,7 +33,6 @@
 		B5A4A5411E142541000A6E2D /* Audio.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A4A5401E142541000A6E2D /* Audio.swift */; };
 		B5A4A5441E14275B000A6E2D /* DownloadService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A4A5431E14275B000A6E2D /* DownloadService.swift */; };
 		B5B4CE3E1E1D787100A0F117 /* FeedSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B4CE3D1E1D787100A0F117 /* FeedSpec.swift */; };
-		B5BA3F171DF75478000B6FFF /* SubscriptionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BB74611DE3894800F327F0 /* SubscriptionsViewModel.swift */; };
 		B5BB0D991DD51CB300BD7FA0 /* OPMLService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BB0D981DD51CB300BD7FA0 /* OPMLService.swift */; };
 		B5D793CD1E16D3F800331A20 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D793CC1E16D3F800331A20 /* main.swift */; };
 		B5D793CF1E16D4EF00331A20 /* TestingAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D793CE1E16D4EF00331A20 /* TestingAppDelegate.swift */; };
@@ -64,13 +63,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		B51D58DF1E242CA700BB089B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B5F0D2331DD506ED00402FEC /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B5F0D23A1DD506ED00402FEC;
-			remoteInfo = SweetPea;
-		};
 		B5D793CA1E16D31000331A20 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B5F0D2331DD506ED00402FEC /* Project object */;
@@ -100,7 +92,7 @@
 		9925CFDF86C3A9CC924D0BC0 /* Pods_SweetPeaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SweetPeaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5142A291DF0CA92005CE3AC /* RSSSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSSSpec.swift; sourceTree = "<group>"; };
 		B51D58D41E23FA7C00BB089B /* SubscribeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubscribeViewModel.swift; sourceTree = "<group>"; };
-		B51D58DA1E242CA700BB089B /* SweetPeaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SweetPeaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B51D58E61E2439A100BB089B /* SubscribeViewModelSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubscribeViewModelSpec.swift; sourceTree = "<group>"; };
 		B53661741E16C7F10044F10C /* SweetPeaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SweetPeaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B53661761E16C7F10044F10C /* SweetPeaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SweetPeaTests.swift; sourceTree = "<group>"; };
 		B536618B1E16CACB0044F10C /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = "../../Library/Developer/Xcode/DerivedData/SweetPea-ammcoyyuyrqelrgeerwkfbahqsyg/Build/Products/Debug-iphonesimulator/Quick/Quick.framework"; sourceTree = "<group>"; };
@@ -124,7 +116,6 @@
 		B58A64021E06E89A001716E7 /* hh.rss */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = hh.rss; sourceTree = "<group>"; };
 		B58A64051E06EA66001716E7 /* tests.opml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = tests.opml; sourceTree = "<group>"; };
 		B58A640A1E06EFC9001716E7 /* OPMLServiceStub.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OPMLServiceStub.swift; sourceTree = "<group>"; };
-		B58B3D911E0889070015BCAB /* SubscriptionViewModelStub.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubscriptionViewModelStub.swift; sourceTree = "<group>"; };
 		B59FFA391E16C2B40082894A /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = "../../Library/Developer/Xcode/DerivedData/SweetPea-ammcoyyuyrqelrgeerwkfbahqsyg/Build/Products/Debug-iphonesimulator/Realm/Realm.framework"; sourceTree = "<group>"; };
 		B59FFA3A1E16C2B40082894A /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = "../../Library/Developer/Xcode/DerivedData/SweetPea-ammcoyyuyrqelrgeerwkfbahqsyg/Build/Products/Debug-iphonesimulator/RealmSwift/RealmSwift.framework"; sourceTree = "<group>"; };
 		B5A1AC861DE4EFC90093E823 /* FeedViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FeedViewModel.swift; path = PeaPod/FeedViewModel.swift; sourceTree = "<group>"; };
@@ -140,11 +131,9 @@
 		B5BA3F181DF7557E000B6FFF /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = "Pods/../build/Debug-iphoneos/Quick/Quick.framework"; sourceTree = "<group>"; };
 		B5BB0D911DD51C8300BD7FA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B5BB0D981DD51CB300BD7FA0 /* OPMLService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OPMLService.swift; sourceTree = "<group>"; };
-		B5BB74611DE3894800F327F0 /* SubscriptionsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SubscriptionsViewModel.swift; path = PeaPod/SubscriptionsViewModel.swift; sourceTree = "<group>"; };
 		B5D793CC1E16D3F800331A20 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		B5D793CE1E16D4EF00331A20 /* TestingAppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestingAppDelegate.swift; sourceTree = "<group>"; };
 		B5DABFD91E033A9200D9FFFF /* FeedKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FeedKit.framework; path = "../../Library/Developer/Xcode/DerivedData/SweetPea-ammcoyyuyrqelrgeerwkfbahqsyg/Build/Products/Debug-iphonesimulator/FeedKit/FeedKit.framework"; sourceTree = "<group>"; };
-		B5DABFDC1E03401200D9FFFF /* SubscriptionsViewModelSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubscriptionsViewModelSpec.swift; sourceTree = "<group>"; };
 		B5DABFDF1E0343DB00D9FFFF /* StubUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StubUtility.swift; sourceTree = "<group>"; };
 		B5F0D23B1DD506ED00402FEC /* SweetPea.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SweetPea.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5F0D23E1DD506ED00402FEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -166,13 +155,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		B51D58D71E242CA700BB089B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		B53661711E16C7F10044F10C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -230,13 +212,12 @@
 				B5D793CE1E16D4EF00331A20 /* TestingAppDelegate.swift */,
 				B5A4A5461E142F68000A6E2D /* DownloadServiceSpec.swift */,
 				B57BB6D71E0B1E330002E0CD /* StoreSpec.swift */,
-				B5DABFDC1E03401200D9FFFF /* SubscriptionsViewModelSpec.swift */,
-				B58B3D911E0889070015BCAB /* SubscriptionViewModelStub.swift */,
 				B56ED7571E12F91300482181 /* EpisodeSpec.swift */,
 				B5BA3F151DF74EAF000B6FFF /* OPMLServiceTest.swift */,
 				B58A640A1E06EFC9001716E7 /* OPMLServiceStub.swift */,
 				B551BC4E1DF23CE8001C76E3 /* AudioPlayingSpec.swift */,
 				B5142A291DF0CA92005CE3AC /* RSSSpec.swift */,
+				B51D58E61E2439A100BB089B /* SubscribeViewModelSpec.swift */,
 				B5BB0D911DD51C8300BD7FA0 /* Info.plist */,
 				B5F57B521E019A1300462BC8 /* ComposeSpec.swift */,
 				B53661761E16C7F10044F10C /* SweetPeaTests.swift */,
@@ -287,7 +268,6 @@
 		B5BB74601DE3890A00F327F0 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				B5BB74611DE3894800F327F0 /* SubscriptionsViewModel.swift */,
 				B51D58D41E23FA7C00BB089B /* SubscribeViewModel.swift */,
 				B5A1AC861DE4EFC90093E823 /* FeedViewModel.swift */,
 				B53B50581E0F1342009C8EEF /* EpisodeViewModel.swift */,
@@ -313,7 +293,6 @@
 			children = (
 				B5F0D23B1DD506ED00402FEC /* SweetPea.app */,
 				B53661741E16C7F10044F10C /* SweetPeaTests.xctest */,
-				B51D58DA1E242CA700BB089B /* SweetPeaUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -378,24 +357,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B51D58D91E242CA700BB089B /* SweetPeaUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B51D58E11E242CA700BB089B /* Build configuration list for PBXNativeTarget "SweetPeaUITests" */;
-			buildPhases = (
-				B51D58D61E242CA700BB089B /* Sources */,
-				B51D58D71E242CA700BB089B /* Frameworks */,
-				B51D58D81E242CA700BB089B /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				B51D58E01E242CA700BB089B /* PBXTargetDependency */,
-			);
-			name = SweetPeaUITests;
-			productName = SweetPeaUITests;
-			productReference = B51D58DA1E242CA700BB089B /* SweetPeaUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 		B53661731E16C7F10044F10C /* SweetPeaTests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B536617B1E16C7F10044F10C /* Build configuration list for PBXNativeTarget "SweetPeaTests" */;
@@ -451,12 +412,6 @@
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Constellation Software";
 				TargetAttributes = {
-					B51D58D91E242CA700BB089B = {
-						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 97JRRX372K;
-						ProvisioningStyle = Automatic;
-						TestTargetID = B5F0D23A1DD506ED00402FEC;
-					};
 					B53661731E16C7F10044F10C = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 97JRRX372K;
@@ -485,19 +440,11 @@
 			targets = (
 				B5F0D23A1DD506ED00402FEC /* SweetPea */,
 				B53661731E16C7F10044F10C /* SweetPeaTests */,
-				B51D58D91E242CA700BB089B /* SweetPeaUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		B51D58D81E242CA700BB089B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		B53661721E16C7F10044F10C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -664,13 +611,6 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		B51D58D61E242CA700BB089B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		B53661701E16C7F10044F10C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -679,10 +619,10 @@
 				B53661851E16C7F70044F10C /* AudioPlayingSpec.swift in Sources */,
 				B5D793D11E16D5E700331A20 /* OPMLServiceStub.swift in Sources */,
 				B53661861E16C7F70044F10C /* RSSSpec.swift in Sources */,
+				B51D58E71E2439A100BB089B /* SubscribeViewModelSpec.swift in Sources */,
 				B536617E1E16C7F70044F10C /* DownloadServiceSpec.swift in Sources */,
 				B536617F1E16C7F70044F10C /* StoreSpec.swift in Sources */,
 				B53661881E16C7F70044F10C /* ComposeSpec.swift in Sources */,
-				B53661811E16C7F70044F10C /* SubscriptionViewModelStub.swift in Sources */,
 				B5B4CE3E1E1D787100A0F117 /* FeedSpec.swift in Sources */,
 				B5D793D01E16D5E200331A20 /* OPMLServiceTest.swift in Sources */,
 				B53661771E16C7F10044F10C /* SweetPeaTests.swift in Sources */,
@@ -702,7 +642,6 @@
 				B56ED7601E13077500482181 /* Result.swift in Sources */,
 				B5F20F551E0B231500A5E1A5 /* Subscription.swift in Sources */,
 				B5A4A5441E14275B000A6E2D /* DownloadService.swift in Sources */,
-				B5BA3F171DF75478000B6FFF /* SubscriptionsViewModel.swift in Sources */,
 				B55A5E771E1D9E6700D85583 /* SubscribeViewController.swift in Sources */,
 				B5BB0D991DD51CB300BD7FA0 /* OPMLService.swift in Sources */,
 				B5A1AC8E1DE640440093E823 /* Helpers.swift in Sources */,
@@ -725,11 +664,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		B51D58E01E242CA700BB089B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = B5F0D23A1DD506ED00402FEC /* SweetPea */;
-			targetProxy = B51D58DF1E242CA700BB089B /* PBXContainerItemProxy */;
-		};
 		B5D793CB1E16D31000331A20 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = B5F0D23A1DD506ED00402FEC /* SweetPea */;
@@ -757,34 +691,6 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		B51D58E21E242CA700BB089B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				DEVELOPMENT_TEAM = 97JRRX372K;
-				INFOPLIST_FILE = SweetPeaUITests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Constellation.SweetPeaUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = SweetPea;
-			};
-			name = Debug;
-		};
-		B51D58E31E242CA700BB089B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				DEVELOPMENT_TEAM = 97JRRX372K;
-				INFOPLIST_FILE = SweetPeaUITests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Constellation.SweetPeaUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = SweetPea;
-			};
-			name = Release;
-		};
 		B536617C1E16C7F10044F10C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 69F8EB8C7A5E27568000FC64 /* Pods-SweetPeaTests.debug.xcconfig */;
@@ -971,14 +877,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B51D58E11E242CA700BB089B /* Build configuration list for PBXNativeTarget "SweetPeaUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B51D58E21E242CA700BB089B /* Debug */,
-				B51D58E31E242CA700BB089B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
 		B536617B1E16C7F10044F10C /* Build configuration list for PBXNativeTarget "SweetPeaTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
