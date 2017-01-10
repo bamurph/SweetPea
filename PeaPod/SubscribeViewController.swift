@@ -20,9 +20,14 @@ class SubscribeViewController: UIViewController {
 
     @IBOutlet weak var feedTitle: UILabel!
     @IBOutlet weak var feedDescription: UITextView!
+    @IBOutlet weak var subscribeButton: UIButton!
+
+    @IBOutlet weak var titleSubStack: UIStackView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        feedTitle.text = ""
+        feedDescription.text = ""
 
         podcastUrl.rx.text
             .subscribe(onNext: { n in
@@ -37,6 +42,10 @@ class SubscribeViewController: UIViewController {
             .bindTo(feedDescription.rx.text)
             .addDisposableTo(disposeBag)
 
+        viewModel.podcastTitle
+            .map { $0.isEmpty }
+            .bindTo(subscribeButton.rx.isHidden)
+            .addDisposableTo(disposeBag)
 
 
     }

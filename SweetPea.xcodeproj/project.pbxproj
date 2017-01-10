@@ -24,7 +24,6 @@
 		B53B505E1E0F1379009C8EEF /* EnclosureViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53B505D1E0F1379009C8EEF /* EnclosureViewModel.swift */; };
 		B551BC511DF24065001C76E3 /* AudioService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B551BC501DF24065001C76E3 /* AudioService.swift */; };
 		B55A5E771E1D9E6700D85583 /* SubscribeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55A5E761E1D9E6700D85583 /* SubscribeViewController.swift */; };
-		B5644B7F1E01DE6000FC3FB1 /* SubscriptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5644B7E1E01DE6000FC3FB1 /* SubscriptionsViewController.swift */; };
 		B56ED7601E13077500482181 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56ED75F1E13077500482181 /* Result.swift */; };
 		B57BB6D51E0B1C8A0002E0CD /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57BB6D41E0B1C8A0002E0CD /* Store.swift */; };
 		B58A64061E06EA66001716E7 /* tests.opml in Resources */ = {isa = PBXBuildFile; fileRef = B58A64051E06EA66001716E7 /* tests.opml */; };
@@ -108,7 +107,6 @@
 		B551BC4E1DF23CE8001C76E3 /* AudioPlayingSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioPlayingSpec.swift; sourceTree = "<group>"; };
 		B551BC501DF24065001C76E3 /* AudioService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioService.swift; sourceTree = "<group>"; };
 		B55A5E761E1D9E6700D85583 /* SubscribeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubscribeViewController.swift; sourceTree = "<group>"; };
-		B5644B7E1E01DE6000FC3FB1 /* SubscriptionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubscriptionsViewController.swift; sourceTree = "<group>"; };
 		B56ED7571E12F91300482181 /* EpisodeSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EpisodeSpec.swift; sourceTree = "<group>"; };
 		B56ED75F1E13077500482181 /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		B57BB6D41E0B1C8A0002E0CD /* Store.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Store.swift; path = ../Store.swift; sourceTree = "<group>"; };
@@ -248,7 +246,6 @@
 			isa = PBXGroup;
 			children = (
 				B55A5E761E1D9E6700D85583 /* SubscribeViewController.swift */,
-				B5644B7E1E01DE6000FC3FB1 /* SubscriptionsViewController.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -649,7 +646,6 @@
 				B5A4A5411E142541000A6E2D /* Audio.swift in Sources */,
 				B5E5DB221E00C31B0007CAD0 /* RSSService.swift in Sources */,
 				B5F20F5B1E0B306B00A5E1A5 /* Episode.swift in Sources */,
-				B5644B7F1E01DE6000FC3FB1 /* SubscriptionsViewController.swift in Sources */,
 				B551BC511DF24065001C76E3 /* AudioService.swift in Sources */,
 				B53B50591E0F1342009C8EEF /* EpisodeViewModel.swift in Sources */,
 				B5A1AC871DE4EFC90093E823 /* FeedViewModel.swift in Sources */,

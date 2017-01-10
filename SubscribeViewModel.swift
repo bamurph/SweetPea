@@ -26,7 +26,6 @@ class SubscribeViewModel {
 
     init() {
         feed = urlText.asObservable()
-            .debounce(0.25, scheduler: MainScheduler.instance)
             .distinctUntilChanged()
             .map { URL(string: $0) }
             .flatMapLatest { url -> Observable<Result<RSSFeed>> in
