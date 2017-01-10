@@ -34,6 +34,7 @@ class SubscribeViewController: UIViewController {
                 self.viewModel.urlText.value = n ?? ""
             }).addDisposableTo(disposeBag)
 
+
         viewModel.podcastTitle
             .bindTo(feedTitle.rx.text)
             .addDisposableTo(disposeBag)
@@ -47,6 +48,11 @@ class SubscribeViewController: UIViewController {
             .bindTo(subscribeButton.rx.isHidden)
             .addDisposableTo(disposeBag)
 
+        subscribeButton.rx.tap
+            .subscribe(onNext: { _ in
+                print("TAP")
+                self.viewModel.subscribe()
+            })
 
     }
     // Do any additional setup after loading the view.

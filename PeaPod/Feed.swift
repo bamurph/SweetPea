@@ -44,4 +44,14 @@ class Feed: Object {
         return categories?.components(separatedBy: separator) ?? []
     }
 
+    func joinedCategories() -> String {
+        return categories.joined(separator: separator) ?? ""
+    }
+
+    // TODO: - Input categories properly
+
+    func stringsFrom(categories: [RSSFeedCategory]?) -> [String]? {
+        return categories.flatMap { $0.flatMap { $0.value }
+        }
+    }
 }
