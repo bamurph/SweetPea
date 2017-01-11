@@ -45,7 +45,7 @@ class Feed: Object {
     }
 
     func joinedCategories() -> String {
-        return categories.joined(separator: separator) ?? ""
+        return categories.joined(separator: separator) 
     }
 
     // TODO: - Input categories properly

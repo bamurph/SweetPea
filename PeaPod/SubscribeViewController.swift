@@ -48,11 +48,9 @@ class SubscribeViewController: UIViewController {
             .bindTo(subscribeButton.rx.isHidden)
             .addDisposableTo(disposeBag)
 
-        subscribeButton.rx.tap
-            .subscribe(onNext: { _ in
-                print("TAP")
-                self.viewModel.subscribe()
-            })
+        subscribeButton.rx.tap.asObservable()
+            .bindTo(viewModel.addSubscription)
+            .addDisposableTo(disposeBag)
 
     }
     // Do any additional setup after loading the view.

@@ -21,8 +21,13 @@ class SubscribeViewModel {
     let podcastTitle: Observable<String>
     let podcastDescription: Observable<String>
 
+
+    /// Inputs
     /// Each new element fires a new attempt to fetch a podcast.
     let urlText = Variable<String>("")
+
+    /// Each save action (a tap on subscribe button, etc) will be used to trigger subscribe
+    let addSubscription = Variable<Void>()
 
 
     init() {
@@ -39,51 +44,69 @@ class SubscribeViewModel {
             .shareReplay(1)
 
         podcastTitle = feed
-            .map {
-                if case .success(let val) = $0 {
-                    // TODO: - Raise some sort of alert here
-                    return val.title ?? "No Title Found"
-                } else {
-                    return ""
-                }
-        }
+            .map { try? $0.unwrap() }
+            .map { $0?.title ?? "" }
+
 
         podcastDescription = feed
-            .map {
-                if case .success(let val) = $0 {
-                    return val.description ?? "No Description Found"
-                } else {
-                    return ""
-                }
-        }
+            .map { try? $0.unwrap() }
+            .map { $0?.description ?? ""}
+
+        addSubscription.asObservable().withLatestFrom(feed)
+            .map { try? $0.unwrap() }
+            .filter { $0 != nil }
+            .map { $0! }
+            .subscribe(onNext: {n in
+                print(n)
+                let feed = Feed()
+                feed.title = n.title!
+                feed.link = n.link!
+                feed.feedDescription = n.description
+                feed.language = n.language
+                feed.copyright = n.copyright
+                feed.managingEditor = n.managingEditor
+                feed.webMaster = n.webMaster
+                feed.pubDate = n.pubDate
+                feed.lastBuildDate = n.lastBuildDate
+                feed.imageUrl = n.image?.link
+                feed.categories = feed.stringsFrom(categories: n.categories) ?? [""]
+
+                store.addSubscription(title: n.title!, summary: n.description!, xmlUrl: n.link!, htmlUrl: n.link!, feed: feed)
+
+            })
+
+
 
     }
 
     func subscribe() {
-        feed.replay(1)
-            .subscribe(onNext: { n in
-                switch n {
-                case .success(let sub):
-                    let feed = Feed()
-                    feed.title = sub.title!
-                    feed.link = sub.link!
-                    feed.feedDescription = sub.description
-                    feed.language = sub.language
-                    feed.copyright = sub.copyright
-                    feed.managingEditor = sub.managingEditor
-                    feed.webMaster = sub.webMaster
-                    feed.pubDate = sub.pubDate
-                    feed.lastBuildDate = sub.lastBuildDate
-                    feed.imageUrl = sub.image?.link
-                    feed.categories = feed.stringsFrom(categories: sub.categories)!
-                    store.addFeed(feed)
-
-                    store.addSubscription(title: sub.title!, summary: sub.description!, xmlUrl: sub.link!, htmlUrl: sub.link!, feed: feed)
-                case .failure(let err):
-                    print(err)
-                }
-            })
+        //        let save: Observable<
+        //        let addSub = feed
+        //            .subscribe(onNext: { n in
+        //                print(n)
+        //                switch n {
+        //                case .success(let sub):
+        //                    let feed = Feed()
+        //                    feed.title = sub.title!
+        //                    feed.link = sub.link!
+        //                    feed.feedDescription = sub.description
+        //                    feed.language = sub.language
+        //                    feed.copyright = sub.copyright
+        //                    feed.managingEditor = sub.managingEditor
+        //                    feed.webMaster = sub.webMaster
+        //                    feed.pubDate = sub.pubDate
+        //                    feed.lastBuildDate = sub.lastBuildDate
+        //                    feed.imageUrl = sub.image?.link
+        //                    feed.categories = feed.stringsFrom(categories: sub.categories)!
+        //                    store.addFeed(feed)
+        //                    print(feed)
+        //                    store.addSubscription(title: sub.title!, summary: sub.description!, xmlUrl: sub.link!, htmlUrl: sub.link!, feed: feed)
+        //                case .failure(let err):
+        //                    print(err)
+        //                }
+        //            })
+        
     }
-
+    
 }
 
