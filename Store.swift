@@ -59,7 +59,8 @@ extension Realm {
                 sub.xmlUrl = xmlUrl
                 sub.htmlUrl = htmlUrl
                 sub.feed = feed
-                add(sub)
+
+                add(sub, update: true)
             }
         } catch {
             print(StoreError.addSubscriptionFailed(error).localizedDescription)
@@ -82,7 +83,7 @@ extension Realm {
 // MARK: - Feed Actions
 extension Realm {
 
-    
+
 
     func addFeed(_ feed: Feed) {
         self.addFeed(title: feed.title, link: feed.link, feedDescription: feed.feedDescription, language: feed.language, copyright: feed.copyright, managingEditor: feed.managingEditor, webMaster: feed.webMaster, pubDate: feed.pubDate, lastBuildDate: feed.lastBuildDate, imageUrl: feed.imageUrl, categories: feed.joinedCategories())
@@ -104,7 +105,7 @@ extension Realm {
                 feed.imageUrl = imageUrl
                 feed.items = items
                 feed.categories = feed.separated(categories)
-                add(feed)
+                add(feed, update: true)
             }
         } catch {
             print(StoreError.addFeedFailed(error))
@@ -220,7 +221,6 @@ extension Realm {
         }
     }
 }
-
 
 
 

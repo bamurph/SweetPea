@@ -23,6 +23,10 @@ class Feed: Object {
     dynamic var lastBuildDate: Date?
     dynamic var imageUrl: String?
 
+    override static func primaryKey() -> String {
+        return "link"
+    }
+
     // List of Items in the Feed
      var items = List<Episode>()
 

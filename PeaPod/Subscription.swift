@@ -19,4 +19,7 @@ class Subscription: Object {
     dynamic var htmlUrl: String?
     dynamic var feed: Feed? = nil
 
+    override static func primaryKey() -> String? {
+        return "xmlUrl"
+    }
 }

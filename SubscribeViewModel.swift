@@ -57,8 +57,7 @@ class SubscribeViewModel {
             .filter { $0 != nil }
             .map { $0! }
             .subscribe(onNext: {n in
-                let feed = Feed(from: n)
-                store.addSubscription(title: n.title!, summary: n.description!, xmlUrl: n.link!, htmlUrl: n.link!, feed: feed)
+                store.addSubscription(title: n.title!, summary: n.description!, xmlUrl: n.link!, htmlUrl: n.link!, feed: Feed(from: n))
 
             }).addDisposableTo(disposeBag)
 
