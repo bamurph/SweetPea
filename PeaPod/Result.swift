@@ -28,4 +28,15 @@ extension Result {
             return .failure(err)
         }
     }
+
+
+    /// Convert a Result back to standard Swift 'throws' style error handling
+    public func unwrap() throws -> Value {
+        switch self {
+        case .success(let v):
+            return v
+        case .failure(let e):
+            throw e
+        }
+    }
 }
