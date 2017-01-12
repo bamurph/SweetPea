@@ -23,6 +23,10 @@ class Feed: Object {
     dynamic var lastBuildDate: Date?
     dynamic var imageUrl: String?
 
+    /// Inverse relationship to subscriptions
+    let subscription = LinkingObjects(fromType: Subscription.self, property: "feed")
+
+
     override static func primaryKey() -> String {
         return "link"
     }
