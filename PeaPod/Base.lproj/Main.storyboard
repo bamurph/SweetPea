@@ -13,7 +13,7 @@
         <!--Subscribe View Controller-->
         <scene sceneID="CAe-8e-841">
             <objects>
-                <viewController id="jQb-Tv-W9E" customClass="SubscribeViewController" customModule="SweetPea" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Subscribe" id="jQb-Tv-W9E" customClass="SubscribeViewController" customModule="SweetPea" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="zJ1-Ly-hPA"/>
                         <viewControllerLayoutGuide type="bottom" id="KYO-Jn-lwo"/>

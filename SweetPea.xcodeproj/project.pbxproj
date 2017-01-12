@@ -24,6 +24,12 @@
 		B53B505E1E0F1379009C8EEF /* EnclosureViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53B505D1E0F1379009C8EEF /* EnclosureViewModel.swift */; };
 		B551BC511DF24065001C76E3 /* AudioService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B551BC501DF24065001C76E3 /* AudioService.swift */; };
 		B55A5E771E1D9E6700D85583 /* SubscribeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55A5E761E1D9E6700D85583 /* SubscribeViewController.swift */; };
+		B565D3881E28042700D1C713 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B565D3871E28042700D1C713 /* AppCoordinator.swift */; };
+		B565D38A1E28047500D1C713 /* Migrations.swift in Sources */ = {isa = PBXBuildFile; fileRef = B565D3891E28047500D1C713 /* Migrations.swift */; };
+		B565D38C1E28090100D1C713 /* SubscribeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B565D38B1E28090100D1C713 /* SubscribeCoordinator.swift */; };
+		B565D38E1E28092000D1C713 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B565D38D1E28092000D1C713 /* Coordinator.swift */; };
+		B565D3911E2811E800D1C713 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B565D38F1E2811E800D1C713 /* RootViewController.swift */; };
+		B565D3921E2811E800D1C713 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B565D3901E2811E800D1C713 /* RootViewController.xib */; };
 		B56ED7601E13077500482181 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56ED75F1E13077500482181 /* Result.swift */; };
 		B57BB6D51E0B1C8A0002E0CD /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57BB6D41E0B1C8A0002E0CD /* Store.swift */; };
 		B58A64061E06EA66001716E7 /* tests.opml in Resources */ = {isa = PBXBuildFile; fileRef = B58A64051E06EA66001716E7 /* tests.opml */; };
@@ -107,6 +113,12 @@
 		B551BC4E1DF23CE8001C76E3 /* AudioPlayingSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioPlayingSpec.swift; sourceTree = "<group>"; };
 		B551BC501DF24065001C76E3 /* AudioService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioService.swift; sourceTree = "<group>"; };
 		B55A5E761E1D9E6700D85583 /* SubscribeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubscribeViewController.swift; sourceTree = "<group>"; };
+		B565D3871E28042700D1C713 /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		B565D3891E28047500D1C713 /* Migrations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Migrations.swift; sourceTree = "<group>"; };
+		B565D38B1E28090100D1C713 /* SubscribeCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubscribeCoordinator.swift; sourceTree = "<group>"; };
+		B565D38D1E28092000D1C713 /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		B565D38F1E2811E800D1C713 /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		B565D3901E2811E800D1C713 /* RootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
 		B56ED7571E12F91300482181 /* EpisodeSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EpisodeSpec.swift; sourceTree = "<group>"; };
 		B56ED75F1E13077500482181 /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		B57BB6D41E0B1C8A0002E0CD /* Store.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Store.swift; path = ../Store.swift; sourceTree = "<group>"; };
@@ -233,6 +245,16 @@
 			name = UTR;
 			sourceTree = "<group>";
 		};
+		B565D3861E28040300D1C713 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				B565D3871E28042700D1C713 /* AppCoordinator.swift */,
+				B565D38B1E28090100D1C713 /* SubscribeCoordinator.swift */,
+				B565D38D1E28092000D1C713 /* Coordinator.swift */,
+			);
+			name = Coordinators;
+			sourceTree = "<group>";
+		};
 		B58A64011E06E82F001716E7 /* RSS */ = {
 			isa = PBXGroup;
 			children = (
@@ -245,6 +267,8 @@
 		B5A1AC8C1DE63F1C0093E823 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				B565D38F1E2811E800D1C713 /* RootViewController.swift */,
+				B565D3901E2811E800D1C713 /* RootViewController.xib */,
 				B55A5E761E1D9E6700D85583 /* SubscribeViewController.swift */,
 			);
 			name = Views;
@@ -297,6 +321,7 @@
 		B5F0D23D1DD506ED00402FEC /* SweetPea */ = {
 			isa = PBXGroup;
 			children = (
+				B565D3861E28040300D1C713 /* Coordinators */,
 				B5FBBA461DF2099D00B7A71C /* Resources */,
 				B5FBBA431DF1FAC400B7A71C /* Models */,
 				B5A1AC8C1DE63F1C0093E823 /* Views */,
@@ -319,6 +344,7 @@
 		B5F57B4D1E0197FF00462BC8 /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				B565D3891E28047500D1C713 /* Migrations.swift */,
 				B56ED75F1E13077500482181 /* Result.swift */,
 				B5DABFDF1E0343DB00D9FFFF /* StubUtility.swift */,
 				B537939D1DD9BF8C00D9C9AF /* Helpers.swift */,
@@ -462,6 +488,7 @@
 			files = (
 				B5F0D24C1DD506ED00402FEC /* LaunchScreen.storyboard in Resources */,
 				B5F0D2491DD506ED00402FEC /* Assets.xcassets in Resources */,
+				B565D3921E2811E800D1C713 /* RootViewController.xib in Resources */,
 				B5F0D2441DD506ED00402FEC /* Main.storyboard in Resources */,
 				B58A64061E06EA66001716E7 /* tests.opml in Resources */,
 			);
@@ -634,20 +661,25 @@
 				B5F57B511E01997100462BC8 /* Pipe.swift in Sources */,
 				B57BB6D51E0B1C8A0002E0CD /* Store.swift in Sources */,
 				B5D793CD1E16D3F800331A20 /* main.swift in Sources */,
+				B565D38C1E28090100D1C713 /* SubscribeCoordinator.swift in Sources */,
 				B5F0D2471DD506ED00402FEC /* PeaPod.xcdatamodeld in Sources */,
 				B53B505E1E0F1379009C8EEF /* EnclosureViewModel.swift in Sources */,
 				B56ED7601E13077500482181 /* Result.swift in Sources */,
 				B5F20F551E0B231500A5E1A5 /* Subscription.swift in Sources */,
+				B565D38E1E28092000D1C713 /* Coordinator.swift in Sources */,
 				B5A4A5441E14275B000A6E2D /* DownloadService.swift in Sources */,
+				B565D3911E2811E800D1C713 /* RootViewController.swift in Sources */,
 				B55A5E771E1D9E6700D85583 /* SubscribeViewController.swift in Sources */,
 				B5BB0D991DD51CB300BD7FA0 /* OPMLService.swift in Sources */,
 				B5A1AC8E1DE640440093E823 /* Helpers.swift in Sources */,
 				B5F57B4F1E01982500462BC8 /* Compose.swift in Sources */,
+				B565D3881E28042700D1C713 /* AppCoordinator.swift in Sources */,
 				B5A4A5411E142541000A6E2D /* Audio.swift in Sources */,
 				B5E5DB221E00C31B0007CAD0 /* RSSService.swift in Sources */,
 				B5F20F5B1E0B306B00A5E1A5 /* Episode.swift in Sources */,
 				B551BC511DF24065001C76E3 /* AudioService.swift in Sources */,
 				B53B50591E0F1342009C8EEF /* EpisodeViewModel.swift in Sources */,
+				B565D38A1E28047500D1C713 /* Migrations.swift in Sources */,
 				B5A1AC871DE4EFC90093E823 /* FeedViewModel.swift in Sources */,
 				B5DABFE01E0343DB00D9FFFF /* StubUtility.swift in Sources */,
 				B5F0D23F1DD506ED00402FEC /* AppDelegate.swift in Sources */,

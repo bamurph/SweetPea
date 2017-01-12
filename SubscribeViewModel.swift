@@ -10,10 +10,15 @@ import Foundation
 import RxSwift
 import FeedKit
 
+protocol SubscribeViewModelDelegate: class {
+    func didAddSubscription(viewModel: SubscribeViewModel)
+}
+
 class SubscribeViewModel {
 
     // MARK: - Dependencies
     private let disposeBag = DisposeBag()
+    var coordinatorDelegate: SubscribeViewModelDelegate?
 
     // MARK: - Model
     private let feed: Observable<Result<RSSFeed>>
@@ -58,7 +63,7 @@ class SubscribeViewModel {
             .map { $0! }
             .subscribe(onNext: {n in
                 store.addSubscription(title: n.title!, summary: n.description!, xmlUrl: n.link!, htmlUrl: n.link!, feed: Feed(from: n))
-
+                self.coordinatorDelegate?.didAddSubscription(viewModel: self)
             }).addDisposableTo(disposeBag)
 
     }
