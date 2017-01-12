@@ -15,20 +15,15 @@ protocol SubscribeCoordinatorDelegate: class {
 class SubscribeCoordinator: Coordinator {
     let window: UIWindow
     weak var delegate: SubscribeCoordinatorDelegate?
-    var subscribeViewController: SubscribeViewController?
+    var subscribeViewController = SubscribeViewController(nibName: nil, bundle: nil)
 
     init(window: UIWindow) {
         self.window = window
     }
 
     func start() {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        subscribeViewController = storyboard.instantiateViewController(withIdentifier: "Subscribe") as? SubscribeViewController
-
-        guard let subscribeViewController = subscribeViewController else { return }
         subscribeViewController.viewModel.coordinatorDelegate = self
         window.rootViewController = subscribeViewController
-
     }
 }
 

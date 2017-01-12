@@ -16,6 +16,9 @@ class RootViewController: UIViewController {
 
     @IBOutlet weak var subscribeButton: UIButton!
 
+    @IBOutlet weak var dumbButton: UIButton!
+
+
     init() {
         super.init(nibName: nil, bundle: nil)
     }
@@ -32,13 +35,14 @@ class RootViewController: UIViewController {
             .subscribe(onNext: { _ in
                 self.coordinatorDelegate.showSubscribe()
             })
+
+        _ = dumbButton.rx.tap.asObservable()
+            .bindNext({ _ in
+                self.coordinatorDelegate.showDumbView()
+            })
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
+
 
 
 }

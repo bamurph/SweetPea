@@ -24,6 +24,7 @@ class SubscribeViewController: UIViewController {
 
     @IBOutlet weak var titleSubStack: UIStackView!
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         feedTitle.text = ""
