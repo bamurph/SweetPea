@@ -34,5 +34,6 @@ extension AppCoordinator: SubscribeCoordinatorDelegate {
 
     func subscribeCoordinatorDidFinish(subscribeCoordinator: SubscribeCoordinator) {
         childCoordinators.removeObject(identicalTo: subscribeCoordinator)
+        window.rootViewController = rootViewController
     }
 }
