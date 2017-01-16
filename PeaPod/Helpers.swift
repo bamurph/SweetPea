@@ -22,4 +22,17 @@ func ignoreNil<T>(x: T?) -> Observable<T> {
     return x.map { Observable.just($0) } ?? Observable.empty()
 }
 
+extension Date {
+
+    /// A short string representation of the date
+    ///
+    /// - Returns: A string like (1/15/81)∆
+    func short() -> String {
+        let formatter = DateFormatter()
+        formatter.dateStyle = .short
+        formatter.timeStyle = .none
+        formatter.locale = Locale(identifier: "en_US")
+        return formatter.string(from: self)
+    }
+}
 
