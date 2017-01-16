@@ -16,7 +16,6 @@ class RootViewController: UIViewController {
 
     @IBOutlet weak var subscribeButton: UIButton!
 
-    @IBOutlet weak var dumbButton: UIButton!
 
 
     init() {
@@ -36,10 +35,7 @@ class RootViewController: UIViewController {
                 self.coordinatorDelegate.showSubscribe()
             })
 
-        _ = dumbButton.rx.tap.asObservable()
-            .bindNext({ _ in
-                self.coordinatorDelegate.showDumbView()
-            })
+
     }
 
 

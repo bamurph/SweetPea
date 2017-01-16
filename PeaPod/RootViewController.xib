@@ -11,7 +11,6 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RootViewController" customModule="SweetPea" customModuleProvider="target">
             <connections>
-                <outlet property="dumbButton" destination="aR1-wV-2th" id="RRt-6v-j9f"/>
                 <outlet property="subscribeButton" destination="oHD-52-QQT" id="nys-uS-tEv"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -21,28 +20,16 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SWEETPEA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4v5-ce-zwW">
-                    <rect key="frame" x="143" y="323" width="88" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oHD-52-QQT">
-                    <rect key="frame" x="128" y="401" width="118" height="30"/>
-                    <state key="normal" title="Add Subscription"/>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aR1-wV-2th">
-                    <rect key="frame" x="148" y="514" width="79" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" title="Dumb View"/>
+                    <rect key="frame" x="329" y="20" width="30" height="41"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                    <state key="normal" title="+"/>
                 </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="oHD-52-QQT" firstAttribute="top" secondItem="4v5-ce-zwW" secondAttribute="bottom" constant="57" id="3xk-Yj-Xx1"/>
-                <constraint firstItem="4v5-ce-zwW" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="PQW-Oj-2W7"/>
-                <constraint firstItem="oHD-52-QQT" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="paP-QI-qWd"/>
-                <constraint firstItem="4v5-ce-zwW" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="sR0-6I-11c"/>
+                <constraint firstAttribute="trailing" secondItem="oHD-52-QQT" secondAttribute="trailing" constant="16" id="4NJ-hj-pyB"/>
+                <constraint firstItem="oHD-52-QQT" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="nWX-D3-Ex0"/>
             </constraints>
         </view>
     </objects>
