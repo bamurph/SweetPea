@@ -53,7 +53,7 @@ class DumbViewController: UIViewController {
         super.viewDidLoad()
         print("Dumb view loaded")
 
-        goBack.rx.tap.asObservable()
+         _ = goBack.rx.tap.asObservable()
             .bindNext {
                 self.coordinatorDelegate?.dumbViewDidComplete(dumbViewCoordinator: self.coordinatorDelegate as! DumbViewCoordinator)
         }
