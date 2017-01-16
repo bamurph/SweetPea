@@ -13,6 +13,7 @@ import RxSwift
 
 class RootViewController: UIViewController {
     var coordinatorDelegate: AppCoordinator!
+    let viewModel = RootViewModel()
 
     @IBOutlet weak var subscribeButton: UIButton!
 

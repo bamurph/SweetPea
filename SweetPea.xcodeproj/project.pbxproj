@@ -33,6 +33,7 @@
 		B565D3941E2819F800D1C713 /* SubscribeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B565D3931E2819F800D1C713 /* SubscribeViewController.xib */; };
 		B565D3971E28230900D1C713 /* DumbViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B565D3951E28230900D1C713 /* DumbViewController.swift */; };
 		B565D3981E28230900D1C713 /* DumbViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B565D3961E28230900D1C713 /* DumbViewController.xib */; };
+		B565D39A1E2D421900D1C713 /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B565D3991E2D421900D1C713 /* RootViewModel.swift */; };
 		B56ED7601E13077500482181 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56ED75F1E13077500482181 /* Result.swift */; };
 		B57BB6D51E0B1C8A0002E0CD /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57BB6D41E0B1C8A0002E0CD /* Store.swift */; };
 		B58A64061E06EA66001716E7 /* tests.opml in Resources */ = {isa = PBXBuildFile; fileRef = B58A64051E06EA66001716E7 /* tests.opml */; };
@@ -125,6 +126,7 @@
 		B565D3931E2819F800D1C713 /* SubscribeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SubscribeViewController.xib; sourceTree = "<group>"; };
 		B565D3951E28230900D1C713 /* DumbViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DumbViewController.swift; path = ../DumbViewController.swift; sourceTree = "<group>"; };
 		B565D3961E28230900D1C713 /* DumbViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DumbViewController.xib; path = ../DumbViewController.xib; sourceTree = "<group>"; };
+		B565D3991E2D421900D1C713 /* RootViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewModel.swift; sourceTree = "<group>"; };
 		B56ED7571E12F91300482181 /* EpisodeSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EpisodeSpec.swift; sourceTree = "<group>"; };
 		B56ED75F1E13077500482181 /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		B57BB6D41E0B1C8A0002E0CD /* Store.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Store.swift; path = ../Store.swift; sourceTree = "<group>"; };
@@ -298,6 +300,7 @@
 		B5BB74601DE3890A00F327F0 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				B565D3991E2D421900D1C713 /* RootViewModel.swift */,
 				B51D58D41E23FA7C00BB089B /* SubscribeViewModel.swift */,
 				B5A1AC861DE4EFC90093E823 /* FeedViewModel.swift */,
 				B53B50581E0F1342009C8EEF /* EpisodeViewModel.swift */,
@@ -679,6 +682,7 @@
 				B5F20F551E0B231500A5E1A5 /* Subscription.swift in Sources */,
 				B565D38E1E28092000D1C713 /* Coordinator.swift in Sources */,
 				B5A4A5441E14275B000A6E2D /* DownloadService.swift in Sources */,
+				B565D39A1E2D421900D1C713 /* RootViewModel.swift in Sources */,
 				B565D3911E2811E800D1C713 /* RootViewController.swift in Sources */,
 				B55A5E771E1D9E6700D85583 /* SubscribeViewController.swift in Sources */,
 				B5BB0D991DD51CB300BD7FA0 /* OPMLService.swift in Sources */,
