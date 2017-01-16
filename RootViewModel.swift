@@ -9,6 +9,7 @@
 import Foundation
 import RxSwift
 import RealmSwift
+import RxRealm
 
 class RootViewModel {
 
@@ -16,10 +17,11 @@ class RootViewModel {
     private let disposeBag = DisposeBag()
 
     // MARK: - Model
-    private let episodes: Observable<[Episode]>
+    private let episodes: Observable<[(title: String, feedTitle: String?, date: Date?)]>
 
     init() {
-
+        episodes = Observable.arrayFrom(store.objects(Episode.self))
+            .map { $0.map { ($0.title, $0.feed?.title, $0.pubDate) }}
     }
 
 }

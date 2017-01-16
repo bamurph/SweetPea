@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RootViewController" customModule="SweetPea" customModuleProvider="target">
             <connections>
+                <outlet property="episodeList" destination="DNJ-vV-uBA" id="fru-Dv-Yb6"/>
                 <outlet property="subscribeButton" destination="oHD-52-QQT" id="nys-uS-tEv"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -25,12 +26,21 @@
                     <fontDescription key="fontDescription" type="system" pointSize="24"/>
                     <state key="normal" title="+"/>
                 </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="DNJ-vV-uBA">
+                    <rect key="frame" x="0.0" y="73" width="375" height="594"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="oHD-52-QQT" secondAttribute="trailing" constant="16" id="4NJ-hj-pyB"/>
+                <constraint firstAttribute="bottom" secondItem="DNJ-vV-uBA" secondAttribute="bottom" id="FIe-S3-xCl"/>
+                <constraint firstAttribute="trailing" secondItem="DNJ-vV-uBA" secondAttribute="trailing" id="Zcg-Mg-Bxr"/>
+                <constraint firstItem="DNJ-vV-uBA" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="73" id="gba-rq-m21"/>
+                <constraint firstItem="DNJ-vV-uBA" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="kcn-uT-UBa"/>
                 <constraint firstItem="oHD-52-QQT" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="nWX-D3-Ex0"/>
             </constraints>
+            <point key="canvasLocation" x="34.5" y="54.5"/>
         </view>
     </objects>
 </document>

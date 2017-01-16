@@ -34,6 +34,8 @@
 		B565D3971E28230900D1C713 /* DumbViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B565D3951E28230900D1C713 /* DumbViewController.swift */; };
 		B565D3981E28230900D1C713 /* DumbViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B565D3961E28230900D1C713 /* DumbViewController.xib */; };
 		B565D39A1E2D421900D1C713 /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B565D3991E2D421900D1C713 /* RootViewModel.swift */; };
+		B565D39D1E2D4FA200D1C713 /* RootTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B565D39B1E2D4FA200D1C713 /* RootTableViewCell.swift */; };
+		B565D39E1E2D4FA200D1C713 /* RootTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B565D39C1E2D4FA200D1C713 /* RootTableViewCell.xib */; };
 		B56ED7601E13077500482181 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56ED75F1E13077500482181 /* Result.swift */; };
 		B57BB6D51E0B1C8A0002E0CD /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57BB6D41E0B1C8A0002E0CD /* Store.swift */; };
 		B58A64061E06EA66001716E7 /* tests.opml in Resources */ = {isa = PBXBuildFile; fileRef = B58A64051E06EA66001716E7 /* tests.opml */; };
@@ -127,6 +129,8 @@
 		B565D3951E28230900D1C713 /* DumbViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DumbViewController.swift; path = ../DumbViewController.swift; sourceTree = "<group>"; };
 		B565D3961E28230900D1C713 /* DumbViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DumbViewController.xib; path = ../DumbViewController.xib; sourceTree = "<group>"; };
 		B565D3991E2D421900D1C713 /* RootViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewModel.swift; sourceTree = "<group>"; };
+		B565D39B1E2D4FA200D1C713 /* RootTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootTableViewCell.swift; sourceTree = "<group>"; };
+		B565D39C1E2D4FA200D1C713 /* RootTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootTableViewCell.xib; sourceTree = "<group>"; };
 		B56ED7571E12F91300482181 /* EpisodeSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EpisodeSpec.swift; sourceTree = "<group>"; };
 		B56ED75F1E13077500482181 /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		B57BB6D41E0B1C8A0002E0CD /* Store.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Store.swift; path = ../Store.swift; sourceTree = "<group>"; };
@@ -275,6 +279,8 @@
 		B5A1AC8C1DE63F1C0093E823 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				B565D39B1E2D4FA200D1C713 /* RootTableViewCell.swift */,
+				B565D39C1E2D4FA200D1C713 /* RootTableViewCell.xib */,
 				B565D3951E28230900D1C713 /* DumbViewController.swift */,
 				B565D3961E28230900D1C713 /* DumbViewController.xib */,
 				B565D38F1E2811E800D1C713 /* RootViewController.swift */,
@@ -503,6 +509,7 @@
 				B565D3921E2811E800D1C713 /* RootViewController.xib in Resources */,
 				B565D3981E28230900D1C713 /* DumbViewController.xib in Resources */,
 				B565D3941E2819F800D1C713 /* SubscribeViewController.xib in Resources */,
+				B565D39E1E2D4FA200D1C713 /* RootTableViewCell.xib in Resources */,
 				B5F0D2441DD506ED00402FEC /* Main.storyboard in Resources */,
 				B58A64061E06EA66001716E7 /* tests.opml in Resources */,
 			);
@@ -700,6 +707,7 @@
 				B5DABFE01E0343DB00D9FFFF /* StubUtility.swift in Sources */,
 				B5F0D23F1DD506ED00402FEC /* AppDelegate.swift in Sources */,
 				B53B505B1E0F136B009C8EEF /* Enclosure.swift in Sources */,
+				B565D39D1E2D4FA200D1C713 /* RootTableViewCell.swift in Sources */,
 				B51D58D51E23FA7C00BB089B /* SubscribeViewModel.swift in Sources */,
 				B5F20F581E0B261700A5E1A5 /* Feed.swift in Sources */,
 			);

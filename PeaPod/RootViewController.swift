@@ -11,25 +11,28 @@ import RxCocoa
 import RxSwift
 
 
-class RootViewController: UIViewController {
-    var coordinatorDelegate: AppCoordinator!
-    let viewModel = RootViewModel()
+class RootViewController: UIViewController, UITableViewDelegate {
 
     @IBOutlet weak var subscribeButton: UIButton!
+    @IBOutlet weak var episodeList: UITableView!
 
-
+    var coordinatorDelegate: AppCoordinator!
+    let viewModel = RootViewModel()
 
     init() {
         super.init(nibName: nil, bundle: nil)
     }
     
     required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        super.init(coder: aDecoder)
     }
 
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        let nib = UINib(nibName: "RootTableViewCell", bundle: nil)
+        episodeList.register(nib, forCellReuseIdentifier: "RootTableViewCell")
 
         _ = subscribeButton.rx.tap.asObservable()
             .subscribe(onNext: { _ in
