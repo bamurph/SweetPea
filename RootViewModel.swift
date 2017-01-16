@@ -17,11 +17,18 @@ class RootViewModel {
     private let disposeBag = DisposeBag()
 
     // MARK: - Model
-    private let episodes: Observable<[(title: String, feedTitle: String?, date: Date?)]>
+    let episodes: Observable<[Episode]>
+
+    let feeds: Observable<[Feed]>
+
 
     init() {
-        episodes = Observable.arrayFrom(store.objects(Episode.self))
-            .map { $0.map { ($0.title, $0.feed?.title, $0.pubDate) }}
+        feeds = Observable.from(store.feeds).map { Array($0) }
+        episodes = Observable.from(store.episodes).map { Array($0) }
+
+
     }
+
+    // MARK: -
 
 }

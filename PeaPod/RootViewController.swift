@@ -27,17 +27,24 @@ class RootViewController: UIViewController, UITableViewDelegate {
         super.init(coder: aDecoder)
     }
 
-    
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        let cellID = "Cell"
         let nib = UINib(nibName: "RootTableViewCell", bundle: nil)
-        episodeList.register(nib, forCellReuseIdentifier: "RootTableViewCell")
+        episodeList.register(nib, forCellReuseIdentifier: cellID)
 
         _ = subscribeButton.rx.tap.asObservable()
             .subscribe(onNext: { _ in
                 self.coordinatorDelegate.showSubscribe()
             })
+
+        _ = viewModel.episodes
+            .bindTo(episodeList.rx.items(cellIdentifier: cellID, cellType: RootTableViewCell.self)) { (row, element, cell) in
+                cell.feedTitle.text = element.feed?.title ?? "--"
+                cell.episodeTitle.text = element.title 
+                cell.episodeDate.text = element.pubDate?.short() ?? "--"
+        }
 
 
     }
