@@ -13,7 +13,7 @@
         <!--Subscribe View Controller-->
         <scene sceneID="CAe-8e-841">
             <objects>
-                <viewController id="jQb-Tv-W9E" customClass="SubscribeViewController" customModule="SweetPea" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Subscribe" id="jQb-Tv-W9E" customClass="SubscribeViewController" customModule="SweetPea" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="zJ1-Ly-hPA"/>
                         <viewControllerLayoutGuide type="bottom" id="KYO-Jn-lwo"/>
@@ -74,10 +74,10 @@
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="2gZ-tW-nXn" firstAttribute="leading" secondItem="nUi-rv-enp" secondAttribute="leadingMargin" constant="8" id="0iI-mY-G64"/>
-                            <constraint firstItem="ewB-LK-i5A" firstAttribute="top" secondItem="zJ1-Ly-hPA" secondAttribute="bottom" constant="8" id="7Tm-Sk-w7e"/>
+                            <constraint firstItem="ewB-LK-i5A" firstAttribute="top" secondItem="zJ1-Ly-hPA" secondAttribute="bottom" constant="8" id="G2p-ot-6OC"/>
+                            <constraint firstItem="ghX-AU-QmA" firstAttribute="top" secondItem="zJ1-Ly-hPA" secondAttribute="bottom" constant="8" id="Ttv-hZ-q9H"/>
                             <constraint firstItem="ghX-AU-QmA" firstAttribute="leading" secondItem="nUi-rv-enp" secondAttribute="leadingMargin" constant="8" id="pNO-Zw-VFN"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ghX-AU-QmA" secondAttribute="trailing" constant="8" id="rch-t6-4Qw"/>
-                            <constraint firstItem="ghX-AU-QmA" firstAttribute="top" secondItem="zJ1-Ly-hPA" secondAttribute="bottom" constant="8" id="xNb-WC-kpc"/>
                         </constraints>
                     </view>
                     <connections>
