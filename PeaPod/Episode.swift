@@ -20,6 +20,22 @@ class Episode: Object {
     dynamic var enclosure: Enclosure? = Enclosure()
     let feed = LinkingObjects(fromType: Feed.self, property: "episodes").first
 
+    convenience init?(from item: RSSFeedItem) {
+
+        guard
+            let title = item.title,
+            let link = item.link,
+            let enclosure = Enclosure(from: item.enclosure)
+            else { return nil }
+
+        self.init()
+        self.title = title
+        self.guid = item.guid?.value
+        self.link = link
+        self.episodeDescription = item.description
+        self.pubDate = item.pubDate
+        self.enclosure = enclosure
+    }
 }
 
 

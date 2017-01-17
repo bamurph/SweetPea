@@ -29,7 +29,6 @@ enum RSSServiceError: Error {
 struct RSSService: RSSProtocol {
 
 
-
     func fetch(url: RSSUrl) -> Observable<RSSFeed> {
         return Observable.create { observer in
 
@@ -68,6 +67,11 @@ struct RSSService: RSSProtocol {
                     observer.onNext(Result.failure(e))
                 })
         }
+    }
+
+    func performFetch(_ path: String) -> Observable<Result<RSSFeed>> {
+        guard let url = URL(string: path) else { return Observable.error(RSSServiceError.badUrl) }
+        return performFetch(url)
     }
 }
 

@@ -23,6 +23,18 @@ class Enclosure: Object {
         self.init()
         self.url = url.absoluteString
     }
+
+    convenience init?(from rssEnclosure: RSSFeedItemEnclosure?) {
+
+        guard
+            let url = rssEnclosure?.attributes?.url,
+            let type = rssEnclosure?.attributes?.type
+            else { return nil }
+
+        self.init()
+        self.url = url
+        self.type = type
+    }
 }
 
 

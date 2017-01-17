@@ -53,7 +53,7 @@ class Feed: Object {
     }
 
     func joinedCategories() -> String {
-        return categories.joined(separator: separator) 
+        return categories.joined(separator: separator)
     }
 
     // TODO: - Input categories properly
@@ -65,16 +65,16 @@ class Feed: Object {
 
     convenience init(from rss: RSSFeed) {
         self.init()
-            self.title = rss.title!
-            self.link = rss.link!
-            self.feedDescription = rss.description
-            self.language = rss.language
-            self.copyright = rss.copyright
-            self.managingEditor = rss.managingEditor
-            self.webMaster = rss.webMaster
-            self.pubDate = rss.pubDate
-            self.lastBuildDate = rss.lastBuildDate
-            self.imageUrl = rss.image?.link
-            self.categories = self.stringsFrom(categories: rss.categories) ?? [""]
+        self.title = rss.title!
+        self.link = rss.link!
+        self.feedDescription = rss.description
+        self.language = rss.language
+        self.copyright = rss.copyright
+        self.managingEditor = rss.managingEditor
+        self.webMaster = rss.webMaster
+        self.pubDate = rss.pubDate
+        self.lastBuildDate = rss.lastBuildDate
+        self.imageUrl = rss.image?.link
+        self.categories = self.stringsFrom(categories: rss.categories) ?? [""]
     }
 }

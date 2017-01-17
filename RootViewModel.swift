@@ -15,6 +15,7 @@ class RootViewModel {
 
     // MARK: - Dependencies
     private let disposeBag = DisposeBag()
+    private let rssService = RSSService()
 
     // MARK: - Model
     let episodes: Observable<[Episode]>
@@ -26,9 +27,30 @@ class RootViewModel {
         feeds = Observable.from(store.feeds).map { Array($0) }
         episodes = Observable.from(store.episodes).map { Array($0) }
 
+        // Fetch episodes for feed
+        // TODO: - Extract this to model / viewmodel / service?
+        _ = feeds
+            .map { Observable.from($0) }
+            .concat()
+            .map { self.rssService.performFetch($0.link) }
+            .concat()
+            .subscribe(onNext: {n in
+//                switch n {
+//                case .failure(let err):
+//                    print(err)
+//                case .success(let val):
+//                    val.items?.forEach {
+//                        guard
+//                            let episode = Episode(from: $0)
+//                            else { return }
+//                        store.addEpi
+//                    }
+//                }
+            })
+
 
     }
 
-    // MARK: -
+    // MARK: - Refresh Episodes
 
 }
