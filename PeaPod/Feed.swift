@@ -32,7 +32,7 @@ class Feed: Object {
     }
 
     // List of Items in the Feed
-     var items = List<Episode>()
+    var items = List<Episode>()
 
     // Need to bypass Realm's limitations on arrays
     // Serialize array of strings into a single string to store and back again to load
@@ -76,5 +76,7 @@ class Feed: Object {
         self.lastBuildDate = rss.lastBuildDate
         self.imageUrl = rss.image?.link
         self.categories = self.stringsFrom(categories: rss.categories) ?? [""]
+        let episodes = rss.items.map { $0.flatMap { Episode(from: $0) } } ?? []
+        self.items.append(objectsIn: episodes)
     }
 }

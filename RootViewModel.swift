@@ -30,22 +30,19 @@ class RootViewModel {
         // Fetch episodes for feed
         // TODO: - Extract this to model / viewmodel / service?
         _ = feeds
+            .debug()
             .map { Observable.from($0) }
             .concat()
             .map { self.rssService.performFetch($0.link) }
             .concat()
             .subscribe(onNext: {n in
-//                switch n {
-//                case .failure(let err):
-//                    print(err)
-//                case .success(let val):
-//                    val.items?.forEach {
-//                        guard
-//                            let episode = Episode(from: $0)
-//                            else { return }
-//                        store.addEpi
-//                    }
-//                }
+                switch n {
+                case .failure(let err):
+                    print(err)
+                case .success(let val):
+                    let feed = Feed(from: val)
+                    store.addFeed(feed)
+                }
             })
 
 

@@ -34,6 +34,7 @@ class RootViewController: UIViewController, UITableViewDelegate {
         let nib = UINib(nibName: "RootTableViewCell", bundle: nil)
         episodeList.register(nib, forCellReuseIdentifier: cellID)
 
+
         _ = subscribeButton.rx.tap.asObservable()
             .subscribe(onNext: { _ in
                 self.coordinatorDelegate.showSubscribe()
