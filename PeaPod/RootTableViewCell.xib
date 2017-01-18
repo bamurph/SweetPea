@@ -16,7 +16,7 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="quY-dX-tlX">
@@ -46,12 +46,14 @@
                         </constraints>
                     </stackView>
                 </subviews>
+                <gestureRecognizers/>
                 <constraints>
                     <constraint firstAttribute="leadingMargin" secondItem="quY-dX-tlX" secondAttribute="leading" id="C7A-pp-Y91"/>
                     <constraint firstAttribute="trailingMargin" secondItem="NXf-Fa-nKA" secondAttribute="trailing" id="ofq-5R-Ymh"/>
                     <constraint firstItem="quY-dX-tlX" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="3" id="p92-MQ-WUl"/>
                 </constraints>
             </tableViewCellContentView>
+            <gestureRecognizers/>
             <connections>
                 <outlet property="episodeDate" destination="NXf-Fa-nKA" id="9hp-Fd-meY"/>
                 <outlet property="episodeTitle" destination="FRR-KS-Qyi" id="DvD-s0-gW7"/>

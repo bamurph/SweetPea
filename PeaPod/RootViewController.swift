@@ -16,6 +16,7 @@ class RootViewController: UIViewController, UITableViewDelegate {
     @IBOutlet weak var subscribeButton: UIButton!
     @IBOutlet weak var episodeList: UITableView!
 
+
     var coordinatorDelegate: AppCoordinator!
     let viewModel = RootViewModel()
 
@@ -40,7 +41,7 @@ class RootViewController: UIViewController, UITableViewDelegate {
                 self.coordinatorDelegate.showSubscribe()
             })
 
-        _ = viewModel.episodes
+        let sortedEpisodes = viewModel.episodes
             .scan([Episode]()) {eps, e in
                 return eps + [e]
             }
@@ -51,17 +52,32 @@ class RootViewController: UIViewController, UITableViewDelegate {
                     default: return false
                     }
                 }
-            }
+        }
+
+        _ = sortedEpisodes
             .bindTo(episodeList.rx.items(cellIdentifier: cellID, cellType: RootTableViewCell.self)) { (row, element, cell) in
                 cell.feedTitle.text = element.feed.first?.title ?? "--"
                 cell.episodeTitle.text = element.title
                 cell.episodeDate.text = element.pubDate?.short() ?? "--"
+
         }
+
+        let itemSelected = episodeList.rx.itemSelected
+
+        let doSelect = Observable
+            .combineLatest(sortedEpisodes, itemSelected) { (eps, i) -> Episode in
+                return eps[i.item]
+            }
+            .subscribe(onNext: {n in
+                print(n.title)
+            })
         
-        
+
+
+
     }
     
     
     
-
+    
 }
