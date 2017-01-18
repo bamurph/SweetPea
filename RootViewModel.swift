@@ -18,36 +18,24 @@ class RootViewModel {
     private let rssService = RSSService()
 
     // MARK: - Model
-    let episodes: Observable<[Episode]>
-
-    let feeds: Observable<[Feed]>
+    let episodes: Observable<Episode>
+    let feeds: Observable<Feed>
 
 
     init() {
-        feeds = Observable.from(store.feeds).map { Array($0) }
-        episodes = Observable.from(store.episodes).map { Array($0) }
-
-        // Fetch episodes for feed
-        // TODO: - Extract this to model / viewmodel / service?
-        _ = feeds
-            .debug()
-            .map { Observable.from($0) }
-            .concat()
-            .map { self.rssService.performFetch($0.link) }
-            .concat()
-            .subscribe(onNext: {n in
-                switch n {
-                case .failure(let err):
-                    print(err)
-                case .success(let val):
-                    let feed = Feed(from: val)
-                    store.addFeed(feed)
-                }
-            })
+        feeds = Observable.from(store.feeds |> Array.init)
+        episodes = Observable.from(store.episodes |> Array.init)
 
 
     }
 
-    // MARK: - Refresh Episodes
 
+    func refresh(oldFeeds: Observable<Feed>) -> Disposable {
+        return oldFeeds
+            .subscribe(onNext: {n in
+                self.rssService.refresh(n)
+            }, onCompleted: {c in
+                print("Feeds are refreshed!")
+            })
+    }
 }

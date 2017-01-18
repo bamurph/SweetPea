@@ -79,4 +79,6 @@ class Feed: Object {
         let episodes = rss.items.map { $0.flatMap { Episode(from: $0) } } ?? []
         self.items.append(objectsIn: episodes)
     }
+
+    
 }

@@ -22,7 +22,7 @@ class RootViewController: UIViewController, UITableViewDelegate {
     init() {
         super.init(nibName: nil, bundle: nil)
     }
-    
+
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
@@ -33,7 +33,7 @@ class RootViewController: UIViewController, UITableViewDelegate {
         let cellID = "Cell"
         let nib = UINib(nibName: "RootTableViewCell", bundle: nil)
         episodeList.register(nib, forCellReuseIdentifier: cellID)
-
+        viewModel.refresh(oldFeeds: viewModel.feeds).dispose()
 
         _ = subscribeButton.rx.tap.asObservable()
             .subscribe(onNext: { _ in
@@ -41,16 +41,27 @@ class RootViewController: UIViewController, UITableViewDelegate {
             })
 
         _ = viewModel.episodes
+            .scan([Episode]()) {eps, e in
+                return eps + [e]
+            }
+            .map {
+                $0.sorted {
+                    switch ($0.pubDate, $1.pubDate) {
+                    case let (.some(val1), .some(val2)): return val1 > val2
+                    default: return false
+                    }
+                }
+            }
             .bindTo(episodeList.rx.items(cellIdentifier: cellID, cellType: RootTableViewCell.self)) { (row, element, cell) in
-                cell.feedTitle.text = element.feed?.title ?? "--"
-                cell.episodeTitle.text = element.title 
+                cell.feedTitle.text = element.feed.first?.title ?? "--"
+                cell.episodeTitle.text = element.title
                 cell.episodeDate.text = element.pubDate?.short() ?? "--"
         }
-
-
+        
+        
     }
-
-
-
+    
+    
+    
 
 }

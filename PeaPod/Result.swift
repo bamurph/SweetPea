@@ -39,4 +39,10 @@ extension Result {
             throw e
         }
     }
+
+    /// Convert a Result to an Optional, throwing away error info
+    public func asOptional() -> Value? {
+        return try? self.unwrap()
+    }
+
 }

@@ -84,7 +84,10 @@ extension Realm {
 extension Realm {
 
 
-
+    func refresh(_ feed: Feed) {
+        self.addFeed(feed)
+    }
+    
     func addFeed(_ feed: Feed) {
         self.addFeed(title: feed.title, link: feed.link, feedDescription: feed.feedDescription, language: feed.language, copyright: feed.copyright, managingEditor: feed.managingEditor, webMaster: feed.webMaster, pubDate: feed.pubDate, lastBuildDate: feed.lastBuildDate, imageUrl: feed.imageUrl, categories: feed.joinedCategories(), items: feed.items)
     }

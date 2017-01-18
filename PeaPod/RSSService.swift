@@ -10,6 +10,8 @@ import Foundation
 import FeedKit
 import RxSwift
 import Lepton
+import RealmSwift
+
 typealias RSSUrl = URL
 
 protocol RSSProtocol {
@@ -73,6 +75,12 @@ struct RSSService: RSSProtocol {
         guard let url = URL(string: path) else { return Observable.error(RSSServiceError.badUrl) }
         return performFetch(url)
     }
+
+    func refresh(_ feed: Feed) {
+        store.refresh(feed)
+    }
+
+ 
 }
 
 

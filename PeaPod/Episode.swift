@@ -18,7 +18,7 @@ class Episode: Object {
     dynamic var episodeDescription: String?
     dynamic var pubDate: Date?
     dynamic var enclosure: Enclosure? = Enclosure()
-    let feed = LinkingObjects(fromType: Feed.self, property: "episodes").first
+    let feed = LinkingObjects(fromType: Feed.self, property: "items")
 
     convenience init?(from item: RSSFeedItem) {
 
@@ -37,5 +37,4 @@ class Episode: Object {
         self.enclosure = enclosure
     }
 }
-
 
