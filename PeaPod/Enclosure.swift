@@ -18,7 +18,9 @@ class Enclosure: Object {
 
     /// Inverse relationship to locally saved audio
     let localAudio = LinkingObjects(fromType: Audio.self, property: "enclosure")
-
+    override static func primaryKey() -> String {
+        return "url"
+    }
     convenience init(url: URL) {
         self.init()
         self.url = url.absoluteString

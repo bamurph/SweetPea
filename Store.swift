@@ -61,6 +61,7 @@ extension Realm {
                 sub.feed = feed
 
                 add(sub, update: true)
+
             }
         } catch {
             print(StoreError.addSubscriptionFailed(error).localizedDescription)

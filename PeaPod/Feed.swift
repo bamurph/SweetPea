@@ -12,6 +12,7 @@ import FeedKit
 
 class Feed: Object {
     fileprivate let separator = "\u{FFFF}"
+    
     dynamic var title: String = ""
     dynamic var link: String = ""
     dynamic var feedDescription: String? // property for rss 'description' tag
@@ -23,15 +24,14 @@ class Feed: Object {
     dynamic var lastBuildDate: Date?
     dynamic var imageUrl: String?
 
-    /// Inverse relationship to subscriptions
-    let subscription = LinkingObjects(fromType: Subscription.self, property: "feed")
-
-
     override static func primaryKey() -> String {
         return "link"
     }
 
+    /// Inverse relationship to subscriptions
+    let subscription = LinkingObjects(fromType: Subscription.self, property: "feed")
     // List of Items in the Feed
+
     var items = List<Episode>()
 
     // Need to bypass Realm's limitations on arrays
@@ -74,7 +74,7 @@ class Feed: Object {
         self.webMaster = rss.webMaster
         self.pubDate = rss.pubDate
         self.lastBuildDate = rss.lastBuildDate
-        self.imageUrl = rss.image?.link
+        self.imageUrl = rss.image?.url
         self.categories = self.stringsFrom(categories: rss.categories) ?? [""]
         let episodes = rss.items.map { $0.flatMap { Episode(from: $0) } } ?? []
         self.items.append(objectsIn: episodes)

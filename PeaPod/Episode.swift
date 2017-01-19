@@ -20,6 +20,10 @@ class Episode: Object {
     dynamic var enclosure: Enclosure? = Enclosure()
     let feed = LinkingObjects(fromType: Feed.self, property: "items")
 
+    override static func primaryKey() -> String {
+        return "link"
+    }
+
     convenience init?(from item: RSSFeedItem) {
 
         guard

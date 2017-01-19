@@ -64,7 +64,7 @@ class RootViewController: UIViewController, UITableViewDelegate {
 
         let itemSelected = episodeList.rx.itemSelected
 
-        let doSelect = Observable
+        _ = Observable
             .combineLatest(sortedEpisodes, itemSelected) { (eps, i) -> Episode in
                 return eps[i.item]
             }

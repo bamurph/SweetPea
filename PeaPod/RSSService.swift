@@ -40,6 +40,7 @@ struct RSSService: RSSProtocol {
             }
 
             FeedParser(data: data).parse { result in
+                print(result)
                 switch result {
                 case .rss(let rssFeed):
                     observer.onNext(rssFeed)
@@ -77,7 +78,15 @@ struct RSSService: RSSProtocol {
     }
 
     func refresh(_ feed: Feed) {
-        store.refresh(feed)
+        let viewModel = SubscribeViewModel()
+        guard
+            let path = feed.subscription.first?.xmlUrl,
+            let url = URL(string: path)
+        else {
+            print(RSSServiceError.badUrl)
+            return
+        }
+        viewModel.refresh(url: url)
     }
 
  

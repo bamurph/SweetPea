@@ -15,6 +15,6 @@ import Foundation
 class FeedSpec: QuickSpec {
     override func spec() {
         let testBundle = Bundle(for: type(of: self))
-        let url = testBundle.url(forResource: "utr", withExtension: "rss")
+        let _ = testBundle.url(forResource: "utr", withExtension: "rss")
     }
 }

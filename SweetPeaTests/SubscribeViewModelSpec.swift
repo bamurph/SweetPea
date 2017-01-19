@@ -21,11 +21,11 @@ class SubscribeViewModelSpec: QuickSpec {
         let viewModel = SubscribeViewModel()
         describe("Fetching an RSS Feed") {
             it("can fetch a valid rss feed from a url") {
-                viewModel.podcastTitle
+                _ = viewModel.podcastTitle
                     .subscribe(onNext: { n in
                         expect(n).to(match("Under the Radar"))
                     })
-                viewModel.podcastDescription
+                _ = viewModel.podcastDescription
                     .subscribe(onNext: { n in
                         expect(n.characters.count).to(beGreaterThan(10))
                     })
