@@ -437,6 +437,7 @@
 		B5090549D6768639D50144EF0238948C /* AtomFeedEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C65046D53D53F5357FE341409A9DAA2 /* AtomFeedEntry.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		B5793C7DB0B89460ACE0682E4719DC83 /* RLMAccessor.mm in Sources */ = {isa = PBXBuildFile; fileRef = 64F89162D19F7AE9743AC87B9286FE41 /* RLMAccessor.mm */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"2.2.0\"' -D__ASSERTMACROS__ -DREALM_ENABLE_SYNC -w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		B59A07EFC0D945B773AE51D42C68BD6E /* CwlCatchException.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AFD8DE2CE4745C2AED79284EB8E2B4D /* CwlCatchException.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		B5C320931E33BCE900A208B9 /* iTunesNamespace.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C320921E33BCE900A208B9 /* iTunesNamespace.swift */; };
 		B5C383B47A2EF90CABC1C326D380976D /* RLMListBase.h in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = EC66EEED9259B3F40E89486A83369AB1 /* RLMListBase.h */; };
 		B5CEA66B868DA46B7ECF6D6F4D48FF83 /* SharedSequence+Operators+arity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE99AC66DB78985CBE3F2B535736082 /* SharedSequence+Operators+arity.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		B6C35182340443907FF5FBA50FB0CE37 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A085542C055AFFF3E092E450E82F52E /* Parser.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -1242,6 +1243,7 @@
 		B53378983C9B7DBEBC82044339F663D9 /* Reduce.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Reduce.swift; path = RxSwift/Observables/Implementations/Reduce.swift; sourceTree = "<group>"; };
 		B542F8116771A156A567C35176668970 /* AtomFeed.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AtomFeed.swift; path = Sources/Model/Atom/AtomFeed.swift; sourceTree = "<group>"; };
 		B56C70E85003ABE0893C807DFD19E9B7 /* RxSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5C320921E33BCE900A208B9 /* iTunesNamespace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = iTunesNamespace.swift; path = Sources/Model/RSS/Modules/iTunes/iTunesNamespace.swift; sourceTree = "<group>"; };
 		B5DFD968B793D8EC0CB337CC6CBB3F8F /* QCKDSL.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QCKDSL.m; path = Sources/QuickObjectiveC/DSL/QCKDSL.m; sourceTree = "<group>"; };
 		B608A6E0CE8C0F8945F7C47F927AF648 /* RLMRealm_Dynamic.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMRealm_Dynamic.h; path = include/RLMRealm_Dynamic.h; sourceTree = "<group>"; };
 		B62A94D1DF91F533E6ED1666CA31D5C1 /* sync_metadata.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = sync_metadata.cpp; path = Realm/ObjectStore/src/sync/impl/sync_metadata.cpp; sourceTree = "<group>"; };
@@ -1577,6 +1579,7 @@
 				A558C57DFFB57448F73FF8D1306B663E /* ContentNamespace.swift */,
 				EE3D32CE4AF058D6C312A9711C81ABD3 /* DateSpec.swift */,
 				C5FBF3F28A9E0C3B494B209100981CC7 /* DublinCoreNamespace.swift */,
+				B5C320921E33BCE900A208B9 /* iTunesNamespace.swift */,
 				E65C9070185807445AD5DA10D1437AE8 /* FeedParser.swift */,
 				9F3C53AFA5BDB96E780800B1A086C63F /* FeedType.swift */,
 				F4C282F652E4091F12BE7498DFBB8AFC /* ISO8601DateFormatter.swift */,
@@ -2892,6 +2895,7 @@
 				A7CBEDD878590F7FDD5FB9FC0FDB317A /* RSSFeedItemEnclosure.swift in Sources */,
 				251293269FE8E35BD0F0BC739DE8FFA9 /* RSSFeedItemGUID.swift in Sources */,
 				83130686D80DFDC5E82F64AB48D0E0DD /* RSSFeedItemSource.swift in Sources */,
+				B5C320931E33BCE900A208B9 /* iTunesNamespace.swift in Sources */,
 				436186C405E88732E7E220662F813685 /* RSSFeedSkipDay.swift in Sources */,
 				BDE06002E1133B3ACBF8C598D8C3EE54 /* RSSFeedSkipHour.swift in Sources */,
 				4FEDD6B12774527D8589A9B41A73DE45 /* RSSFeedTextInput.swift in Sources */,
