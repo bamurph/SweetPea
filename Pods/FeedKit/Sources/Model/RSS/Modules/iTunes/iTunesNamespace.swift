@@ -32,5 +32,55 @@ import Foundation
 
 open class ITunesNamespace {
 
+    /**
+ 
+     The content you specify in the <itunes:author> tag appears in the Artist column on the iTunes Store. If the tag is not present, the iTunes Store uses the contents of the <author> tag. If <itunes:author> is not present at the RSS feed level, the iTunes Store uses the contents of the <managingEditor> tag.
+
+     */
+    open var iTunesAuthor: String?
+
+    /**
+ 
+     Specifying the <itunes:block> tag with a Yes value in:
+
+     - A <channel> tag (podcast), prevents the entire podcast from appearing on the iTunes Store podcast directory
+     - An <item> tag (episode), prevents that episode from appearing on the iTunes Store podcast directory
+
+     For example, you might want to block a specific episode if you know that its content would otherwise cause the entire podcast to be removed from the iTunes Store. Specifying any value other than Yes has no effect.
+
+    */
+    open var iTunesBlock: Bool?
+
+    /**
+ 
+     Users can browse podcast subject categories in the iTunes Store by choosing a category from the Podcasts pop-up menu in the navigation bar. Use the <itunes:category> tag to specify the browsing category for your podcast.
+
+     You can also define a subcategory if one is available within your category. Although you can specify more than one category and subcategory in your feed, the iTunes Store only recognizes the first category and subcategory. For a complete list of categories and subcategories, see Podcasts Connect categories.
+
+     Note: When specifying categories and subcategories, be sure to properly escape ampersands:
+
+     Single category:
+
+     <itunes:category text="Music" />
+     Category with ampersand:
+
+     <itunes:category text="TV &amp; Film" />
+     Category with subcategory:
+
+     <itunes:category text="Society &amp; Culture">
+     <itunes:category text="History" />
+     </itunes:category>
+     Multiple categories:
+
+     <itunes:category text="Society &amp; Culture">
+     <itunes:category text="History" />
+     </itunes:category>
+     <itunes:category text="Technology">
+     <itunes:category text="Gadgets" />
+     </itunes:category>
+ 
+     */
+    open var iTunesCategory: ITunesCategory?
+
 
 }

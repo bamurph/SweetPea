@@ -435,6 +435,7 @@
 		B3D0AC8B2DD1CF70D2337DC94DF89594 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF8B69FDBEA9A93D003A1DA57AF17B2E /* Foundation.framework */; };
 		B49916BDCAF7D6F504BE8DBD7D995510 /* QuickConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = 50D14DD7DFC082ADEEAF26BFC7114972 /* QuickConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B5090549D6768639D50144EF0238948C /* AtomFeedEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C65046D53D53F5357FE341409A9DAA2 /* AtomFeedEntry.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		B53777891E37DD75003C4BA5 /* iTunesCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53777881E37DD75003C4BA5 /* iTunesCategory.swift */; };
 		B5793C7DB0B89460ACE0682E4719DC83 /* RLMAccessor.mm in Sources */ = {isa = PBXBuildFile; fileRef = 64F89162D19F7AE9743AC87B9286FE41 /* RLMAccessor.mm */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"2.2.0\"' -D__ASSERTMACROS__ -DREALM_ENABLE_SYNC -w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		B59A07EFC0D945B773AE51D42C68BD6E /* CwlCatchException.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AFD8DE2CE4745C2AED79284EB8E2B4D /* CwlCatchException.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble -w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		B5C320931E33BCE900A208B9 /* iTunesNamespace.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C320921E33BCE900A208B9 /* iTunesNamespace.swift */; };
@@ -1241,6 +1242,7 @@
 		B42A56ABFCC4FA8939B87AD20EB8E388 /* Sample.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Sample.swift; path = RxSwift/Observables/Implementations/Sample.swift; sourceTree = "<group>"; };
 		B4FF2AEC132E899DC86FF42CF9C709B7 /* UITabBarController+Rx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UITabBarController+Rx.swift"; path = "RxCocoa/iOS/UITabBarController+Rx.swift"; sourceTree = "<group>"; };
 		B53378983C9B7DBEBC82044339F663D9 /* Reduce.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Reduce.swift; path = RxSwift/Observables/Implementations/Reduce.swift; sourceTree = "<group>"; };
+		B53777881E37DD75003C4BA5 /* iTunesCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iTunesCategory.swift; sourceTree = "<group>"; };
 		B542F8116771A156A567C35176668970 /* AtomFeed.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AtomFeed.swift; path = Sources/Model/Atom/AtomFeed.swift; sourceTree = "<group>"; };
 		B56C70E85003ABE0893C807DFD19E9B7 /* RxSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5C320921E33BCE900A208B9 /* iTunesNamespace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = iTunesNamespace.swift; path = Sources/Model/RSS/Modules/iTunes/iTunesNamespace.swift; sourceTree = "<group>"; };
@@ -1579,6 +1581,7 @@
 				A558C57DFFB57448F73FF8D1306B663E /* ContentNamespace.swift */,
 				EE3D32CE4AF058D6C312A9711C81ABD3 /* DateSpec.swift */,
 				C5FBF3F28A9E0C3B494B209100981CC7 /* DublinCoreNamespace.swift */,
+				B53777881E37DD75003C4BA5 /* iTunesCategory.swift */,
 				B5C320921E33BCE900A208B9 /* iTunesNamespace.swift */,
 				E65C9070185807445AD5DA10D1437AE8 /* FeedParser.swift */,
 				9F3C53AFA5BDB96E780800B1A086C63F /* FeedType.swift */,
@@ -2873,6 +2876,7 @@
 				16EFBDBD387B2738ADCC9B257FAA1A04 /* AtomFeedSubtitle.swift in Sources */,
 				F0E81063CDAA4893B3E05B477FE34BEA /* AtomPath.swift in Sources */,
 				3F26F11507605AD32AEA11E14C09801A /* ContentNamespace.swift in Sources */,
+				B53777891E37DD75003C4BA5 /* iTunesCategory.swift in Sources */,
 				96DC2B80F38E50E0B8CC77E0FEDC2E00 /* DateSpec.swift in Sources */,
 				18C5FFF45020AB01C07CF12EB115FC3A /* DublinCoreNamespace.swift in Sources */,
 				3B265F0B057CB9183EF67ED05CD8E35F /* FeedKit-dummy.m in Sources */,
