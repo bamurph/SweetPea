@@ -8,72 +8,113 @@
 
 import Foundation
 
-public enum ITunesCategory {
-    case arts(ArtsSubcategory?)
-    case business(BusinessSubcategory?)
-    case comedy
-    case education(EducationSubcategory?)
-    case gamesHobbies(GamesHobbiesSubcategory?)
-    case governmentOrganizations(GovernmentOrganizationsSubcategory?)
-    case health(HealthSubcategory?)
-    case kidsFamily
-    case music
-    case newsPolitics
-    case religionSpirituality(ReligionSpritualitySubcategory?)
-    case scienceMedicine(ScienceMedicineSubcategory?)
-    case societyCulture(SocietyCultureSubcategory?)
-    case sportsRecreation(SportsRecreationSubcategory?)
-    case technology(TechnologySubcategory?)
-    case tvFilm
 
-    public enum ArtsSubcategory: String {
+/// Categories and Subcategories for Itunes Podcasts
+/// see: https://help.apple.com/itc/podcasts_connect/#/itc9267a2f12
+public struct ITunesCategory {
+    let category: Category
+    let subcategory: Subcategory?
+
+    /// Initialize and validate that subcategories and categories match
+    init?(with categoryString: String?, subcategoryString: String?) {
+        guard
+            categoryString != nil,
+            let category = Category(rawValue: categoryString!)
+            else { return nil }
+        guard
+            subcategoryString != nil,
+            let subcategory = Subcategory(rawValue: subcategoryString!),
+            ITunesCategory.validate(category: category, subcategory: subcategory)
+            else { self = ITunesCategory(with: category); return}
+
+        self = ITunesCategory(with: category, subcategory: subcategory)
+
+    }
+
+    init(with category: Category, subcategory: Subcategory? = nil) {
+        self.category = category
+        self.subcategory = subcategory
+    }
+
+    static func validate(category: Category, subcategory: Subcategory) -> Bool {
+        guard let validSubcategories = validCombinations[category] else { return false }
+        return validSubcategories.contains(subcategory)
+    }
+
+
+
+    static let validCombinations: [Category: Set<Subcategory>] =
+        [.arts:                     [.design, .fashionBeauty, .food, .literature, .performingArts, .visualArts],
+         .business:                 [.businessNews, .careers, .investing, .managementMarketing, .shopping],
+         .education:                [.educationalTechnology, .higherEducation, .k12, .languageCourses, .training],
+         .gamesHobbies:             [.automotive, .aviation, .hobbies, .otherGames, .videoGames],
+         .governmentOrganizations:  [.local, .national, .nonProfit, .regional],
+         .health:                   [.alternativeHealth, .fitnessNutrition, .selfHelp, .sexuality],
+         .religionSpirituality:     [.buddhism, .christianity, .hinduism, .islam, .judaism, .other, .spirituality],
+         .scienceMedicine:          [.medicine, .naturalSciences, .socialSciences],
+         .societyCulture:           [.history, .personalJournals, .philosophy, .placesTravel],
+         .sportsRecreation:         [.amateur, .collegeHighSchool, .outdoor, .professional],
+         .technology:               [.gadgets, .techNews, .podcasting, .softwareHowTo]
+    ]
+
+
+    public enum Category: String {
+        case arts
+        case business
+        case comedy
+        case education
+        case gamesHobbies = "Games & Hobbies"
+        case governmentOrganizations = "Government & Organizations"
+        case health
+        case kidsFamily = "Kids & Family"
+        case music
+        case newsPolitics = "News & Politics"
+        case religionSpirituality = "Religion & Spirituality"
+        case scienceMedicine = "Science & Medicine"
+        case societyCulture = "Society & Culture"
+        case sportsRecreation = "Sports & Recreation"
+        case technology
+        case tvFilm = "TV & Film"
+    }
+
+    public enum Subcategory: String {
+
+        // Arts
         case design
         case fashionBeauty = "Fashion & Beauty"
         case food
         case literature
         case performingArts
         case visualArts
-    }
-
-    public enum BusinessSubcategory: String {
+        // Business
         case businessNews
         case careers
         case investing
         case managementMarketing = "Management & Marketing"
         case shopping
-    }
-
-    public enum EducationSubcategory: String {
+        // Education
         case educationalTechnology
         case higherEducation
         case k12 = "K-12"
         case languageCourses
         case training
-    }
-
-    public enum GamesHobbiesSubcategory: String {
+        // Games & Hobbies
         case automotive
         case aviation
-        case gamesHobbies
+        case hobbies
         case otherGames
         case videoGames
-    }
-
-    public enum GovernmentOrganizationsSubcategory: String {
+        // Government & Organizations
         case local
         case national
         case nonProfit = "Non-Profit"
         case regional
-    }
-
-    public enum HealthSubcategory: String {
+        // Health
         case alternativeHealth
         case fitnessNutrition = "Fitness & Nutrition"
         case selfHelp = "Self-Help"
         case sexuality
-    }
-
-    public enum ReligionSpritualitySubcategory: String {
+        // Religion & Spirituality
         case buddhism
         case christianity
         case hinduism
@@ -81,106 +122,32 @@ public enum ITunesCategory {
         case judaism
         case other
         case spirituality
-    }
-
-    public enum ScienceMedicineSubcategory: String {
+        // Science & Medicine
         case medicine
         case naturalSciences
         case socialSciences
-    }
-
-    public enum SocietyCultureSubcategory: String {
+        // Society & Culture
         case history
         case personalJournals
         case philosophy
         case placesTravel = "Places & Travel"
-    }
-
-    public enum SportsRecreationSubcategory: String {
+        // Sports & Recreation
         case amateur
         case collegeHighSchool = "College & High School"
         case outdoor
         case professional
-    }
-
-    public enum TechnologySubcategory: String {
+        // Technology
         case gadgets
         case techNews
         case podcasting
         case softwareHowTo = "Software How-To"
     }
 
-    init?(category: String) {
-        if category == "Arts" { self = .arts(nil) }
-        if category == "Business" { self = .business(nil) }
-        if category == "Comedy" { self = .comedy }
-        if category == "Education" { self = .education(nil) }
-        if category == "Games &  Hobbies" { self = .education(nil) }
-        if category == "Government & Organizations" { self = .gamesHobbies(nil) }
-        if category == "Health" { self = .health(nil) }
-        if category == "Kids & Family" { self = .kidsFamily }
-        if category == "Music" { self = .music }
-        if category == "News & Politics" { self = .newsPolitics }
-        if category == "Religion & Spirituality" { self = .religionSpirituality(nil) }
-        if category == "Science & Medicine" { self = .scienceMedicine(nil) }
-        if category == "Society & Culture" { self = .societyCulture(nil) }
-        if category == "Sports & Recreation" { self = .sportsRecreation(nil) }
-        if category == "Technology" { self = .technology(nil) }
-        if category == "TV & Film" { self = .tvFilm }
 
-        return nil
-    }
 
-    init?(category: ITunesCategory, subCategory: String?) {
-        guard let s = subCategory else { self = category; return }
-
-        switch category {
-        case .arts(_):
-            self = .arts(ArtsSubcategory(rawValue: s))
-        case .business(_):
-            self = .business(BusinessSubcategory(rawValue: s))
-        case .comedy: self = .comedy
-        case .education(_):
-            self = .education(EducationSubcategory(rawValue: s))
-        case .gamesHobbies(_):
-            self = .gamesHobbies(GamesHobbiesSubcategory(rawValue: s))
-        case .governmentOrganizations(_):
-            self = .governmentOrganizations(GovernmentOrganizationsSubcategory(rawValue: s))
-        case .health(_):
-            self = .health(HealthSubcategory(rawValue: s))
-        case .kidsFamily: self = .kidsFamily
-        case .music: self = .music
-        case .newsPolitics: self = .newsPolitics
-        case .religionSpirituality(_):
-            self = .religionSpirituality(ReligionSpritualitySubcategory(rawValue: s))
-        case .scienceMedicine(_):
-            self = .scienceMedicine(ScienceMedicineSubcategory(rawValue: s))
-        case .societyCulture(_):
-            self = .societyCulture(SocietyCultureSubcategory(rawValue: s))
-        case .sportsRecreation(_):
-            self = .sportsRecreation(SportsRecreationSubcategory(rawValue: s))
-        case .technology(_):
-            self = .technology(TechnologySubcategory(rawValue: s))
-        case .tvFilm: self = .tvFilm
-        }
-    }
-
-    init?(category: String, subCategory: String?) {
-        guard let justCat = ITunesCategory(category: category) else { return nil }
-
-        let fullCat = ITunesCategory(category: justCat, subCategory: subCategory)
-
-        if fullCat != nil { self = fullCat! }
-
-        return nil
-
-    
-
-    }
-        
-        
-        
-        
 }
+
+
+
 
 
