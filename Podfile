@@ -5,7 +5,7 @@ inhibit_all_warnings!
 target 'SweetPea' do
     pod 'RxRealm'
     pod 'RealmSwift', '~> 2.2'
-    pod 'FeedKit', '~> 5.0'
+    #pod 'FeedKit', '~> 5.0'
     pod 'Lepton' , :git => 'https://github.com/younata/Lepton.git'
     pod 'RxSwift', '~> 3.0'
     pod 'RxCocoa', '~> 3.1'

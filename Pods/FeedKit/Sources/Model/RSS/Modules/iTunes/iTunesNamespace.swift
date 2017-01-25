@@ -80,7 +80,7 @@ open class ITunesNamespace {
      </itunes:category>
 
      */
-    open var iTunesCategory: ITunesCategory?
+    open var iTunesCategory: [ITunesCategory]?
 
     /**
 
@@ -97,22 +97,6 @@ open class ITunesNamespace {
      */
     open var iTunesImage: String?
 
-    /**
-
-     The content you specify in the <itunes:duration> tag appears in the Time column in the List View on the iTunes Store.
-
-     Specify one of the following formats for the <itunes:duration> tag value:
-
-     HH:MM:SS
-     H:MM:SS
-     MM:SS
-     M:SS
-     Where H = hours, M = minutes, and S = seconds.
-
-     If you specify a single number as a value (without colons), the iTunes Store displays the value as seconds. If you specify one colon, the iTunes Store displays the number to the left as minutes and the number to the right as seconds. If you specify more then two colons, the iTunes Store ignores the numbers farthest to the right.
-     */
-    open var iTunesDuration: String?
-
     /** 
  
 
@@ -123,5 +107,35 @@ open class ITunesNamespace {
      Note: Podcasts containing explicit material are not available in some iTunes Store territories.
 
      */
-    open var iTunesExplicit: Bool?
+    open var iTunesExplicit: String?
+
+    /** 
+ 
+     Specifying the <itunes:complete> tag with a Yes value indicates that a podcast is complete and you will not post any more episodes in the future. This tag is only supported at the <channel> level (podcast).
+
+     Note: If you specify a value other than Yes, nothing happens.
+
+     */
+    open var iTunesComplete: String?
+
+    /** 
+ 
+     Use the <itunes:new-feed-url> tag to manually change the URL where your podcast is located. This tag is only supported at a <channel>level (podcast).
+
+     <itunes:new-feed-url>http://newlocation.com/example.rss</itunes:new-feed-url>
+     Note: You should maintain your old feed until you have migrated your existing subscribers. For more information, see Update your RSS feed URL.
+
+    */
+    open var iTunesNewFeedURL: String?
+
+    /** 
+ 
+     Use the <itunes:owner> tag to specify contact information for the podcast owner. Include the email address of the owner in a nested <itunes:email> tag and the name of the owner in a nested <itunes:name> tag.
+
+     The <itunes:owner> tag information is for administrative communication about the podcast and is not displayed on the iTunes Store.
+
+     */
+    open var iTunesOwner: ITunesOwner?
+
+
 }

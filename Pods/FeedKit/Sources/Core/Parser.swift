@@ -128,7 +128,8 @@ class Parser: XMLParser, XMLParserDelegate {
      
      */
     fileprivate func mapCharacters(_ string: String) {
-        
+        print(self.currentXMLDOMPath.path)
+        print(string)
         guard let feedType = self.feedType else { return }
         
         switch feedType {

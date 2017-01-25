@@ -1,0 +1,3 @@
+[submodule "FeedKit"]
+	path = FeedKit
+	url = git@github.com:bamurph/FeedKit.git

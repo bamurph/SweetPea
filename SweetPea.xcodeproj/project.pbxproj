@@ -10,6 +10,7 @@
 		0EAADA37FD89AAE94F44561B /* Pods_SweetPeaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9925CFDF86C3A9CC924D0BC0 /* Pods_SweetPeaTests.framework */; };
 		B51D58D51E23FA7C00BB089B /* SubscribeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51D58D41E23FA7C00BB089B /* SubscribeViewModel.swift */; };
 		B51D58E71E2439A100BB089B /* SubscribeViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51D58E61E2439A100BB089B /* SubscribeViewModelSpec.swift */; };
+		B533B1E81E3943850094B758 /* iTunesCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B533B1E71E3943850094B758 /* iTunesCategory.swift */; };
 		B53661771E16C7F10044F10C /* SweetPeaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53661761E16C7F10044F10C /* SweetPeaTests.swift */; };
 		B536617E1E16C7F70044F10C /* DownloadServiceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A4A5461E142F68000A6E2D /* DownloadServiceSpec.swift */; };
 		B536617F1E16C7F70044F10C /* StoreSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57BB6D71E0B1E330002E0CD /* StoreSpec.swift */; };
@@ -104,6 +105,7 @@
 		B5142A291DF0CA92005CE3AC /* RSSSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSSSpec.swift; sourceTree = "<group>"; };
 		B51D58D41E23FA7C00BB089B /* SubscribeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubscribeViewModel.swift; sourceTree = "<group>"; };
 		B51D58E61E2439A100BB089B /* SubscribeViewModelSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubscribeViewModelSpec.swift; sourceTree = "<group>"; };
+		B533B1E71E3943850094B758 /* iTunesCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = iTunesCategory.swift; path = ../Pods/FeedKit/iTunesCategory.swift; sourceTree = "<group>"; };
 		B53661741E16C7F10044F10C /* SweetPeaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SweetPeaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B53661761E16C7F10044F10C /* SweetPeaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SweetPeaTests.swift; sourceTree = "<group>"; };
 		B536618B1E16CACB0044F10C /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = "../../Library/Developer/Xcode/DerivedData/SweetPea-ammcoyyuyrqelrgeerwkfbahqsyg/Build/Products/Debug-iphonesimulator/Quick/Quick.framework"; sourceTree = "<group>"; };
@@ -375,6 +377,7 @@
 		B5FBBA431DF1FAC400B7A71C /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				B533B1E71E3943850094B758 /* iTunesCategory.swift */,
 				B5F20F541E0B231500A5E1A5 /* Subscription.swift */,
 				B5F20F571E0B261700A5E1A5 /* Feed.swift */,
 				B5F20F5A1E0B306B00A5E1A5 /* Episode.swift */,
@@ -684,6 +687,7 @@
 				B5D793CD1E16D3F800331A20 /* main.swift in Sources */,
 				B565D38C1E28090100D1C713 /* SubscribeCoordinator.swift in Sources */,
 				B5F0D2471DD506ED00402FEC /* PeaPod.xcdatamodeld in Sources */,
+				B533B1E81E3943850094B758 /* iTunesCategory.swift in Sources */,
 				B53B505E1E0F1379009C8EEF /* EnclosureViewModel.swift in Sources */,
 				B56ED7601E13077500482181 /* Result.swift in Sources */,
 				B5F20F551E0B231500A5E1A5 /* Subscription.swift in Sources */,

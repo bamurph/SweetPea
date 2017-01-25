@@ -27,7 +27,7 @@ import Foundation
 
 /// Categories and Subcategories for Itunes Podcasts
 /// see: https://help.apple.com/itc/podcasts_connect/#/itc9267a2f12
-public struct ITunesCategory {
+struct ITunesCategory {
 
     /// The iTunes Podcasting Tags Category
     let category: Category
