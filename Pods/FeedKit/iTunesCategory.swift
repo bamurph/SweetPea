@@ -2,17 +2,36 @@
 //  iTunesCategory.swift
 //  Pods
 //
-//  Created by Ben Murphy on 1/24/17.
+//  Copyright (c) 2017 Ben Murphy
 //
+//  Permission is hereby granted, free of charge, to any person obtaining a copy
+//  of this software and associated documentation files (the "Software"), to deal
+//  in the Software without restriction, including without limitation the rights
+//  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+//  copies of the Software, and to permit persons to whom the Software is
+//  furnished to do so, subject to the following conditions:
+//
+//  The above copyright notice and this permission notice shall be included in all
+//  copies or substantial portions of the Software.
+//
+//  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+//  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+//  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+//  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+//  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+//  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+//  SOFTWARE.
 //
 
 import Foundation
 
-
 /// Categories and Subcategories for Itunes Podcasts
 /// see: https://help.apple.com/itc/podcasts_connect/#/itc9267a2f12
 public struct ITunesCategory {
+
+    /// The iTunes Podcasting Tags Category
     let category: Category
+    /// The iTunes Podcasting Tags Subcategory
     let subcategory: Subcategory?
 
     /// Initialize and validate that subcategories and categories match
@@ -31,11 +50,22 @@ public struct ITunesCategory {
 
     }
 
+    /// Initialize with a valid Category and maybe a subcategory
+    ///
+    /// - Parameters:
+    ///   - category: any category
+    ///   - subcategory: an optional subcategory
     init(with category: Category, subcategory: Subcategory? = nil) {
         self.category = category
         self.subcategory = subcategory
     }
 
+    /// Ensure that a category and subcategory are valid matches
+    ///
+    /// - Parameters:
+    ///   - category: the top level category
+    ///   - subcategory: a subcategory
+    /// - Returns: true if the combination is valid
     static func validate(category: Category, subcategory: Subcategory) -> Bool {
         guard let validSubcategories = validCombinations[category] else { return false }
         return validSubcategories.contains(subcategory)
@@ -43,6 +73,7 @@ public struct ITunesCategory {
 
 
 
+    /// Match categories with valid subcategories - does not include categories with no subcategories
     static let validCombinations: [Category: Set<Subcategory>] =
         [.arts:                     [.design, .fashionBeauty, .food, .literature, .performingArts, .visualArts],
          .business:                 [.businessNews, .careers, .investing, .managementMarketing, .shopping],
@@ -57,7 +88,7 @@ public struct ITunesCategory {
          .technology:               [.gadgets, .techNews, .podcasting, .softwareHowTo]
     ]
 
-
+    /// All Categories
     public enum Category: String {
         case arts
         case business
@@ -77,8 +108,8 @@ public struct ITunesCategory {
         case tvFilm = "TV & Film"
     }
 
+    /// All Subcategories
     public enum Subcategory: String {
-
         // Arts
         case design
         case fashionBeauty = "Fashion & Beauty"

@@ -24,23 +24,23 @@
 
 import Foundation
 
-/** 
- 
+/**
+
  iTunes Podcasting Tags are de facto standard for podcast syndication. For more information see https://help.apple.com/itc/podcasts_connect/#/itcb54353390
- 
-*/
+
+ */
 
 open class ITunesNamespace {
 
     /**
- 
+
      The content you specify in the <itunes:author> tag appears in the Artist column on the iTunes Store. If the tag is not present, the iTunes Store uses the contents of the <author> tag. If <itunes:author> is not present at the RSS feed level, the iTunes Store uses the contents of the <managingEditor> tag.
 
      */
     open var iTunesAuthor: String?
 
     /**
- 
+
      Specifying the <itunes:block> tag with a Yes value in:
 
      - A <channel> tag (podcast), prevents the entire podcast from appearing on the iTunes Store podcast directory
@@ -48,11 +48,11 @@ open class ITunesNamespace {
 
      For example, you might want to block a specific episode if you know that its content would otherwise cause the entire podcast to be removed from the iTunes Store. Specifying any value other than Yes has no effect.
 
-    */
+     */
     open var iTunesBlock: Bool?
 
     /**
- 
+
      Users can browse podcast subject categories in the iTunes Store by choosing a category from the Podcasts pop-up menu in the navigation bar. Use the <itunes:category> tag to specify the browsing category for your podcast.
 
      You can also define a subcategory if one is available within your category. Although you can specify more than one category and subcategory in your feed, the iTunes Store only recognizes the first category and subcategory. For a complete list of categories and subcategories, see Podcasts Connect categories.
@@ -78,12 +78,12 @@ open class ITunesNamespace {
      <itunes:category text="Technology">
      <itunes:category text="Gadgets" />
      </itunes:category>
- 
+
      */
     open var iTunesCategory: ITunesCategory?
 
     /**
- 
+
      Specify your podcast artwork using the <a href> attribute in the<itunes:image> tag. If you do not specify the <itunes:image> tag, the iTunes Store uses the content specified in the RSS feed image tag and Apple does not consider your podcast for feature placement on the iTunes Store or Podcasts.
 
      Depending on their device, subscribers see your podcast artwork in varying sizes. Therefore, make sure your design is effective at both its original size and at thumbnail size. Apple recommends including a title, brand, or source name as part of your podcast artwork. For examples of podcast artwork, see the Top Podcasts. To avoid technical issues when you update your podcast artwork, be sure to:
@@ -93,10 +93,35 @@ open class ITunesNamespace {
      The <itunes:image> tag is also supported at the <item> (episode) level. For best results, Apple recommends embedding the same artwork within the metadata for that episode’s media file prior to uploading to your host server; using Garageband or another content-creation tool to edit your media file if needed.
 
      Note: Artwork must be a minimum size of 1400 x 1400 pixels and a maximum size of 3000 x 3000 pixels, in JPEG or PNG format, 72 dpi, with appropriate file extensions (.jpg, .png), and in the RGB colorspace. These requirements are different from the standard RSS image tag specifications.
- 
+
      */
-    open var iTunesImage: ITunesImage? 
+    open var iTunesImage: String?
 
+    /**
 
+     The content you specify in the <itunes:duration> tag appears in the Time column in the List View on the iTunes Store.
 
+     Specify one of the following formats for the <itunes:duration> tag value:
+
+     HH:MM:SS
+     H:MM:SS
+     MM:SS
+     M:SS
+     Where H = hours, M = minutes, and S = seconds.
+
+     If you specify a single number as a value (without colons), the iTunes Store displays the value as seconds. If you specify one colon, the iTunes Store displays the number to the left as minutes and the number to the right as seconds. If you specify more then two colons, the iTunes Store ignores the numbers farthest to the right.
+     */
+    open var iTunesDuration: String?
+
+    /** 
+ 
+
+     The <itunes:explicit> tag indicates whether your podcast contains explicit material. You can specify the following values:
+
+     Yes | Explicit | True. If you specify yes, explicit, or true, indicating the presence of explicit content, the iTunes Store displays an Explicit parental advisory graphic for your podcast.
+     Clean | No | False. If you specify clean, no, or false, indicating that none of your podcast episodes contain explicit language or adult content, the iTunes Store displays a Clean parental advisory graphic for your podcast.
+     Note: Podcasts containing explicit material are not available in some iTunes Store territories.
+
+     */
+    open var iTunesExplicit: Bool?
 }
