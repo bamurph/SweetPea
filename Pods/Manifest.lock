@@ -1,5 +1,4 @@
 PODS:
-  - FeedKit (5.0.0)
   - Lepton (0.1.0)
   - Nimble (5.1.1)
   - Quick (1.0.0)
@@ -18,7 +17,6 @@ PODS:
   - RxSwift (3.1.0)
 
 DEPENDENCIES:
-  - FeedKit (~> 5.0)
   - Lepton (from `https://github.com/younata/Lepton.git`)
   - Nimble
   - Quick
@@ -38,7 +36,6 @@ CHECKOUT OPTIONS:
     :git: https://github.com/younata/Lepton.git
 
 SPEC CHECKSUMS:
-  FeedKit: f3edf3ba14a3aef57caceec91ef77745d10abbbe
   Lepton: bd40c02b72773ff71a12d98345b4c879401f1955
   Nimble: 415e3aa3267e7bc2c96b05fa814ddea7bb686a29
   Quick: 8024e4a47e6cc03a9d5245ef0948264fc6d27cff
@@ -49,6 +46,6 @@ SPEC CHECKSUMS:
   RxRealm: 5ff7bbc8ccf44067cf83e0ddfb6402af417f9332
   RxSwift: 83ff553e7593fdfdcb2562933a64c0284dffdadc
 
-PODFILE CHECKSUM: eb17a4f1174e3494bfbcba5080d4b1b21250245f
+PODFILE CHECKSUM: 4351675408110ef0a7d282178e00c342d42209a8
 
 COCOAPODS: 1.0.0

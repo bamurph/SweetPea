@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:FeedKit/FeedKit.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:SweetPea.xcodeproj">
    </FileRef>
    <FileRef

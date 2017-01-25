@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "C6604F3B23BE28764B81CD243348CC23A73ECF1B",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "C6604F3B23BE28764B81CD243348CC23A73ECF1B" : 9223372036854775807,
+    "78559EF9D35239BE275455583E24181A058C441E" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "287ECD44-3FB3-4E73-95C4-11B708617934",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "C6604F3B23BE28764B81CD243348CC23A73ECF1B" : "SweetPea\/",
+    "78559EF9D35239BE275455583E24181A058C441E" : "SweetPea\/FeedKit\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "SweetPea",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "SweetPea.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:bamurph\/FeedKit.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "78559EF9D35239BE275455583E24181A058C441E"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:bamurph\/SweetPea.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "C6604F3B23BE28764B81CD243348CC23A73ECF1B"
+    }
+  ]
+}
