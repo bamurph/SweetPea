@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6D0F1EAB381B8B5EB1D9151EE19C82EE"
+               BlueprintIdentifier = "C2F8BDED6B57D4536DEAAE78B7CFF332"
                BuildableName = "Pods_SweetPea.framework"
                BlueprintName = "Pods-SweetPea"
                ReferencedContainer = "container:Pods/Pods.xcodeproj">
@@ -75,9 +75,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B53661731E16C7F10044F10C"
-               BuildableName = "SweetPeaTests.xctest"
-               BlueprintName = "SweetPeaTests"
+               BlueprintIdentifier = "B51D58D91E242CA700BB089B"
+               BuildableName = "SweetPeaUITests.xctest"
+               BlueprintName = "SweetPeaUITests"
                ReferencedContainer = "container:SweetPea.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -85,9 +85,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B51D58D91E242CA700BB089B"
-               BuildableName = "SweetPeaUITests.xctest"
-               BlueprintName = "SweetPeaUITests"
+               BlueprintIdentifier = "B53661731E16C7F10044F10C"
+               BuildableName = "SweetPeaTests.xctest"
+               BlueprintName = "SweetPeaTests"
                ReferencedContainer = "container:SweetPea.xcodeproj">
             </BuildableReference>
          </TestableReference>

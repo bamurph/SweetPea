@@ -74,7 +74,7 @@ class Feed: Object {
         self.webMaster = rss.webMaster
         self.pubDate = rss.pubDate
         self.lastBuildDate = rss.lastBuildDate
-        self.imageUrl = rss.image?.url
+        self.imageUrl = rss.iTunes?.iTunesImage
         self.categories = self.stringsFrom(categories: rss.categories) ?? [""]
         let episodes = rss.items.map { $0.flatMap { Episode(from: $0) } } ?? []
         self.items.append(objectsIn: episodes)

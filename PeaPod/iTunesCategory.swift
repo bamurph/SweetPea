@@ -29,8 +29,6 @@ import Foundation
 /// see: https://help.apple.com/itc/podcasts_connect/#/itc9267a2f12
 open class ITunesCategory {
 
-    open var
-
     /// The iTunes Podcasting Tags Category
     let category: Category
     /// The iTunes Podcasting Tags Subcategory

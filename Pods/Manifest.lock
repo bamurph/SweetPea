@@ -24,7 +24,7 @@ DEPENDENCIES:
   - RxBlocking (~> 3.1)
   - RxCocoa (~> 3.1)
   - RxRealm
-  - RxSwift (~> 3.0)
+  - RxSwift (~> 3.1)
 
 EXTERNAL SOURCES:
   Lepton:
@@ -46,6 +46,6 @@ SPEC CHECKSUMS:
   RxRealm: 5ff7bbc8ccf44067cf83e0ddfb6402af417f9332
   RxSwift: 83ff553e7593fdfdcb2562933a64c0284dffdadc
 
-PODFILE CHECKSUM: 4351675408110ef0a7d282178e00c342d42209a8
+PODFILE CHECKSUM: 09db5f698280c607a519679191202ed42a5d72d2
 
 COCOAPODS: 1.0.0

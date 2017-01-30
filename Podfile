@@ -7,7 +7,7 @@ target 'SweetPea' do
     pod 'RealmSwift', '~> 2.2'
     #pod 'FeedKit', '~> 5.0'
     pod 'Lepton' , :git => 'https://github.com/younata/Lepton.git'
-    pod 'RxSwift', '~> 3.0'
+    pod 'RxSwift', '~> 3.1'
     pod 'RxCocoa', '~> 3.1'
     pod 'RxBlocking', '~> 3.1'
 

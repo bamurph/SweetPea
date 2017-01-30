@@ -17,14 +17,27 @@ class RootViewModel {
     private let disposeBag = DisposeBag()
     private let rssService = RSSService()
 
+
     // MARK: - Model
     let episodes: Observable<Episode>
     let feeds: Observable<Feed>
+    var notificationToken: NotificationToken?
 
 
     init() {
-        feeds = Observable.from(store.feeds |> Array.init)
-        episodes = Observable.from(store.episodes |> Array.init)
+
+        feeds = Observable.from(store.objects(Feed.self))
+        //episodes = Observable.from(store.objects(Episode.self))
+
+
+        episodes =
+            Observable.from(store.objects(Episode.self))
+                .do(onNext: {n in
+                    print(n.title)
+                })
+        //.scan([Episode]()) { acc, val in
+        //return acc + [val] }
+
 
         /// Refresh feeds on launch
         _ = refresh(oldFeeds: feeds)

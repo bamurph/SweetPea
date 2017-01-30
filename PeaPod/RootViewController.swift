@@ -20,6 +20,7 @@ class RootViewController: UIViewController, UITableViewDelegate {
     var coordinatorDelegate: AppCoordinator!
     let viewModel = RootViewModel()
 
+
     init() {
         super.init(nibName: nil, bundle: nil)
     }
@@ -35,6 +36,13 @@ class RootViewController: UIViewController, UITableViewDelegate {
         let nib = UINib(nibName: "RootTableViewCell", bundle: nil)
         episodeList.register(nib, forCellReuseIdentifier: cellID)
         viewModel.refresh(oldFeeds: viewModel.feeds).dispose()
+
+        viewModel.notificationToken =
+            store.addNotificationBlock { [weak self] (_) in
+                print("update!")
+                self?.episodeList.reloadData()
+        }
+
 
         _ = subscribeButton.rx.tap.asObservable()
             .subscribe(onNext: { _ in
@@ -52,6 +60,7 @@ class RootViewController: UIViewController, UITableViewDelegate {
                     default: return false
                     }
                 }
+
         }
 
         _ = sortedEpisodes
@@ -62,6 +71,12 @@ class RootViewController: UIViewController, UITableViewDelegate {
 
         }
 
+        _ = viewModel.episodes
+            .subscribe(onNext: {n in
+                print(n)
+                self.episodeList.reloadData()
+            })
+
         let itemSelected = episodeList.rx.itemSelected
 
         _ = Observable
@@ -71,12 +86,13 @@ class RootViewController: UIViewController, UITableViewDelegate {
             .subscribe(onNext: {n in
                 print(n.title)
             })
-        
-
-
 
     }
-    
+
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        print("View appeared")
+    }
     
     
     
