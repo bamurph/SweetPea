@@ -88,11 +88,11 @@ extension Realm {
     func refresh(_ feed: Feed) {
         self.addFeed(feed)
     }
-    
+
     func addFeed(_ feed: Feed) {
         self.addFeed(title: feed.title, link: feed.link, feedDescription: feed.feedDescription, language: feed.language, copyright: feed.copyright, managingEditor: feed.managingEditor, webMaster: feed.webMaster, pubDate: feed.pubDate, lastBuildDate: feed.lastBuildDate, imageUrl: feed.imageUrl, categories: feed.joinedCategories(), items: feed.items)
     }
-    
+
     func addFeed(title: String, link: String, feedDescription: String?, language: String?, copyright: String?, managingEditor: String?, webMaster: String?, pubDate: Date?, lastBuildDate: Date?, imageUrl: String?, categories: String?, items: List<Episode> = List<Episode>.init()) {
         do {
             try write {
@@ -226,8 +226,15 @@ extension Realm {
     }
 }
 
+func store() -> Realm {
+    return try! Realm(fileURL: URL(string: "/Users/ben/Desktop/TestRealm.realm")!)
+}
+
+
+let bgScheduler = SerialDispatchQueueScheduler(qos: .background)
 
 
 
-let store = try! Realm(fileURL: URL(string: "/Users/ben/Desktop/TestRealm.realm")!)
+
+
 

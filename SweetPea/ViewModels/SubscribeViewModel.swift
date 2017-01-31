@@ -9,6 +9,7 @@
 import Foundation
 import RxSwift
 import FeedKit
+import RealmSwift
 
 protocol SubscribeViewModelDelegate: class {
     func didAddSubscription(viewModel: SubscribeViewModel)
@@ -71,6 +72,7 @@ class SubscribeViewModel {
             .filter { $0.1 != nil }
             .map { ($0.0, $0.1!) }
             .subscribe(onNext: {n in
+                let store = try! Realm(fileURL: URL(string: "/Users/ben/Desktop/TestRealm.realm")!)
                 store.addSubscription(title: n.1.title!, summary: n.1.description!, xmlUrl: n.0, htmlUrl: n.1.link!, feed: Feed(from: n.1))
                 self.coordinatorDelegate?.didAddSubscription(viewModel: self)
             }).addDisposableTo(disposeBag)

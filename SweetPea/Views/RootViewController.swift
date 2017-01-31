@@ -19,7 +19,8 @@ class RootViewController: UIViewController, UITableViewDelegate {
 
     var coordinatorDelegate: AppCoordinator!
     let viewModel = RootViewModel()
-
+    let disposeBag = DisposeBag()
+    let refreshing: Variable<Bool> = Variable(false)
 
     init() {
         super.init(nibName: nil, bundle: nil)
@@ -35,13 +36,13 @@ class RootViewController: UIViewController, UITableViewDelegate {
         let cellID = "Cell"
         let nib = UINib(nibName: "RootTableViewCell", bundle: nil)
         episodeList.register(nib, forCellReuseIdentifier: cellID)
-        viewModel.refresh(oldFeeds: viewModel.feeds).dispose()
+//        viewModel.refresh(oldFeeds: viewModel.feeds).dispose()
 
-        viewModel.notificationToken =
-            store.addNotificationBlock { [weak self] (_) in
-                print("update!")
-                self?.episodeList.reloadData()
-        }
+//        viewModel.notificationToken =
+//            store.addNotificationBlock { [weak self] (_) in
+//                print("update!")
+//                self?.episodeList.reloadData()
+//        }
 
 
         _ = subscribeButton.rx.tap.asObservable()
@@ -50,9 +51,6 @@ class RootViewController: UIViewController, UITableViewDelegate {
             })
 
         let sortedEpisodes = viewModel.episodes
-            .scan([Episode]()) {eps, e in
-                return eps + [e]
-            }
             .map {
                 $0.sorted {
                     switch ($0.pubDate, $1.pubDate) {
@@ -71,11 +69,7 @@ class RootViewController: UIViewController, UITableViewDelegate {
 
         }
 
-        _ = viewModel.episodes
-            .subscribe(onNext: {n in
-                print(n)
-                self.episodeList.reloadData()
-            })
+
 
         let itemSelected = episodeList.rx.itemSelected
 
@@ -86,6 +80,7 @@ class RootViewController: UIViewController, UITableViewDelegate {
             .subscribe(onNext: {n in
                 print(n.title)
             })
+
 
     }
 
