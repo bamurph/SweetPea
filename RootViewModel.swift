@@ -11,6 +11,8 @@ import RxSwift
 import RealmSwift
 import RxRealm
 
+
+
 class RootViewModel {
 
     // MARK: - Dependencies
@@ -26,6 +28,7 @@ class RootViewModel {
 
     init() {
 
+        let a = Observable.
         feeds = Observable.from(store.objects(Feed.self))
         //episodes = Observable.from(store.objects(Episode.self))
 

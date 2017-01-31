@@ -3,7 +3,7 @@ use_frameworks!
 inhibit_all_warnings!
 
 target 'SweetPea' do
-    pod 'RxRealm'
+    pod 'RxRealm', '~> 0.5.1'
     pod 'RealmSwift', '~> 2.2'
     #pod 'FeedKit', '~> 5.0'
     pod 'Lepton' , :git => 'https://github.com/younata/Lepton.git'
