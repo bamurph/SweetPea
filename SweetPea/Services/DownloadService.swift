@@ -14,8 +14,21 @@ enum AudioDownloadingError: Error {
 }
 
 protocol AudioDownloading {
-    func data(from url : URL) -> Observable<Data>
+    func data(from url: URL) -> Observable<Data>
     func data(from enclosure: Enclosure)-> Observable<Data>
+}
+
+enum ImageDownloadingError: Error {
+    case noImageCreated
+    case invalidURL(String)
+    case noData
+    case noPath
+}
+
+protocol ImageDownloading {
+    func image(from url: URL) -> Observable<UIImage>
+    func data(from url: URL) -> Observable<Data>
+    func data(from path: String?) -> Observable<Data>
 }
 
 
@@ -48,6 +61,48 @@ extension DownloadService: AudioDownloading {
             return Disposables.create()
         }
     }
-    
+
+}
+
+extension DownloadService: ImageDownloading {
+
+    internal func data(from path: String?) -> Observable<Data> {
+        print(path)
+        let data$ = Observable.of(path)
+            .debug()
+            .flatMap { p -> Observable<Data> in
+                guard
+                    let path = p,
+                    let url = URL(string: path)
+                    else { return Observable.empty() }
+                do {
+                    let data = try Data(contentsOf: url)
+                    return Observable.just(data)
+                } catch let error {
+                    return Observable.error(error)
+                }
+        }
+        return data$
+    }
+
+
+    internal func image(from url: URL) -> Observable<UIImage> {
+        return Observable<UIImage>.create { observer in
+            do {
+                let data = try Data(contentsOf: url)
+                if let image = UIImage(data: data) {
+                    observer.onNext(image)
+                    observer.onCompleted()
+                } else {
+                    observer.onError(ImageDownloadingError.noImageCreated)
+                }
+            } catch {
+                observer.onError(ImageDownloadingError.invalidURL(url.absoluteString))
+            }
+            return Disposables.create()
+        }
+    }
+
+
 
 }

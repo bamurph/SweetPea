@@ -34,7 +34,7 @@ class RootViewController: UIViewController, UITableViewDelegate {
         let cellID = "Cell"
         let nib = UINib(nibName: "RootTableViewCell", bundle: nil)
         episodeList.register(nib, forCellReuseIdentifier: cellID)
-        viewModel.refresh(oldFeeds: viewModel.feeds).dispose()
+        _ = viewModel.refresh(oldFeeds: viewModel.feeds)
 
         _ = subscribeButton.rx.tap.asObservable()
             .subscribe(onNext: { _ in

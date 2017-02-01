@@ -61,8 +61,8 @@ extension Realm {
                 sub.feed = feed
 
                 add(sub, update: true)
-
             }
+
         } catch {
             print(StoreError.addSubscriptionFailed(error).localizedDescription)
         }
@@ -88,12 +88,12 @@ extension Realm {
     func refresh(_ feed: Feed) {
         self.addFeed(feed)
     }
-    
+
     func addFeed(_ feed: Feed) {
-        self.addFeed(title: feed.title, link: feed.link, feedDescription: feed.feedDescription, language: feed.language, copyright: feed.copyright, managingEditor: feed.managingEditor, webMaster: feed.webMaster, pubDate: feed.pubDate, lastBuildDate: feed.lastBuildDate, imageUrl: feed.imageUrl, categories: feed.joinedCategories(), items: feed.items)
+        self.addFeed(title: feed.title, link: feed.link, feedDescription: feed.feedDescription, language: feed.language, copyright: feed.copyright, managingEditor: feed.managingEditor, webMaster: feed.webMaster, pubDate: feed.pubDate, lastBuildDate: feed.lastBuildDate, imageUrl: feed.imageUrl, imageData: feed.imageData, categories: feed.joinedCategories(), items: feed.items)
     }
-    
-    func addFeed(title: String, link: String, feedDescription: String?, language: String?, copyright: String?, managingEditor: String?, webMaster: String?, pubDate: Date?, lastBuildDate: Date?, imageUrl: String?, categories: String?, items: List<Episode> = List<Episode>.init()) {
+
+    func addFeed(title: String, link: String, feedDescription: String?, language: String?, copyright: String?, managingEditor: String?, webMaster: String?, pubDate: Date?, lastBuildDate: Date?, imageUrl: String?, imageData: Data?, categories: String?, items: List<Episode> = List<Episode>.init()) {
         do {
             try write {
                 let feed = Feed()
@@ -107,9 +107,18 @@ extension Realm {
                 feed.pubDate = pubDate
                 feed.lastBuildDate = lastBuildDate
                 feed.imageUrl = imageUrl
+                feed.imageData = imageData
                 feed.items = items
                 feed.categories = feed.separated(categories)
                 add(feed, update: true)
+
+                let data$ = DownloadService().data(from: feed.imageUrl)
+                    .subscribe(onNext: {n in
+                        try? self.write {
+                            feed.imageData = n
+                            print(n.count)
+                            self.add(feed, update: true) }
+                    })
             }
         } catch {
             print(StoreError.addFeedFailed(error))
