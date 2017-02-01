@@ -1,5 +1,5 @@
 PODS:
-  - FeedKit (5.0.0)
+  - FeedKit (5.1.0)
   - Lepton (0.1.0)
   - Nimble (5.1.1)
   - Quick (1.0.0)
@@ -18,7 +18,7 @@ PODS:
   - RxSwift (3.1.0)
 
 DEPENDENCIES:
-  - FeedKit (~> 5.0)
+  - FeedKit (from `https://github.com/nmdias/FeedKit.git`)
   - Lepton (from `https://github.com/younata/Lepton.git`)
   - Nimble
   - Quick
@@ -29,16 +29,21 @@ DEPENDENCIES:
   - RxSwift (~> 3.0)
 
 EXTERNAL SOURCES:
+  FeedKit:
+    :git: https://github.com/nmdias/FeedKit.git
   Lepton:
     :git: https://github.com/younata/Lepton.git
 
 CHECKOUT OPTIONS:
+  FeedKit:
+    :commit: a259d181dd4d55f95ff0f5dafc23e5536bb0281d
+    :git: https://github.com/nmdias/FeedKit.git
   Lepton:
     :commit: 92a21f46f12f2ec6a814aedc30a51e551d42a573
     :git: https://github.com/younata/Lepton.git
 
 SPEC CHECKSUMS:
-  FeedKit: f3edf3ba14a3aef57caceec91ef77745d10abbbe
+  FeedKit: d7905d27d5de4d3deb105e10e31d5c9bbaef54d5
   Lepton: bd40c02b72773ff71a12d98345b4c879401f1955
   Nimble: 415e3aa3267e7bc2c96b05fa814ddea7bb686a29
   Quick: 8024e4a47e6cc03a9d5245ef0948264fc6d27cff
@@ -49,6 +54,6 @@ SPEC CHECKSUMS:
   RxRealm: 5ff7bbc8ccf44067cf83e0ddfb6402af417f9332
   RxSwift: 83ff553e7593fdfdcb2562933a64c0284dffdadc
 
-PODFILE CHECKSUM: eb17a4f1174e3494bfbcba5080d4b1b21250245f
+PODFILE CHECKSUM: 4b50db20dca408cf3f4257e7da2b6fff91476afe
 
 COCOAPODS: 1.0.0
