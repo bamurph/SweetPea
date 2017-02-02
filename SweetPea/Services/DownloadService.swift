@@ -67,9 +67,7 @@ extension DownloadService: AudioDownloading {
 extension DownloadService: ImageDownloading {
 
     internal func data(from path: String?) -> Observable<Data> {
-        print(path)
         let data$ = Observable.of(path)
-            .debug()
             .flatMap { p -> Observable<Data> in
                 guard
                     let path = p,

@@ -23,8 +23,8 @@ class RootViewModel {
 
 
     init() {
-        feeds = Observable.from(store.feeds |> Array.init)
-        episodes = Observable.from(store.episodes |> Array.init)
+        feeds = Observable.from(store().feeds |> Array.init)
+        episodes = Observable.from(store().episodes |> Array.init)
 
 
         /// Refresh feeds on launch

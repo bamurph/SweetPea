@@ -15,6 +15,7 @@ enum StoreError: Error {
     case addSubscriptionFailed(Error)
     case deleteSubscriptionFailed(Error)
     case addFeedFailed(Error)
+    case addFeedImageFailed(Error)
     case deleteFeedFailed(Error)
     case addEpisodeFailed(Error)
     case deleteEpisodeFailed(Error)
@@ -23,6 +24,7 @@ enum StoreError: Error {
     case addEnclosureFailed(Error)
     case deleteEnclosureFailed(Error)
 }
+extension Realm: FileWriting {}
 
 extension Realm {
     var subscriptions: Results<Subscription> {
@@ -90,10 +92,10 @@ extension Realm {
     }
 
     func addFeed(_ feed: Feed) {
-        self.addFeed(title: feed.title, link: feed.link, feedDescription: feed.feedDescription, language: feed.language, copyright: feed.copyright, managingEditor: feed.managingEditor, webMaster: feed.webMaster, pubDate: feed.pubDate, lastBuildDate: feed.lastBuildDate, imageUrl: feed.imageUrl, imageData: feed.imageData, categories: feed.joinedCategories(), items: feed.items)
+        self.addFeed(title: feed.title, link: feed.link, feedDescription: feed.feedDescription, language: feed.language, copyright: feed.copyright, managingEditor: feed.managingEditor, webMaster: feed.webMaster, pubDate: feed.pubDate, lastBuildDate: feed.lastBuildDate, imageUrl: feed.imageUrl, imageLocalUrl: feed.imageLocalUrl, categories: feed.joinedCategories(), items: feed.items)
     }
 
-    func addFeed(title: String, link: String, feedDescription: String?, language: String?, copyright: String?, managingEditor: String?, webMaster: String?, pubDate: Date?, lastBuildDate: Date?, imageUrl: String?, imageData: Data?, categories: String?, items: List<Episode> = List<Episode>.init()) {
+    func addFeed(title: String, link: String, feedDescription: String?, language: String?, copyright: String?, managingEditor: String?, webMaster: String?, pubDate: Date?, lastBuildDate: Date?, imageUrl: String?, imageLocalUrl: String?, categories: String?, items: List<Episode> = List<Episode>.init()) {
         do {
             try write {
                 let feed = Feed()
@@ -107,22 +109,38 @@ extension Realm {
                 feed.pubDate = pubDate
                 feed.lastBuildDate = lastBuildDate
                 feed.imageUrl = imageUrl
-                feed.imageData = imageData
+                feed.imageLocalUrl = imageLocalUrl
                 feed.items = items
                 feed.categories = feed.separated(categories)
-                add(feed, update: true)
 
-                let data$ = DownloadService().data(from: feed.imageUrl)
-                    .subscribe(onNext: {n in
-                        try? self.write {
-                            feed.imageData = n
-                            print(n.count)
-                            self.add(feed, update: true) }
-                    })
             }
         } catch {
             print(StoreError.addFeedFailed(error))
         }
+
+    }
+
+    func addFeedImage(_ feed: Feed) {
+
+        let data$ = DownloadService().data(from: feed.imageUrl)
+            .filter { _ in feed.imageUrl != nil }
+            .map { (URL(string: feed.imageUrl!), $0 ) }
+            .filter { $0.0 != nil }
+            .map { (name: $0.0!.lastPathComponent, data: $0.1 ) }
+
+
+        _ = write(data: data$)
+            .debug()
+            .subscribe(onNext: { n in
+                do {
+                    try self.write {
+                        feed.imageLocalUrl = n.path
+                    }
+                } catch {
+                }
+            })
+
+
     }
 
     func deleteFeed(_ feed: Feed) {
@@ -238,5 +256,6 @@ extension Realm {
 
 
 
-let store = try! Realm(fileURL: URL(string: "/Users/ben/Desktop/TestRealm.realm")!)
-
+func store() -> Realm {
+    return try! Realm(fileURL: URL(string: "/Users/ben/Desktop/TestRealm.realm")!)
+}

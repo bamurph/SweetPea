@@ -71,7 +71,7 @@ class SubscribeViewModel {
             .filter { $0.1 != nil }
             .map { ($0.0, $0.1!) }
             .subscribe(onNext: {n in
-                store.addFeed(Feed(from: n.1))
+                store().addFeed(Feed(from: n.1))
                 self.coordinatorDelegate?.didAddSubscription(viewModel: self)
             }).addDisposableTo(disposeBag)
 

@@ -78,15 +78,20 @@ struct RSSService: RSSProtocol {
     }
 
     func refresh(_ feed: Feed) {
-        let viewModel = SubscribeViewModel()
-        guard
-            let path = feed.subscription.first?.xmlUrl,
-            let url = URL(string: path)
-        else {
-            print(RSSServiceError.badUrl)
-            return
-        }
-        viewModel.refresh(url: url)
+        let bgs = SerialDispatchQueueScheduler(qos: .background)
+        let feedRef = ThreadSafeReference(to: feed)
+        let feed$ = Observable.from(feedRef)
+            .observeOn(bgs)
+            .map { store().resolve($0) }
+            .map { $0 }
+            .subscribeOn(bgs)
+        _ = feed$.subscribe(onNext: { n in
+            if let feed = n {
+                store().addFeed(feed)
+                store().addFeedImage(feed)
+            }
+        })
+
     }
 
  

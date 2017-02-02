@@ -11,6 +11,7 @@ import RxCocoa
 import RxSwift
 
 
+
 class RootViewController: UIViewController, UITableViewDelegate {
 
     @IBOutlet weak var subscribeButton: UIButton!
@@ -34,7 +35,9 @@ class RootViewController: UIViewController, UITableViewDelegate {
         let cellID = "Cell"
         let nib = UINib(nibName: "RootTableViewCell", bundle: nil)
         episodeList.register(nib, forCellReuseIdentifier: cellID)
-        _ = viewModel.refresh(oldFeeds: viewModel.feeds)
+       
+        _ = self.viewModel.refresh(oldFeeds: self.viewModel.feeds)
+
 
         _ = subscribeButton.rx.tap.asObservable()
             .subscribe(onNext: { _ in

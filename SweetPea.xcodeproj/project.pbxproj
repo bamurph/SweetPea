@@ -18,6 +18,7 @@
 		B536618A1E16C8FC0044F10C /* EpisodeSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56ED7571E12F91300482181 /* EpisodeSpec.swift */; };
 		B536618C1E16CACB0044F10C /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B536618B1E16CACB0044F10C /* Quick.framework */; };
 		B536618E1E16CACF0044F10C /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B536618D1E16CACF0044F10C /* Nimble.framework */; };
+		B537A5AA1E43C985004D2749 /* FileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B537A5A91E43C985004D2749 /* FileService.swift */; };
 		B53B50591E0F1342009C8EEF /* EpisodeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53B50581E0F1342009C8EEF /* EpisodeViewModel.swift */; };
 		B53B505B1E0F136B009C8EEF /* Enclosure.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53B505A1E0F136B009C8EEF /* Enclosure.swift */; };
 		B53B505E1E0F1379009C8EEF /* EnclosureViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53B505D1E0F1379009C8EEF /* EnclosureViewModel.swift */; };
@@ -107,6 +108,7 @@
 		B536618D1E16CACF0044F10C /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = "../../Library/Developer/Xcode/DerivedData/SweetPea-ammcoyyuyrqelrgeerwkfbahqsyg/Build/Products/Debug-iphonesimulator/Nimble/Nimble.framework"; sourceTree = "<group>"; };
 		B537939D1DD9BF8C00D9C9AF /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		B537939F1DDA626300D9C9AF /* RSSService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSSService.swift; sourceTree = "<group>"; };
+		B537A5A91E43C985004D2749 /* FileService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileService.swift; sourceTree = "<group>"; };
 		B53B50581E0F1342009C8EEF /* EpisodeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EpisodeViewModel.swift; sourceTree = "<group>"; };
 		B53B505A1E0F136B009C8EEF /* Enclosure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enclosure.swift; sourceTree = "<group>"; };
 		B53B505D1E0F1379009C8EEF /* EnclosureViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnclosureViewModel.swift; sourceTree = "<group>"; };
@@ -284,6 +286,7 @@
 		B5BB0D971DD51CA400BD7FA0 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				B537A5A91E43C985004D2749 /* FileService.swift */,
 				B551BC501DF24065001C76E3 /* AudioService.swift */,
 				B5A4A5431E14275B000A6E2D /* DownloadService.swift */,
 				B5BB0D981DD51CB300BD7FA0 /* OPMLService.swift */,
@@ -696,6 +699,7 @@
 				B5F0D23F1DD506ED00402FEC /* AppDelegate.swift in Sources */,
 				B53B505B1E0F136B009C8EEF /* Enclosure.swift in Sources */,
 				B565D39D1E2D4FA200D1C713 /* RootTableViewCell.swift in Sources */,
+				B537A5AA1E43C985004D2749 /* FileService.swift in Sources */,
 				B51D58D51E23FA7C00BB089B /* SubscribeViewModel.swift in Sources */,
 				B5F20F581E0B261700A5E1A5 /* Feed.swift in Sources */,
 			);

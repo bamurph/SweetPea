@@ -12,7 +12,7 @@ import RealmSwift
 struct Migrations {
     static func run() {
         let config = Realm.Configuration(
-            schemaVersion: 4,
+            schemaVersion: 5,
             migrationBlock: { migration, oldSchemaVersion in
                 if oldSchemaVersion < 1 {
                     migration.enumerateObjects(ofType: Subscription.className(), { (oldObject, newObject) in
@@ -45,6 +45,9 @@ struct Migrations {
                         new!["imageData"] = nil
                     })
                 }
+
+                if oldSchemaVersion < 5 { }
+
 
         })
 
