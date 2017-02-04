@@ -9,7 +9,6 @@
 import Foundation
 import RxSwift
 import RealmSwift
-import RxRealm
 
 class RootViewModel {
 
