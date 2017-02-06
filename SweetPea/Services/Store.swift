@@ -130,7 +130,6 @@ extension Realm {
 
 
         _ = write(data: data$)
-            .debug()
             .subscribe(onNext: { n in
                 do {
                     try self.write {

@@ -36,7 +36,7 @@ class RootViewController: UIViewController, UITableViewDelegate {
         let nib = UINib(nibName: "RootTableViewCell", bundle: nil)
         episodeList.register(nib, forCellReuseIdentifier: cellID)
        
-        _ = self.viewModel.refresh(oldFeeds: self.viewModel.feeds)
+        //_ = self.viewModel.refresh(oldFeeds: self.viewModel.feeds)
 
 
         _ = subscribeButton.rx.tap.asObservable()
@@ -46,9 +46,7 @@ class RootViewController: UIViewController, UITableViewDelegate {
 
         let sortedEpisodes = viewModel.sortedWithImages()
 
-        _ = sortedEpisodes.subscribe(onNext: {n in
-            n.forEach { print($0.0.title) }
-        })
+
 
 
 

@@ -40,7 +40,7 @@ struct RSSService: RSSProtocol {
             }
 
             FeedParser(data: data).parse { result in
-                print(result)
+
                 switch result {
                 case .rss(let rssFeed):
                     observer.onNext(rssFeed)

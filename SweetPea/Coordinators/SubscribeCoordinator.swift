@@ -29,7 +29,6 @@ class SubscribeCoordinator: Coordinator {
 
 extension SubscribeCoordinator: SubscribeViewModelDelegate {
     func didAddSubscription(viewModel: SubscribeViewModel) {
-        print("Added subscription")
         self.delegate?.subscribeCoordinatorDidFinish(subscribeCoordinator: self)
     }
 }

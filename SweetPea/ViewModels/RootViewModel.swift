@@ -62,7 +62,6 @@ class RootViewModel: FileLocating, FileReading {
 
     func sortedWithImages() -> Observable<[(Episode, UIImage?)]> {
         return episodesWithImages()
-            .debug()
             .scan([(Episode, UIImage?)]()) { eps, e in
                 return eps + [e] }
             .map {
@@ -79,12 +78,12 @@ class RootViewModel: FileLocating, FileReading {
 
 
 
-func refresh(oldFeeds: Observable<Feed>) -> Disposable {
-    return oldFeeds
-        .subscribe(onNext: {n in
-            self.rssService.refresh(n)
-        }, onCompleted: {c in
-            print("Feeds are refreshed!")
-        })
-}
+    func refresh(oldFeeds: Observable<Feed>) -> Disposable {
+        return oldFeeds
+            .subscribe(onNext: {n in
+                self.rssService.refresh(n)
+            }, onCompleted: {c in
+                print("Feeds are refreshed!")
+            })
+    }
 }

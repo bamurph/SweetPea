@@ -28,7 +28,6 @@ class EpisodeSpec: QuickSpec {
         describe("creating an episode from an rss episode item") {
             it("returns a valid episode") {
                 let enc = Enclosure(from: feedItems?.first)
-                dump(enc)
                 expect(enc).toNot(beNil())
 
             }

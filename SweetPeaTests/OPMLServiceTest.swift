@@ -43,16 +43,13 @@ class OPMLServiceTest: QuickSpec {
                 context("when the urls are local") {
                     it("returns valid urls") {
                         let urls = items.map { URL(string: $0.xmlURL!) }
-
                         expect(urls).toNot(beNil())
-                        print(urls)
                     }
                 }
 
                 context("when an rss url is local") {
                     it("returns a complete url") {
                         expect(rssUrls).toNot(beNil())
-                        print(rssUrls)
                     }
                 }
             }
