@@ -42,7 +42,7 @@ extension FileWriting {
                 .subscribe(onNext: { n in
                     do {
                         try n.data.write(to: n.url, options: .atomic)
-                        observer.onNext((path: n.url.absoluteString, data: n.data))
+                        observer.onNext((path: n.url.lastPathComponent, data: n.data))
                     } catch let error {
                         observer.onError(error)
                     }

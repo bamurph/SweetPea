@@ -10,7 +10,8 @@ import UIKit
 
 class RootTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var feedTitle: UILabel!
+
+    @IBOutlet weak var episodeImage: UIImageView!
     @IBOutlet weak var episodeTitle: UILabel!
     @IBOutlet weak var episodeDate: UILabel!
 

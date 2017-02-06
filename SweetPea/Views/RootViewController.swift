@@ -44,36 +44,28 @@ class RootViewController: UIViewController, UITableViewDelegate {
                 self.coordinatorDelegate.showSubscribe()
             })
 
-        let sortedEpisodes = viewModel.episodes
-            .scan([Episode]()) {eps, e in
-                return eps + [e]
-            }
-            .map {
-                $0.sorted {
-                    switch ($0.pubDate, $1.pubDate) {
-                    case let (.some(val1), .some(val2)): return val1 > val2
-                    default: return false
-                    }
-                }
-        }
+        let sortedEpisodes = viewModel.sortedWithImages()
+
+        _ = sortedEpisodes.subscribe(onNext: {n in
+            n.forEach { print($0.0.title) }
+        })
+
+
 
         _ = sortedEpisodes
-            .bindTo(episodeList.rx.items(cellIdentifier: cellID, cellType: RootTableViewCell.self)) { (row, element, cell) in
-                cell.feedTitle.text = element.feed.first?.title ?? "--"
-                cell.episodeTitle.text = element.title
-                cell.episodeDate.text = element.pubDate?.short() ?? "--"
-
+            .bindTo(episodeList.rx.items(cellIdentifier: cellID,
+                cellType: RootTableViewCell.self)) { (row, element, cell) in
+                cell.episodeImage.image = element.1
+                cell.episodeTitle.text = element.0.title
+                cell.episodeDate.text = element.0.pubDate?.short() ?? "--"
         }
 
-        let itemSelected = episodeList.rx.itemSelected
-
-        _ = Observable
-            .combineLatest(sortedEpisodes, itemSelected) { (eps, i) -> Episode in
-                return eps[i.item]
-            }
+        _ = episodeList.rx.itemSelected
             .subscribe(onNext: {n in
-                print(n.title)
+                print("Item #\(n.item) selected")
             })
+
+
         
 
 
