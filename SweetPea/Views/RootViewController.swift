@@ -49,7 +49,7 @@ class RootViewController: UIViewController, UITableViewDelegate {
                 self.coordinatorDelegate.showSubscribe()
             })
 
-        let sortedEpisodes = viewModel.sortedWithImages()
+        let sortedEpisodes = viewModel.sortedWithImages().shareReplay(1)
 
 
 
@@ -61,17 +61,26 @@ class RootViewController: UIViewController, UITableViewDelegate {
                 cell.episodeImage.image = element.1
                 cell.episodeTitle.text = element.0.title
                 cell.episodeDate.text = element.0.pubDate?.short() ?? "--"
+
         }
 
-        _ = episodeList.rx.itemSelected
+        func getItem<T>(in observableArray: Observable<[T]>, atIndex: IndexPath) {
+            _ = observableArray.map { $0[atIndex.item] }
+                .subscribe(onNext: { n in
+                    guard
+                        let (episode, art) = n as? (Episode, UIImage?),
+                        let feed = episode.feed.first,
+                        art != nil
+                        else { return }
+                    self.coordinatorDelegate.showEpisodeView(episode: episode, feed: feed, art: art!)
+                })
+        }
+
+         _ = episodeList.rx.itemSelected
             .subscribe(onNext: {n in
-                print("Item #\(n.item) selected")
+                getItem(in: sortedEpisodes, atIndex: n)
+
             })
-
-
-        
-
-
 
     }
     

@@ -15,7 +15,6 @@
                 <outlet property="art" destination="XmO-1H-PND" id="mAK-Vj-Oy6"/>
                 <outlet property="episodeDescription" destination="Ti2-JP-eT0" id="Vqg-XI-duW"/>
                 <outlet property="episodeTitle" destination="pdQ-Jj-ydv" id="6c5-fm-cu2"/>
-                <outlet property="feedTitle" destination="G4v-TU-3e7" id="uOB-wJ-Z5X"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -24,15 +23,8 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HXD-DJ-KTz">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                    <items>
-                        <navigationItem title="Title" id="G4v-TU-3e7"/>
-                    </items>
-                </navigationBar>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XmO-1H-PND">
-                    <rect key="frame" x="-1" y="44" width="376" height="376"/>
+                    <rect key="frame" x="-1" y="0.0" width="376" height="376"/>
                     <constraints>
                         <constraint firstAttribute="width" secondItem="XmO-1H-PND" secondAttribute="height" multiplier="1:1" id="nNr-fM-yXY"/>
                     </constraints>
@@ -46,7 +38,7 @@
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                 </textView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Episode Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pdQ-Jj-ydv">
-                    <rect key="frame" x="16" y="428" width="343" height="21.5"/>
+                    <rect key="frame" x="16" y="384" width="343" height="21.5"/>
                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
@@ -59,7 +51,7 @@
                 <constraint firstItem="XmO-1H-PND" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="icC-Kb-asR"/>
                 <constraint firstItem="pdQ-Jj-ydv" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="kWT-Ii-y0c"/>
                 <constraint firstItem="pdQ-Jj-ydv" firstAttribute="top" secondItem="XmO-1H-PND" secondAttribute="bottom" constant="8" id="m2R-2h-VwS"/>
-                <constraint firstItem="XmO-1H-PND" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="44" id="pYX-va-rmC"/>
+                <constraint firstItem="XmO-1H-PND" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="pYX-va-rmC"/>
             </constraints>
             <point key="canvasLocation" x="33.5" y="54.5"/>
         </view>

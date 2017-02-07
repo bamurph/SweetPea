@@ -37,8 +37,11 @@ class EpisodeViewController: UIViewController {
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        edgesForExtendedLayout = .all
+        extendedLayoutIncludesOpaqueBars = true
+        _ = viewModel.art.subscribe(onNext: {n in
+            self.art.image = n
+        })
     }
 
     override func didReceiveMemoryWarning() {
