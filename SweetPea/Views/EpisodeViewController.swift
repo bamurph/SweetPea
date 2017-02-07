@@ -18,7 +18,6 @@ class EpisodeViewController: UIViewController {
     var viewModel: EpisodeViewModel
 
     @IBOutlet weak var feedTitle: UINavigationItem!
-
     @IBOutlet weak var art: UIImageView!
     @IBOutlet weak var episodeDescription: UITextView!
     @IBOutlet weak var episodeTitle: UILabel!
@@ -27,7 +26,7 @@ class EpisodeViewController: UIViewController {
     init(episode: Episode, feed: Feed, art: UIImage) {
         self.viewModel = EpisodeViewModel(episode: episode, feed: feed, art: art)
         super.init(nibName: nil, bundle: nil)
-
+        
     }
 
     required init?(coder aDecoder: NSCoder) {

@@ -18,8 +18,8 @@ class RootViewController: UIViewController, UITableViewDelegate {
     let disposeBag = DisposeBag()
     var coordinatorDelegate: AppCoordinator!
     let viewModel = RootViewModel()
+    let subscribeButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: nil)
 
-    @IBOutlet weak var subscribeButton: UIBarButtonItem!
     @IBOutlet weak var episodeList: UITableView!
 
 
@@ -27,6 +27,7 @@ class RootViewController: UIViewController, UITableViewDelegate {
 
     init() {
         super.init(nibName: nil, bundle: nil)
+
     }
 
     required init?(coder aDecoder: NSCoder) {
@@ -39,6 +40,8 @@ class RootViewController: UIViewController, UITableViewDelegate {
         let cellID = "Cell"
         let nib = UINib(nibName: "RootTableViewCell", bundle: nil)
         episodeList.register(nib, forCellReuseIdentifier: cellID)
+        coordinatorDelegate.navigationController?.navigationBar.topItem?.rightBarButtonItem = subscribeButton
+
        
         //_ = self.viewModel.refresh(oldFeeds: self.viewModel.feeds)
 
