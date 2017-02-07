@@ -57,16 +57,3 @@ extension AppCoordinator: SubscribeCoordinatorDelegate {
     }
 }
 
-extension AppCoordinator: DumbViewCoordinatorDelegate {
-    func showDumbView() {
-        let dumbViewCoordinator = DumbViewCoordinator(window: window)
-        childCoordinators.add(dumbViewCoordinator)
-        dumbViewCoordinator.delegate = self
-        dumbViewCoordinator.start()
-    }
-
-    func dumbViewDidComplete(dumbViewCoordinator: DumbViewCoordinator) {
-        childCoordinators.removeObject(identicalTo: dumbViewCoordinator)
-        window.rootViewController = rootViewController
-    }
-}
