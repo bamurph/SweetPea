@@ -13,11 +13,12 @@ import FeedKit
 
 
 class SubscribeViewController: UIViewController {
+
+    // MARK: - Dependencies
     let disposeBag = DisposeBag()
     let viewModel = SubscribeViewModel()
 
     @IBOutlet weak var podcastUrl: UITextField!
-
     @IBOutlet weak var feedTitle: UILabel!
     @IBOutlet weak var feedDescription: UITextView!
     @IBOutlet weak var subscribeButton: UIButton!

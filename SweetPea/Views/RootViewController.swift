@@ -14,12 +14,16 @@ import RxSwift
 
 class RootViewController: UIViewController, UITableViewDelegate {
 
-    @IBOutlet weak var subscribeButton: UIButton!
+    // MARK: - Dependencies
+    let disposeBag = DisposeBag()
+    var coordinatorDelegate: AppCoordinator!
+    let viewModel = RootViewModel()
+
+    @IBOutlet weak var subscribeButton: UIBarButtonItem!
     @IBOutlet weak var episodeList: UITableView!
 
 
-    var coordinatorDelegate: AppCoordinator!
-    let viewModel = RootViewModel()
+
 
     init() {
         super.init(nibName: nil, bundle: nil)

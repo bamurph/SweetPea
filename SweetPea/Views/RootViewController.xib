@@ -12,7 +12,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RootViewController" customModule="SweetPea" customModuleProvider="target">
             <connections>
                 <outlet property="episodeList" destination="DNJ-vV-uBA" id="fru-Dv-Yb6"/>
-                <outlet property="subscribeButton" destination="oHD-52-QQT" id="nys-uS-tEv"/>
+                <outlet property="subscribeButton" destination="5pU-ri-tgP" id="U75-iw-7Zi"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -21,27 +21,32 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oHD-52-QQT">
-                    <rect key="frame" x="329" y="20" width="30" height="41"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                    <state key="normal" title="+"/>
-                </button>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="100" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="DNJ-vV-uBA">
                     <rect key="frame" x="0.0" y="73" width="375" height="594"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </tableView>
+                <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Py-jj-vKy">
+                    <rect key="frame" x="0.0" y="29" width="375" height="44"/>
+                    <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                    <items>
+                        <navigationItem id="CoH-JC-yck">
+                            <barButtonItem key="rightBarButtonItem" title="+" systemItem="add" id="5pU-ri-tgP"/>
+                        </navigationItem>
+                    </items>
+                </navigationBar>
             </subviews>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" red="0.97255921363830566" green="0.97254097461700439" blue="0.97255337238311768" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
             <gestureRecognizers/>
             <constraints>
-                <constraint firstAttribute="trailing" secondItem="oHD-52-QQT" secondAttribute="trailing" constant="16" id="4NJ-hj-pyB"/>
                 <constraint firstAttribute="bottom" secondItem="DNJ-vV-uBA" secondAttribute="bottom" id="FIe-S3-xCl"/>
                 <constraint firstAttribute="trailing" secondItem="DNJ-vV-uBA" secondAttribute="trailing" id="Zcg-Mg-Bxr"/>
                 <constraint firstItem="DNJ-vV-uBA" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="73" id="gba-rq-m21"/>
+                <constraint firstItem="7Py-jj-vKy" firstAttribute="trailing" secondItem="DNJ-vV-uBA" secondAttribute="trailing" id="k6D-8A-scN"/>
                 <constraint firstItem="DNJ-vV-uBA" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="kcn-uT-UBa"/>
-                <constraint firstItem="oHD-52-QQT" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="nWX-D3-Ex0"/>
+                <constraint firstItem="7Py-jj-vKy" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="29" id="sKp-D1-yaQ"/>
+                <constraint firstItem="7Py-jj-vKy" firstAttribute="leading" secondItem="DNJ-vV-uBA" secondAttribute="leading" id="w2B-Ek-frv"/>
             </constraints>
-            <point key="canvasLocation" x="34.5" y="54.5"/>
+            <point key="canvasLocation" x="58" y="-2"/>
         </view>
     </objects>
 </document>

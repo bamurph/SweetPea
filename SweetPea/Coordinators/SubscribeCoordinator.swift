@@ -9,21 +9,25 @@
 import UIKit
 
 protocol SubscribeCoordinatorDelegate: class {
+    func showSubscribe()
     func subscribeCoordinatorDidFinish(subscribeCoordinator: SubscribeCoordinator)
 }
 
 class SubscribeCoordinator: Coordinator {
+    weak var navigationController: UINavigationController?
     let window: UIWindow
     weak var delegate: SubscribeCoordinatorDelegate?
+
     var subscribeViewController = SubscribeViewController(nibName: nil, bundle: nil)
 
-    init(window: UIWindow) {
+    init(navigationController: UINavigationController?, window: UIWindow) {
         self.window = window
+        self.navigationController = navigationController
     }
 
     func start() {
         subscribeViewController.viewModel.coordinatorDelegate = self
-        window.rootViewController = subscribeViewController
+        navigationController?.pushViewController(self.subscribeViewController, animated: true)
     }
 }
 

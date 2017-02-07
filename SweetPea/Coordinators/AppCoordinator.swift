@@ -10,13 +10,17 @@ import UIKit
 
 class AppCoordinator: Coordinator {
     let window: UIWindow
+    weak var navigationController: UINavigationController?
     let rootViewController = RootViewController()
     let childCoordinators = NSMutableArray()
 
+
     init(window: UIWindow) {
         self.window = window
-        rootViewController.coordinatorDelegate = self
-        window.rootViewController = rootViewController
+        self.navigationController = UINavigationController(rootViewController: rootViewController)
+        self.window.rootViewController = self.navigationController
+        self.window.makeKeyAndVisible()
+        self.rootViewController.coordinatorDelegate = self
     }
 
     func start() {
@@ -24,9 +28,24 @@ class AppCoordinator: Coordinator {
     }
 }
 
+extension AppCoordinator: EpisodeCoordinatorDelegate {
+
+    func showEpisodeView(episode: Episode, feed: Feed, art: UIImage) {
+        let episodeCoordinator = EpisodeCoordinator(navigationController: self.navigationController, window: window, episode: episode, feed: feed, art: art)
+        childCoordinators.add(episodeCoordinator)
+        episodeCoordinator.delegate = self
+        episodeCoordinator.start()
+    }
+
+    func handleBackButton() {
+        //
+    }
+
+}
+
 extension AppCoordinator: SubscribeCoordinatorDelegate {
     func showSubscribe() {
-        let subscribeCoordinator = SubscribeCoordinator(window: window)
+        let subscribeCoordinator = SubscribeCoordinator(navigationController: self.navigationController, window: window)
         childCoordinators.add(subscribeCoordinator)
         subscribeCoordinator.delegate = self
         subscribeCoordinator.start()
