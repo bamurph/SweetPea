@@ -22,9 +22,6 @@ class RootViewController: UIViewController, UITableViewDelegate {
 
     @IBOutlet weak var episodeList: UITableView!
 
-
-
-
     init() {
         super.init(nibName: nil, bundle: nil)
 
@@ -41,6 +38,7 @@ class RootViewController: UIViewController, UITableViewDelegate {
         let nib = UINib(nibName: "RootTableViewCell", bundle: nil)
         episodeList.register(nib, forCellReuseIdentifier: cellID)
         coordinatorDelegate.navigationController?.navigationBar.topItem?.rightBarButtonItem = subscribeButton
+
 
        
         //_ = self.viewModel.refresh(oldFeeds: self.viewModel.feeds)

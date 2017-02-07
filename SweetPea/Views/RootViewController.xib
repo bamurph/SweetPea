@@ -21,7 +21,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="100" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="DNJ-vV-uBA">
-                    <rect key="frame" x="0.0" y="73" width="375" height="594"/>
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </tableView>
             </subviews>
@@ -30,9 +30,10 @@
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="DNJ-vV-uBA" secondAttribute="bottom" id="FIe-S3-xCl"/>
                 <constraint firstAttribute="trailing" secondItem="DNJ-vV-uBA" secondAttribute="trailing" id="Zcg-Mg-Bxr"/>
-                <constraint firstItem="DNJ-vV-uBA" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="73" id="gba-rq-m21"/>
+                <constraint firstItem="DNJ-vV-uBA" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="gba-rq-m21"/>
                 <constraint firstItem="DNJ-vV-uBA" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="kcn-uT-UBa"/>
             </constraints>
+            <nil key="simulatedTopBarMetrics"/>
             <point key="canvasLocation" x="58" y="-2"/>
         </view>
     </objects>
