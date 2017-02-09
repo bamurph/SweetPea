@@ -8,11 +8,12 @@
 
 import UIKit
 
-class AppCoordinator: Coordinator {
+class AppCoordinator: NavigationCoordinator {
     let window: UIWindow
     weak var navigationController: UINavigationController?
     let rootViewController = RootViewController()
     let childCoordinators = NSMutableArray()
+
 
 
     init(window: UIWindow) {
@@ -37,8 +38,10 @@ extension AppCoordinator: EpisodeCoordinatorDelegate {
         episodeCoordinator.start()
     }
 
-    func handleBackButton() {
-        //
+    func episodeCoordinatorDidFinish(episodeCoordinator: EpisodeCoordinator) {
+        navigationController?.popViewController(animated: true)
+        childCoordinators.removeObject(identicalTo: episodeCoordinator)
+        window.rootViewController = rootViewController
     }
 
 }

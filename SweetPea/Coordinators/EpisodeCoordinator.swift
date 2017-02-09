@@ -10,7 +10,7 @@ import UIKit
 
 protocol EpisodeCoordinatorDelegate: class {
     func showEpisodeView(episode: Episode, feed: Feed, art: UIImage)
-    func handleBackButton()
+    func episodeCoordinatorDidFinish(episodeCoordinator: EpisodeCoordinator)
 }
 
 class EpisodeCoordinator: Coordinator {

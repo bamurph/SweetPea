@@ -10,5 +10,9 @@ import UIKit
 
 protocol Coordinator: class {
     func start()
+}
+
+protocol NavigationCoordinator: Coordinator {
     weak var navigationController: UINavigationController? { get set }
+    var childCoordinators: NSMutableArray { get }
 }

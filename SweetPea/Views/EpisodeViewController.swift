@@ -15,6 +15,7 @@ class EpisodeViewController: UIViewController {
 
     // MARK: - Dependencies
     let disposeBag = DisposeBag()
+    var coordinatorDelegate: EpisodeCoordinator!
     var viewModel: EpisodeViewModel
 
     @IBOutlet weak var feedTitle: UINavigationItem!
@@ -37,6 +38,9 @@ class EpisodeViewController: UIViewController {
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        coordinatorDelegate.navigationController?.navigationItem.backBarButtonItem?.isEnabled = false
+
+
         edgesForExtendedLayout = .all
         extendedLayoutIncludesOpaqueBars = true
         _ = viewModel.art.subscribe(onNext: {n in
