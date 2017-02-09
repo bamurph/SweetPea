@@ -15,7 +15,7 @@ class EpisodeViewController: UIViewController {
 
     // MARK: - Dependencies
     let disposeBag = DisposeBag()
-    var coordinatorDelegate: EpisodeCoordinator!
+    var viewCoordinatorDelegate: EpisodeViewCoordinatorDelegate!
     var viewModel: EpisodeViewModel
 
     @IBOutlet weak var feedTitle: UINavigationItem!
@@ -24,8 +24,9 @@ class EpisodeViewController: UIViewController {
     @IBOutlet weak var episodeTitle: UILabel!
 
     // MARK: - Initialization
-    init(episode: Episode, feed: Feed, art: UIImage) {
+    init(episode: Episode, feed: Feed, art: UIImage, delegate: EpisodeViewCoordinatorDelegate?) {
         self.viewModel = EpisodeViewModel(episode: episode, feed: feed, art: art)
+        self.viewCoordinatorDelegate = delegate
         super.init(nibName: nil, bundle: nil)
         
     }
@@ -38,7 +39,7 @@ class EpisodeViewController: UIViewController {
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        coordinatorDelegate.navigationController?.navigationItem.backBarButtonItem?.isEnabled = false
+        viewCoordinatorDelegate.navigationController?.navigationItem.backBarButtonItem?.isEnabled = false
 
 
         edgesForExtendedLayout = .all

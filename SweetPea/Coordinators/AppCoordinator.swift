@@ -30,9 +30,8 @@ class AppCoordinator: NavigationCoordinator {
 extension AppCoordinator: EpisodeCoordinatorDelegate {
 
     func showEpisodeView(episode: Episode, feed: Feed, art: UIImage) {
-        let episodeCoordinator = EpisodeCoordinator(navigationController: self.navigationController, window: window, episode: episode, feed: feed, art: art)
+        let episodeCoordinator = EpisodeCoordinator(navigationController: self.navigationController, window: window, episode: episode, feed: feed, art: art, delegate: self)
         childCoordinators.add(episodeCoordinator)
-        episodeCoordinator.delegate = self
         episodeCoordinator.start()
     }
 
