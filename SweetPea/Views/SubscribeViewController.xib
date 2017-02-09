@@ -26,7 +26,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="HMM-JD-nd5">
-                    <rect key="frame" x="16" y="28" width="343" height="585"/>
+                    <rect key="frame" x="16" y="64" width="343" height="585"/>
                     <subviews>
                         <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter URL" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8O9-9L-cQV">
                             <rect key="frame" x="0.0" y="0.0" width="343" height="32"/>
@@ -77,9 +77,9 @@
             <gestureRecognizers/>
             <constraints>
                 <constraint firstItem="owH-GD-AqV" firstAttribute="leading" secondItem="oxs-Rb-Hj9" secondAttribute="leadingMargin" constant="8" id="Pmf-hO-Uz0"/>
-                <constraint firstItem="HMM-JD-nd5" firstAttribute="top" secondItem="oxs-Rb-Hj9" secondAttribute="top" constant="28" id="xJx-KW-mhY"/>
+                <constraint firstItem="HMM-JD-nd5" firstAttribute="top" secondItem="oxs-Rb-Hj9" secondAttribute="top" constant="64" id="xJx-KW-mhY"/>
             </constraints>
-            <nil key="simulatedTopBarMetrics"/>
+            <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
         </view>
     </objects>
 </document>

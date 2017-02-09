@@ -14,8 +14,6 @@ class AppCoordinator: NavigationCoordinator {
     let rootViewController = RootViewController()
     let childCoordinators = NSMutableArray()
 
-
-
     init(window: UIWindow) {
         self.window = window
         self.navigationController = UINavigationController(rootViewController: rootViewController)
@@ -39,7 +37,7 @@ extension AppCoordinator: EpisodeCoordinatorDelegate {
     }
 
     func episodeCoordinatorDidFinish(episodeCoordinator: EpisodeCoordinator) {
-        navigationController?.popViewController(animated: true)
+        _ = navigationController?.popViewController(animated: true)
         childCoordinators.removeObject(identicalTo: episodeCoordinator)
         window.rootViewController = rootViewController
     }

@@ -62,7 +62,6 @@
 		B5E7DBFA1E4A343800628A41 /* EpisodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5E7DBF81E4A343800628A41 /* EpisodeViewController.xib */; };
 		B5E7DBFC1E4A470B00628A41 /* EpisodeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E7DBFB1E4A470B00628A41 /* EpisodeCoordinator.swift */; };
 		B5F0D23F1DD506ED00402FEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F0D23E1DD506ED00402FEC /* AppDelegate.swift */; };
-		B5F0D2441DD506ED00402FEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5F0D2421DD506ED00402FEC /* Main.storyboard */; };
 		B5F0D2471DD506ED00402FEC /* PeaPod.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B5F0D2451DD506ED00402FEC /* PeaPod.xcdatamodeld */; };
 		B5F0D2491DD506ED00402FEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5F0D2481DD506ED00402FEC /* Assets.xcassets */; };
 		B5F0D24C1DD506ED00402FEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5F0D24A1DD506ED00402FEC /* LaunchScreen.storyboard */; };
@@ -159,8 +158,6 @@
 		B5E7DBFB1E4A470B00628A41 /* EpisodeCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EpisodeCoordinator.swift; sourceTree = "<group>"; };
 		B5F0D23B1DD506ED00402FEC /* SweetPea.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SweetPea.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5F0D23E1DD506ED00402FEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B5F0D2401DD506ED00402FEC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B5F0D2431DD506ED00402FEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B5F0D2461DD506ED00402FEC /* PeaPod.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PeaPod.xcdatamodel; sourceTree = "<group>"; };
 		B5F0D2481DD506ED00402FEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B5F0D24B1DD506ED00402FEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -345,9 +342,7 @@
 				B5F0D2481DD506ED00402FEC /* Assets.xcassets */,
 				B5F0D24D1DD506ED00402FEC /* Info.plist */,
 				B5F0D24A1DD506ED00402FEC /* LaunchScreen.storyboard */,
-				B5F0D2421DD506ED00402FEC /* Main.storyboard */,
 				B5F0D2451DD506ED00402FEC /* PeaPod.xcdatamodeld */,
-				B5F0D2401DD506ED00402FEC /* ViewController.swift */,
 				B5D793CC1E16D3F800331A20 /* main.swift */,
 			);
 			path = SweetPea;
@@ -504,7 +499,6 @@
 				B565D3921E2811E800D1C713 /* RootViewController.xib in Resources */,
 				B565D3941E2819F800D1C713 /* SubscribeViewController.xib in Resources */,
 				B565D39E1E2D4FA200D1C713 /* RootTableViewCell.xib in Resources */,
-				B5F0D2441DD506ED00402FEC /* Main.storyboard in Resources */,
 				B58A64061E06EA66001716E7 /* tests.opml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -720,15 +714,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		B5F0D2421DD506ED00402FEC /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B5F0D2431DD506ED00402FEC /* Base */,
-			);
-			name = Main.storyboard;
-			path = .;
-			sourceTree = "<group>";
-		};
 		B5F0D24A1DD506ED00402FEC /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

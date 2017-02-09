@@ -28,6 +28,7 @@ class SubscribeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
         feedTitle.text = ""
         feedDescription.text = ""
 

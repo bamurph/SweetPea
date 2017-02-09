@@ -24,6 +24,9 @@ class RootViewModel: FileLocating, FileReading {
         feeds = Observable.from(store().feeds |> Array.init)
         episodes = Observable.from(store().episodes |> Array.init)
 
+        _ = refresh(oldFeeds: feeds)
+
+
     }
 
     func feedsWithImages() -> Observable<(Feed, UIImage?)> {
