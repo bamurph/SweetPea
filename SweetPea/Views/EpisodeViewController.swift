@@ -18,10 +18,11 @@ class EpisodeViewController: UIViewController {
     var viewCoordinatorDelegate: EpisodeViewCoordinatorDelegate!
     var viewModel: EpisodeViewModel
 
-    @IBOutlet weak var feedTitle: UINavigationItem!
+    // MARK: - Outlets / Inputs
     @IBOutlet weak var art: UIImageView!
     @IBOutlet weak var episodeDescription: UITextView!
     @IBOutlet weak var episodeTitle: UILabel!
+    @IBOutlet weak var play: UIButton!
 
     // MARK: - Initialization
     init(episode: Episode, feed: Feed, art: UIImage, delegate: EpisodeViewCoordinatorDelegate?) {
@@ -47,6 +48,13 @@ class EpisodeViewController: UIViewController {
         _ = viewModel.art.subscribe(onNext: {n in
             self.art.image = n
         })
+
+        let play$ = play.rx.tap
+            .scan(false) { lastState, newValue in
+                return !lastState }
+        _ = play$.bindTo(play.rx.isSelected)
+        _ = play$.subscribe(onNext: {n in print(n) })
+
     }
 
     override func didReceiveMemoryWarning() {

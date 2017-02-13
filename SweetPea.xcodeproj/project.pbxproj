@@ -36,6 +36,8 @@
 		B565D39E1E2D4FA200D1C713 /* RootTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B565D39C1E2D4FA200D1C713 /* RootTableViewCell.xib */; };
 		B56ED7601E13077500482181 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56ED75F1E13077500482181 /* Result.swift */; };
 		B57BB6D51E0B1C8A0002E0CD /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57BB6D41E0B1C8A0002E0CD /* Store.swift */; };
+		B58054751E524A120064F3CD /* FontAwesome.otf in Resources */ = {isa = PBXBuildFile; fileRef = B58054741E524A030064F3CD /* FontAwesome.otf */; };
+		B58054761E524A190064F3CD /* FontAwesome.otf in Resources */ = {isa = PBXBuildFile; fileRef = B58054741E524A030064F3CD /* FontAwesome.otf */; };
 		B58A64061E06EA66001716E7 /* tests.opml in Resources */ = {isa = PBXBuildFile; fileRef = B58A64051E06EA66001716E7 /* tests.opml */; };
 		B5A1AC871DE4EFC90093E823 /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A1AC861DE4EFC90093E823 /* FeedViewModel.swift */; };
 		B5A1AC8E1DE640440093E823 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B537939D1DD9BF8C00D9C9AF /* Helpers.swift */; };
@@ -132,6 +134,7 @@
 		B56ED75F1E13077500482181 /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		B57BB6D41E0B1C8A0002E0CD /* Store.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 		B57BB6D71E0B1E330002E0CD /* StoreSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreSpec.swift; sourceTree = "<group>"; };
+		B58054741E524A030064F3CD /* FontAwesome.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = FontAwesome.otf; path = "../../../../Downloads/font-awesome-4.7.0/fonts/FontAwesome.otf"; sourceTree = "<group>"; };
 		B58A64021E06E89A001716E7 /* hh.rss */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = hh.rss; sourceTree = "<group>"; };
 		B58A64051E06EA66001716E7 /* tests.opml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = tests.opml; sourceTree = "<group>"; };
 		B58A640A1E06EFC9001716E7 /* OPMLServiceStub.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OPMLServiceStub.swift; sourceTree = "<group>"; };
@@ -376,6 +379,7 @@
 		B5FBBA461DF2099D00B7A71C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				B58054741E524A030064F3CD /* FontAwesome.otf */,
 				B58A64011E06E82F001716E7 /* RSS */,
 				B551BC4A1DF23B92001C76E3 /* UTR */,
 				B5B686C81DF76D3800B5673B /* overcast.opml */,
@@ -485,6 +489,7 @@
 				B5D793D41E16D64B00331A20 /* Under the Radar 1_ Adapting to the Market.mp3 in Resources */,
 				B5D793D51E16D64B00331A20 /* Under the Radar 55_ Black Friday Sale.mp3 in Resources */,
 				B5D793D31E16D64700331A20 /* tests.opml in Resources */,
+				B58054761E524A190064F3CD /* FontAwesome.otf in Resources */,
 				B5D793D61E16D64B00331A20 /* Under the Radar 56_ Surviving the Winter.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -499,6 +504,7 @@
 				B565D3921E2811E800D1C713 /* RootViewController.xib in Resources */,
 				B565D3941E2819F800D1C713 /* SubscribeViewController.xib in Resources */,
 				B565D39E1E2D4FA200D1C713 /* RootTableViewCell.xib in Resources */,
+				B58054751E524A120064F3CD /* FontAwesome.otf in Resources */,
 				B58A64061E06EA66001716E7 /* tests.opml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
