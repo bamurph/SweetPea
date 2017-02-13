@@ -26,6 +26,13 @@ protocol AudioPlaying {
     func audioPlayer(url: URL) -> Observable<AVPlayer>
 }
 
+extension AudioPlaying {
+    func audioPlayer(url: URL) -> Observable<AVPlayer> {
+        return AudioService().audioPlayer(url: url).shareReplay(1)
+    }
+
+}
+
 
 struct AudioService: AudioPlaying {
     func audioPlayer(url: URL) -> Observable<AVPlayer> {
