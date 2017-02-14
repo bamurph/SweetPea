@@ -52,7 +52,7 @@ class EpisodeViewController: UIViewController {
         let play$ = play.rx.tap
             .scan(false) { lastState, newValue in
                 return !lastState }
-        _ = ˚play$.bindTo(viewModel.playing)
+        _ = play$.bindTo(viewModel.playing)
         _ = play$.bindTo(play.rx.isSelected)
         _ = play$.subscribe(onNext: {n in print(n) })
 

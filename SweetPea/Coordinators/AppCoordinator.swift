@@ -46,14 +46,17 @@ extension AppCoordinator: EpisodeCoordinatorDelegate {
 extension AppCoordinator: SubscribeCoordinatorDelegate {
     func showSubscribe() {
         let subscribeCoordinator = SubscribeCoordinator(navigationController: self.navigationController, window: window)
-        childCoordinators.add(subscribeCoordinator)
         subscribeCoordinator.delegate = self
+        childCoordinators.add(subscribeCoordinator)
         subscribeCoordinator.start()
     }
 
     func subscribeCoordinatorDidFinish(subscribeCoordinator: SubscribeCoordinator) {
+        _ = navigationController?.popViewController(animated: true)
         childCoordinators.removeObject(identicalTo: subscribeCoordinator)
-        window.rootViewController = rootViewController
+        //window.rootViewController = rootViewController
+        rootViewController.episodeList.reloadData()
+
     }
 }
 

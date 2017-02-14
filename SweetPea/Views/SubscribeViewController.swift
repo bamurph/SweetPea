@@ -16,6 +16,7 @@ class SubscribeViewController: UIViewController {
 
     // MARK: - Dependencies
     let disposeBag = DisposeBag()
+    var viewCoordinatorDelegate: SubscribeViewCoordinatorDelegate!
     let viewModel = SubscribeViewModel()
 
     @IBOutlet weak var podcastUrl: UITextField!
@@ -28,6 +29,8 @@ class SubscribeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        viewCoordinatorDelegate.navigationController?.navigationItem.backBarButtonItem?.isEnabled = false
 
         feedTitle.text = ""
         feedDescription.text = ""

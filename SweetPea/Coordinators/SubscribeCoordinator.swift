@@ -27,6 +27,7 @@ class SubscribeCoordinator: Coordinator {
 
     func start() {
         subscribeViewController.viewModel.coordinatorDelegate = self
+        subscribeViewController.viewCoordinatorDelegate = self
         navigationController?.pushViewController(self.subscribeViewController, animated: true)
     }
 }
@@ -36,4 +37,10 @@ extension SubscribeCoordinator: SubscribeViewModelDelegate {
         self.delegate?.subscribeCoordinatorDidFinish(subscribeCoordinator: self)
     }
 }
+
+protocol SubscribeViewCoordinatorDelegate {
+    weak var navigationController: UINavigationController? { get set }
+}
+
+extension SubscribeCoordinator: SubscribeViewCoordinatorDelegate { }
 

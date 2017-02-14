@@ -112,7 +112,7 @@ extension Realm {
                 feed.imageLocalUrl = imageLocalUrl
                 feed.items = items
                 feed.categories = feed.separated(categories)
-
+                add(feed, update: true)
             }
         } catch {
             print(StoreError.addFeedFailed(error))

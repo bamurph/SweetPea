@@ -66,12 +66,15 @@ class SubscribeViewModel {
             .map { $0?.description ?? ""}
 
         addSubscription.asObservable()
+            .debug()
             .withLatestFrom(feed)
             .map { ($0.0, try? $0.1.unwrap()) }
             .filter { $0.1 != nil }
             .map { ($0.0, $0.1!) }
             .subscribe(onNext: {n in
-                store().addFeed(Feed(from: n.1))
+                let feed = Feed(from: n.1)
+                store().addFeed(feed)
+                store().addFeedImage(feed)
                 self.coordinatorDelegate?.didAddSubscription(viewModel: self)
             }).addDisposableTo(disposeBag)
 
