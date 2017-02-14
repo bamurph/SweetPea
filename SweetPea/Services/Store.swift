@@ -256,5 +256,9 @@ extension Realm {
 
 
 func store() -> Realm {
+    if let _ = NSClassFromString("QuickSpec") {
+        return try! Realm(configuration: Realm.Configuration(fileURL: nil, inMemoryIdentifier: "testing", syncConfiguration: nil, encryptionKey: nil, readOnly: false, schemaVersion: 0, migrationBlock: nil, deleteRealmIfMigrationNeeded: false, objectTypes: nil))
+    }
+
     return try! Realm(fileURL: URL(string: "/Users/ben/Desktop/TestRealm.realm")!)
 }

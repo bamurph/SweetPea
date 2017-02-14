@@ -16,6 +16,8 @@ import RxSwift
 class StoreSpec: QuickSpec {
 
     override func spec() {
+        let s = store()
+        s
         try! store().write {
             store().deleteAll()
         }
@@ -49,7 +51,6 @@ class StoreSpec: QuickSpec {
         describe("adding a feed from an rss file") {
             it("saves a nonsense feed with no items to the store") {
 
-                store().addFeed(title: <#T##String#>, link: <#T##String#>, feedDescription: <#T##String?#>, language: <#T##String?#>, copyright: <#T##String?#>, managingEditor: <#T##String?#>, webMaster: <#T##String?#>, pubDate: <#T##Date?#>, lastBuildDate: <#T##Date?#>, imageUrl: <#T##String?#>, imageLocalUrl: <#T##String?#>, categories: <#T##String?#>, items: <#T##List<Episode>#>)
                 store().addFeed(title: "nonsense show", link: "http://nonsenseshow.com/rss", feedDescription: "a really dumb show", language: nil, copyright: nil, managingEditor: nil, webMaster: nil, pubDate: nil, lastBuildDate: Date.init(), imageUrl: nil, imageLocalUrl: nil, categories: nil)
                 let feed = store().feeds.first(where: { (feed) -> Bool in
                     feed.title == "nonsense show"
