@@ -23,6 +23,7 @@ class EpisodeViewController: UIViewController {
     @IBOutlet weak var episodeDescription: UITextView!
     @IBOutlet weak var episodeTitle: UILabel!
     @IBOutlet weak var play: UIButton!
+    @IBOutlet weak var fastForward: UIButton!
 
     // MARK: - Initialization
     init(episode: Episode, feed: Feed, art: UIImage, delegate: EpisodeViewCoordinatorDelegate?) {
@@ -55,6 +56,13 @@ class EpisodeViewController: UIViewController {
         _ = play$.bindTo(viewModel.playing)
         _ = play$.bindTo(play.rx.isSelected)
         _ = play$.subscribe(onNext: {n in print(n) })
+
+        let fastForward$ = fastForward.rx.tap
+        _ = fastForward$.bindTo(viewModel.fastForward)
+
+
+
+
 
 
     }

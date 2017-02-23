@@ -20,6 +20,8 @@ class RootViewModel: FileLocating, FileReading {
     let episodes: Observable<Episode>
     let feeds: Observable<Feed>
 
+
+
     init() {
         feeds = Observable.from(store().feeds |> Array.init)
         episodes = Observable.from(store().episodes |> Array.init)

@@ -19,6 +19,7 @@
                 <outlet property="art" destination="XmO-1H-PND" id="mAK-Vj-Oy6"/>
                 <outlet property="episodeDescription" destination="Ti2-JP-eT0" id="Vqg-XI-duW"/>
                 <outlet property="episodeTitle" destination="pdQ-Jj-ydv" id="6c5-fm-cu2"/>
+                <outlet property="fastForward" destination="JYG-zy-d9i" id="GDF-gc-UhC"/>
                 <outlet property="play" destination="eaY-uq-dFA" id="rFT-la-Rng"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -46,7 +47,7 @@
                     <constraints>
                         <constraint firstAttribute="height" constant="55" id="WSx-c3-tXx"/>
                     </constraints>
-                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                    <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna  ⟳. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                 </textView>
@@ -58,6 +59,13 @@
                     </state>
                     <state key="selected" title=""/>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JYG-zy-d9i">
+                    <rect key="frame" x="218" y="578" width="65" height="55"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                    <state key="normal" title="▶︎▶︎">
+                        <color key="titleColor" red="0.043137254899999998" green="0.37254901959999998" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
@@ -66,11 +74,13 @@
                 <constraint firstAttribute="trailing" secondItem="pdQ-Jj-ydv" secondAttribute="trailing" constant="16" id="OHL-LC-LTW"/>
                 <constraint firstItem="eaY-uq-dFA" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Pqt-x0-XqJ"/>
                 <constraint firstAttribute="trailing" secondItem="XmO-1H-PND" secondAttribute="trailing" id="Q8c-rw-YPg"/>
+                <constraint firstItem="JYG-zy-d9i" firstAttribute="centerY" secondItem="eaY-uq-dFA" secondAttribute="centerY" id="TAH-g4-PWg"/>
                 <constraint firstItem="Ti2-JP-eT0" firstAttribute="leading" secondItem="pdQ-Jj-ydv" secondAttribute="leading" id="WJn-6K-emD"/>
                 <constraint firstItem="XmO-1H-PND" firstAttribute="centerX" secondItem="pdQ-Jj-ydv" secondAttribute="centerX" id="bwe-TO-u0n"/>
                 <constraint firstItem="Ti2-JP-eT0" firstAttribute="trailing" secondItem="pdQ-Jj-ydv" secondAttribute="trailing" id="cAu-yA-nxr"/>
                 <constraint firstItem="XmO-1H-PND" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="d8k-uk-uiK"/>
                 <constraint firstItem="pdQ-Jj-ydv" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="kWT-Ii-y0c"/>
+                <constraint firstItem="JYG-zy-d9i" firstAttribute="leading" secondItem="eaY-uq-dFA" secondAttribute="trailing" constant="16" id="sA1-JN-DfY"/>
                 <constraint firstItem="Ti2-JP-eT0" firstAttribute="top" secondItem="pdQ-Jj-ydv" secondAttribute="bottom" constant="8" symbolic="YES" id="tmY-IR-Oce"/>
             </constraints>
             <point key="canvasLocation" x="33.5" y="54.5"/>

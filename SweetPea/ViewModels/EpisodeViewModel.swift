@@ -22,6 +22,7 @@ class EpisodeViewModel: AudioPlaying {
 
     // MARK: - Inputs
     public let playing = Variable<Bool>(false)
+    public let fastForward = Variable<Void>()
 
     init(episode: Episode, feed: Feed, art: UIImage) {
         self.episode = Observable.from([episode])
@@ -41,9 +42,24 @@ class EpisodeViewModel: AudioPlaying {
                 case false: avp.pause()
                 }
             })
+
+        let pp$ = Observable.combineLatest(player$, playing.asObservable()) {
+            return (player: $0, playing: $1) }
+
+        let fastForward$ = fastForward.asObservable().withLatestFrom(pp$)
+            .subscribe(onNext: { n in
+                n.player.pause()
+                let seekTime = CMTime(seconds: 15.00, preferredTimescale: 1)
+                let targetTime = seekTime + n.player.currentItem!.currentTime()                n.player.seek(to: targetTime)
+                if n.playing == true {
+                    n.player.play()
+                }
+            })
     }
-    
-    
 }
+
+
+
+
 
 
