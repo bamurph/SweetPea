@@ -61,13 +61,23 @@ class EpisodeViewController: UIViewController {
         let fastForward$ = fastForward.rx.tap
             .map { Jump.forward }
 
-
         let rewind$ = rewind.rx.tap
             .map { Jump.backward }
 
         _ = Observable.of(fastForward$, rewind$)
             .merge()
             .bindTo(viewModel.jump)
+
+
+        let touchDownFastForward$ = fastForward.rx.controlEvent(.touchDown)
+        let touchDownRewind$ = rewind.rx.controlEvent(.touchDown)
+
+        let touchUpFastForward$ = Observable.of(fastForward.rx.controlEvent(.touchUpInside), fastForward.rx.controlEvent(.touchUpOutside))
+        let touchUpRewind$ =
+            Observable.of(rewind.rx.controlEvent(.touchUpInside), rewind.rx.controlEvent(.touchUpOutside))
+
+
+        _ = Observable.combineLatest(touchDownFastForward$, touchDownRewind$) { return (ff: $0, rw: $1) }
 
 
 
