@@ -21,6 +21,7 @@
                 <outlet property="episodeTitle" destination="pdQ-Jj-ydv" id="6c5-fm-cu2"/>
                 <outlet property="fastForward" destination="JYG-zy-d9i" id="GDF-gc-UhC"/>
                 <outlet property="play" destination="eaY-uq-dFA" id="rFT-la-Rng"/>
+                <outlet property="rewind" destination="yoJ-lI-xbe" id="tcS-rP-3xD"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -59,18 +60,23 @@
                     </state>
                     <state key="selected" title=""/>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JYG-zy-d9i">
-                    <rect key="frame" x="218" y="578" width="65" height="55"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="36"/>
-                    <state key="normal" title="▶︎▶︎">
-                        <color key="titleColor" red="0.043137254899999998" green="0.37254901959999998" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
-                    </state>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JYG-zy-d9i">
+                    <rect key="frame" x="226" y="580" width="57" height="51"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                    <state key="normal" title="▶︎▶︎"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yoJ-lI-xbe">
+                    <rect key="frame" x="91" y="580" width="57" height="51"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                    <state key="normal" title="◀◀"/>
                 </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="eaY-uq-dFA" secondAttribute="bottom" constant="37" id="29i-aL-LdF"/>
                 <constraint firstItem="pdQ-Jj-ydv" firstAttribute="top" secondItem="XmO-1H-PND" secondAttribute="bottom" constant="16" id="3dz-bD-mxq"/>
+                <constraint firstItem="yoJ-lI-xbe" firstAttribute="centerY" secondItem="eaY-uq-dFA" secondAttribute="centerY" id="A86-fw-s8E"/>
+                <constraint firstItem="eaY-uq-dFA" firstAttribute="leading" secondItem="yoJ-lI-xbe" secondAttribute="trailing" constant="24" id="Mhm-Js-3aV"/>
                 <constraint firstAttribute="trailing" secondItem="pdQ-Jj-ydv" secondAttribute="trailing" constant="16" id="OHL-LC-LTW"/>
                 <constraint firstItem="eaY-uq-dFA" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Pqt-x0-XqJ"/>
                 <constraint firstAttribute="trailing" secondItem="XmO-1H-PND" secondAttribute="trailing" id="Q8c-rw-YPg"/>
@@ -80,7 +86,7 @@
                 <constraint firstItem="Ti2-JP-eT0" firstAttribute="trailing" secondItem="pdQ-Jj-ydv" secondAttribute="trailing" id="cAu-yA-nxr"/>
                 <constraint firstItem="XmO-1H-PND" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="d8k-uk-uiK"/>
                 <constraint firstItem="pdQ-Jj-ydv" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="kWT-Ii-y0c"/>
-                <constraint firstItem="JYG-zy-d9i" firstAttribute="leading" secondItem="eaY-uq-dFA" secondAttribute="trailing" constant="16" id="sA1-JN-DfY"/>
+                <constraint firstItem="JYG-zy-d9i" firstAttribute="leading" secondItem="eaY-uq-dFA" secondAttribute="trailing" constant="24" id="sA1-JN-DfY"/>
                 <constraint firstItem="Ti2-JP-eT0" firstAttribute="top" secondItem="pdQ-Jj-ydv" secondAttribute="bottom" constant="8" symbolic="YES" id="tmY-IR-Oce"/>
             </constraints>
             <point key="canvasLocation" x="33.5" y="54.5"/>

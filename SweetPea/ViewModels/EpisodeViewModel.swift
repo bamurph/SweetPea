@@ -10,6 +10,11 @@ import AVFoundation
 import RealmSwift
 import RxSwift
 
+enum Jump {
+    case forward
+    case backward
+}
+
 class EpisodeViewModel: AudioPlaying {
 
     // MARK: - Dependencies
@@ -19,10 +24,12 @@ class EpisodeViewModel: AudioPlaying {
     let episode: Observable<Episode>
     let feed: Observable<Feed>
     let art: Observable<UIImage>
+    let player = Variable<AVPlayer?>(nil)
+    let jumpTime = CMTime(seconds: 15.00, preferredTimescale: 1)
 
     // MARK: - Inputs
     public let playing = Variable<Bool>(false)
-    public let fastForward = Variable<Void>()
+    public let jump = Variable<Jump?>(nil)
 
     init(episode: Episode, feed: Feed, art: UIImage) {
         self.episode = Observable.from([episode])
@@ -33,27 +40,28 @@ class EpisodeViewModel: AudioPlaying {
             .map { $0.enclosure?.url }.filter { $0 != nil }
             .map { URL(string: $0!) }.filter { $0 != nil }
             .flatMap { self.audioPlayer(url: $0!) }
+            .bindTo(player)
 
-        let playPause$ = Observable.combineLatest(player$, playing.asObservable()) { return ($0, $1) }
+        let playPause$ = playing.asObservable()
             .subscribe(onNext: { n in
-                let (avp, play) = n
-                switch play {
-                case true: avp.play()
-                case false: avp.pause()
+                switch n {
+                case true: self.player.value?.play()
+                case false: self.player.value?.pause()
                 }
             })
 
-        let pp$ = Observable.combineLatest(player$, playing.asObservable()) {
-            return (player: $0, playing: $1) }
-
-        let fastForward$ = fastForward.asObservable().withLatestFrom(pp$)
+        let fastForward$ = jump.asObservable()
             .subscribe(onNext: { n in
-                n.player.pause()
-                let seekTime = CMTime(seconds: 15.00, preferredTimescale: 1)
-                let targetTime = seekTime + n.player.currentItem!.currentTime()                n.player.seek(to: targetTime)
-                if n.playing == true {
-                    n.player.play()
+                guard let item = self.player.value?.currentItem else { return }
+                let targetTime: CMTime
+                switch n {
+                case .some(.forward):
+                    targetTime = item.currentTime() + self.jumpTime
+                case .some(.backward):
+                    targetTime = item.currentTime() - self.jumpTime
+                case .none: return
                 }
+                item.seek(to: targetTime)
             })
     }
 }

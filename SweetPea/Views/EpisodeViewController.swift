@@ -24,6 +24,7 @@ class EpisodeViewController: UIViewController {
     @IBOutlet weak var episodeTitle: UILabel!
     @IBOutlet weak var play: UIButton!
     @IBOutlet weak var fastForward: UIButton!
+    @IBOutlet weak var rewind: UIButton!
 
     // MARK: - Initialization
     init(episode: Episode, feed: Feed, art: UIImage, delegate: EpisodeViewCoordinatorDelegate?) {
@@ -58,8 +59,15 @@ class EpisodeViewController: UIViewController {
         _ = play$.subscribe(onNext: {n in print(n) })
 
         let fastForward$ = fastForward.rx.tap
-        _ = fastForward$.bindTo(viewModel.fastForward)
+            .map { Jump.forward }
 
+
+        let rewind$ = rewind.rx.tap
+            .map { Jump.backward }
+
+        _ = Observable.of(fastForward$, rewind$)
+            .merge()
+            .bindTo(viewModel.jump)
 
 
 
