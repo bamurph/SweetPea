@@ -84,13 +84,24 @@ struct RSSService: RSSProtocol {
         let feed$ = Observable.from(feedRef)
             .observeOn(bgs)
             .map { store().resolve($0) }
-            .map { $0 }
+            .map { $0?.subscription.first?.xmlUrl }
+            .filter { $0 != nil }
+            .flatMap { self.performFetch($0!) }
             .subscribeOn(bgs)
+
+
         _ = feed$.subscribe(onNext: { n in
-            if let feed = n {
-                store().addFeed(feed)
+
+            switch n {
+            case .success(let v):
+                let feed = Feed(from: v)
+                store().refresh(feed)
                 store().addFeedImage(feed)
+                print(feed.imageLocalUrl)
+            case .failure(let e):
+                print(e)
             }
+
         })
 
     }

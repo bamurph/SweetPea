@@ -121,7 +121,7 @@ extension Realm {
     }
 
     func addFeedImage(_ feed: Feed) {
-
+        print("Adding feed image")
         let data$ = DownloadService().data(from: feed.imageUrl)
             .filter { _ in feed.imageUrl != nil }
             .map { (URL(string: feed.imageUrl!), $0 ) }
@@ -132,10 +132,14 @@ extension Realm {
         _ = write(data: data$)
             .subscribe(onNext: { n in
                 do {
+                    print(n)
+                    print("Writing feed image to disk")
                     try self.write {
                         feed.imageLocalUrl = n.path
+                        self.add(feed, update: true)    
                     }
                 } catch {
+                    print("Failed to write to disk")
                 }
             })
 
