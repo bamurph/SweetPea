@@ -26,6 +26,8 @@ class EpisodeViewController: UIViewController {
     @IBOutlet weak var fastForward: UIButton!
     @IBOutlet weak var rewind: UIButton!
 
+
+
     // MARK: - Initialization
     init(episode: Episode, feed: Feed, art: UIImage, delegate: EpisodeViewCoordinatorDelegate?) {
         self.viewModel = EpisodeViewModel(episode: episode, feed: feed, art: art)

@@ -6,6 +6,8 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -26,44 +28,44 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="HMM-JD-nd5">
-                    <rect key="frame" x="16" y="64" width="343" height="585"/>
+                    <rect key="frame" x="16" y="84" width="343" height="342.5"/>
                     <subviews>
                         <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter URL" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8O9-9L-cQV">
-                            <rect key="frame" x="0.0" y="0.0" width="343" height="32"/>
+                            <rect key="frame" x="0.0" y="0.0" width="343" height="36"/>
                             <constraints>
-                                <constraint firstAttribute="height" constant="32" id="U0n-o9-B2G"/>
+                                <constraint firstAttribute="height" constant="36" identifier="URL Input Height" id="9CP-lJ-Dgc"/>
                             </constraints>
                             <nil key="textColor"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="24"/>
                             <textInputTraits key="textInputTraits" keyboardType="URL" enablesReturnKeyAutomatically="YES"/>
                         </textField>
                         <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="7EI-uL-npn">
-                            <rect key="frame" x="0.0" y="43" width="343" height="31"/>
+                            <rect key="frame" x="0.0" y="47" width="343" height="34.5"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Feed Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="owH-GD-AqV">
-                                    <rect key="frame" x="0.0" y="0.0" width="171.5" height="31"/>
-                                    <constraints>
-                                        <constraint firstAttribute="height" constant="31" id="FHg-DI-OuZ"/>
-                                    </constraints>
+                                    <rect key="frame" x="0.0" y="7" width="171.5" height="20.5"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <button hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="748" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jyJ-WB-Hgk">
-                                    <rect key="frame" x="265" y="0.0" width="78" height="31"/>
+                                    <rect key="frame" x="265" y="0.0" width="78" height="34.5"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <state key="normal" title="Subscribe"/>
                                 </button>
                             </subviews>
                             <constraints>
-                                <constraint firstItem="jyJ-WB-Hgk" firstAttribute="height" secondItem="owH-GD-AqV" secondAttribute="height" id="gH3-TE-0al"/>
+                                <constraint firstItem="owH-GD-AqV" firstAttribute="baseline" secondItem="jyJ-WB-Hgk" secondAttribute="baseline" id="IQp-In-7CT"/>
+                                <constraint firstItem="owH-GD-AqV" firstAttribute="top" secondItem="7EI-uL-npn" secondAttribute="top" constant="7" id="KWR-Bc-Zku"/>
+                                <constraint firstItem="owH-GD-AqV" firstAttribute="baseline" secondItem="jyJ-WB-Hgk" secondAttribute="firstBaseline" id="NjR-DS-TaG"/>
+                                <constraint firstAttribute="trailing" secondItem="jyJ-WB-Hgk" secondAttribute="trailing" id="ndd-DB-yAy"/>
                             </constraints>
                         </stackView>
                         <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yfl-Ig-NTy">
-                            <rect key="frame" x="0.0" y="85" width="343" height="500"/>
+                            <rect key="frame" x="0.0" y="92.5" width="343" height="250"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <constraints>
-                                <constraint firstAttribute="height" constant="500" id="2In-9y-loA"/>
+                                <constraint firstAttribute="height" constant="250" id="mRd-vb-YrL"/>
                             </constraints>
                             <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </string>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -71,15 +73,20 @@
                             <dataDetectorType key="dataDetectorTypes" link="YES"/>
                         </textView>
                     </subviews>
+                    <constraints>
+                        <constraint firstItem="jyJ-WB-Hgk" firstAttribute="top" secondItem="8O9-9L-cQV" secondAttribute="bottom" constant="11" identifier="Subscribe Button Top Margin" id="qRj-CJ-R18"/>
+                    </constraints>
                 </stackView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <gestureRecognizers/>
             <constraints>
-                <constraint firstItem="owH-GD-AqV" firstAttribute="leading" secondItem="oxs-Rb-Hj9" secondAttribute="leadingMargin" constant="8" id="Pmf-hO-Uz0"/>
-                <constraint firstItem="HMM-JD-nd5" firstAttribute="top" secondItem="oxs-Rb-Hj9" secondAttribute="top" constant="64" id="xJx-KW-mhY"/>
+                <constraint firstItem="owH-GD-AqV" firstAttribute="leading" secondItem="oxs-Rb-Hj9" secondAttribute="leadingMargin" constant="8" identifier="Feed Title Leading Margin" id="Pmf-hO-Uz0"/>
+                <constraint firstItem="HMM-JD-nd5" firstAttribute="top" secondItem="oxs-Rb-Hj9" secondAttribute="top" constant="84" identifier="Stack View Top Margin" id="Rm7-kh-KvE" userLabel="Stack View Top Margin" colorLabel="IBBuiltInLabel-Red"/>
+                <constraint firstAttribute="trailing" secondItem="8O9-9L-cQV" secondAttribute="trailing" constant="16" identifier="URL Input Trailing Margin" id="prN-J6-Efs"/>
             </constraints>
             <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+            <point key="canvasLocation" x="39.5" y="53.5"/>
         </view>
     </objects>
 </document>

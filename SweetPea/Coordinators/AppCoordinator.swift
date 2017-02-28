@@ -56,6 +56,7 @@ extension AppCoordinator: SubscribeCoordinatorDelegate {
         childCoordinators.removeObject(identicalTo: subscribeCoordinator)
         //window.rootViewController = rootViewController
         rootViewController.episodeList.reloadData()
+        rootViewController
 
     }
 }

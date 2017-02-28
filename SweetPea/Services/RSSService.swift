@@ -80,6 +80,7 @@ struct RSSService: RSSProtocol {
     func refresh(_ feed: Feed) {
         let bgs = SerialDispatchQueueScheduler(qos: .background)
         let feedRef = ThreadSafeReference(to: feed)
+        
         let feed$ = Observable.from(feedRef)
             .observeOn(bgs)
             .map { store().resolve($0) }

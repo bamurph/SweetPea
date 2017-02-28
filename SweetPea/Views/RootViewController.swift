@@ -38,11 +38,7 @@ class RootViewController: UIViewController, UITableViewDelegate {
         let nib = UINib(nibName: "RootTableViewCell", bundle: nil)
         episodeList.register(nib, forCellReuseIdentifier: cellID)
         coordinatorDelegate.navigationController?.navigationBar.topItem?.rightBarButtonItem = subscribeButton
-
-
        
-        //_ = self.viewModel.refresh(oldFeeds: self.viewModel.feeds)
-
 
         _ = subscribeButton.rx.tap.asObservable()
             .subscribe(onNext: { _ in
@@ -50,11 +46,6 @@ class RootViewController: UIViewController, UITableViewDelegate {
             })
 
         let sortedEpisodes = viewModel.sortedWithImages().shareReplay(1)
-
-
-
-
-
         _ = sortedEpisodes
             .bindTo(episodeList.rx.items(cellIdentifier: cellID,
                 cellType: RootTableViewCell.self)) { (row, element, cell) in
@@ -83,6 +74,8 @@ class RootViewController: UIViewController, UITableViewDelegate {
             })
 
     }
+
+    
     
     
     

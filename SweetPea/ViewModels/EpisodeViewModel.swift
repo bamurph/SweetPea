@@ -36,13 +36,13 @@ class EpisodeViewModel: AudioPlaying {
         self.feed = Observable.from([feed])
         self.art = Observable.from([art])
 
-        let player$ = self.episode
+        _ = self.episode
             .map { $0.enclosure?.url }.filter { $0 != nil }
             .map { URL(string: $0!) }.filter { $0 != nil }
             .flatMap { self.audioPlayer(url: $0!) }
             .bindTo(player)
 
-        let playPause$ = playing.asObservable()
+        _ = playing.asObservable()
             .subscribe(onNext: { n in
                 switch n {
                 case true: self.player.value?.play()
@@ -50,7 +50,7 @@ class EpisodeViewModel: AudioPlaying {
                 }
             })
 
-        let fastForward$ = jump.asObservable()
+        _ = jump.asObservable()
             .subscribe(onNext: { n in
                 guard let item = self.player.value?.currentItem else { return }
                 let targetTime: CMTime
