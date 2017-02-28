@@ -45,6 +45,7 @@
 		B5A4A5441E14275B000A6E2D /* DownloadService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A4A5431E14275B000A6E2D /* DownloadService.swift */; };
 		B5B4CE3E1E1D787100A0F117 /* FeedSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B4CE3D1E1D787100A0F117 /* FeedSpec.swift */; };
 		B5BB0D991DD51CB300BD7FA0 /* OPMLService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BB0D981DD51CB300BD7FA0 /* OPMLService.swift */; };
+		B5D29B7B1E65FC29006C3394 /* Results+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D29B7A1E65FC29006C3394 /* Results+Rx.swift */; };
 		B5D793CD1E16D3F800331A20 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D793CC1E16D3F800331A20 /* main.swift */; };
 		B5D793CF1E16D4EF00331A20 /* TestingAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D793CE1E16D4EF00331A20 /* TestingAppDelegate.swift */; };
 		B5D793D01E16D5E200331A20 /* OPMLServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BA3F151DF74EAF000B6FFF /* OPMLServiceTest.swift */; };
@@ -152,6 +153,7 @@
 		B5BA3F151DF74EAF000B6FFF /* OPMLServiceTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OPMLServiceTest.swift; sourceTree = "<group>"; };
 		B5BB0D911DD51C8300BD7FA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B5BB0D981DD51CB300BD7FA0 /* OPMLService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OPMLService.swift; sourceTree = "<group>"; };
+		B5D29B7A1E65FC29006C3394 /* Results+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Results+Rx.swift"; sourceTree = "<group>"; };
 		B5D793CC1E16D3F800331A20 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		B5D793CE1E16D4EF00331A20 /* TestingAppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestingAppDelegate.swift; sourceTree = "<group>"; };
 		B5DABFD91E033A9200D9FFFF /* FeedKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FeedKit.framework; path = "../../Library/Developer/Xcode/DerivedData/SweetPea-ammcoyyuyrqelrgeerwkfbahqsyg/Build/Products/Debug-iphonesimulator/FeedKit/FeedKit.framework"; sourceTree = "<group>"; };
@@ -354,6 +356,7 @@
 		B5F57B4D1E0197FF00462BC8 /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				B5D29B7A1E65FC29006C3394 /* Results+Rx.swift */,
 				B5F57B4E1E01982500462BC8 /* Compose.swift */,
 				B537939D1DD9BF8C00D9C9AF /* Helpers.swift */,
 				B565D3891E28047500D1C713 /* Migrations.swift */,
@@ -689,6 +692,7 @@
 				B55A5E771E1D9E6700D85583 /* SubscribeViewController.swift in Sources */,
 				B5BB0D991DD51CB300BD7FA0 /* OPMLService.swift in Sources */,
 				B5A1AC8E1DE640440093E823 /* Helpers.swift in Sources */,
+				B5D29B7B1E65FC29006C3394 /* Results+Rx.swift in Sources */,
 				B5F57B4F1E01982500462BC8 /* Compose.swift in Sources */,
 				B565D3881E28042700D1C713 /* AppCoordinator.swift in Sources */,
 				B5A4A5411E142541000A6E2D /* Audio.swift in Sources */,

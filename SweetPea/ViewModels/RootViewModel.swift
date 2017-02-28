@@ -17,37 +17,48 @@ class RootViewModel: FileLocating, FileReading {
     private let rssService = RSSService()
 
     // MARK: - Model
-    let episodes: Observable<Episode>
-    let feeds: Observable<Feed>
+    let episodes: Observable<[Episode]>
+    let feeds: Observable<[Feed]>
 
 
 
     init() {
-        feeds = Observable.from(store().feeds |> Array.init)
-        episodes = Observable.from(store().episodes |> Array.init)
+        feeds = store().feeds.asObservableArray()
+        episodes = store().episodes.asObservableArray()
 
-        _ = refresh(oldFeeds: feeds)
+        _ = feeds
+            .map { Observable.from($0) }
+            .subscribe(onNext: {n in
+                _ = self.refresh(oldFeeds: n)
+            })
 
 
     }
 
-    func feedsWithImages() -> Observable<(Feed, UIImage?)> {
+    func feedsWithImages() -> Observable<(Feed, Observable<UIImage?>)> {
+
         let imagesForFeeds$ = feeds
-            .map { feed -> URL? in
-                guard
-                    let path = feed.imageLocalUrl
-                    else { return nil }
-                return self.fileDir().appendingPathComponent(path)}
-            .flatMap { url -> Observable<UIImage?> in
-                guard
-                    url != nil
-                    else { return .just(nil) }
-                return self.image(at: url!)
-                    .map { UIImage?.some($0) }}
+            .map {
+                $0.map {
+                    feed -> URL? in
+                    guard
+                        let path = feed.imageLocalUrl
+                        else { return nil }
+                    return self.fileDir().appendingPathComponent(path)}
+                    .map { url -> Observable<UIImage?> in
+                        guard
+                            url != nil
+                            else { return .just(nil) }
+                        return self.image(at: url!)
+                            .map { UIImage?.some($0) }
+                }
+            }
 
         return Observable
             .zip(feeds, imagesForFeeds$) { return ($0, $1) }
             .map { ($0.0, $0.1) }
+
+
     }
 
     func episodesWithImages() -> Observable<(Episode, UIImage?)> {
